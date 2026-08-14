@@ -1,52 +1,64 @@
 ---
-title: Beer as Art — Event Design & Photography
+title: Beer as Art — Event Posters & Label
 client: Rain City Brew
-year: 2012
+year: 2013
 category: Event Design
 division: business
 work_type: internship
-role: Design Intern & Staff Photographer
-context: Internship
-status: draft
-tags: poster, print, label, event, photography, beverage
-summary: Event identity, posters, and a beer label for the brewery's Beer as Art series, plus event photography across both nights.
+role: Design Intern
+context: Internship, in partnership with Ninkasi Brewing
+featured: true
+tags: poster, print, label, event, beverage, illustration
+summary: Posters for both nights of the brewery's Beer as Art homebrew competition, and the label for a beer brewed by one of the owners.
 images:
+  01-stashebash-poster.jpg: 'Stache Bash 2012 — event poster for the first Beer as Art homebrew competition and art show
+  02-brews-of-anime-poster.jpg: Brews of Anime 2013 — event poster for the second competition, built around a club-patch treatment
+  03-wild-eyed-joker-label.png: Wild-Eyed Joker — label and artwork for a spiced pale amber ale brewed by one of the Rain City Brew owners
 ---
 
-Draft. Remove the `status: draft` line to publish.
+Beer as Art was a Rain City Brew event series, run in partnership with
+Ninkasi Brewing, that paired homebrewers with local artists. Each brewer
+made a beer, mead, or ale; an artist made the artwork and label for it; and
+the results were judged in front of a crowd. I came in as the design intern
+off the back of a packaging project, and worked both events.
 
-Beer as Art was a Rain City Brew series, run in partnership with Ninkasi
-Brewing, that paired homebrewers with local artists — the artist made the
-artwork and the label for the brewer's ale, mead, or beer. As the design
-intern I worked across two complete events, and shot both of them as staff
-photographer.
+## Two nights, two identities
 
-## What belongs on this page
+The events needed to feel like part of one series without repeating
+themselves, since the second was pitched to the same audience as the first.
 
-- Event poster, StasheBash 2012
-- Event poster, Beers of Anime 2013
-- Artwork and label for Wild-Eyed Joker, a beer crafted by one of the
-  Rain City Brew owners
-- Event photography from both nights
+'Stache Bash, in November 2012, ran on a single joke told properly — a
+bowler hat, wire glasses, and an enormous curled moustache, drawn in one
+weight of black on off-white, with the event details set quietly underneath
+so the mark carries the poster.
 
-## Assets to pull
+[[01-stashebash-poster.jpg]]
 
-High-resolution sources, all under
-`D:\Work\Inkboard Design\Client Folder\Rain City Brew`:
+Brews of Anime, in April 2013, was themed on cartoon and anime characters,
+and went the opposite direction: a biker-club patch stitched onto the back
+of a leather jacket, with the type running up the right edge and the entry
+terms set into the composition the way club patches carry their own
+hierarchy. Same series, different volume.
 
-- `Projects\BeerAsArt_Posters\BrewsOfAnime\BrewsofAnime2013_Print.png` — 5400x7200
-- `Projects\BeerAsArt_Posters\StasheBash\` — StasheBash poster and artist artwork
-- `Projects\JokerLabel\` — Wild-Eyed Joker artwork and label
-- `BeersOfAnime_Photos\` — event photography, 5184x3456 originals
-- `BaA_Mustache_Photos\` — StasheBash event photography, 5184x3456 originals
+[[02-brews-of-anime-poster.jpg]]
 
-The three `legacy-slide-*.jpg` files in this folder are 792x612 exports from
-the old portfolio deck, with captions burned in. They are reference only —
-use them to remember what was shown, not as the images on the page.
+## Wild-Eyed Joker
 
-Photography needs its own treatment rather than being mixed into the design
-gallery. Two capabilities on one page have to stay legible as two.
+One of the Rain City Brew owners brewed a spiced pale amber, and I did the
+artwork and the label for it — a manic, hand-drawn face on a burst of
+purple, with the beer name on a banner across the middle.
 
-This is deliberately separate from the package design project, which was
-coursework and is what led to this internship. Keeping them apart means each
-page carries an accurate label instead of blurring two engagements together.
+[[03-wild-eyed-joker-label.png]]
+
+The artwork is deliberately crude. The beer was called Wild-Eyed Joker and
+it was competing in a room full of homebrew, so a clean, corporate label
+would have been the wrong answer.
+
+## Credit where it is due
+
+The labels shown at these events were made by the participating artists
+— David Bloomfield, Narboo, Alex Pascaul, Michael O'Connor, Jennifer
+Hoffmann, Kristin Spooner, Lindsey Anzures and Erik Teschlog among them —
+not by me. My work here is the event posters and the Wild-Eyed Joker label.
+That distinction is the whole point of the series, and it is worth keeping
+straight.
