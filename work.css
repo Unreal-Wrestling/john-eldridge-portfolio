@@ -493,8 +493,49 @@
    pieces of design work above them. Wider than the copy measure: these
    are photographs, and they earn the extra width the design flats don't. */
 .proj-slideshow {
-  max-width: 900px;
+  max-width: 760px;
   margin-bottom: 3.5rem;
+}
+
+/* ── Tabbed project sections ─────────────────────────────── */
+/* When a project splits into distinct events, a tab bar lets the viewer
+   jump between them without scrolling past the entire other section. */
+.proj-tabs {
+  margin-top: 1rem;
+}
+.proj-tab-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+.proj-tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  background: none;
+  color: var(--text-muted);
+  font: inherit;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.proj-tab-btn:hover {
+  color: var(--text);
+}
+.proj-tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+.proj-tab-pane {
+  min-height: 0;
+}
+.proj-tab-pane .proj-body:first-child {
+  margin-top: 0;
 }
 .slide { margin: 0; }
 .slide img {
@@ -523,6 +564,7 @@
 .slide-controls {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1.25rem;
 }
@@ -554,6 +596,7 @@
 .slide-dots {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.4rem;
   margin-top: 1rem;
 }

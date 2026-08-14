@@ -140,6 +140,12 @@ class Project:
     # a reel of 20 frames never competes with the pieces being shown.
     # Lives in a photos/ subfolder and renders as one slideshow.
     photos: list[ProjectImage] = field(default_factory=list)
+    # Named photo blocks for sectioned projects, keyed by the suffix in
+    # `photos-name:`. Each block renders as its own slideshow.
+    photo_blocks: dict[str, list[ProjectImage]] = field(default_factory=dict)
+    # Tab labels for sectioned projects. When non-empty the body is split
+    # at matching ## headings and each section renders in its own tab.
+    sections: list[str] = field(default_factory=list)
 
     @property
     def url(self) -> str:
@@ -261,6 +267,7 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
     raw_meta, body = parts[1], parts[2]
     meta: dict = {}
     blocks: dict[str, dict[str, str]] = {"images": {}, "photos": {}}
+    photo_blocks: dict[str, dict[str, str]] = {}
     current = ""
 
     for line in raw_meta.splitlines():
@@ -271,7 +278,10 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
         if current and indented:
             if ":" in line:
                 fname, _, caption = line.strip().partition(":")
-                blocks[current][fname.strip()] = caption.strip()
+                if current.startswith("photos-"):
+                    photo_blocks[current[7:]][fname.strip()] = caption.strip()
+                else:
+                    blocks[current][fname.strip()] = caption.strip()
             continue
 
         current = ""
@@ -284,10 +294,15 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
         if key in blocks:
             current = key
             continue
+        if key.startswith("photos-"):
+            photo_blocks[key[7:]] = {}
+            current = key
+            continue
         meta[key] = value
 
     meta["_images"] = blocks["images"]
     meta["_photos"] = blocks["photos"]
+    meta["_photo_blocks"] = photo_blocks
     return meta, body.strip()
 
 
@@ -341,7 +356,9 @@ def render_body(text: str) -> str:
         if not block:
             continue
 
-        if block.startswith("## "):
+        if block.startswith("### "):
+            out.append(f"<h3>{inline(block[4:].strip())}</h3>")
+        elif block.startswith("## "):
             out.append(f"<h2>{inline(block[3:].strip())}</h2>")
         elif block.startswith("[[web:") and block.endswith("]]"):
             url, _, cap = block[6:-2].partition("|")
@@ -351,7 +368,12 @@ def render_body(text: str) -> str:
             # after the images are processed, since dimensions aren't
             # known yet.
             ref = block[2:-2].strip()
-            out.append("<!--PHOTOS-->" if ref == "photos" else f"<!--IMG:{ref}-->")
+            if ref == "photos":
+                out.append("<!--PHOTOS-->")
+            elif ref.startswith("photos:"):
+                out.append(f"<!--PHOTOS:{ref[7:]}-->")
+            else:
+                out.append(f"<!--IMG:{ref}-->")
         elif all(ln.strip().startswith(">") for ln in block.splitlines()):
             quote = " ".join(ln.strip().lstrip(">").strip() for ln in block.splitlines())
             out.append(f"<blockquote>{inline(quote)}</blockquote>")
@@ -476,7 +498,11 @@ def load_project(folder: Path) -> Project | None:
 
     photo_captions = meta.get("_photos", {})
     photo_dir = folder / "photos"
-    if photo_dir.is_dir():
+    photo_blocks_meta = meta.get("_photo_blocks", {})
+
+    # When named photo blocks are used (photos-sb:, photos-boa:, etc.),
+    # skip the default auto-load — those photos are handled by the blocks.
+    if not photo_blocks_meta and photo_dir.is_dir():
         for img in sorted(photo_dir.iterdir()):
             if img.suffix.lower() not in IMAGE_EXTS:
                 continue
@@ -488,6 +514,30 @@ def load_project(folder: Path) -> Project | None:
                     caption=photo_captions.get(img.name, ""),
                 )
             )
+
+    # Named photo blocks for tabbed/sectioned projects
+    photo_blocks_meta = meta.get("_photo_blocks", {})
+    for block_name, captions in photo_blocks_meta.items():
+        block_photos: list[ProjectImage] = []
+        for fname in sorted(captions.keys()):
+            img_path = photo_dir / fname
+            if not img_path.exists():
+                print(f"  WARN {folder.name}: photo '{fname}' not found in photos/")
+                continue
+            block_photos.append(
+                ProjectImage(
+                    src=img_path,
+                    full_rel=f"img/photos/{img_path.stem}.jpg",
+                    thumb_rel=f"img/photos/{img_path.stem}-thumb.jpg",
+                    caption=captions[fname],
+                )
+            )
+        proj.photo_blocks[block_name] = block_photos
+
+    # Section labels for tabbed projects
+    sections_raw = meta.get("sections", "")
+    if sections_raw:
+        proj.sections = [s.strip() for s in sections_raw.split(",") if s.strip()]
 
     return proj
 
@@ -626,6 +676,13 @@ def build_images(proj: Project, out_dir: Path) -> None:
         resize_to(photo.src, out_dir / photo.thumb_rel, THUMB_MAX_W)
         photo.width, photo.height = w, h
         photo.shape = classify_shape(w, h)
+
+    for block_photos in proj.photo_blocks.values():
+        for photo in block_photos:
+            w, h = resize_to(photo.src, out_dir / photo.full_rel, FULL_MAX_W)
+            resize_to(photo.src, out_dir / photo.thumb_rel, THUMB_MAX_W)
+            photo.width, photo.height = w, h
+            photo.shape = classify_shape(w, h)
 
 
 # ── HTML ──────────────────────────────────────────────────────────────
@@ -799,18 +856,23 @@ def render_figure(image: ProjectImage, proj: Project, eager: bool) -> str:
       </figure>"""
 
 
-def render_slideshow(proj: Project) -> str:
+def render_slideshow(proj: Project, photos: list[ProjectImage] | None = None,
+                     id_suffix: str = "") -> str:
     """One slideshow for a project's event photography.
 
     Every slide ships in the HTML so the set is crawlable and works with
     JavaScript disabled - without JS it degrades to a plain vertical run
     of photos, which is a worse experience but never a broken one.
     """
-    if not proj.photos:
+    if photos is None:
+        photos = proj.photos
+    if not photos:
         return ""
 
+    elem_id = f"shots-{id_suffix}" if id_suffix else "shots"
+
     slides = []
-    for i, photo in enumerate(proj.photos):
+    for i, photo in enumerate(photos):
         cap = (
             f'<figcaption class="slide-cap">{esc(photo.caption)}</figcaption>'
             if photo.caption
@@ -831,16 +893,16 @@ def render_slideshow(proj: Project) -> str:
 
     dots = "".join(
         f'<button class="slide-dot" data-go="{i}" aria-label="Photo {i + 1}"></button>'
-        for i in range(len(proj.photos))
+        for i in range(len(photos))
     )
 
-    return f"""    <div class="proj-slideshow" id="shots" data-count="{len(proj.photos)}">
+    return f"""    <div class="proj-slideshow" id="{elem_id}" data-count="{len(photos)}">
       <div class="slide-track">
 {chr(10).join(slides)}
       </div>
       <div class="slide-controls">
         <button class="slide-btn" data-step="-1" aria-label="Previous photo">&larr;</button>
-        <p class="slide-count"><span class="slide-now">1</span> / {len(proj.photos)}</p>
+        <p class="slide-count"><span class="slide-now">1</span> / {len(photos)}</p>
         <button class="slide-btn" data-step="1" aria-label="Next photo">&rarr;</button>
       </div>
       <div class="slide-dots">{dots}</div>
@@ -848,7 +910,7 @@ def render_slideshow(proj: Project) -> str:
 
     <script>
       (function () {{
-        var box = document.getElementById('shots');
+        var box = document.getElementById('{elem_id}');
         if (!box) return;
         var slides = box.querySelectorAll('.slide');
         var dots = box.querySelectorAll('.slide-dot');
@@ -987,32 +1049,161 @@ def render_project_page(proj: Project) -> str:
     by_name = {im.src.name: im for im in proj.images}
     placed: set[str] = set()
     shown = 0
-    photos_placed = False
-    segments = re.split(r"<!--IMG:(.+?)-->|<!--PHOTOS-->", proj.body_html)
     lead = f"{disclaimer}\n      {credits}"
 
-    for i, segment in enumerate(segments):
-        if i % 2 == 1:  # capture group - an image reference, or the reel
-            if segment is None:  # the <!--PHOTOS--> branch
-                parts.append(render_slideshow(proj))
-                photos_placed = True
-                continue
-            image = by_name.get(segment)
-            if image is None:
-                print(f"  WARN {proj.slug}: no image named '{segment}'")
-                continue
-            placed.add(segment)
-            parts.append(
-                f'    <div class="proj-gallery">\n'
-                f"{render_figure(image, proj, eager=shown == 0)}\n    </div>\n"
-            )
-            shown += 1
-            continue
+    def render_segments(body_html: str, lead_html: str) -> tuple[list[str], bool, str]:
+        """Split body HTML at image/photo markers and return rendered
+        parts, whether photos were placed, and the consumed lead."""
+        seg_parts: list[str] = []
+        seg_photos_placed = False
+        seg_lead = lead_html
+        seg_shown = 0
 
-        body = segment.strip()
-        if not body and not lead:
-            continue
-        parts.append(f'    <div class="proj-body">\n      {lead}\n      {body}\n    </div>\n')
+        segments = re.split(
+            r"<!--IMG:(.+?)-->|<!--PHOTOS(?::([a-z0-9_-]+))?-->",
+            body_html,
+        )
+        for i, segment in enumerate(segments):
+            if i % 3 == 1:  # IMG capture group
+                if segment is None:  # PHOTOS branch matched, not IMG
+                    continue
+                image = by_name.get(segment)
+                if image is None:
+                    print(f"  WARN {proj.slug}: no image named '{segment}'")
+                    continue
+                placed.add(segment)
+                seg_parts.append(
+                    f'    <div class="proj-gallery">\n'
+                    f"{render_figure(image, proj, eager=shown + seg_shown == 0)}\n    </div>\n"
+                )
+                seg_shown += 1
+                continue
+            if i % 3 == 2:  # PHOTOS capture group (named or default)
+                block_name = segment
+                if block_name:
+                    photos = proj.photo_blocks.get(block_name, [])
+                    seg_parts.append(render_slideshow(proj, photos, block_name))
+                    seg_photos_placed = True
+                else:
+                    seg_parts.append(render_slideshow(proj))
+                    seg_photos_placed = True
+                continue
+
+            body = segment.strip()
+            if not body and not seg_lead:
+                continue
+            seg_parts.append(
+                f'    <div class="proj-body">\n      {seg_lead}\n      {body}\n    </div>\n'
+            )
+            seg_lead = ""
+
+        return seg_parts, seg_photos_placed, seg_lead
+
+    photos_placed = False
+
+    if proj.sections:
+        # Tabbed project: split the body at <h2> tags matching section names.
+        # The intro (everything before the first section heading) renders
+        # as a lead block above the tabs.
+        section_set = set(html.escape(s) for s in proj.sections)
+        # Split on <h2>Section name</h2> boundaries
+        h2_pattern = r'<h2>([^<]+)</h2>'
+        h2_matches = list(re.finditer(h2_pattern, proj.body_html))
+
+        # Find which h2s match our section names
+        section_starts = []
+        for m in h2_matches:
+            heading_text = m.group(1).strip()
+            if heading_text in section_set:
+                section_starts.append(m)
+
+        if section_starts:
+            # Intro is everything before the first section heading
+            intro_html = proj.body_html[:section_starts[0].start()].strip()
+            if intro_html:
+                intro_parts, intro_photos, _ = render_segments(intro_html, lead)
+                parts.extend(intro_parts)
+                if intro_photos:
+                    photos_placed = True
+                lead = ""
+
+            # Tab bar
+            tab_buttons = []
+            for idx, sec_name in enumerate(proj.sections):
+                active = " active" if idx == 0 else ""
+                tab_buttons.append(
+                    f'<button class="proj-tab-btn{active}" data-tab="{idx}" '
+                    f'type="button">{esc(sec_name)}</button>'
+                )
+            parts.append(
+                f'    <div class="proj-tabs">\n'
+                f'      <div class="proj-tab-bar">{" ".join(tab_buttons)}</div>\n'
+            )
+
+            # Each section pane
+            for idx, sec_name in enumerate(proj.sections):
+                # Find the matching h2
+                sec_escaped = html.escape(sec_name)
+                start_match = None
+                for m in section_starts:
+                    if m.group(1).strip() == sec_escaped:
+                        start_match = m
+                        break
+                if not start_match:
+                    continue
+
+                # Section content goes from after this h2 to the start of
+                # the next section h2 (or end of body)
+                content_start = start_match.end()
+                content_end = len(proj.body_html)
+                for m in section_starts:
+                    if m.start() > start_match.start():
+                        content_end = m.start()
+                        break
+
+                section_html = proj.body_html[content_start:content_end].strip()
+                pane_parts, pane_photos, _ = render_segments(section_html, "")
+                pane_hidden = "" if idx == 0 else ' style="display:none"'
+                parts.append(
+                    f'      <div class="proj-tab-pane" data-pane="{idx}"{pane_hidden}>\n'
+                )
+                parts.extend(pane_parts)
+                if pane_photos:
+                    photos_placed = True
+                parts.append('      </div>\n')
+
+            # Tab switching script
+            parts.append("""    </div>
+    <script>
+      (function () {
+        var bar = document.querySelector('.proj-tab-bar');
+        if (!bar) return;
+        var btns = bar.querySelectorAll('.proj-tab-btn');
+        var panes = document.querySelectorAll('.proj-tab-pane');
+        btns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var idx = btn.dataset.tab;
+            btns.forEach(function (b) { b.classList.toggle('active', b === btn); });
+            panes.forEach(function (p) {
+              p.style.display = p.dataset.pane === idx ? '' : 'none';
+            });
+          });
+        });
+      })();
+    </script>
+""")
+        else:
+            # No matching h2s found, fall through to normal rendering
+            body_parts, body_photos, _ = render_segments(proj.body_html, lead)
+            parts.extend(body_parts)
+            if body_photos:
+                photos_placed = True
+            lead = ""
+    else:
+        body_parts, body_photos, _ = render_segments(proj.body_html, lead)
+        parts.extend(body_parts)
+        if body_photos:
+            photos_placed = True
         lead = ""
 
     if proj.photos and not photos_placed:
@@ -1294,6 +1485,8 @@ def main() -> int:
         build_images(proj, out)
         (out / "index.html").write_text(render_project_page(proj), encoding="utf-8")
         reel = f", {len(proj.photos)} photos" if proj.photos else ""
+        if proj.photo_blocks:
+            reel += f", {sum(len(v) for v in proj.photo_blocks.values())} photos in {len(proj.photo_blocks)} blocks"
         print(f"  OK   /work/{proj.slug}/  ({len(proj.images)} images{reel})")
 
     # After the projects, since the home page embeds their cards.
