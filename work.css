@@ -324,6 +324,24 @@
   line-height: 1.6;
 }
 
+/* Credit for people who executed under direction. Quiet, but present. */
+.proj-credits {
+  margin: 2rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+.proj-credits-label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
 .work-card-img { position: relative; }
 .work-card-badge {
   position: absolute;

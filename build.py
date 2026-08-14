@@ -112,6 +112,7 @@ class Project:
     context: str = ""  # e.g. "Everett Community College, 2015"
     outcome: str = ""  # e.g. "1st place, 200 entries"
     summary: str = ""
+    team: list[str] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     featured: bool = False
     body_html: str = ""
@@ -259,6 +260,7 @@ def load_project(folder: Path) -> Project | None:
 
     title = meta.get("title") or folder.name.replace("-", " ").title()
     tags = [t.strip() for t in meta.get("tags", "").split(",") if t.strip()]
+    team = [t.strip() for t in meta.get("team", "").split(",") if t.strip()]
 
     division = meta.get("division", "").strip().lower()
     if division in ("arts", "art", "entertainment", "arts & entertainment"):
@@ -296,6 +298,7 @@ def load_project(folder: Path) -> Project | None:
         context=meta.get("context", ""),
         outcome=meta.get("outcome", ""),
         summary=meta.get("summary", ""),
+        team=team,
         tags=tags,
         featured=meta.get("featured", "").lower() in ("true", "yes", "1"),
         body_html=render_body(body),
@@ -468,6 +471,17 @@ def render_project_page(proj: Project) -> str:
         else ""
     )
 
+    # Crediting the people who executed under direction is standard
+    # practice and costs nothing. It also makes the directing role read
+    # as real rather than as a claim over other people's work.
+    credits = ""
+    if proj.team:
+        names = ", ".join(esc(n) for n in proj.team)
+        credits = (
+            '<p class="proj-credits"><span class="proj-credits-label">'
+            f'Design team</span>{names}</p>'
+        )
+
     parts.append(f"""
   <header class="proj-header">
     <div class="container">
@@ -493,6 +507,7 @@ def render_project_page(proj: Project) -> str:
     <div class="proj-body">
       {disclaimer}
       {proj.body_html}
+      {credits}
       {('<div class="proj-tags">' + ''.join(f'<span class="proj-tag">{esc(t)}</span>' for t in proj.tags) + '</div>') if proj.tags else ''}
     </div>
 """)
