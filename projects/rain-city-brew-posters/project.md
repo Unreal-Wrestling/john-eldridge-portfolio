@@ -34,7 +34,7 @@ photos-boa:
   14-boa-table-pour.jpg: Pouring an entry for judging
   15-boa-pour.jpg: Brews of Anime — a dark entry going into the glass
   16-boa-cheers.jpg: Tasting glasses, Brews of Anime
-  17-boa-glasses.jpg: Tasting glasses at the bar, Brews of Anime
+  17-boa-glasses.jpg: Brews of Anime, April 2013
   18-boa-group.jpg: Guests at Brews of Anime
   19-boa-staff.jpg: The crew at the end of the night
   20-boa-backstage.jpg: Packing down after the event
