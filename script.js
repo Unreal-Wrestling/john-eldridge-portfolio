@@ -3,37 +3,197 @@
    ═══════════════════════════════════════════════════════════ */
 
 // ── Design Work Gallery Items ──────────────────────────────
+// Categories mirror the three sections of the source portfolio deck.
+// Deck title, section dividers, and the closing contact slide are
+// intentionally omitted — the site already covers that ground.
+const CATEGORIES = [
+  { key: 'all',       label: 'All Work' },
+  { key: 'merch',     label: 'Merch & Packaging' },
+  { key: 'ad',        label: 'Ad & Event' },
+  { key: 'marketing', label: 'Marketing Assets' },
+];
+
 const galleryImages = [
-  { file: 'Artboard 1.png',  title: 'Design Work — Artboard 1' },
-  { file: 'Artboard 2.png',  title: 'Design Work — Artboard 2' },
-  { file: 'Artboard 3.png',  title: 'Design Work — Artboard 3' },
-  { file: 'Artboard 4.png',  title: 'Design Work — Artboard 4' },
-  { file: 'Artboard 5.png',  title: 'Design Work — Artboard 5' },
-  { file: 'Artboard 6.png',  title: 'Design Work — Artboard 6' },
-  { file: 'Artboard 7.png',  title: 'Design Work — Artboard 7' },
-  { file: 'Artboard 8.png',  title: 'Design Work — Artboard 8' },
-  { file: 'Artboard 9.png',  title: 'Design Work — Artboard 9' },
-  { file: 'Artboard 10.png', title: 'Design Work — Artboard 10' },
-  { file: 'Artboard 11.png', title: 'Design Work — Artboard 11' },
-  { file: 'Artboard 12.png', title: 'Design Work — Artboard 12' },
-  { file: 'Artboard 13.png', title: 'Design Work — Artboard 13' },
-  { file: 'Artboard 14.png', title: 'Design Work — Artboard 14' },
-  { file: 'Artboard 15.png', title: 'Design Work — Artboard 15' },
-  { file: 'Artboard 16.png', title: 'Design Work — Artboard 16' },
-  { file: 'Artboard 17.png', title: 'Design Work — Artboard 17' },
-  { file: 'Artboard 18.png', title: 'Design Work — Artboard 18' },
-  { file: 'Artboard 19.png', title: 'Design Work — Artboard 19' },
-  { file: 'Artboard 20.png', title: 'Design Work — Artboard 20' },
-  { file: 'Artboard 21.png', title: 'Design Work — Artboard 21' },
-  { file: 'Artboard 22.png', title: 'Design Work — Artboard 22' },
-  { file: 'Artboard 23.png', title: 'Design Work — Artboard 23' },
-  { file: 'Artboard 24.png', title: 'Design Work — Artboard 24' },
-  { file: 'Artboard 25.png', title: 'Design Work — Artboard 25' },
-  { file: 'Artboard 26.png', title: 'Design Work — Artboard 26' },
-  { file: 'Artboard 27.png', title: 'Design Work — Artboard 27' },
-  { file: 'Artboard 28.png', title: 'Design Work — Artboard 28' },
-  { file: 'Artboard 29.png', title: 'Design Work — Artboard 29' },
-  { file: 'Artboard Closer.png', title: 'Show Closer Graphic' },
+  // ── Section One — Merch & Packaging ──
+  {
+    file: 'Artboard 3.png',
+    client: 'Asphalt Clothing',
+    title: 'T-Shirt Merch Collection',
+    category: 'merch',
+    desc: 'A six-design apparel collection, each piece reinterpreting the brand\u2019s triangle logo — from bold and graphic to minimal and understated.',
+  },
+  {
+    file: 'Artboard 4.png',
+    client: 'Grenco Science',
+    title: 'Vape Pen Packaging',
+    category: 'merch',
+    desc: 'A two-design packaging collection delivered with production-ready dielines: a blue watercolor series and a sleek brushed-aluminum finish.',
+  },
+  {
+    file: 'Artboard 5.png',
+    client: 'Red Bull Global Rallycross',
+    title: 'T-Shirt Merch Designs',
+    category: 'merch',
+    desc: 'Four rally-racing merch designs using aggressive tread marks, mud lines, and a world map to capture the sport\u2019s speed and global reach.',
+  },
+  {
+    file: 'Artboard 6.png',
+    client: 'Rain City Brew',
+    title: 'Porter Label & Package Design',
+    category: 'merch',
+    desc: 'Bottle label and six-pack carrier built on Pacific Northwest imagery — a lighthouse beacon cutting through Puget Sound storm clouds.',
+  },
+  {
+    file: 'Artboard 7.png',
+    client: 'Music Industry',
+    title: 'Logo & Merch Designs',
+    category: 'merch',
+    desc: 'Apparel and logo work for Redman, Caviar Gold, Cavigold Records, Arisen From Nothing, Dead Kiss, The Rockefellers, and Jimmy Nuge.',
+  },
+  {
+    file: 'Artboard 8.png',
+    client: 'Arisen From Nothing / The Rockefellers',
+    title: 'EP Album Covers',
+    category: 'merch',
+    desc: 'Front and back covers for two EPs, including logo design, track listings, band credits, and original cover photography.',
+  },
+  {
+    file: 'Artboard 9.png',
+    client: 'Action Sports',
+    title: 'Logo & Merch Designs',
+    category: 'merch',
+    desc: 'Merch and branding for Vitalire, Stevens Pass, and Kash Vault Clothing — including a benefit design raising medical costs for a local PNW rider.',
+  },
+
+  // ── Section Two — Ad & Event ──
+  {
+    file: 'Artboard 11.png',
+    client: 'Local Events',
+    title: 'Poster & Handbill Designs',
+    category: 'ad',
+    desc: 'Poster and handbill designs across music, art, and comedy — including EMP semi-finals, Hard Rock Cafe, Splintered Throne, and the Big Fat Comedy Show.',
+  },
+  {
+    file: 'Artboard 12.png',
+    client: 'Buzz Inn Steakhouse',
+    title: 'Social & Event Headers',
+    category: 'ad',
+    desc: 'Shareable social graphics and event headers for holiday promotions and menu specials across nine restaurant locations.',
+  },
+  {
+    file: 'Artboard 13.png',
+    client: 'Crypticon Seattle',
+    title: 'Convention Poster & Magazine Ads',
+    category: 'ad',
+    desc: 'Poster and magazine ad campaign for the Pacific Northwest\u2019s largest horror convention, built around the 2014 celebrity guest lineup.',
+  },
+  {
+    file: 'Artboard 14.png',
+    client: 'Crypticon Seattle',
+    title: 'Full Event Collateral',
+    category: 'ad',
+    desc: 'Two-year project scope: posters, magazine ads, handbills, event badges, drink vouchers, tickets, business cards, email banners, and the weekend-pass \u201cCertificate of Death.\u201d',
+  },
+  {
+    file: 'Artboard 15.png',
+    client: 'LEGIT Cannabis Co.',
+    title: 'Handbill & Magazine Ad',
+    category: 'ad',
+    desc: 'Print campaign establishing the brand as a premium crafted pre-roll, carried from handbill through to a full-page magazine ad.',
+  },
+  {
+    file: 'Artboard 16.png',
+    client: 'Fantasy Wrestling Alliance',
+    title: 'Event Header Series',
+    category: 'ad',
+    desc: 'Sixteen pay-per-view header designs ranging from bold and colorful to sleek and minimal, each themed to its event\u2019s season and tone.',
+  },
+  {
+    file: 'Artboard 17.png',
+    client: 'Fantasy Wrestling Alliance',
+    title: 'Event Poster Series',
+    category: 'ad',
+    desc: 'Full-page poster and ad designs for marquee pay-per-view events, including full match-card typography.',
+  },
+
+  // ── Section Three — Marketing Assets ──
+  {
+    file: 'Artboard 19.png',
+    client: 'Seaweed Cannabis Co.',
+    title: 'Educational Display Slides',
+    category: 'marketing',
+    desc: 'A digital-display series breaking down terpenes — taste, experience, and effects — designed to make technical product information scannable in-store.',
+  },
+  {
+    file: 'Artboard 20.png',
+    client: 'Various',
+    title: 'Document & Menu Design',
+    category: 'marketing',
+    desc: 'A to-go menu for The Hearty Galley plus employment applications, order forms, sponsor and press kits, product analysis forms, surveys, coupons, and letterheads.',
+  },
+  {
+    file: 'Artboard 21.png',
+    client: 'BizTech RX',
+    title: 'Branding & Identity',
+    category: 'marketing',
+    desc: 'Complete identity rollout: logo, website, promotional mailers, door hangers, business cards, email banners, and stationery.',
+  },
+  {
+    file: 'Artboard 22.png',
+    client: 'Fantasy Wrestling Alliance',
+    title: 'Branding & Identity',
+    category: 'marketing',
+    desc: 'The master FWA mark plus twelve individual promotion logos, each styled to a different era and attitude of pro wrestling.',
+  },
+  {
+    file: 'Artboard 23.png',
+    client: 'Fantasy Wrestling Alliance',
+    title: 'Annual Awards Magazine Layout',
+    category: 'marketing',
+    desc: 'A multi-page year-end awards magazine designed as a deliberate homage to 1980s pro-wrestling print, using bold typography and muted color.',
+  },
+  {
+    file: 'Artboard 24.png',
+    client: 'Fantasy Wrestling Alliance',
+    title: 'Report & Instruction Manual',
+    category: 'marketing',
+    desc: 'A weekly four-page commissioner report plus a four-page beginner\u2019s manual using step-by-step instructions and visual aids to make a complex ruleset approachable.',
+  },
+  {
+    file: 'Artboard 25.png',
+    client: 'Fantasy Wrestling Alliance',
+    title: 'Patreon Membership Assets',
+    category: 'marketing',
+    desc: 'Membership tier graphics and channel banner in a black-and-gold system built to signal quality and value at every price point.',
+  },
+  {
+    file: 'Artboard 26.png',
+    client: 'Chronos World',
+    title: 'Streaming Channel Identity',
+    category: 'marketing',
+    desc: 'A full weekly programming schedule with individual logo designs for ten shows, plus intro/outro stings, cover photos, and promotional graphics.',
+  },
+  {
+    file: 'Artboard 27.png',
+    client: 'Chronos World',
+    title: 'Live Stream Overlays',
+    category: 'marketing',
+    desc: 'Custom broadcast overlays and character frames for live stream productions, each themed to its show\u2019s world and tone.',
+  },
+  {
+    file: 'Artboard 28.png',
+    client: 'Various Authors',
+    title: 'Book Cover Design',
+    category: 'marketing',
+    desc: 'Three covers — a poetry collection, a chef\u2019s memoir, and a supernatural mystery — delivered as print-ready wraps with spine and dieline specs.',
+  },
+  {
+    file: 'Artboard 29.png',
+    client: '3G\u2019s Coffeeshop',
+    title: 'Logo, Menu & Loyalty Cards',
+    category: 'marketing',
+    desc: 'Seaside identity built on the Westport Lookout Tower and jetty, with three gulls representing the three generations who run the shop.',
+  },
 ];
 
 // ── Video Showcase Items (YouTube embeds) ─────────────────
@@ -84,16 +244,67 @@ function escapeHtml(str) {
   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-// ── Build Gallery ──────────────────────────────────────────
+// ── Build Gallery + Category Filters ───────────────────────
 const galleryEl = document.getElementById('gallery');
-galleryImages.forEach((item, i) => {
-  const div = document.createElement('div');
-  div.className = 'gallery-item reveal';
-  div.dataset.index = i;
-  div.innerHTML = `<img src="${escapeAttr(item.file)}" alt="${escapeAttr(item.title)}" loading="lazy">`;
-  div.addEventListener('click', () => openLightbox(i));
-  galleryEl.appendChild(div);
-});
+const filtersEl = document.getElementById('gallery-filters');
+
+let activeCategory = 'all';
+// The set currently rendered — the lightbox navigates within this,
+// so arrow keys stay inside the active filter.
+let visibleImages = [];
+
+function itemsFor(category) {
+  return category === 'all'
+    ? galleryImages
+    : galleryImages.filter((item) => item.category === category);
+}
+
+function fullLabel(item) {
+  return item.client ? `${item.client} — ${item.title}` : item.title;
+}
+
+function renderGallery() {
+  visibleImages = itemsFor(activeCategory);
+  galleryEl.innerHTML = '';
+  visibleImages.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'gallery-item';
+    div.dataset.index = i;
+    div.innerHTML = `
+      <img src="${escapeAttr(item.file)}" alt="${escapeAttr(fullLabel(item))}" loading="lazy">
+      <div class="gallery-caption">
+        ${item.client ? `<span class="gallery-client">${escapeHtml(item.client)}</span>` : ''}
+        <span class="gallery-title">${escapeHtml(item.title)}</span>
+      </div>
+    `;
+    div.addEventListener('click', () => openLightbox(i));
+    galleryEl.appendChild(div);
+  });
+}
+
+function renderFilters() {
+  if (!filtersEl) return;
+  CATEGORIES.forEach((cat) => {
+    const count = itemsFor(cat.key).length;
+    if (!count) return;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'filter-btn' + (cat.key === activeCategory ? ' active' : '');
+    btn.dataset.category = cat.key;
+    btn.innerHTML = `${escapeHtml(cat.label)} <span class="filter-count">${count}</span>`;
+    btn.addEventListener('click', () => {
+      activeCategory = cat.key;
+      filtersEl.querySelectorAll('.filter-btn').forEach((b) => {
+        b.classList.toggle('active', b.dataset.category === activeCategory);
+      });
+      renderGallery();
+    });
+    filtersEl.appendChild(btn);
+  });
+}
+
+renderFilters();
+renderGallery();
 
 // ── Build Video Cards ──────────────────────────────────────
 const videoGridEl = document.getElementById('video-grid');
@@ -122,6 +333,7 @@ videos.forEach((v) => {
 // ── Lightbox ───────────────────────────────────────────────
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
 const lightboxCounter = lightbox.querySelector('.lightbox-counter');
 let currentIndex = 0;
 
@@ -138,19 +350,29 @@ function closeLightbox() {
 }
 
 function updateLightbox() {
-  const item = galleryImages[currentIndex];
+  const item = visibleImages[currentIndex];
+  if (!item) return;
   lightboxImg.src = item.file;
-  lightboxImg.alt = item.title;
-  lightboxCounter.textContent = `${currentIndex + 1} / ${galleryImages.length}`;
+  lightboxImg.alt = fullLabel(item);
+  if (lightboxCaption) {
+    lightboxCaption.innerHTML = `
+      ${item.client ? `<span class="lightbox-client">${escapeHtml(item.client)}</span>` : ''}
+      <span class="lightbox-title">${escapeHtml(item.title)}</span>
+      ${item.desc ? `<span class="lightbox-desc">${escapeHtml(item.desc)}</span>` : ''}
+    `;
+  }
+  lightboxCounter.textContent = `${currentIndex + 1} / ${visibleImages.length}`;
 }
 
 function nextImage() {
-  currentIndex = (currentIndex + 1) % galleryImages.length;
+  if (!visibleImages.length) return;
+  currentIndex = (currentIndex + 1) % visibleImages.length;
   updateLightbox();
 }
 
 function prevImage() {
-  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  if (!visibleImages.length) return;
+  currentIndex = (currentIndex - 1 + visibleImages.length) % visibleImages.length;
   updateLightbox();
 }
 

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John S. Eldrige, Jr. — Design, Marketing & Content Production</title>
-  <meta name="description" content="Portfolio of John S. Eldrige, Jr. — designer, marketer, and content creator. Brand identity, campaign and ad design, print and environmental graphics, photography, video editing, and motion graphics for businesses of every size.">
+  <title>John S. Eldridge, Jr. — Design, Marketing & Content Production</title>
+  <meta name="description" content="Portfolio of John S. Eldridge, Jr. — designer, marketer, and content creator. Brand identity, campaign and ad design, print and environmental graphics, photography, video editing, and motion graphics for businesses of every size.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Design · Marketing · Content Production</p>
-      <h1 class="hero-title">John S. Eldrige<span>, Jr.</span></h1>
+      <h1 class="hero-title">John S. Eldridge<span>, Jr.</span></h1>
       <p class="hero-sub">
         Bold visual identities, campaigns that convert, and a steady stream of
         polished content — one creative who can take a brand from concept to
@@ -148,7 +148,10 @@
       <div class="section-header">
         <span class="section-num">03</span>
         <h2>Design Work</h2>
-        <p class="section-desc">A selection of graphic design pieces showing range across identity, promotional, and editorial work.</p>
+        <p class="section-desc">Client work across brand identity, packaging, print campaigns, event collateral, and editorial layout. Filter by category, or click any piece to see the detail.</p>
+      </div>
+      <div class="gallery-filters" id="gallery-filters">
+        <!-- Filter buttons injected by JS -->
       </div>
       <div class="gallery" id="gallery">
         <!-- Gallery items injected by JS -->
@@ -196,7 +199,7 @@
 
   <!-- ── Footer ────────────────────────────────────────────── -->
   <footer>
-    <p>© 2026 John S. Eldrige, Jr. — Design, Marketing & Content Production</p>
+    <p>© 2026 John S. Eldridge, Jr. — Design, Marketing & Content Production</p>
   </footer>
 
   <!-- ── Mobile Nav ────────────────────────────────────────── -->
@@ -216,7 +219,10 @@
   <div id="lightbox" class="lightbox">
     <button class="lightbox-close" aria-label="Close">&times;</button>
     <button class="lightbox-prev" aria-label="Previous">‹</button>
-    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-inner">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
     <button class="lightbox-next" aria-label="Next">›</button>
     <span class="lightbox-counter"></span>
   </div>
