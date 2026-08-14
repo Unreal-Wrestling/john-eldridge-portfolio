@@ -428,6 +428,11 @@
   flex-direction: column;
   gap: 2.5rem;
 }
+/* Copy and figures alternate down the page, so a gallery that is
+   followed by more write-up needs the same breathing room the body
+   blocks give each other. */
+.proj-gallery + .proj-body { margin-top: 3.5rem; }
+.proj-body-close { margin-top: 3.5rem; }
 
 /* Display width is driven by the image's real proportions. The inline
    max-width emitted by build.py caps every figure at its native pixel

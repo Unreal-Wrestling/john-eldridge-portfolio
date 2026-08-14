@@ -45,10 +45,14 @@ execution.
 From there the sequence ran vector artwork, then print collateral, then
 digital — each stage held to the decisions made at the one before it.
 
+[[01-sketches.jpg]]
+
 ## The mark
 
 The logo centers on a puzzle-piece motif built around that line. The three
 service pillars sit under the wordmark as a consistent structural element.
+
+[[02-logo.jpg]]
 
 ## The rollout
 

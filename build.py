@@ -243,6 +243,10 @@ def render_body(text: str) -> str:
 
         if block.startswith("## "):
             out.append(f"<h2>{inline(block[3:].strip())}</h2>")
+        elif re.fullmatch(r"\[\[[^\[\]]+\]\]", block):
+            # Image placed inline in the write-up. Resolved after the
+            # images are processed, since dimensions aren't known yet.
+            out.append(f"<!--IMG:{block[2:-2].strip()}-->")
         elif all(ln.strip().startswith(">") for ln in block.splitlines()):
             quote = " ".join(ln.strip().lstrip(">").strip() for ln in block.splitlines())
             out.append(f"<blockquote>{inline(quote)}</blockquote>")
@@ -538,6 +542,37 @@ def esc(s: str) -> str:
     return html.escape(s or "", quote=True)
 
 
+def render_figure(image: ProjectImage, proj: Project, eager: bool) -> str:
+    """One gallery figure. Shared by inline placement and the trailing set."""
+    cap = f"<figcaption>{esc(image.caption)}</figcaption>" if image.caption else ""
+    # Cap the figure at the asset's true width so nothing is ever scaled
+    # up past its native resolution.
+    cap_px = f' style="max-width:{image.width}px"' if image.width else ""
+    dims = (
+        f' width="{image.width}" height="{image.height}"'
+        if image.width and image.height
+        else ""
+    )
+
+    if image.is_video:
+        # Muted and looping so it behaves like a motion sample rather
+        # than something that ambushes you with sound.
+        return f"""      <figure class="proj-figure is-{image.shape}"{cap_px}>
+        <video src="{image.full_rel}"{dims} controls loop muted playsinline
+               preload="metadata" aria-label="{esc(image.caption or proj.heading)}"></video>
+        {cap}
+      </figure>"""
+
+    matte = " has-matte" if image.matte else ""
+    loading = "eager" if eager else "lazy"
+    return f"""      <figure class="proj-figure is-{image.shape}{matte}"{cap_px}>
+        <a href="{image.full_rel}" target="_blank" rel="noopener">
+          <img src="{image.thumb_rel}" alt="{esc(image.caption or proj.heading)}"{dims} loading="{loading}">
+        </a>
+        {cap}
+      </figure>"""
+
+
 def render_project_page(proj: Project) -> str:
     desc = proj.summary or f"{proj.heading} by {OWNER}"
     parts = [
@@ -630,51 +665,57 @@ def render_project_page(proj: Project) -> str:
     </div>
   </header>
 
-  <main class="container proj-main">
-    <div class="proj-body">
-      {disclaimer}
-      {credits}
-      {proj.body_html}
-      {testimonial}
-      {('<div class="proj-tags">' + ''.join(f'<span class="proj-tag">{esc(t)}</span>' for t in proj.tags) + '</div>') if proj.tags else ''}
-    </div>
-""")
+  <main class="container proj-main">""")
 
-    if proj.images:
-        parts.append('    <div class="proj-gallery">')
-        for i, image in enumerate(proj.images):
-            cap = (
-                f'<figcaption>{esc(image.caption)}</figcaption>' if image.caption else ""
-            )
-            # First image is above the fold; the rest can load lazily.
-            loading = "eager" if i == 0 else "lazy"
-            # Cap the figure at the image's true width so nothing is ever
-            # scaled up past its native resolution.
-            cap_px = f' style="max-width:{image.width}px"' if image.width else ""
-            dims = (
-                f' width="{image.width}" height="{image.height}"'
-                if image.width and image.height
-                else ""
-            )
+    # The write-up is split at any inline image reference so figures sit
+    # between blocks of copy at full container width. Text keeps its
+    # reading measure; images are not squeezed into it.
+    by_name = {im.src.name: im for im in proj.images}
+    placed: set[str] = set()
+    shown = 0
+    segments = re.split(r"<!--IMG:(.+?)-->", proj.body_html)
+    lead = f"{disclaimer}\n      {credits}"
 
-            if image.is_video:
-                # Muted and looping so it behaves like a motion sample
-                # rather than something that ambushes you with sound.
-                parts.append(f"""      <figure class="proj-figure is-{image.shape}"{cap_px}>
-        <video src="{image.full_rel}"{dims} controls loop muted playsinline
-               preload="metadata" aria-label="{esc(image.caption or proj.heading)}"></video>
-        {cap}
-      </figure>""")
+    for i, segment in enumerate(segments):
+        if i % 2 == 1:  # capture group - an image reference
+            image = by_name.get(segment)
+            if image is None:
+                print(f"  WARN {proj.slug}: no image named '{segment}'")
                 continue
+            placed.add(segment)
+            parts.append(
+                f'    <div class="proj-gallery">\n'
+                f"{render_figure(image, proj, eager=shown == 0)}\n    </div>\n"
+            )
+            shown += 1
+            continue
 
-            matte = " has-matte" if image.matte else ""
-            parts.append(f"""      <figure class="proj-figure is-{image.shape}{matte}"{cap_px}>
-        <a href="{image.full_rel}" target="_blank" rel="noopener">
-          <img src="{image.thumb_rel}" alt="{esc(image.caption or proj.heading)}"{dims} loading="{loading}">
-        </a>
-        {cap}
-      </figure>""")
+        body = segment.strip()
+        if not body and not lead:
+            continue
+        parts.append(f'    <div class="proj-body">\n      {lead}\n      {body}\n    </div>\n')
+        lead = ""
+
+    remaining = [im for im in proj.images if im.src.name not in placed]
+    if remaining:
+        parts.append('    <div class="proj-gallery">')
+        for image in remaining:
+            parts.append(render_figure(image, proj, eager=shown == 0))
+            shown += 1
         parts.append("    </div>")
+
+    tags_html = (
+        '<div class="proj-tags">'
+        + "".join(f'<span class="proj-tag">{esc(t)}</span>' for t in proj.tags)
+        + "</div>"
+        if proj.tags
+        else ""
+    )
+    if testimonial or tags_html:
+        parts.append(
+            f'    <div class="proj-body proj-body-close">\n'
+            f"      {testimonial}\n      {tags_html}\n    </div>\n"
+        )
 
     parts.append("""
     <div class="proj-nav">
