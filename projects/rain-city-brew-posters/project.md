@@ -64,7 +64,7 @@ poster and the photography.
 ### The website
 
 I was their webmaster over the same period and built out pages for each
-event as it came up, so a poster in a bar had somewhere to send people.
+event as it came up.
 Here is the front page in September 2012, two months out from 'Stache Bash,
 with the call for artists on it:
 
