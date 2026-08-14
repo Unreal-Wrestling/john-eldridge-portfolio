@@ -211,8 +211,14 @@
 
 .proj-main { padding: 3.5rem 0 6rem; }
 
+/* One measure for the whole write-up. Copy and figures share it, so a
+   project page reads as a single column rather than text at reading
+   width with images sprawling to the full container behind it. Change
+   this one value to widen or narrow the whole page. */
+:root { --measure: 680px; }
+
 .proj-body {
-  max-width: 680px;
+  max-width: var(--measure);
   margin-bottom: 3.5rem;
 }
 .proj-body p {
@@ -427,6 +433,9 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  /* Never wider than the copy. Native resolution still caps each figure
+     individually, but a 1800px source should not mean an 1800px figure. */
+  max-width: var(--measure);
 }
 /* Copy and figures alternate down the page, so a gallery that is
    followed by more write-up needs the same breathing room the body
@@ -454,8 +463,10 @@
 /* Posters, flyers, vertical layouts - cap so they don't dominate. */
 .proj-figure.is-tall  { max-width: min(640px, 100%) !important; }
 /* Landscape pieces that shouldn't run the full column - motion samples,
-   secondary artwork. Between a mark and a full-bleed layout. */
-.proj-figure.is-medium { max-width: min(700px, 100%) !important; }
+   secondary artwork. Between a mark and a full-bleed layout. Kept
+   clearly under the measure, or it would be indistinguishable from
+   is-wide once the gallery is capped. */
+.proj-figure.is-medium { max-width: min(560px, 100%) !important; }
 .proj-figure:hover { border-color: var(--accent-dim); }
 .proj-figure a { display: block; }
 
