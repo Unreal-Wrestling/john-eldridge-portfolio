@@ -13,7 +13,6 @@ images:
   01-logo.jpg [small]: Primary logo — the Westport Lookout Tower and jetty, with three gulls for the three generations
   02-cafe-menu.jpg: Full cafe menu covering deli sandwiches, salads, bagels, and box lunches
   03-loyalty-coupon.png: Free-drink loyalty coupons, printed eight-up for in-store distribution
-  04-holiday-poster.jpg: Seasonal promotional poster
 ---
 
 3G's is a family-owned coffeeshop, candy store, and deli in Westport,
@@ -37,9 +36,9 @@ imagery.
 ## Extending the system
 
 The identity carried into the pieces the business actually needed day to
-day: a full cafe menu, a holiday promotional poster, and a free-drink
-loyalty coupon laid out eight-up on a single sheet so staff could cut and
-hand them out without a separate print run.
+day: a full cafe menu, and a free-drink loyalty coupon laid out eight-up on
+a single sheet so staff could cut and hand them out without a separate
+print run.
 
 [[02-cafe-menu.jpg]]
 
