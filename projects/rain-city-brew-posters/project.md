@@ -45,35 +45,6 @@ with Ninkasi Brewing. Brewers brought beers, meads and ales, local artists
 made the artwork and labels for them, and everything got judged in front of
 a crowd. I was the design intern and photographer for two of the events.
 
-Troy Lancaster, one of the owners, brewed a spiced pale amber and asked me
-to do the label for it. I drew a wild-eyed face on a purple sunburst, with
-the name on a yellow banner across the middle.
-
-[[03-wild-eyed-joker-label.png]]
-
-I drew it by hand and kept it loose on purpose, to sit with the
-illustration and anime theme the night was built around. Something wild and
-expressive to match the ale it was meant to accompany.
-
-I was also their webmaster over the same period. I built the Rain City Brew
-site — the company, what they did, and where to find them — and built out
-pages for each event as it came up, so a poster in a bar had somewhere to
-send people.
-
-The site itself is long gone, but the Internet Archive caught it. Here is
-the front page in September 2012, two months out from 'Stache Bash, with
-the call for artists on it:
-
-[[web:https://web.archive.org/web/20120902211059/http://raincitybrew.com/ | Rain City Brew, 2 September 2012]]
-
-And in June 2013, after the second show:
-
-[[web:https://web.archive.org/web/20130623120439/http://raincitybrew.com/ | Rain City Brew, 23 June 2013]]
-
-The Archive kept the pages but not every asset, so both render rough in
-places. It is still the real thing, and a broken capture beats describing
-work nobody can check.
-
 ## 'Stache Bash
 
 November 2012 at the Seattle Creative Arts Center. The poster was
@@ -90,6 +61,19 @@ The artwork and labels visible in these photographs are the work of the
 exhibiting artists and brewers, not mine. My work at this event was the
 poster and the photography.
 
+### The website
+
+I was their webmaster over the same period and built out pages for each
+event as it came up, so a poster in a bar had somewhere to send people.
+Here is the front page in September 2012, two months out from 'Stache Bash,
+with the call for artists on it:
+
+[[web:https://web.archive.org/web/20120902211059/http://raincitybrew.com/ | Rain City Brew, 2 September 2012]]
+
+The Archive kept the pages but not every asset, so it renders rough in
+places. It is still the real thing, and a broken capture beats describing
+work nobody can check.
+
 ## Brews of Anime
 
 April 2013, themed on cartoon and anime characters. Alex Pascual drew the
@@ -104,7 +88,32 @@ and sponsors sit low, where a jacket hem would be.
 
 [[02-brews-of-anime-poster.jpg]]
 
+Troy Lancaster, one of the owners, brewed a spiced pale amber for the event
+and asked me to do the label for it. I drew a wild-eyed face on a purple
+sunburst, with the name on a yellow banner across the middle.
+
+[[03-wild-eyed-joker-label.png]]
+
+I drew it by hand and kept it loose on purpose, to sit with the
+illustration and anime theme the night was built around. Something wild and
+expressive to match the ale it was meant to accompany.
+
 Another 150 frames from the second night, same approach — brewers, judging,
 the room and the crowd.
 
 [[photos:boa]]
+
+The artwork and labels visible in these photographs are the work of the
+exhibiting artists and brewers, not mine. My work at this event was the
+poster, the Joker label and the photography.
+
+### The website
+
+By June 2013, after the second show, the site had been updated with the
+Brews of Anime event page:
+
+[[web:https://web.archive.org/web/20130623120439/http://raincitybrew.com/ | Rain City Brew, 23 June 2013]]
+
+The Archive kept the pages but not every asset, so it renders rough in
+places. It is still the real thing, and a broken capture beats describing
+work nobody can check.

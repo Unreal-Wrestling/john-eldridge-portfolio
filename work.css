@@ -453,7 +453,7 @@
 }
 .web-frame {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 21 / 8;
   border: 1px solid var(--border);
   border-radius: var(--radius, 8px);
   overflow: hidden;
@@ -463,10 +463,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 133%;
-  height: 133%;
+  width: 150%;
+  height: 150%;
   border: 0;
-  transform: scale(0.75);
+  transform: scale(0.667);
   transform-origin: top left;
 }
 .web-frame::after {
