@@ -49,7 +49,10 @@ OWNER = "John S. Eldridge, Jr."
 
 # Files copied verbatim from the project root into dist/.
 LEGACY_FILES = ["index.html", "styles.css", "script.js", "work.css"]
-LEGACY_GLOBS = ["Artboard *.png"]
+LEGACY_GLOBS: list[str] = []
+
+# Replaced in index.html at build time with generated project cards.
+HOME_CARDS_MARKER = "<!--CASE_STUDIES-->"
 
 IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp"}
 # Copied through untouched - there is no transcoding step, so source files
@@ -542,6 +545,54 @@ def esc(s: str) -> str:
     return html.escape(s or "", quote=True)
 
 
+def render_work_card(p: Project, href: str) -> str:
+    """One project card. Shared by /work/ and the home page, so the two
+    can never drift apart or show a different set of projects."""
+    # Cards need a still; a video has no thumbnail to fall back on.
+    still = next((im for im in p.images if not im.is_video), None)
+    thumb = f"{href}{still.thumb_rel}" if still else ""
+    haystack = " ".join(
+        [p.title, p.client, p.category, p.year, " ".join(p.tags), p.summary]
+    ).lower()
+    img = (
+        f'<img src="{thumb}" alt="{esc(p.heading)}" loading="lazy">'
+        if thumb
+        else '<div class="work-card-noimg">No image</div>'
+    )
+    # Badge the card too, so the nature of the work is clear before
+    # anyone clicks through.
+    card_badge = (
+        f'<span class="work-card-badge">{esc(p.type_label)}</span>'
+        if p.type_label
+        else ""
+    )
+    return f"""      <a class="work-card" href="{href}"
+         data-cat="{esc(p.category)}" data-div="{p.division}"
+         data-search="{esc(haystack)}">
+        <div class="work-card-img">{img}{card_badge}</div>
+        <div class="work-card-info">
+          {f'<span class="work-card-client">{esc(p.client)}</span>' if p.client else ''}
+          <h2 class="work-card-title">{esc(p.title)}</h2>
+          {f'<p class="work-card-summary">{esc(p.summary)}</p>' if p.summary else ''}
+          <div class="work-card-meta">
+            <span>{esc(p.category)}</span>{f'<span>{esc(p.year)}</span>' if p.year else ''}
+          </div>
+        </div>
+      </a>"""
+
+
+def render_home_cards(projects: list[Project]) -> str:
+    """Project cards for the home page work section.
+
+    Featured projects lead; the rest follow in the same order as /work/.
+    """
+    if not projects:
+        return '<p class="section-desc">No projects published yet.</p>'
+    ordered = sorted(projects, key=lambda p: not p.featured)
+    cards = "\n".join(render_work_card(p, f"work/{p.slug}/") for p in ordered)
+    return f'<div class="work-grid">\n{cards}\n      </div>'
+
+
 def render_figure(image: ProjectImage, proj: Project, eager: bool) -> str:
     """One gallery figure. Shared by inline placement and the trailing set."""
     cap = f"<figcaption>{esc(image.caption)}</figcaption>" if image.caption else ""
@@ -793,37 +844,7 @@ def render_work_index(projects: list[Project]) -> str:
 """)
 
     for p in projects:
-        # Cards need a still; a video has no thumbnail to fall back on.
-        still = next((im for im in p.images if not im.is_video), None)
-        thumb = f"{p.slug}/{still.thumb_rel}" if still else ""
-        haystack = " ".join(
-            [p.title, p.client, p.category, p.year, " ".join(p.tags), p.summary]
-        ).lower()
-        img = (
-            f'<img src="{thumb}" alt="{esc(p.heading)}" loading="lazy">'
-            if thumb
-            else '<div class="work-card-noimg">No image</div>'
-        )
-        # Badge the card too, so the nature of the work is clear before
-        # anyone clicks through.
-        card_badge = (
-            f'<span class="work-card-badge">{esc(p.type_label)}</span>'
-            if p.type_label
-            else ""
-        )
-        parts.append(f"""      <a class="work-card" href="{p.slug}/"
-         data-cat="{esc(p.category)}" data-div="{p.division}"
-         data-search="{esc(haystack)}">
-        <div class="work-card-img">{img}{card_badge}</div>
-        <div class="work-card-info">
-          {f'<span class="work-card-client">{esc(p.client)}</span>' if p.client else ''}
-          <h2 class="work-card-title">{esc(p.title)}</h2>
-          {f'<p class="work-card-summary">{esc(p.summary)}</p>' if p.summary else ''}
-          <div class="work-card-meta">
-            <span>{esc(p.category)}</span>{f'<span>{esc(p.year)}</span>' if p.year else ''}
-          </div>
-        </div>
-      </a>""")
+        parts.append(render_work_card(p, f"{p.slug}/"))
 
     parts.append("""    </div>
     <p class="work-empty" id="work-empty" hidden>No projects match that search.</p>
@@ -937,13 +958,23 @@ def render_sitemap(projects: list[Project]) -> str:
 # ── Build ─────────────────────────────────────────────────────────────
 
 
-def copy_legacy() -> None:
+def copy_legacy(projects: list[Project]) -> None:
     for name in LEGACY_FILES:
         src = ROOT / name
-        if src.exists():
-            shutil.copy2(src, DIST / name)
-        else:
+        if not src.exists():
             print(f"  WARN missing {name}")
+            continue
+        if name == "index.html":
+            # The home page is hand-written, but its work section is
+            # generated, so the two can't fall out of step.
+            text = src.read_text(encoding="utf-8")
+            if HOME_CARDS_MARKER in text:
+                text = text.replace(HOME_CARDS_MARKER, render_home_cards(projects))
+            else:
+                print(f"  WARN {name}: {HOME_CARDS_MARKER} not found")
+            (DIST / name).write_text(text, encoding="utf-8")
+            continue
+        shutil.copy2(src, DIST / name)
     for pattern in LEGACY_GLOBS:
         for src in ROOT.glob(pattern):
             shutil.copy2(src, DIST / src.name)
@@ -967,8 +998,6 @@ def main() -> int:
         shutil.rmtree(DIST)
     DIST.mkdir(parents=True)
 
-    copy_legacy()
-
     projects: list[Project] = []
     if PROJECTS_DIR.exists():
         for folder in sorted(PROJECTS_DIR.iterdir()):
@@ -990,6 +1019,9 @@ def main() -> int:
         build_images(proj, out)
         (out / "index.html").write_text(render_project_page(proj), encoding="utf-8")
         print(f"  OK   /work/{proj.slug}/  ({len(proj.images)} images)")
+
+    # After the projects, since the home page embeds their cards.
+    copy_legacy(projects)
 
     (work_dir / "index.html").write_text(render_work_index(projects), encoding="utf-8")
     (DIST / "sitemap.xml").write_text(render_sitemap(projects), encoding="utf-8")
