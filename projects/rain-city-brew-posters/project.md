@@ -17,7 +17,7 @@ images:
   03-wild-eyed-joker-label.png: Wild-Eyed Joker — label for a spiced pale amber brewed by co-owner Troy Lancaster
 photos:
   01-sb-poster-on-easel.jpg: The 'Stache Bash poster on the door at the Seattle Creative Arts Center, November 2012
-  02-sb-room.jpg: 'Stache Bash, November 2012 — the room at capacity
+  02-sb-room.jpg: 'Stache Bash, November 2012 — the room filling up
   03-sb-poster-display.jpg: 'Stache Bash poster on display, November 2012
   04-sb-stickers.jpg: Guests wearing the mustache mark
   05-sb-scorecard.jpg: Judging underway
