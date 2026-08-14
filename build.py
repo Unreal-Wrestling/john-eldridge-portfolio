@@ -107,6 +107,7 @@ class Project:
     category: str = "Uncategorized"
     division: str = "business"
     work_type: str = "client"
+    role: str = ""  # e.g. "Creative Director" - state it, don't imply it
     context: str = ""  # e.g. "Everett Community College, 2015"
     outcome: str = ""  # e.g. "1st place, 200 entries"
     summary: str = ""
@@ -290,6 +291,7 @@ def load_project(folder: Path) -> Project | None:
         category=meta.get("category", "Uncategorized"),
         division=division,
         work_type=work_type,
+        role=meta.get("role", ""),
         context=meta.get("context", ""),
         outcome=meta.get("outcome", ""),
         summary=meta.get("summary", ""),
@@ -425,7 +427,9 @@ def render_project_page(proj: Project) -> str:
         )
     ]
 
-    meta_bits = [b for b in (proj.category, proj.year) if b]
+    # Role is stated plainly rather than left to inference - on work where
+    # a team executed under direction, the credit needs to be explicit.
+    meta_bits = [b for b in (proj.category, proj.year, proj.role) if b]
     # For commissioned work there's no disclaimer to carry it, so the
     # context (studio, contract, employer) belongs in the meta row.
     if proj.context and proj.work_type in COMMISSIONED:

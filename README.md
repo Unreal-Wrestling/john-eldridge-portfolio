@@ -120,6 +120,11 @@ Each answers a different question, and all three are optional.
 
 The toggle only appears once **both** divisions have at least one project.
 
+`role:` and `context:` are free text and appear in the meta row alongside
+category and year — e.g. `role: Creative Director`, `context: Contract`.
+State the role explicitly on any project where a team executed under your
+direction, rather than leaving it to be inferred.
+
 ### Labelling non-client work
 
 Anything that isn't `work_type: client` gets a badge plus a **generated**
