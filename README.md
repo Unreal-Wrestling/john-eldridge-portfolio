@@ -16,27 +16,32 @@ only a code backup. Deploying is a separate, manual step.
 
 ### Deploy
 
-The `.mp4` files exceed Cloudflare's 25 MiB per-file limit, so **do not
-deploy the project folder directly** — stage the web files first:
+```powershell
+npm run deploy            # publish to the live site
+npm run deploy:preview    # throwaway preview URL, live site untouched
+```
+
+That runs `deploy.ps1`, which stages the web files to a temp folder,
+aborts if any file exceeds Cloudflare's 25 MiB limit, deploys to the
+`main` production branch, and verifies the live HTML matches local.
+
+It stages 33 files / ~20 MB: `index.html`, `styles.css`, `script.js`,
+and the 30 `Artboard *.png` images. `serve.py`, `package.json`, and the
+`.mp4` masters are local-only and never deployed.
+
+<details>
+<summary>Equivalent manual command</summary>
 
 ```powershell
-$out = Join-Path $env:TEMP 'portfolio-deploy'
-Remove-Item $out -Recurse -Force -ErrorAction SilentlyContinue
-New-Item -ItemType Directory -Path $out | Out-Null
-Copy-Item index.html,styles.css,script.js $out
-Copy-Item *.png $out
-
-npx wrangler pages deploy $out `
+npx wrangler pages deploy <staged-folder> `
   --project-name=john-eldridge-portfolio `
   --branch=main
 ```
 
-`--branch=main` is required — that is the production branch, and any
-other value produces a preview URL instead of updating the live site.
+`--branch=main` is required — that is the production branch. Any other
+value produces a preview URL instead of updating the live site.
 
-The staged folder holds 33 files / ~20 MB: `index.html`, `styles.css`,
-`script.js`, and the 30 `Artboard *.png` images. Nothing else is needed;
-`serve.py` and `package.json` are local-only.
+</details>
 
 - Live URL: https://john-eldridge-portfolio.pages.dev/
 - Cloudflare account ID: `bcec09abf1e749ac5cf7b7417983a073`

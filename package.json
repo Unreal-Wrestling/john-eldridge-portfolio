@@ -1,9 +1,11 @@
 {
   "name": "john-eldridge-portfolio",
   "version": "1.0.0",
-  "description": "Multimedia Production & Design Portfolio — John S. Eldrige, Jr.",
+  "description": "Design, Marketing & Content Production Portfolio — John S. Eldridge, Jr.",
   "scripts": {
     "build": "echo 'No build needed'",
-    "dev": "npx serve ."
+    "dev": "python serve.py",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy.ps1",
+    "deploy:preview": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy.ps1 -Preview"
   }
 }
