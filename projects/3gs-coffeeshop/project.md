@@ -9,7 +9,7 @@ work_type: client
 role: Creative Director
 context: Inkboard Design
 tags: logo, menu, print, loyalty, hospitality
-featured: true
+featured: false
 summary: Seaside identity for a family-run Westport coffeeshop, extended into menus and a loyalty coupon program.
 images:
   01-logo.jpg [small]: Primary logo — the Westport Lookout Tower and jetty, with three gulls for the three generations
