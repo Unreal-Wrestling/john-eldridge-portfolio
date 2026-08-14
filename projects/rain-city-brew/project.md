@@ -8,6 +8,7 @@ work_type: student
 context: Coursework, Everett Community College
 tags: packaging, label, print, beverage, dieline
 featured: true
+thumb: 02-bottles.png
 summary: Bottle labels and six-pack packaging for a Seattle brewery, built on Pacific Northwest storm-and-lighthouse imagery.
 images:
   01-packaging.jpg: Six-pack carrier and bottle label system
