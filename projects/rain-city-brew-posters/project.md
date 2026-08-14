@@ -19,7 +19,7 @@ images:
 Rain City Brew ran a competition series called Beer As Art in partnership
 with Ninkasi Brewing. Brewers brought beers, meads and ales, local artists
 made the artwork and labels for them, and everything got judged in front of
-a crowd. I was the design intern on two of the nights.
+a crowd. I was the design intern and photographer for two of the events.
 
 ## Beer As Art Events
 
@@ -51,5 +51,4 @@ the name on a yellow banner across the middle.
 [[03-wild-eyed-joker-label.png]]
 
 I drew it by hand and kept it loose on purpose, to sit with the
-illustration and anime theme the night was built around. Something clean
-and corporate would have looked out of place on that table.
+illustration and anime theme the night was built around. Something wild and expressive to match the ale it was meant to accompany.
