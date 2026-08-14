@@ -24,8 +24,8 @@ photos:
   06-sb-staff.jpg: Rain City Brew staff working the floor
   07-sb-art-wall.jpg: Artists beside their pieces — artwork by the exhibiting artists
   08-sb-winner.jpg: A brewer with his bottle and its label art — label artwork by the exhibiting artist
-  09-sb-poster-display.jpg: 'Stache Bash poster on display, November 2012
-  10-sb-stickers.jpg: Guests wearing the mustache mark
+  09-sb-stickers.jpg: Guests wearing the mustache mark
+  10-sb-poster-display.jpg: 'Stache Bash poster on display, November 2012
   11-boa-room.jpg: Brews of Anime, April 2013
   12-boa-tasting.jpg: Brews of Anime — tasting and judging, April 2013
   13-boa-merch.jpg: Event shirts on the wall
