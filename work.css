@@ -129,6 +129,21 @@
 }
 .work-card:hover .work-card-img img { transform: scale(1.05); }
 
+/* A mark is the wrong shape for a 4:3 crop - a wide wordmark loses both
+   ends to object-fit: cover. Contain it instead, on the white it was
+   drawn against, with room at the edges so it reads as a logo and not a
+   detail shot. */
+.work-card-img.is-mark {
+  background: #fff;
+}
+.work-card-img.is-mark img {
+  object-fit: contain;
+  padding: 2rem 2.25rem;
+  box-sizing: border-box;
+}
+/* The hover zoom would push a contained mark back under the crop. */
+.work-card:hover .work-card-img.is-mark img { transform: none; }
+
 .work-card-noimg {
   display: flex;
   align-items: center;
@@ -458,8 +473,10 @@
   overflow: hidden;
   transition: var(--transition);
 }
-/* Logos, marks, small assets - full width would just blow them up. */
-.proj-figure.is-small { max-width: min(460px, 100%) !important; }
+/* Logos, marks, small assets - full width would just blow them up. A mark
+   is read as a whole shape, not examined, so it wants to sit clearly
+   inside the measure rather than push against it. */
+.proj-figure.is-small { max-width: min(400px, 100%) !important; }
 /* Posters, flyers, vertical layouts - cap so they don't dominate. */
 .proj-figure.is-tall  { max-width: min(640px, 100%) !important; }
 /* Landscape pieces that shouldn't run the full column - motion samples,

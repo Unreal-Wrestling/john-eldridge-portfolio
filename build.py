@@ -567,6 +567,9 @@ def render_work_card(p: Project, href: str) -> str:
     can never drift apart or show a different set of projects."""
     still = p.card_image
     thumb = f"{href}{still.thumb_rel}" if still else ""
+    # A logo cropped to fill a 4:3 card loses its ends. Marks get contained
+    # and centred on white instead, which is how a logo is meant to sit.
+    mark_cls = " is-mark" if still and still.shape_hint == "small" else ""
     haystack = " ".join(
         [p.title, p.client, p.category, p.year, " ".join(p.tags), p.summary]
     ).lower()
@@ -585,7 +588,7 @@ def render_work_card(p: Project, href: str) -> str:
     return f"""      <a class="work-card" href="{href}"
          data-cat="{esc(p.category)}" data-div="{p.division}"
          data-search="{esc(haystack)}">
-        <div class="work-card-img">{img}{card_badge}</div>
+        <div class="work-card-img{mark_cls}">{img}{card_badge}</div>
         <div class="work-card-info">
           {f'<span class="work-card-client">{esc(p.client)}</span>' if p.client else ''}
           <h2 class="work-card-title">{esc(p.title)}</h2>
