@@ -11,7 +11,7 @@ context: Owned and operated
 featured: true
 thumb: 03-cwe-logo.jpg
 tags: logo, identity, branding, twitch, streaming, ttrpg, motion graphics, video editing, social media, show design, discord, game design
-sections: Brand Identity, Original Logo, Show Logos, Stream Overlays, Social Media & Streaming, Show Openers & Motion Graphics, Game Design & Production
+sections: Brand Identity, Show Logos, Stream Overlays, Social Media & Streaming, Show Openers & Motion Graphics, Game Design & Production
 summary: An ambitious entertainment network project producing live TTRPG gameplay shows six days a week for Twitch and YouTube — brand identity, show intros/outros, motion graphics, social media kit, Discord community, and full production pipeline.
 images:
   01-cw-logo.jpg [thumb-only]: Chronos World — original logo
@@ -30,8 +30,6 @@ images:
   14-cw-image.jpeg [thumb-only]: Chronos World promotional image
 photos-brand-core:
   03-brand-cwe-logo.jpg: Chronos World Entertainment — rebrand logo
-  13-brand-cw-presents.png: CW Presents — show branding mark
-photos-original-logo:
   01-brand-cw-logo.jpg: Chronos World — original logo
 photos-social-banners:
   04-social-twitch-banner.jpg: Twitch channel banner
@@ -121,20 +119,9 @@ The Chronos World Entertainment rebrand established the visual
 foundation for the network. The new logo — a cleaner, more
 professional wordmark — replaced the original Chronos World
 identity and was designed to work across Twitch, YouTube,
-Facebook, Patreon, and Discord. A "CW Presents" show branding
-stamp rounded out the core identity system.
+Facebook, Patreon, and Discord.
 
 [[grid:brand-core]]
-
-## Original Logo
-
-The original Chronos World logo was the starting point — a
-simpler wordmark that preceded the full network buildout. It
-was retired in favor of the Chronos World Entertainment
-rebrand as the project evolved into a broader production
-company identity.
-
-[[grid:original-logo]]
 
 ## Show Logos
 
