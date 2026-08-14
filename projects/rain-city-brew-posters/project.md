@@ -8,11 +8,13 @@ division: business
 work_type: internship
 role: Design Intern, Photographer & Webmaster
 context: Internship
-featured: true
+featured: false
+thumb: 00-rain-city-logo.jpg
 tags: poster, print, label, event, beverage, illustration
 sections: 'Stache Bash, Brews of Anime
 summary: Posters for two nights of the brewery's Beer As Art competition series, the label for a spiced pale amber brewed by one of the owners, and the photography from both events.
 images:
+  00-rain-city-logo.jpg [thumb-only]: Rain City Brew — logo
   01-stashebash-poster.jpg: 'Stache Bash 2012 — homebrew competition and art show, November 2012
   02-brews-of-anime-poster.jpg: Brews of Anime — the follow-up event, April 2013. Center patch illustration by Alex Pascual; poster design and layout by John Eldridge
   03-wild-eyed-joker-label.png: Wild-Eyed Joker — label for a spiced pale amber brewed by co-owner Troy Lancaster

@@ -6,9 +6,10 @@ date: 2012-02
 category: Packaging
 division: business
 work_type: student
+role: Student
 context: Coursework, Everett Community College
 tags: packaging, label, print, beverage, dieline
-featured: true
+featured: false
 outcome: Led to a design internship with the brewery
 summary: Bottle label and six-pack carrier for a Seattle brewery, built on Pacific Northwest storm-and-lighthouse imagery. The project led to an internship with the client.
 images:

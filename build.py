@@ -81,6 +81,7 @@ class ProjectImage:
     height: int = 0
     shape: str = "wide"  # wide | tall | small - drives display width
     shape_hint: str = ""  # explicit override from project.md, if given
+    thumb_only: bool = False  # used as card thumbnail only, not shown in body
 
 
 # Primary split. Employers in these two worlds want to see different
@@ -329,6 +330,25 @@ def render_web_embed(url: str, caption: str) -> str:
     )
 
 
+def render_youtube_embed(url: str, caption: str) -> str:
+    """Embed a YouTube video via its privacy-enhanced nocookie domain."""
+    m = re.search(r"(?:youtu\.be/|v=)([\w-]{11})", url)
+    video_id = m.group(1) if m else ""
+    label = caption or "Video"
+    return (
+        '<figure class="video-embed">\n'
+        '  <div class="video-frame">\n'
+        f'    <iframe src="https://www.youtube.com/embed/{video_id}" '
+        f'title="{esc(label)}" loading="lazy" allowfullscreen\n'
+        '            referrerpolicy="no-referrer"></iframe>\n'
+        "  </div>\n"
+        f'  <figcaption>{esc(label)} '
+        f'<a href="{esc(url)}" target="_blank" rel="noopener">Watch on YouTube &rarr;</a>'
+        "</figcaption>\n"
+        "</figure>"
+    )
+
+
 def render_body(text: str) -> str:
     """Render a deliberately small Markdown subset.
 
@@ -363,6 +383,9 @@ def render_body(text: str) -> str:
         elif block.startswith("[[web:") and block.endswith("]]"):
             url, _, cap = block[6:-2].partition("|")
             out.append(render_web_embed(url.strip(), cap.strip()))
+        elif block.startswith("[[youtube:") and block.endswith("]]"):
+            url, _, cap = block[10:-2].partition("|")
+            out.append(render_youtube_embed(url.strip(), cap.strip()))
         elif re.fullmatch(r"\[\[[^\[\]]+\]\]", block):
             # Image or slideshow placed inline in the write-up. Resolved
             # after the images are processed, since dimensions aren't
@@ -372,6 +395,13 @@ def render_body(text: str) -> str:
                 out.append("<!--PHOTOS-->")
             elif ref.startswith("photos:"):
                 out.append(f"<!--PHOTOS:{ref[7:]}-->")
+            elif ref.startswith("grid:"):
+                grid_spec = ref[5:]
+                if ":wide" in grid_spec:
+                    name, _, _ = grid_spec.partition(":")
+                    out.append(f"<!--GRID:{name}:wide-->")
+                else:
+                    out.append(f"<!--GRID:{grid_spec}-->")
             else:
                 out.append(f"<!--IMG:{ref}-->")
         elif all(ln.strip().startswith(">") for ln in block.splitlines()):
@@ -461,13 +491,17 @@ def load_project(folder: Path) -> Project | None:
         caption = captions.get(img.name, "")
         hint = ""
         for key, val in captions.items():
-            m = re.match(rf"^{re.escape(img.name)}\s*\[(\w+)\]$", key)
+            m = re.match(rf"^{re.escape(img.name)}\s*\[([\w-]+)\]$", key)
             if m:
                 hint, caption = m.group(1).lower(), val
                 break
-        if hint and hint not in ("wide", "medium", "tall", "small"):
+        thumb_only = False
+        if hint and hint not in ("wide", "medium", "tall", "small", "thumb-only"):
             print(f"  WARN {folder.name}: unknown shape '{hint}' on {img.name}")
             hint = ""
+        if hint == "thumb-only":
+            thumb_only = True
+            hint = "small"
 
         if suffix in VIDEO_EXTS:
             # Copied through as-is; there is no transcoding step here.
@@ -490,6 +524,7 @@ def load_project(folder: Path) -> Project | None:
                 thumb_rel=f"img/{stem}-thumb.jpg" if suffix != ".png" else f"img/{stem}-thumb.png",
                 caption=caption,
                 shape_hint=hint,
+                thumb_only=thumb_only,
             )
         )
 
@@ -949,6 +984,46 @@ def render_slideshow(proj: Project, photos: list[ProjectImage] | None = None,
 """
 
 
+def render_grid(proj: Project, photos: list[ProjectImage],
+                 id_suffix: str = "", grid_cls: str = "") -> str:
+    """A tiled grid for collections of small marks (logos, badges).
+
+    Each item is a self-contained figure with object-fit: contain so
+    logos aren't cropped. Degrades gracefully without JavaScript.
+    """
+    if not photos:
+        return ""
+
+    tiles = []
+    for i, photo in enumerate(photos):
+        cap = (
+            f'<figcaption class="grid-cap">{esc(photo.caption)}</figcaption>'
+            if photo.caption
+            else ""
+        )
+        dims = (
+            f' width="{photo.width}" height="{photo.height}"'
+            if photo.width and photo.height
+            else ""
+        )
+        tiles.append(
+            f'        <figure class="grid-tile">\n'
+            f'          <div class="grid-tile-img">\n'
+            f'            <img src="{photo.thumb_rel}" alt="{esc(photo.caption or proj.heading)}"'
+            f'{dims} loading="{"eager" if i < 4 else "lazy"}">\n'
+            f"          </div>\n"
+            f"          {cap}\n"
+            f"        </figure>"
+        )
+
+    cls = f"proj-grid {grid_cls}" if grid_cls else "proj-grid"
+    elem_id = f"grid-{id_suffix}" if id_suffix else "grid"
+    return f"""    <div class="{cls}" id="{elem_id}">
+{chr(10).join(tiles)}
+    </div>
+"""
+
+
 def render_project_page(proj: Project) -> str:
     desc = proj.summary or f"{proj.heading} by {OWNER}"
     parts = [
@@ -1060,12 +1135,12 @@ def render_project_page(proj: Project) -> str:
         seg_shown = 0
 
         segments = re.split(
-            r"<!--IMG:(.+?)-->|<!--PHOTOS(?::([a-z0-9_-]+))?-->",
+            r"<!--IMG:(.+?)-->|<!--PHOTOS(?::([a-z0-9_-]+))?-->|<!--GRID:([a-z0-9_-]+)(?::([a-z]+))?-->",
             body_html,
         )
         for i, segment in enumerate(segments):
-            if i % 3 == 1:  # IMG capture group
-                if segment is None:  # PHOTOS branch matched, not IMG
+            if i % 5 == 1:  # IMG capture group
+                if segment is None:  # PHOTOS or GRID branch matched
                     continue
                 image = by_name.get(segment)
                 if image is None:
@@ -1078,7 +1153,7 @@ def render_project_page(proj: Project) -> str:
                 )
                 seg_shown += 1
                 continue
-            if i % 3 == 2:  # PHOTOS capture group (named or default)
+            if i % 5 == 2:  # PHOTOS capture group (named or default)
                 block_name = segment
                 if block_name:
                     photos = proj.photo_blocks.get(block_name, [])
@@ -1087,6 +1162,16 @@ def render_project_page(proj: Project) -> str:
                 else:
                     seg_parts.append(render_slideshow(proj))
                     seg_photos_placed = True
+                continue
+            if i % 5 == 3:  # GRID name capture group
+                block_name = segment
+                if block_name:
+                    photos = proj.photo_blocks.get(block_name, [])
+                    grid_cls = "proj-grid-wide" if segments[i + 1] == "wide" else ""
+                    seg_parts.append(render_grid(proj, photos, block_name, grid_cls=grid_cls))
+                    seg_photos_placed = True
+                continue
+            if i % 5 == 4:  # GRID modifier capture group (wide, etc.)
                 continue
 
             body = segment.strip()
@@ -1209,7 +1294,7 @@ def render_project_page(proj: Project) -> str:
     if proj.photos and not photos_placed:
         parts.append(render_slideshow(proj))
 
-    remaining = [im for im in proj.images if im.src.name not in placed]
+    remaining = [im for im in proj.images if im.src.name not in placed and not im.thumb_only]
     if remaining:
         parts.append('    <div class="proj-gallery">')
         for image in remaining:

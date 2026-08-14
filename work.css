@@ -488,6 +488,40 @@
 }
 .web-embed figcaption a:hover { text-decoration: underline; }
 
+/* ── YouTube video embeds ───────────────────────────────── */
+.video-embed {
+  max-width: 760px;
+  margin: 0 0 2.5rem;
+}
+.video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 8px);
+  overflow: hidden;
+  background: #000;
+}
+.video-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-embed figcaption {
+  margin-top: 0.85rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.video-embed figcaption a {
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.video-embed figcaption a:hover { text-decoration: underline; }
+
 /* ── Event photography slideshow ─────────────────────────── */
 /* One frame at a time, so twenty documentary photos never bury the three
    pieces of design work above them. Wider than the copy measure: these
@@ -612,6 +646,56 @@
 }
 .slide-dot:hover { background: var(--text-muted); }
 .slide-dot.is-on { background: var(--accent); }
+
+/* ── Logo grid (tiled marks) ────────────────────────────── */
+/* A compact grid for collections of small marks — promotion logos, badge
+   sets, icon families. Each tile is a white card with the logo centred
+   via object-fit: contain and a small caption below. */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.25rem;
+  max-width: 760px;
+  margin-bottom: 3rem;
+}
+.proj-grid-wide {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1100px;
+}
+.proj-grid-wide .grid-tile-img {
+  aspect-ratio: 7 / 5;
+}
+.grid-tile {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-tile-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid var(--border, rgba(0,0,0,0.08));
+  border-radius: var(--radius, 8px);
+  overflow: hidden;
+}
+.grid-tile-img img {
+  max-width: 88%;
+  max-height: 88%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.grid-cap {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
 
 /* ── Project images ──────────────────────────────────────── */
 .proj-gallery {

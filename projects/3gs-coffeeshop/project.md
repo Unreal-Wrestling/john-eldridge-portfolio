@@ -6,6 +6,7 @@ date: 2015-06
 category: Branding & Identity
 division: business
 work_type: client
+role: Creative Director
 context: Inkboard Design
 tags: logo, menu, print, loyalty, hospitality
 featured: true
