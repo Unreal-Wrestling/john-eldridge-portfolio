@@ -72,6 +72,7 @@ class ProjectImage:
     width: int = 0
     height: int = 0
     shape: str = "wide"  # wide | tall | small - drives display width
+    shape_hint: str = ""  # explicit override from project.md, if given
 
 
 # Primary split. Employers in these two worlds want to see different
@@ -305,12 +306,27 @@ def load_project(folder: Path) -> Project | None:
         if img.suffix.lower() not in IMAGE_EXTS:
             continue
         stem = img.stem
+        # A caption may carry a display hint: `logo.jpg [small]: Primary mark`.
+        # Resolution and display width are separate decisions - a 1600px
+        # logo should be sharp, not a metre wide.
+        caption = captions.get(img.name, "")
+        hint = ""
+        for key, val in captions.items():
+            m = re.match(rf"^{re.escape(img.name)}\s*\[(\w+)\]$", key)
+            if m:
+                hint, caption = m.group(1).lower(), val
+                break
+        if hint and hint not in ("wide", "tall", "small"):
+            print(f"  WARN {folder.name}: unknown shape '{hint}' on {img.name}")
+            hint = ""
+
         proj.images.append(
             ProjectImage(
                 src=img,
                 full_rel=f"img/{stem}.jpg" if img.suffix.lower() != ".png" else f"img/{stem}.png",
                 thumb_rel=f"img/{stem}-thumb.jpg" if img.suffix.lower() != ".png" else f"img/{stem}-thumb.png",
-                caption=captions.get(img.name, ""),
+                caption=caption,
+                shape_hint=hint,
             )
         )
 
@@ -367,7 +383,7 @@ def build_images(proj: Project, out_dir: Path) -> None:
         w, h = resize_to(image.src, out_dir / image.full_rel, FULL_MAX_W)
         resize_to(image.src, out_dir / image.thumb_rel, THUMB_MAX_W)
         image.width, image.height = w, h
-        image.shape = classify_shape(w, h)
+        image.shape = image.shape_hint or classify_shape(w, h)
 
 
 # ── HTML ──────────────────────────────────────────────────────────────

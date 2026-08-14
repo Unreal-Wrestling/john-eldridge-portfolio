@@ -149,6 +149,17 @@ than its true pixel width, so small logos aren't blown up. Images under
 700px wide and images taller than 1.35× their width get narrower display
 caps automatically. No manual sizing needed.
 
+Display width is picked automatically from the image's proportions, but
+you can override it per image with a bracketed hint — useful when a file
+is high-resolution but shouldn't be shown large, like a wordmark:
+
+```
+images:
+  02-logo.jpg [small]: Primary logo
+```
+
+Valid hints are `small` (460px), `tall` (640px), and `wide` (full width).
+
 The build **fails** if any file exceeds 25 MiB or the site exceeds 20,000
 files — the two Cloudflare Pages limits.
 
