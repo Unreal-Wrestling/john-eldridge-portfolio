@@ -86,11 +86,16 @@ DIVISIONS = {
 # or student work as client work is the fastest way to lose credibility.
 WORK_TYPES = {
     "client": "",  # the default; no badge needed
+    "internship": "Internship",
     "student": "Student Project",
     "competition": "Design Competition",
     "self": "Self-Initiated",
     "volunteer": "Volunteer / Pro Bono",
 }
+
+# Work that was actually commissioned - by a client, an employer, or an
+# internship host. Real briefs with real stakeholders, so no disclaimer.
+COMMISSIONED = {"client", "internship"}
 
 
 @dataclass
@@ -133,7 +138,7 @@ class Project:
         Any project that was not commissioned says so plainly, on the page
         itself, near the top.
         """
-        if self.work_type == "client":
+        if self.work_type in COMMISSIONED:
             return ""
 
         who = self.client or "The brand shown"
@@ -266,6 +271,8 @@ def load_project(folder: Path) -> Project | None:
     work_type = meta.get("work_type", meta.get("type", "")).strip().lower()
     if work_type in ("contest", "competition"):
         work_type = "competition"
+    elif work_type in ("intern", "internship"):
+        work_type = "internship"
     elif work_type in ("self", "self-initiated", "spec", "concept"):
         work_type = "self"
     elif work_type in ("volunteer", "probono", "pro bono"):
@@ -419,6 +426,10 @@ def render_project_page(proj: Project) -> str:
     ]
 
     meta_bits = [b for b in (proj.category, proj.year) if b]
+    # For commissioned work there's no disclaimer to carry it, so the
+    # context (studio, contract, employer) belongs in the meta row.
+    if proj.context and proj.work_type in COMMISSIONED:
+        meta_bits.append(proj.context)
 
     # Non-client work is badged in the header and disclaimed above the
     # write-up. Both are generated, so they can't be omitted by accident.

@@ -4,8 +4,8 @@ client: BizTech RX
 year: 2014
 category: Branding & Identity
 division: business
-work_type: student
-context: Coursework, Everett Community College
+work_type: client
+context: Contract role
 tags: logo, identity, collateral, email, print, b2b
 featured: true
 summary: Full identity rollout for a B2B services firm, from logo through mailers, email banners, and operational forms.
