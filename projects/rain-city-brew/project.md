@@ -31,6 +31,8 @@ The beam treatment does two jobs at once: it reads as stained glass at a
 glance, and it gives the label a strong focal point that stays legible from
 across a shelf, which matters more than detail at retail distance.
 
+[[02-bottles.png]]
+
 ## Deliverables
 
 Bottle label, six-pack carrier, a promotional poster, and a product sheet

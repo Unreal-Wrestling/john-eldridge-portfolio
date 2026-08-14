@@ -38,5 +38,7 @@ day: a full cafe menu, a holiday promotional poster, and a free-drink
 loyalty coupon laid out eight-up on a single sheet so staff could cut and
 hand them out without a separate print run.
 
+[[01-cafe-menu.jpg]]
+
 Clean and modern, but warm enough to suit a shop where the owners know
 their regulars by name.
