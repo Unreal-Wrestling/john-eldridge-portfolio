@@ -131,6 +131,10 @@ class Project:
     thumb: str = ""
     body_html: str = ""
     images: list[ProjectImage] = field(default_factory=list)
+    # Event/documentary photography, kept separate from the design work so
+    # a reel of 20 frames never competes with the pieces being shown.
+    # Lives in a photos/ subfolder and renders as one slideshow.
+    photos: list[ProjectImage] = field(default_factory=list)
 
     @property
     def url(self) -> str:
@@ -199,7 +203,8 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
     """Split a project.md into a metadata dict and the body text.
 
     Deliberately not YAML - avoiding a dependency. Supports `key: value`
-    lines plus one nested `images:` block of `filename: caption` pairs.
+    lines plus nested `images:` and `photos:` blocks of `filename: caption`
+    pairs.
     """
     if not text.startswith("---"):
         return {}, text
@@ -210,33 +215,34 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
 
     raw_meta, body = parts[1], parts[2]
     meta: dict = {}
-    images: dict[str, str] = {}
-    in_images = False
+    blocks: dict[str, dict[str, str]] = {"images": {}, "photos": {}}
+    current = ""
 
     for line in raw_meta.splitlines():
         if not line.strip():
             continue
 
         indented = line[0] in " \t"
-        if in_images and indented:
+        if current and indented:
             if ":" in line:
                 fname, _, caption = line.strip().partition(":")
-                images[fname.strip()] = caption.strip()
+                blocks[current][fname.strip()] = caption.strip()
             continue
 
-        in_images = False
+        current = ""
         if ":" not in line:
             continue
 
         key, _, value = line.partition(":")
         key, value = key.strip().lower(), value.strip()
 
-        if key == "images":
-            in_images = True
+        if key in blocks:
+            current = key
             continue
         meta[key] = value
 
-    meta["_images"] = images
+    meta["_images"] = blocks["images"]
+    meta["_photos"] = blocks["photos"]
     return meta, body.strip()
 
 
@@ -263,9 +269,11 @@ def render_body(text: str) -> str:
         if block.startswith("## "):
             out.append(f"<h2>{inline(block[3:].strip())}</h2>")
         elif re.fullmatch(r"\[\[[^\[\]]+\]\]", block):
-            # Image placed inline in the write-up. Resolved after the
-            # images are processed, since dimensions aren't known yet.
-            out.append(f"<!--IMG:{block[2:-2].strip()}-->")
+            # Image or slideshow placed inline in the write-up. Resolved
+            # after the images are processed, since dimensions aren't
+            # known yet.
+            ref = block[2:-2].strip()
+            out.append("<!--PHOTOS-->" if ref == "photos" else f"<!--IMG:{ref}-->")
         elif all(ln.strip().startswith(">") for ln in block.splitlines()):
             quote = " ".join(ln.strip().lstrip(">").strip() for ln in block.splitlines())
             out.append(f"<blockquote>{inline(quote)}</blockquote>")
@@ -386,6 +394,21 @@ def load_project(folder: Path) -> Project | None:
 
     if not proj.images:
         print(f"  WARN {folder.name}: no images found")
+
+    photo_captions = meta.get("_photos", {})
+    photo_dir = folder / "photos"
+    if photo_dir.is_dir():
+        for img in sorted(photo_dir.iterdir()):
+            if img.suffix.lower() not in IMAGE_EXTS:
+                continue
+            proj.photos.append(
+                ProjectImage(
+                    src=img,
+                    full_rel=f"img/photos/{img.stem}.jpg",
+                    thumb_rel=f"img/photos/{img.stem}-thumb.jpg",
+                    caption=photo_captions.get(img.name, ""),
+                )
+            )
 
     return proj
 
@@ -514,6 +537,12 @@ def build_images(proj: Project, out_dir: Path) -> None:
         image.matte = image.shape == "small" and has_white_background(
             out_dir / image.full_rel
         )
+
+    for photo in proj.photos:
+        w, h = resize_to(photo.src, out_dir / photo.full_rel, FULL_MAX_W)
+        resize_to(photo.src, out_dir / photo.thumb_rel, THUMB_MAX_W)
+        photo.width, photo.height = w, h
+        photo.shape = classify_shape(w, h)
 
 
 # ── HTML ──────────────────────────────────────────────────────────────
@@ -676,6 +705,94 @@ def render_figure(image: ProjectImage, proj: Project, eager: bool) -> str:
       </figure>"""
 
 
+def render_slideshow(proj: Project) -> str:
+    """One slideshow for a project's event photography.
+
+    Every slide ships in the HTML so the set is crawlable and works with
+    JavaScript disabled - without JS it degrades to a plain vertical run
+    of photos, which is a worse experience but never a broken one.
+    """
+    if not proj.photos:
+        return ""
+
+    slides = []
+    for i, photo in enumerate(proj.photos):
+        cap = (
+            f'<figcaption class="slide-cap">{esc(photo.caption)}</figcaption>'
+            if photo.caption
+            else ""
+        )
+        dims = (
+            f' width="{photo.width}" height="{photo.height}"'
+            if photo.width and photo.height
+            else ""
+        )
+        slides.append(
+            f'        <figure class="slide" data-i="{i}">\n'
+            f'          <img src="{photo.thumb_rel}" alt="{esc(photo.caption or proj.heading)}"'
+            f'{dims} loading="{"eager" if i == 0 else "lazy"}">\n'
+            f"          {cap}\n"
+            f"        </figure>"
+        )
+
+    dots = "".join(
+        f'<button class="slide-dot" data-go="{i}" aria-label="Photo {i + 1}"></button>'
+        for i in range(len(proj.photos))
+    )
+
+    return f"""    <div class="proj-slideshow" id="shots" data-count="{len(proj.photos)}">
+      <div class="slide-track">
+{chr(10).join(slides)}
+      </div>
+      <div class="slide-controls">
+        <button class="slide-btn" data-step="-1" aria-label="Previous photo">&larr;</button>
+        <p class="slide-count"><span class="slide-now">1</span> / {len(proj.photos)}</p>
+        <button class="slide-btn" data-step="1" aria-label="Next photo">&rarr;</button>
+      </div>
+      <div class="slide-dots">{dots}</div>
+    </div>
+
+    <script>
+      (function () {{
+        var box = document.getElementById('shots');
+        if (!box) return;
+        var slides = box.querySelectorAll('.slide');
+        var dots = box.querySelectorAll('.slide-dot');
+        var now = box.querySelector('.slide-now');
+        var at = 0;
+
+        box.classList.add('is-live');
+
+        function show(i) {{
+          at = (i + slides.length) % slides.length;
+          for (var s = 0; s < slides.length; s++) {{
+            slides[s].classList.toggle('is-on', s === at);
+            if (dots[s]) dots[s].classList.toggle('is-on', s === at);
+          }}
+          now.textContent = at + 1;
+        }}
+
+        box.querySelectorAll('.slide-btn').forEach(function (b) {{
+          b.addEventListener('click', function () {{
+            show(at + parseInt(b.dataset.step, 10));
+          }});
+        }});
+        dots.forEach(function (d) {{
+          d.addEventListener('click', function () {{
+            show(parseInt(d.dataset.go, 10));
+          }});
+        }});
+        document.addEventListener('keydown', function (e) {{
+          if (e.key === 'ArrowLeft') show(at - 1);
+          if (e.key === 'ArrowRight') show(at + 1);
+        }});
+
+        show(0);
+      }})();
+    </script>
+"""
+
+
 def render_project_page(proj: Project) -> str:
     desc = proj.summary or f"{proj.heading} by {OWNER}"
     parts = [
@@ -776,11 +893,16 @@ def render_project_page(proj: Project) -> str:
     by_name = {im.src.name: im for im in proj.images}
     placed: set[str] = set()
     shown = 0
-    segments = re.split(r"<!--IMG:(.+?)-->", proj.body_html)
+    photos_placed = False
+    segments = re.split(r"<!--IMG:(.+?)-->|<!--PHOTOS-->", proj.body_html)
     lead = f"{disclaimer}\n      {credits}"
 
     for i, segment in enumerate(segments):
-        if i % 2 == 1:  # capture group - an image reference
+        if i % 2 == 1:  # capture group - an image reference, or the reel
+            if segment is None:  # the <!--PHOTOS--> branch
+                parts.append(render_slideshow(proj))
+                photos_placed = True
+                continue
             image = by_name.get(segment)
             if image is None:
                 print(f"  WARN {proj.slug}: no image named '{segment}'")
@@ -798,6 +920,9 @@ def render_project_page(proj: Project) -> str:
             continue
         parts.append(f'    <div class="proj-body">\n      {lead}\n      {body}\n    </div>\n')
         lead = ""
+
+    if proj.photos and not photos_placed:
+        parts.append(render_slideshow(proj))
 
     remaining = [im for im in proj.images if im.src.name not in placed]
     if remaining:
@@ -1070,7 +1195,8 @@ def main() -> int:
         out.mkdir(parents=True, exist_ok=True)
         build_images(proj, out)
         (out / "index.html").write_text(render_project_page(proj), encoding="utf-8")
-        print(f"  OK   /work/{proj.slug}/  ({len(proj.images)} images)")
+        reel = f", {len(proj.photos)} photos" if proj.photos else ""
+        print(f"  OK   /work/{proj.slug}/  ({len(proj.images)} images{reel})")
 
     # After the projects, since the home page embeds their cards.
     copy_legacy(projects)

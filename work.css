@@ -443,6 +443,88 @@
   backdrop-filter: blur(4px);
 }
 
+/* ── Event photography slideshow ─────────────────────────── */
+/* One frame at a time, so twenty documentary photos never bury the three
+   pieces of design work above them. Wider than the copy measure: these
+   are photographs, and they earn the extra width the design flats don't. */
+.proj-slideshow {
+  max-width: 900px;
+  margin-bottom: 3.5rem;
+}
+.slide { margin: 0; }
+.slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 8px);
+  background: var(--bg-card);
+}
+.slide-cap {
+  margin-top: 0.85rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Before the script runs, every slide is visible - a plain vertical run
+   of photos. The controls only appear once they can actually do something. */
+.proj-slideshow:not(.is-live) .slide + .slide { margin-top: 1.5rem; }
+.proj-slideshow:not(.is-live) .slide-controls,
+.proj-slideshow:not(.is-live) .slide-dots { display: none; }
+.proj-slideshow.is-live .slide { display: none; }
+.proj-slideshow.is-live .slide.is-on { display: block; }
+
+.slide-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.slide-btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.slide-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.slide-count {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  font-variant-numeric: tabular-nums;
+}
+.slide-now { color: var(--text); font-weight: 600; }
+
+.slide-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+.slide-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.slide-dot:hover { background: var(--text-muted); }
+.slide-dot.is-on { background: var(--accent); }
+
 /* ── Project images ──────────────────────────────────────── */
 .proj-gallery {
   display: flex;

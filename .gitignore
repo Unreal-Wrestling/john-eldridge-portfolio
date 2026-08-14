@@ -9,6 +9,9 @@ dist/
 # Wrangler local cache - contains account metadata
 .wrangler/
 
+# Local contact sheets for reviewing shoot archives - scratch, not assets
+.review/
+
 # Python
 __pycache__/
 *.pyc
