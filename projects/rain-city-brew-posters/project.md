@@ -18,14 +18,14 @@ images:
 photos:
   01-sb-poster-on-easel.jpg: The 'Stache Bash poster on the door at the Seattle Creative Arts Center, November 2012
   02-sb-room.jpg: 'Stache Bash, November 2012 — the room filling up
-  03-sb-poster-display.jpg: 'Stache Bash poster on display, November 2012
-  04-sb-stickers.jpg: Guests wearing the mustache mark
-  05-sb-scorecard.jpg: Judging underway
-  06-sb-pour.jpg: Pouring a competition entry
-  07-sb-cheers.jpg: Tasting glasses, 'Stache Bash
-  08-sb-staff.jpg: Rain City Brew staff working the floor
-  09-sb-art-wall.jpg: Artists beside their pieces — artwork by the exhibiting artists
-  10-sb-winner.jpg: A brewer with his bottle and its label art — label artwork by the exhibiting artist
+  03-sb-scorecard.jpg: Judging underway
+  04-sb-pour.jpg: Pouring a competition entry
+  05-sb-cheers.jpg: Tasting glasses, 'Stache Bash
+  06-sb-staff.jpg: Rain City Brew staff working the floor
+  07-sb-art-wall.jpg: Artists beside their pieces — artwork by the exhibiting artists
+  08-sb-winner.jpg: A brewer with his bottle and its label art — label artwork by the exhibiting artist
+  09-sb-poster-display.jpg: 'Stache Bash poster on display, November 2012
+  10-sb-stickers.jpg: Guests wearing the mustache mark
   11-boa-room.jpg: Brews of Anime, April 2013
   12-boa-tasting.jpg: Brews of Anime — tasting and judging, April 2013
   13-boa-merch.jpg: Event shirts on the wall
