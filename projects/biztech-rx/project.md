@@ -10,6 +10,7 @@ context: Contract
 team: Brandon Robertson, Bryce Pollett, Eugene Capone, Sabrina Odell
 tags: logo, identity, collateral, email, print, b2b
 featured: true
+thumb: 02-logo.jpg
 summary: Full identity rollout for a B2B services firm, from logo through mailers, email banners, and operational forms.
 quote: This rebrand project has led to a huge amount of growth for BizTech Rx!
 quote_by: Evan Rabinowitz, CEO, BizTech RX

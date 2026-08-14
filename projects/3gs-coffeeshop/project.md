@@ -10,9 +10,10 @@ tags: logo, menu, print, loyalty, hospitality
 featured: true
 summary: Seaside identity for a family-run Westport coffeeshop, extended into menus and a loyalty coupon program.
 images:
-  01-cafe-menu.jpg: Full cafe menu covering deli sandwiches, salads, bagels, and box lunches
-  02-loyalty-coupon.png: Free-drink loyalty coupons, printed eight-up for in-store distribution
-  03-holiday-poster.jpg: Seasonal promotional poster
+  01-logo.jpg [small]: Primary logo — the Westport Lookout Tower and jetty, with three gulls for the three generations
+  02-cafe-menu.jpg: Full cafe menu covering deli sandwiches, salads, bagels, and box lunches
+  03-loyalty-coupon.png: Free-drink loyalty coupons, printed eight-up for in-store distribution
+  04-holiday-poster.jpg: Seasonal promotional poster
 ---
 
 3G's is a family-owned coffeeshop, candy store, and deli in Westport,
@@ -31,6 +32,8 @@ The illustrations were drawn from original photographs I took on location,
 so the landmarks read as specifically Westport rather than generic coastal
 imagery.
 
+[[01-logo.jpg]]
+
 ## Extending the system
 
 The identity carried into the pieces the business actually needed day to
@@ -38,7 +41,7 @@ day: a full cafe menu, a holiday promotional poster, and a free-drink
 loyalty coupon laid out eight-up on a single sheet so staff could cut and
 hand them out without a separate print run.
 
-[[01-cafe-menu.jpg]]
+[[02-cafe-menu.jpg]]
 
 Clean and modern, but warm enough to suit a shop where the owners know
 their regulars by name.

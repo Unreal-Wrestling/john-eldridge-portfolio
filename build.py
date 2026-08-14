@@ -125,12 +125,28 @@ class Project:
     team: list[str] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     featured: bool = False
+    # Filename to use on index cards. Defaults to the first still, which is
+    # usually right, but a project that opens on sketches or a wide layout
+    # is better represented by its logo.
+    thumb: str = ""
     body_html: str = ""
     images: list[ProjectImage] = field(default_factory=list)
 
     @property
     def url(self) -> str:
         return f"/work/{self.slug}/"
+
+    @property
+    def card_image(self) -> "ProjectImage | None":
+        """The still a card should lead with. Video has no thumbnail, so it
+        can never be the card image."""
+        stills = [im for im in self.images if not im.is_video]
+        if self.thumb:
+            chosen = next((im for im in stills if im.src.name == self.thumb), None)
+            if chosen:
+                return chosen
+            print(f"  WARN {self.slug}: thumb '{self.thumb}' not found")
+        return stills[0] if stills else None
 
     @property
     def heading(self) -> str:
@@ -320,6 +336,7 @@ def load_project(folder: Path) -> Project | None:
         team=team,
         tags=tags,
         featured=meta.get("featured", "").lower() in ("true", "yes", "1"),
+        thumb=meta.get("thumb", ""),
         body_html=render_body(body),
     )
 
@@ -548,8 +565,7 @@ def esc(s: str) -> str:
 def render_work_card(p: Project, href: str) -> str:
     """One project card. Shared by /work/ and the home page, so the two
     can never drift apart or show a different set of projects."""
-    # Cards need a still; a video has no thumbnail to fall back on.
-    still = next((im for im in p.images if not im.is_video), None)
+    still = p.card_image
     thumb = f"{href}{still.thumb_rel}" if still else ""
     haystack = " ".join(
         [p.title, p.client, p.category, p.year, " ".join(p.tags), p.summary]
