@@ -324,6 +324,21 @@
   line-height: 1.6;
 }
 
+/* Pull quote - for the strategic line a project actually hangs on. */
+.proj-body blockquote {
+  margin: 2.25rem 0;
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  border-left: 3px solid var(--accent);
+  color: var(--text);
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.45;
+}
+@media (max-width: 600px) {
+  .proj-body blockquote { font-size: 1.15rem; }
+}
+
 /* Credits lead the write-up on directed work: who ran it, who built it. */
 .proj-credits {
   margin: 0 0 2rem;
@@ -406,15 +421,17 @@
 .proj-figure a { display: block; }
 
 /* Marks and wordmarks are usually supplied on white and sit awkwardly
-   when they run to the edge of the frame. Matte them instead. The
+   when they run to the edge of the frame. Matte them instead. Applied
+   only where the build detected a white background, so full-bleed
+   artwork doesn't get a border it was never designed to have. The
    padding goes on the link rather than the figure so the caption stays
    on the dark card below. */
-.proj-figure.is-small a {
+.proj-figure.has-matte a {
   background: #fff;
   padding: 2.25rem 2.5rem;
 }
 @media (max-width: 600px) {
-  .proj-figure.is-small a { padding: 1.5rem 1.75rem; }
+  .proj-figure.has-matte a { padding: 1.5rem 1.75rem; }
 }
 .proj-figure img,
 .proj-figure video {

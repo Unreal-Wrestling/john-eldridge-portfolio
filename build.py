@@ -73,6 +73,7 @@ class ProjectImage:
     thumb_rel: str
     caption: str = ""
     is_video: bool = False
+    matte: bool = False  # white-background mark, safe to pad with white
     width: int = 0
     height: int = 0
     shape: str = "wide"  # wide | tall | small - drives display width
@@ -240,6 +241,9 @@ def render_body(text: str) -> str:
 
         if block.startswith("## "):
             out.append(f"<h2>{inline(block[3:].strip())}</h2>")
+        elif all(ln.strip().startswith(">") for ln in block.splitlines()):
+            quote = " ".join(ln.strip().lstrip(">").strip() for ln in block.splitlines())
+            out.append(f"<blockquote>{inline(quote)}</blockquote>")
         elif all(ln.strip().startswith("- ") for ln in block.splitlines()):
             items = "".join(
                 f"<li>{inline(ln.strip()[2:])}</li>" for ln in block.splitlines()
@@ -443,6 +447,24 @@ def probe_mp4_size(path: Path) -> tuple[int, int]:
         return 0, 0
 
 
+def has_white_background(path: Path) -> bool:
+    """True if all four corners are effectively white.
+
+    Used to decide whether padding a figure with white will blend into
+    the artwork or just frame it in a border it was never meant to have.
+    """
+    try:
+        with Image.open(path) as im:
+            im = im.convert("RGB")
+            w, h = im.size
+            if w < 6 or h < 6:
+                return False
+            corners = [(2, 2), (w - 3, 2), (2, h - 3), (w - 3, h - 3)]
+            return all(min(im.getpixel(c)) >= 242 for c in corners)
+    except OSError:
+        return False
+
+
 def build_images(proj: Project, out_dir: Path) -> None:
     for image in proj.images:
         if image.is_video:
@@ -458,6 +480,12 @@ def build_images(proj: Project, out_dir: Path) -> None:
         resize_to(image.src, out_dir / image.thumb_rel, THUMB_MAX_W)
         image.width, image.height = w, h
         image.shape = image.shape_hint or classify_shape(w, h)
+        # Marks are usually supplied on white and look cramped against the
+        # frame edge. Full-bleed artwork is not, and would just get a white
+        # border it was never designed to have.
+        image.matte = image.shape == "small" and has_white_background(
+            out_dir / image.full_rel
+        )
 
 
 # ── HTML ──────────────────────────────────────────────────────────────
@@ -621,7 +649,8 @@ def render_project_page(proj: Project) -> str:
       </figure>""")
                 continue
 
-            parts.append(f"""      <figure class="proj-figure is-{image.shape}"{cap_px}>
+            matte = " has-matte" if image.matte else ""
+            parts.append(f"""      <figure class="proj-figure is-{image.shape}{matte}"{cap_px}>
         <a href="{image.full_rel}" target="_blank" rel="noopener">
           <img src="{image.thumb_rel}" alt="{esc(image.caption or proj.heading)}"{dims} loading="{loading}">
         </a>

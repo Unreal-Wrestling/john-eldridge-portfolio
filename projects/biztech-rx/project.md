@@ -15,20 +15,26 @@ images:
   01-logo.jpg [small]: Primary logo
   02-logo-sting.mp4 [medium]: Animated logo sting, built from the mark by Bryce Pollett
   03-identity-overview.jpg: Identity system applied across print and digital collateral — elements by Brandon Robertson, Eugene Capone, and Sabrina Odell
-  04-email-banner.jpg: Email banner, one of a set of ten variations
-  05-application-form.jpg: Employment application form
+  04-leave-behind-mailer.jpg [small]: Leave-behind mailer — the puzzle concept carrying the tagline
+  05-email-banner.jpg: Email banner, one of a set of ten variations
+  06-facebook-banner.jpg: Social cover banner, one of a matched set across Facebook and Yelp
+  07-application-form.jpg: Employment application form
 ---
 
 BizTech RX offers business, technical, and marketing services. The identity
 needed to communicate a fairly abstract, three-part service offering to
 small business owners quickly.
 
+> What piece are you missing?
+
+That line did the work a service list couldn't. It reframes an abstract
+three-part offering as a question the prospect answers about their own
+business before they have finished reading it.
+
 ## The mark
 
-The logo centers on a puzzle-piece motif tied to the line "What piece are
-you missing?" — turning a vague service list into a question a prospect can
-immediately answer about their own business. The three service pillars sit
-under the wordmark as a consistent structural element.
+The logo centers on a puzzle-piece motif built around that line. The three
+service pillars sit under the wordmark as a consistent structural element.
 
 ## The rollout
 
