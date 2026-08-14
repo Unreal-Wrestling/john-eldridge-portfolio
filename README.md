@@ -1,6 +1,10 @@
 # John S. Eldridge, Jr. — Portfolio
 
-Static portfolio site. No build step, no framework, no dependencies.
+Static portfolio site. No framework, no npm toolchain. The only build
+dependency is Pillow, used to resize project images.
+
+Project root: `d:\Work\Portfolio` — an independent repo, unrelated to the
+UnrealWrestling project it used to sit inside.
 
 ## 🔴 Live Site
 
@@ -21,19 +25,18 @@ npm run deploy            # publish to the live site
 npm run deploy:preview    # throwaway preview URL, live site untouched
 ```
 
-That runs `deploy.ps1`, which stages the web files to a temp folder,
-aborts if any file exceeds Cloudflare's 25 MiB limit, deploys to the
-`main` production branch, and verifies the live HTML matches local.
+That runs `deploy.ps1`, which builds the site with `build.py`, uploads
+`dist/` to the `main` production branch, and verifies the result.
 
-It stages 33 files / ~20 MB: `index.html`, `styles.css`, `script.js`,
-and the 30 `Artboard *.png` images. `serve.py`, `package.json`, and the
-`.mp4` masters are local-only and never deployed.
+Only `dist/` is uploaded, so `serve.py`, `package.json`, the `projects/`
+sources, and the `.mp4` masters never reach the CDN.
 
 <details>
-<summary>Equivalent manual command</summary>
+<summary>Equivalent manual commands</summary>
 
 ```powershell
-npx wrangler pages deploy <staged-folder> `
+python build.py
+npx wrangler pages deploy dist `
   --project-name=john-eldridge-portfolio `
   --branch=main
 ```
@@ -63,12 +66,53 @@ Runs from any folder, including a USB stick. Plain
 
 | File | Purpose |
 |------|---------|
-| `index.html` | All page copy and structure |
+| `build.py` | Static site generator — writes `dist/` |
+| `deploy.ps1` | Builds, uploads to Cloudflare, verifies |
+| `projects/` | Project sources: images + `project.md` per project |
+| `index.html` | Home page copy and structure |
 | `styles.css` | Dark theme. Accent colors in `:root` at the top |
-| `script.js` | Gallery data, category filters, lightbox, nav |
+| `work.css` | Styles for the generated `/work/` pages |
+| `script.js` | Legacy gallery data, filters, lightbox, nav |
 | `serve.py` | Local dev server |
-| `Artboard *.png` | Design work images (committed) |
-| `*.mp4` | Source video files — **gitignored**, too large |
+| `Artboard *.png` | Legacy slide images (committed) |
+| `dist/` | Build output — **gitignored**, never edit by hand |
+| `*.mp4` | Source video masters — **gitignored**, too large |
+
+## Adding a project
+
+Projects are generated into real pages at `/work/<slug>/` with selectable,
+indexable text — unlike the legacy artboards, which bake their copy into
+pixels.
+
+Create `projects/<slug>/` containing the chosen images and a `project.md`:
+
+```
+---
+title: Label & Package Design
+client: Rain City Brew
+year: 2013
+category: Packaging
+tags: packaging, label, print
+featured: true
+summary: One line, shown on the index card.
+images:
+  01-packaging.jpg: Caption for this image
+---
+
+Body copy. `## ` makes a heading, `- ` makes a bullet.
+```
+
+Then `npm run deploy`. No Illustrator, no site code. Add `status: draft`
+to keep a project out of the build until it's ready.
+
+The build resizes every image to full (1800px) and thumb (800px) variants,
+and **fails** if any file exceeds 25 MiB or the site exceeds 20,000 files —
+the two Cloudflare Pages limits.
+
+Source assets for the back catalog live in
+`d:\Work\Inkboard Design\Client Folder` (82 clients). Those folders mix
+finished deliverables with stock and working files, so picking images is a
+manual curation step.
 
 ## Editing the gallery
 
