@@ -339,6 +339,37 @@
   .proj-body blockquote { font-size: 1.15rem; }
 }
 
+/* Client testimonial - closes the write-up. Given real weight, because
+   an attributed client verdict is the hardest thing in a portfolio to
+   manufacture and the easiest for a reader to trust. */
+.proj-testimonial {
+  margin: 2.5rem 0 0;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+}
+.proj-testimonial blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--text);
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+.proj-testimonial blockquote::before { content: "\201C"; }
+.proj-testimonial blockquote::after  { content: "\201D"; }
+.proj-testimonial figcaption {
+  margin-top: 0.9rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.proj-testimonial figcaption::before { content: "\2014\00a0"; }
+
 /* Credits lead the write-up on directed work: who ran it, who built it. */
 .proj-credits {
   margin: 0 0 2rem;

@@ -117,6 +117,8 @@ class Project:
     context: str = ""  # e.g. "Everett Community College, 2015"
     outcome: str = ""  # e.g. "1st place, 200 entries"
     summary: str = ""
+    quote: str = ""  # client testimonial, in their words
+    quote_by: str = ""  # attribution - name and title
     team: list[str] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     featured: bool = False
@@ -306,6 +308,8 @@ def load_project(folder: Path) -> Project | None:
         context=meta.get("context", ""),
         outcome=meta.get("outcome", ""),
         summary=meta.get("summary", ""),
+        quote=meta.get("quote", ""),
+        quote_by=meta.get("quote_by", ""),
         team=team,
         tags=tags,
         featured=meta.get("featured", "").lower() in ("true", "yes", "1"),
@@ -592,6 +596,19 @@ def render_project_page(proj: Project) -> str:
             )
         credits = f'<div class="proj-credits">{"".join(rows)}</div>'
 
+    # The client's verdict closes the write-up. Attribution is required -
+    # an unattributed testimonial is worth nothing to a reader.
+    testimonial = ""
+    if proj.quote and proj.quote_by:
+        testimonial = (
+            '<figure class="proj-testimonial">'
+            f'<blockquote>{esc(proj.quote)}</blockquote>'
+            f'<figcaption>{esc(proj.quote_by)}</figcaption>'
+            "</figure>"
+        )
+    elif proj.quote:
+        print(f"  WARN {proj.slug}: quote has no quote_by, omitting")
+
     parts.append(f"""
   <header class="proj-header">
     <div class="container">
@@ -618,6 +635,7 @@ def render_project_page(proj: Project) -> str:
       {disclaimer}
       {credits}
       {proj.body_html}
+      {testimonial}
       {('<div class="proj-tags">' + ''.join(f'<span class="proj-tag">{esc(t)}</span>' for t in proj.tags) + '</div>') if proj.tags else ''}
     </div>
 """)
