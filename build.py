@@ -517,9 +517,9 @@ def render_project_page(proj: Project) -> str:
         )
     ]
 
-    # Role is stated plainly rather than left to inference - on work where
-    # a team executed under direction, the credit needs to be explicit.
-    meta_bits = [b for b in (proj.category, proj.year, proj.role) if b]
+    # Role is not repeated here - it leads the credits block below, which
+    # states it alongside the team rather than as a bare label.
+    meta_bits = [b for b in (proj.category, proj.year) if b]
     # For commissioned work there's no disclaimer to carry it, so the
     # context (studio, contract, employer) belongs in the meta row.
     if proj.context and proj.work_type in COMMISSIONED:
@@ -542,16 +542,27 @@ def render_project_page(proj: Project) -> str:
         else ""
     )
 
-    # Crediting the people who executed under direction is standard
-    # practice and costs nothing. It also makes the directing role read
-    # as real rather than as a claim over other people's work.
+    # Credits lead the write-up rather than trailing it. On directed work
+    # the reader should know who ran it and who executed before reading
+    # the story, and naming the team makes the direction claim credible
+    # instead of looking like ownership of other people's work.
     credits = ""
-    if proj.team:
-        names = ", ".join(esc(n) for n in proj.team)
-        credits = (
-            '<p class="proj-credits"><span class="proj-credits-label">'
-            f'Design team</span>{names}</p>'
-        )
+    if proj.role or proj.team:
+        rows = []
+        if proj.role:
+            rows.append(
+                '<div class="proj-credit-row is-lead">'
+                f'<span class="proj-credits-label">{esc(proj.role)}</span>'
+                f'<span class="proj-credit-name">{esc(OWNER)}</span></div>'
+            )
+        if proj.team:
+            names = ", ".join(esc(n) for n in proj.team)
+            rows.append(
+                '<div class="proj-credit-row">'
+                '<span class="proj-credits-label">Design team</span>'
+                f'<span class="proj-credit-name">{names}</span></div>'
+            )
+        credits = f'<div class="proj-credits">{"".join(rows)}</div>'
 
     parts.append(f"""
   <header class="proj-header">
@@ -577,8 +588,8 @@ def render_project_page(proj: Project) -> str:
   <main class="container proj-main">
     <div class="proj-body">
       {disclaimer}
-      {proj.body_html}
       {credits}
+      {proj.body_html}
       {('<div class="proj-tags">' + ''.join(f'<span class="proj-tag">{esc(t)}</span>' for t in proj.tags) + '</div>') if proj.tags else ''}
     </div>
 """)

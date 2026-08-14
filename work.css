@@ -324,22 +324,40 @@
   line-height: 1.6;
 }
 
-/* Credit for people who executed under direction. Quiet, but present. */
+/* Credits lead the write-up on directed work: who ran it, who built it. */
 .proj-credits {
-  margin: 2rem 0 0;
-  padding-top: 1.25rem;
+  margin: 0 0 2rem;
+  padding: 1.1rem 1.4rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--bg-card);
+}
+.proj-credit-row + .proj-credit-row {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
   border-top: 1px solid var(--border);
-  color: var(--text-dim);
-  font-size: 0.9rem;
 }
 .proj-credits-label {
   display: block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   color: var(--text-muted);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+.proj-credit-name {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+/* The directing role is the point of the block, so it carries the weight. */
+.proj-credit-row.is-lead .proj-credits-label { color: var(--accent); }
+.proj-credit-row.is-lead .proj-credit-name {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .work-card-img { position: relative; }
