@@ -11,54 +11,49 @@ featured: true
 tags: poster, print, label, event, beverage, illustration
 summary: Posters for both nights of the brewery's Beer as Art homebrew competition, and the label for a beer brewed by one of the owners.
 images:
-  01-stashebash-poster.jpg: 'Stache Bash 2012 — event poster for the first Beer as Art homebrew competition and art show
-  02-brews-of-anime-poster.jpg: Brews of Anime 2013 — event poster for the second competition, built around a club-patch treatment
-  03-wild-eyed-joker-label.png: Wild-Eyed Joker — label and artwork for a spiced pale amber ale brewed by one of the Rain City Brew owners
+  01-stashebash-poster.jpg: 'Stache Bash 2012 — homebrew competition and art show, November 2012
+  02-brews-of-anime-poster.jpg: Brews of Anime — the follow-up event, April 2013
+  03-wild-eyed-joker-label.png: Wild-Eyed Joker — label for a spiced pale amber brewed by one of the owners
 ---
 
-Beer as Art was a Rain City Brew event series, run in partnership with
-Ninkasi Brewing, that paired homebrewers with local artists. Each brewer
-made a beer, mead, or ale; an artist made the artwork and label for it; and
-the results were judged in front of a crowd. I came in as the design intern
-off the back of a packaging project, and worked both events.
+Rain City Brew ran a series called Beer as Art with Ninkasi Brewing.
+Homebrewers made the beer, local artists made the artwork and the label for
+it, and all of it got judged in front of a crowd. I was the design intern
+for two of them.
 
-## Two nights, two identities
+## Two events
 
-The events needed to feel like part of one series without repeating
-themselves, since the second was pitched to the same audience as the first.
+Both events went out to more or less the same crowd, so the second one
+couldn't just be the first one with new dates dropped in.
 
-'Stache Bash, in November 2012, ran on a single joke told properly — a
-bowler hat, wire glasses, and an enormous curled moustache, drawn in one
-weight of black on off-white, with the event details set quietly underneath
-so the mark carries the poster.
+'Stache Bash was November 2012. The poster is a bowler hat, a pair of wire
+glasses and a huge curled mustache, all in black on off-white. Event details
+stay small underneath. The mustache does the work.
 
 [[01-stashebash-poster.jpg]]
 
-Brews of Anime, in April 2013, was themed on cartoon and anime characters,
-and went the opposite direction: a biker-club patch stitched onto the back
-of a leather jacket, with the type running up the right edge and the entry
-terms set into the composition the way club patches carry their own
-hierarchy. Same series, different volume.
+Brews of Anime was the following April, themed on cartoon and anime
+characters. That one I went louder on: a club patch on the back of a black
+leather jacket, copy running up the right-hand side, entry price and the
+21+ line worked into the patch layout instead of parked in a corner.
 
 [[02-brews-of-anime-poster.jpg]]
 
 ## Wild-Eyed Joker
 
-One of the Rain City Brew owners brewed a spiced pale amber, and I did the
-artwork and the label for it — a manic, hand-drawn face on a burst of
-purple, with the beer name on a banner across the middle.
+One of the owners brewed a spiced pale amber and asked me to do the label
+for it. I drew a wild-eyed face on a purple sunburst, with the name on a
+yellow banner across the middle.
 
 [[03-wild-eyed-joker-label.png]]
 
-The artwork is deliberately crude. The beer was called Wild-Eyed Joker and
-it was competing in a room full of homebrew, so a clean, corporate label
-would have been the wrong answer.
+It's rough on purpose. The beer was called Wild-Eyed Joker and it was going
+up against a room full of homebrew. Something clean and corporate would
+have been the wrong call.
 
-## Credit where it is due
+## Credits
 
-The labels shown at these events were made by the participating artists
-— David Bloomfield, Narboo, Alex Pascaul, Michael O'Connor, Jennifer
-Hoffmann, Kristin Spooner, Lindsey Anzures and Erik Teschlog among them —
-not by me. My work here is the event posters and the Wild-Eyed Joker label.
-That distinction is the whole point of the series, and it is worth keeping
-straight.
+The labels at these events were the artists' work, not mine. David
+Bloomfield, Narboo, Alex Pascaul, Michael O'Connor, Jennifer Hoffmann,
+Kristin Spooner, Lindsey Anzures and Erik Teschlog all made pieces for the
+brewers, along with others. Mine are the two posters and the Joker label.

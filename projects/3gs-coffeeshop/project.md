@@ -15,32 +15,33 @@ images:
   03-loyalty-coupon.png: Free-drink loyalty coupons, printed eight-up for in-store distribution
 ---
 
-3G's is a family-owned coffeeshop, candy store, and deli in Westport,
-Washington. The brief was an identity that felt rooted in the town rather
-than transplanted from a chain.
+3G's is a coffeeshop, candy store and deli in Westport, Washington, run by
+three generations of the same family. They didn't want anything that looked
+like it could have come from a chain in any beach town on the coast.
 
 ## The mark
 
-The logo is built on two Westport landmarks: the Lookout Tower and the
-jetty. The tower gives the mark height and a sense of permanence, while the
-jetty adds depth and points the composition out toward the ocean. Three
-seagulls sit at the heart of the design, one for each of the three
-generations of the family who own and run the shop.
+I went out and photographed the Westport Lookout Tower and the jetty, then
+drew the logo from my own photos. The tower gives the mark its height. The
+jetty runs off behind it toward the water. Three gulls sit in the middle,
+one for each generation.
 
-The illustrations were drawn from original photographs I took on location,
-so the landmarks read as specifically Westport rather than generic coastal
-imagery.
+Shooting it myself mattered here. Stock coastal art would have handed me a
+generic lighthouse and a pier, and anyone who actually lives in Westport
+would have noticed right away.
 
 [[01-logo.jpg]]
 
-## Extending the system
+## The rest of it
 
-The identity carried into the pieces the business actually needed day to
-day: a full cafe menu, and a free-drink loyalty coupon laid out eight-up on
-a single sheet so staff could cut and hand them out without a separate
-print run.
+After the logo they needed the things a shop uses every day. A full cafe
+menu covering the deli sandwiches, salads, bagels and box lunches, and a
+free coffee loyalty coupon.
+
+I laid the coupons out eight to a page so staff could run off a sheet, cut
+them up and hand them out. No separate print job, no minimum order.
 
 [[02-cafe-menu.jpg]]
 
-Clean and modern, but warm enough to suit a shop where the owners know
-their regulars by name.
+The owners know their regulars by name. That's what the identity had to feel
+like.

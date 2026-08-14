@@ -25,44 +25,50 @@ images:
   08-application-form.jpg: Employment application form — John Eldridge
 ---
 
-BizTech RX offers business, technical, and marketing services. The identity
-needed to communicate a fairly abstract, three-part service offering to
-small business owners quickly.
+BizTech RX sold business, technical and marketing services to small
+business owners. Three service lines, all of them fairly abstract, and not
+much room on a business card to explain any of it.
+
+So we stopped explaining and asked instead:
 
 > What piece are you missing?
 
-That line was the centerpiece the whole project was built on. It did the
-work a service list couldn't, reframing an abstract three-part offering
-as a question the prospect answers about their own business before they
-have finished reading it.
+Everything hangs off that line. A list of services makes someone read and
+evaluate. A question makes them think about their own business, and most
+people have answered it before they finish reading.
 
-## Process
+## Getting there
 
-The identity started on paper. A page of pencil directions worked through
-ways to set the wordmark and pair it with a puzzle motif, and only the
-surviving direction went into Illustrator. Sketching first keeps
-exploration cheap and settles direction before it becomes a question of
-execution.
-
-From there the sequence ran vector artwork, then print collateral, then
-digital — each stage held to the decisions made at the one before it.
+I started on paper. A page of pencil directions, working out how to set the
+wordmark and where a puzzle piece could sit in it. One direction survived
+and that's the one that went into Illustrator. Sketching is cheap.
+Redrawing vector art is not.
 
 [[01-sketches.jpg]]
 
+After the mark was locked we did print, then digital. Each stage had to
+live with what got decided before it.
+
 ## The mark
 
-The logo centers on a puzzle-piece motif built around that line. The three
-service pillars sit under the wordmark as a consistent structural element.
+The logo is built on the puzzle piece, with the three service lines set
+under the wordmark so they turn up the same way on every piece.
 
 [[02-logo.jpg]]
 
 ## The rollout
 
-The identity was applied across the full set of pieces the business ran on:
+I ran a team of four through the rest of it, and we covered everything the
+business needed:
 
 - Promotional mailers and postcards with tiered startup and promo packages
-- Door hangers for local canvassing
+- Door hangers for canvassing the local area
 - Business cards and stationery
-- A set of ten email banner variations
-- Vertical retractable banners for events
-- Operational paperwork, including multi-page employment application forms
+- Ten variations on the email signature banner
+- Retractable vertical banners for events
+- The paperwork nobody thinks about, including a multi-page employment
+  application form
+
+Credits are on each image. Bryce animated the logo sting, Eugene built the
+website, Brandon did the door hangers, and Sabrina did the banners and one
+of the business cards.
