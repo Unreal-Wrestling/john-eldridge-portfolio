@@ -52,6 +52,9 @@ LEGACY_FILES = ["index.html", "styles.css", "script.js", "work.css"]
 LEGACY_GLOBS = ["Artboard *.png"]
 
 IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp"}
+# Copied through untouched - there is no transcoding step, so source files
+# need to be web-ready and within the 25 MiB per-asset limit already.
+VIDEO_EXTS = {".mp4", ".webm"}
 
 # Cloudflare Pages rejects any single asset over 25 MiB, and several source
 # files in the archive are well over that, so everything gets resized.
@@ -69,6 +72,7 @@ class ProjectImage:
     full_rel: str
     thumb_rel: str
     caption: str = ""
+    is_video: bool = False
     width: int = 0
     height: int = 0
     shape: str = "wide"  # wide | tall | small - drives display width
@@ -306,7 +310,8 @@ def load_project(folder: Path) -> Project | None:
 
     captions = meta.get("_images", {})
     for img in sorted(folder.iterdir()):
-        if img.suffix.lower() not in IMAGE_EXTS:
+        suffix = img.suffix.lower()
+        if suffix not in IMAGE_EXTS and suffix not in VIDEO_EXTS:
             continue
         stem = img.stem
         # A caption may carry a display hint: `logo.jpg [small]: Primary mark`.
@@ -323,11 +328,25 @@ def load_project(folder: Path) -> Project | None:
             print(f"  WARN {folder.name}: unknown shape '{hint}' on {img.name}")
             hint = ""
 
+        if suffix in VIDEO_EXTS:
+            # Copied through as-is; there is no transcoding step here.
+            proj.images.append(
+                ProjectImage(
+                    src=img,
+                    full_rel=f"img/{stem}{suffix}",
+                    thumb_rel="",
+                    caption=caption,
+                    is_video=True,
+                    shape_hint=hint,
+                )
+            )
+            continue
+
         proj.images.append(
             ProjectImage(
                 src=img,
-                full_rel=f"img/{stem}.jpg" if img.suffix.lower() != ".png" else f"img/{stem}.png",
-                thumb_rel=f"img/{stem}-thumb.jpg" if img.suffix.lower() != ".png" else f"img/{stem}-thumb.png",
+                full_rel=f"img/{stem}.jpg" if suffix != ".png" else f"img/{stem}.png",
+                thumb_rel=f"img/{stem}-thumb.jpg" if suffix != ".png" else f"img/{stem}-thumb.png",
                 caption=caption,
                 shape_hint=hint,
             )
@@ -381,8 +400,60 @@ def classify_shape(w: int, h: int) -> str:
     return "wide"
 
 
+def probe_mp4_size(path: Path) -> tuple[int, int]:
+    """Read display dimensions out of an MP4's track header.
+
+    ffmpeg isn't a dependency here, and without dimensions the page would
+    reflow as the video loads. Width and height are the last eight bytes
+    of a tkhd box, stored as 16.16 fixed point.
+    """
+
+    def walk(f, end: int) -> tuple[int, int]:
+        while f.tell() < end - 8:
+            start = f.tell()
+            header = f.read(8)
+            if len(header) < 8:
+                break
+            size = int.from_bytes(header[:4], "big")
+            kind = header[4:8]
+            if size == 1:  # 64-bit extended size
+                size = int.from_bytes(f.read(8), "big")
+            if size < 8:
+                break
+            stop = start + size
+
+            if kind in (b"moov", b"trak", b"mdia"):
+                found = walk(f, stop)
+                if found != (0, 0):
+                    return found
+            elif kind == b"tkhd":
+                payload = f.read(stop - f.tell())
+                if len(payload) >= 8:
+                    w = int.from_bytes(payload[-8:-4], "big") >> 16
+                    h = int.from_bytes(payload[-4:], "big") >> 16
+                    if w and h:
+                        return w, h
+            f.seek(stop)
+        return 0, 0
+
+    try:
+        with path.open("rb") as f:
+            return walk(f, path.stat().st_size)
+    except OSError:
+        return 0, 0
+
+
 def build_images(proj: Project, out_dir: Path) -> None:
     for image in proj.images:
+        if image.is_video:
+            dest = out_dir / image.full_rel
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(image.src, dest)
+            w, h = probe_mp4_size(image.src)
+            image.width, image.height = w, h
+            image.shape = image.shape_hint or (classify_shape(w, h) if w else "wide")
+            continue
+
         w, h = resize_to(image.src, out_dir / image.full_rel, FULL_MAX_W)
         resize_to(image.src, out_dir / image.thumb_rel, THUMB_MAX_W)
         image.width, image.height = w, h
@@ -528,6 +599,17 @@ def render_project_page(proj: Project) -> str:
                 if image.width and image.height
                 else ""
             )
+
+            if image.is_video:
+                # Muted and looping so it behaves like a motion sample
+                # rather than something that ambushes you with sound.
+                parts.append(f"""      <figure class="proj-figure is-{image.shape}"{cap_px}>
+        <video src="{image.full_rel}"{dims} controls loop muted playsinline
+               preload="metadata" aria-label="{esc(image.caption or proj.heading)}"></video>
+        {cap}
+      </figure>""")
+                continue
+
             parts.append(f"""      <figure class="proj-figure is-{image.shape}"{cap_px}>
         <a href="{image.full_rel}" target="_blank" rel="noopener">
           <img src="{image.thumb_rel}" alt="{esc(image.caption or proj.heading)}"{dims} loading="{loading}">
@@ -612,7 +694,9 @@ def render_work_index(projects: list[Project]) -> str:
 """)
 
     for p in projects:
-        thumb = f"{p.slug}/{p.images[0].thumb_rel}" if p.images else ""
+        # Cards need a still; a video has no thumbnail to fall back on.
+        still = next((im for im in p.images if not im.is_video), None)
+        thumb = f"{p.slug}/{still.thumb_rel}" if still else ""
         haystack = " ".join(
             [p.title, p.client, p.category, p.year, " ".join(p.tags), p.summary]
         ).lower()

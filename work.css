@@ -395,11 +395,14 @@
 @media (max-width: 600px) {
   .proj-figure.is-small a { padding: 1.5rem 1.75rem; }
 }
-.proj-figure img {
+.proj-figure img,
+.proj-figure video {
   width: 100%;
   height: auto;
   display: block;
 }
+/* Motion pieces sit on black so letterboxing reads as intentional. */
+.proj-figure video { background: #000; }
 .proj-figure figcaption {
   padding: 1rem 1.5rem;
   border-top: 1px solid var(--border);

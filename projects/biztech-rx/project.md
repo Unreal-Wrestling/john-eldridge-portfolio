@@ -13,9 +13,10 @@ featured: true
 summary: Full identity rollout for a B2B services firm, from logo through mailers, email banners, and operational forms.
 images:
   01-logo.jpg [small]: Primary logo
-  02-identity-overview.jpg: Identity system applied across print and digital collateral
-  03-email-banner.jpg: Email banner, one of a set of ten variations
-  04-application-form.jpg: Employment application form
+  02-logo-sting.mp4: Animated logo sting, built from the mark by Bryce Pollett
+  03-identity-overview.jpg: Identity system applied across print and digital collateral
+  04-email-banner.jpg: Email banner, one of a set of ten variations
+  05-application-form.jpg: Employment application form
 ---
 
 BizTech RX offers business, technical, and marketing services. The identity
