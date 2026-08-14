@@ -6,25 +6,26 @@ category: Event Design
 division: business
 work_type: internship
 role: Design Intern
-context: Internship, in partnership with Ninkasi Brewing
+context: Internship
 featured: true
 tags: poster, print, label, event, beverage, illustration
-summary: Posters for both nights of the brewery's Beer as Art homebrew competition, and the label for a beer brewed by one of the owners.
+summary: Posters for two nights of the brewery's Beer as Art competition series, and the label for a spiced pale amber brewed by one of the owners.
 images:
   01-stashebash-poster.jpg: 'Stache Bash 2012 — homebrew competition and art show, November 2012
   02-brews-of-anime-poster.jpg: Brews of Anime — the follow-up event, April 2013
-  03-wild-eyed-joker-label.png: Wild-Eyed Joker — label for a spiced pale amber brewed by one of the owners
+  03-wild-eyed-joker-label.png: Wild-Eyed Joker — label for a spiced pale amber brewed by co-owner Troy Lancaster
 ---
 
-Rain City Brew ran a series called Beer as Art with Ninkasi Brewing.
-Homebrewers made the beer, local artists made the artwork and the label for
-it, and all of it got judged in front of a crowd. I was the design intern
-for two of them.
+Rain City Brew ran a competition series called Beer as Art in partnership
+with Ninkasi Brewing. Brewers brought beers, meads and ales, local artists
+made the artwork and labels for them, and everything got judged in front of
+a crowd. I was the design intern on two of the nights.
 
 ## Two events
 
-Both events went out to more or less the same crowd, so the second one
-couldn't just be the first one with new dates dropped in.
+The events ran about twice a year and each one had its own theme. That was
+the point of the series, so each poster got built for its own night rather
+than reusing a template.
 
 'Stache Bash was November 2012. The poster is a bowler hat, a pair of wire
 glasses and a huge curled mustache, all in black on off-white. Event details
@@ -41,19 +42,12 @@ leather jacket, copy running up the right-hand side, entry price and the
 
 ## Wild-Eyed Joker
 
-One of the owners brewed a spiced pale amber and asked me to do the label
-for it. I drew a wild-eyed face on a purple sunburst, with the name on a
-yellow banner across the middle.
+Troy Lancaster, one of the owners, brewed a spiced pale amber and asked me
+to do the label for it. I drew a wild-eyed face on a purple sunburst, with
+the name on a yellow banner across the middle.
 
 [[03-wild-eyed-joker-label.png]]
 
-It's rough on purpose. The beer was called Wild-Eyed Joker and it was going
-up against a room full of homebrew. Something clean and corporate would
-have been the wrong call.
-
-## Credits
-
-The labels at these events were the artists' work, not mine. David
-Bloomfield, Narboo, Alex Pascaul, Michael O'Connor, Jennifer Hoffmann,
-Kristin Spooner, Lindsey Anzures and Erik Teschlog all made pieces for the
-brewers, along with others. Mine are the two posters and the Joker label.
+I drew it by hand and kept it loose on purpose, to sit with the
+illustration and anime theme the night was built around. Something clean
+and corporate would have looked out of place on that table.
