@@ -2,6 +2,7 @@
 title: Label & Package Design
 client: Rain City Brew
 year: 2012
+date: 2012-02
 category: Packaging
 division: business
 work_type: student

@@ -2,6 +2,7 @@
 title: Logo, Menu & Loyalty Program
 client: 3G's Coffeeshop
 year: 2015
+date: 2015-06
 category: Branding & Identity
 division: business
 work_type: client

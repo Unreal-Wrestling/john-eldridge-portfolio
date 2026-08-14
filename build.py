@@ -113,6 +113,11 @@ class Project:
     title: str
     client: str = ""
     year: str = ""
+    # Sorting only, never displayed: YYYY-MM or YYYY-MM-DD. `year` is the
+    # label a reader sees and is often a range, which is too coarse to
+    # order a year's worth of work. Taken from the dates on the source
+    # files when the project's own records don't say.
+    date: str = ""
     category: str = "Uncategorized"
     division: str = "business"
     work_type: str = "client"
@@ -165,6 +170,25 @@ class Project:
         """
         m = re.search(r"\d{4}", self.year or "")
         return int(m.group()) if m else 9999
+
+    @property
+    def sort_key(self) -> tuple:
+        """Chronological position, to the month where it is known.
+
+        A year alone can't order a body of work produced at pace, so an
+        explicit `date` wins when present. Projects dated only by year fall
+        back to month 0 and lead that year, which is the honest position
+        for a date we don't actually know.
+        """
+        m = re.match(r"(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?$", (self.date or "").strip())
+        if m:
+            year, month, day = m.group(1), m.group(2), m.group(3)
+            return (int(year), int(month or 0), int(day or 0), self.title.lower())
+        if self.date:
+            print(f"  WARN {self.slug}: unreadable date '{self.date}', using year")
+        # No date given: order by the year label, and let a project confined
+        # to one year lead one that runs on past it.
+        return (self.sort_year, 0, 0, self.title.lower())
 
     @property
     def sort_end_year(self) -> int:
@@ -279,6 +303,13 @@ def render_body(text: str) -> str:
         s = html.escape(s)
         s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
         s = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"<em>\1</em>", s)
+        # [text](url). Escaped first, so a URL's ampersands are already
+        # entities by the time they land in the attribute.
+        s = re.sub(
+            r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
+            r'<a href="\2" target="_blank" rel="noopener">\1</a>',
+            s,
+        )
         return s
 
     out: list[str] = []
@@ -353,6 +384,7 @@ def load_project(folder: Path) -> Project | None:
         title=title,
         client=meta.get("client", ""),
         year=meta.get("year", ""),
+        date=meta.get("date", ""),
         category=meta.get("category", "Uncategorized"),
         division=division,
         work_type=work_type,
@@ -1221,9 +1253,7 @@ def main() -> int:
     # a progression - how the work and the style developed - so date order
     # beats any ranking by importance. Undated work sorts last rather than
     # silently landing in 1970.
-    projects.sort(
-        key=lambda p: (p.sort_year, p.sort_end_year, p.client.lower(), p.title.lower())
-    )
+    projects.sort(key=lambda p: p.sort_key)
 
     work_dir = DIST / "work"
     work_dir.mkdir(parents=True, exist_ok=True)

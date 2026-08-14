@@ -2,6 +2,7 @@
 title: Beer As Art — Posters, Label & Event Photography
 client: Rain City Brew
 year: 2012-2013
+date: 2012-08
 category: Event Design
 division: business
 work_type: internship
@@ -98,6 +99,13 @@ site — the company, what they did, and where to find them — and built out
 pages for each event as it came up, so a poster in a bar had somewhere to
 send people.
 
-The site is long gone and I have no archive of it, so there is nothing to
-show here. It was a real part of the job, though, and leaving it off the
-page would misrepresent what the internship actually involved.
+The site itself is long gone, but the Internet Archive caught it. This
+[capture from September 2012](https://web.archive.org/web/20120902211059/http://raincitybrew.com/)
+is the site as it ran during the internship, with the 'Stache Bash call for
+artists on the front page, two months out from the event. There is
+[another from June 2013](https://web.archive.org/web/20130623120439/http://raincitybrew.com/)
+after the second show.
+
+Fair warning on both: the Archive kept the pages but not all of the assets,
+so they render rough. Still the actual thing, though, and I would rather
+point at a broken capture than describe work nobody can check.

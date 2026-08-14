@@ -2,6 +2,7 @@
 title: Brand Identity & Business Collateral
 client: BizTech RX
 year: 2014
+date: 2014-06
 category: Branding & Identity
 division: business
 work_type: client
