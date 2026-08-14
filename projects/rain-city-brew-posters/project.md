@@ -21,11 +21,10 @@ with Ninkasi Brewing. Brewers brought beers, meads and ales, local artists
 made the artwork and labels for them, and everything got judged in front of
 a crowd. I was the design intern on two of the nights.
 
-## Two events
+## Beer As Art Events
 
-The events ran about twice a year and each one had its own theme. That was
-the point of the series, so each poster got built for its own night rather
-than reusing a template.
+The Beer As Art events ran about twice a year and each was built around its
+own theme.
 
 'Stache Bash was November 2012. The poster is a bowler hat, a pair of wire
 glasses and a huge curled mustache, all in black on off-white. Event details
