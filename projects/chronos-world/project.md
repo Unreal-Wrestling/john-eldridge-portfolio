@@ -12,7 +12,7 @@ featured: true
 thumb: 03-cwe-logo.jpg
 tags: logo, identity, branding, twitch, streaming, ttrpg, motion graphics, video editing, social media, show design, discord, game design
 sections: Brand Identity, Original Logo, Show Logos, Stream Overlays, Social Media & Streaming, Show Openers & Motion Graphics, Game Design & Production
-summary: An attempted entertainment network producing live TTRPG gameplay shows six days a week for Twitch and YouTube — brand identity, show intros/outros, motion graphics, social media kit, Discord community, and full production pipeline.
+summary: An ambitious entertainment network project producing live TTRPG gameplay shows six days a week for Twitch and YouTube — brand identity, show intros/outros, motion graphics, social media kit, Discord community, and full production pipeline.
 images:
   01-cw-logo.png [thumb-only]: Chronos World — original logo
   02-cw-header.jpg [thumb-only]: Chronos World — channel header
