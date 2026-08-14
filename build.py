@@ -157,6 +157,16 @@ class Project:
         return f"{self.client} - {self.title}" if self.client else self.title
 
     @property
+    def sort_year(self) -> int:
+        """First four-digit year in the year field, for ordering.
+
+        Tolerates ranges like '2012-2013' and anything non-numeric, which
+        sorts last instead of crashing the build or landing in 1970.
+        """
+        m = re.search(r"\d{4}", self.year or "")
+        return int(m.group()) if m else 9999
+
+    @property
     def division_label(self) -> str:
         return DIVISIONS.get(self.division, DIVISIONS["business"])
 
@@ -665,12 +675,23 @@ def render_404() -> str:
 def render_home_cards(projects: list[Project]) -> str:
     """Project cards for the home page work section.
 
-    Featured projects lead; the rest follow in the same order as /work/.
+    Only `featured: true` projects appear here - the home page is a
+    highlights reel, and /work/ is the complete record. They keep the same
+    chronological order as the index so moving between the two never feels
+    like moving between two different sites.
+
+    If nothing is flagged featured, everything shows: a silently empty work
+    section on the home page would be far worse than an unfiltered one.
     """
     if not projects:
         return '<p class="section-desc">No projects published yet.</p>'
-    ordered = sorted(projects, key=lambda p: not p.featured)
-    cards = "\n".join(render_work_card(p, f"work/{p.slug}/") for p in ordered)
+
+    picked = [p for p in projects if p.featured]
+    if not picked:
+        print("  WARN no featured projects; home page is showing all of them")
+        picked = projects
+
+    cards = "\n".join(render_work_card(p, f"work/{p.slug}/") for p in picked)
     return f'<div class="work-grid">\n{cards}\n      </div>'
 
 
@@ -870,7 +891,7 @@ def render_project_page(proj: Project) -> str:
       <nav class="crumbs">
         <a href="../../">Home</a>
         <span>/</span>
-        <a href="../">Work</a>
+        <a href="../">Portfolio</a>
         <span>/</span>
         <span class="crumb-current">{esc(proj.client or proj.title)}</span>
       </nav>
@@ -947,7 +968,7 @@ def render_project_page(proj: Project) -> str:
 
     parts.append("""
     <div class="proj-nav">
-      <a href="../" class="proj-nav-btn">&larr; All Work</a>
+      <a href="../" class="proj-nav-btn">&larr; Full Portfolio</a>
       <a href="../../#contact" class="proj-nav-btn proj-nav-cta">Get In Touch</a>
     </div>
   </main>
@@ -959,7 +980,8 @@ def render_project_page(proj: Project) -> str:
 def render_work_index(projects: list[Project]) -> str:
     cats = sorted({p.category for p in projects})
     desc = (
-        f"Selected design, branding, packaging, and marketing projects by {OWNER}."
+        f"Every published project by {OWNER}, in order from earliest to "
+        "most recent - design, branding, packaging, marketing and photography."
     )
 
     parts = [
@@ -1003,9 +1025,9 @@ def render_work_index(projects: list[Project]) -> str:
       <nav class="crumbs">
         <a href="../">Home</a>
         <span>/</span>
-        <span class="crumb-current">Work</span>
+        <span class="crumb-current">Portfolio</span>
       </nav>
-      <h1 class="work-title">Work</h1>
+      <h1 class="work-title">Full Portfolio</h1>
       <p class="work-sub">{esc(desc)}</p>
       {division_ui}
       <input type="search" id="work-search" class="work-search"
@@ -1184,8 +1206,11 @@ def main() -> int:
             if proj:
                 projects.append(proj)
 
-    # Featured first, then newest, then alphabetical by client.
-    projects.sort(key=lambda p: (not p.featured, -int(p.year or 0), p.client.lower()))
+    # Chronological, earliest first. The full index is meant to be read as
+    # a progression - how the work and the style developed - so date order
+    # beats any ranking by importance. Undated work sorts last rather than
+    # silently landing in 1970.
+    projects.sort(key=lambda p: (p.sort_year, p.client.lower(), p.title.lower()))
 
     work_dir = DIST / "work"
     work_dir.mkdir(parents=True, exist_ok=True)
