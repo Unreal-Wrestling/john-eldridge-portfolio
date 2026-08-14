@@ -7,10 +7,10 @@
     the Git repo. Pushing to GitHub does NOT deploy the site. This script is
     the only thing that publishes changes.
 
-    The .mp4 files in this folder are local masters. They are not referenced
-    by the site (videos are YouTube embeds) and one is 160 MB, far over
-    Cloudflare's 25 MiB per-file limit. So we stage only the web files into a
-    temp folder and deploy that, rather than deploying the project folder.
+    Runs build.py first, which generates the deployable site into dist/:
+    the legacy single-page site plus a generated page per project under
+    /work/. Only dist/ is uploaded, so the .mp4 masters (one is 160 MB, far
+    over Cloudflare's 25 MiB per-file limit) can never reach the CDN.
 
     NOTE: keep this file ASCII-only. Windows PowerShell 5.1 reads .ps1 as
     ANSI, and non-ASCII characters break string parsing.
@@ -43,37 +43,16 @@ $Branch = if ($Preview) { 'preview' } else { 'main' }
 $Root = $PSScriptRoot
 Push-Location $Root
 try {
-    # -- Stage only what the site actually needs ----------------------
-    $Stage = Join-Path $env:TEMP 'portfolio-deploy'
-    if (Test-Path $Stage) { Remove-Item $Stage -Recurse -Force }
-    New-Item -ItemType Directory -Path $Stage | Out-Null
+    # -- Build ------------------------------------------------------
+    # build.py resizes images, enforces the 25 MiB and 20,000-file
+    # ceilings, and fails non-zero rather than letting a bad upload start.
+    $Stage = Join-Path $Root 'dist'
 
-    Copy-Item -Path (Join-Path $Root 'index.html') -Destination $Stage
-    Copy-Item -Path (Join-Path $Root 'styles.css') -Destination $Stage
-    Copy-Item -Path (Join-Path $Root 'script.js')  -Destination $Stage
-    Copy-Item -Path (Join-Path $Root '*.png')      -Destination $Stage
-
-    $Files   = Get-ChildItem $Stage -File
-    $TotalMB = [math]::Round((($Files | Measure-Object Length -Sum).Sum / 1MB), 2)
-    $MaxMB   = [math]::Round((($Files | Measure-Object Length -Maximum).Maximum / 1MB), 2)
-
-    Write-Host ""
-    Write-Host "  Staged $($Files.Count) files - $TotalMB MB total, largest $MaxMB MB" -ForegroundColor Cyan
-
-    # Cloudflare Pages rejects any single file over 25 MiB.
-    $TooBig = $Files | Where-Object { $_.Length -gt 25MB }
-    if ($TooBig) {
-        Write-Host ""
-        Write-Host "  ERROR: these files exceed Cloudflare's 25 MiB limit:" -ForegroundColor Red
-        foreach ($f in $TooBig) {
-            $fMB = [math]::Round($f.Length / 1MB, 2)
-            Write-Host "    $($f.Name) - $fMB MB" -ForegroundColor Red
-        }
-        throw "Aborting: oversized files would fail the upload."
-    }
+    python (Join-Path $Root 'build.py')
+    if ($LASTEXITCODE -ne 0) { throw "build.py failed with code $LASTEXITCODE" }
 
     if (-not (Test-Path (Join-Path $Stage 'index.html'))) {
-        throw "Aborting: index.html missing from the staged folder."
+        throw "Aborting: dist/index.html missing - the build did not complete."
     }
 
     # -- Deploy ------------------------------------------------------
@@ -104,7 +83,8 @@ try {
             @{ Label = 'lightbox caption'; Pattern = 'id="lightbox-caption"'; Expect = $true  },
             @{ Label = 'mobile nav';       Pattern = 'id="mobile-nav"';      Expect = $true  },
             @{ Label = 'name spelling';    Pattern = 'Eldrige';              Expect = $false },
-            @{ Label = 'no old client';    Pattern = 'Remedy';               Expect = $false }
+            @{ Label = 'no old client';    Pattern = 'Remedy';               Expect = $false },
+            @{ Label = 'work section link'; Pattern = 'href="/work/"';       Expect = $true  }
         )
 
         $failed = 0
@@ -117,6 +97,22 @@ try {
                 Write-Host "    FAIL $($c.Label)" -ForegroundColor Red
                 $failed++
             }
+        }
+
+        # The generated project index is a separate page, so check it too.
+        try {
+            $workHtml = (Invoke-WebRequest "$LiveUrl`work/?cb=$bust" -UseBasicParsing).Content
+            if ($workHtml -match 'id="work-grid"') {
+                Write-Host "    OK   /work/ project index" -ForegroundColor Green
+            }
+            else {
+                Write-Host "    FAIL /work/ project index" -ForegroundColor Red
+                $failed++
+            }
+        }
+        catch {
+            Write-Host "    FAIL /work/ did not respond" -ForegroundColor Red
+            $failed++
         }
 
         Write-Host ""
