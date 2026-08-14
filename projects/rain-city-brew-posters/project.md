@@ -12,7 +12,7 @@ tags: poster, print, label, event, beverage, illustration
 summary: Posters for two nights of the brewery's Beer As Art competition series, and the label for a spiced pale amber brewed by one of the owners.
 images:
   01-stashebash-poster.jpg: 'Stache Bash 2012 — homebrew competition and art show, November 2012
-  02-brews-of-anime-poster.jpg: Brews of Anime — the follow-up event, April 2013
+  02-brews-of-anime-poster.jpg: Brews of Anime — the follow-up event, April 2013. Center patch illustration by Rob Pascual; poster design and layout by John Eldridge
   03-wild-eyed-joker-label.png: Wild-Eyed Joker — label for a spiced pale amber brewed by co-owner Troy Lancaster
 ---
 
@@ -31,9 +31,14 @@ own theme.
 [[01-stashebash-poster.jpg]]
 
 Brews of Anime was the following April, themed on cartoon and anime
-characters. That one I went louder on: a club patch on the back of a black
-leather jacket, copy running up the right-hand side, entry price and the
-21+ line worked into the patch layout instead of parked in a corner.
+characters. Rob Pascual drew the club patch at the center of it, and it's a
+great piece of work. My job was the poster around it.
+
+I put the patch where it would actually live, on the back of a black leather
+jacket, and built everything else off that. The Beer As Art lockup sits top
+left, the pitch runs up the right-hand side in one line, and the 21+ and
+$20 entry notes flank the patch instead of getting parked in a corner. Date
+and sponsors sit low, where a jacket hem would be.
 
 [[02-brews-of-anime-poster.jpg]]
 
