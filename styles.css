@@ -358,96 +358,6 @@ section { padding: 6rem 0; position: relative; }
 }
 .filter-btn.active .filter-count { color: var(--accent); }
 
-/* ── Gallery ─────────────────────────────────────────────── */
-.gallery {
-  columns: 3;
-  column-gap: 1.25rem;
-}
-
-.gallery-item {
-  break-inside: avoid;
-  margin-bottom: 1.25rem;
-  border-radius: var(--radius);
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  transition: var(--transition);
-}
-.gallery-item img {
-  width: 100%;
-  display: block;
-  transition: transform 0.5s ease;
-}
-.gallery-item::after {
-  content: '⤢';
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
-  width: 48px; height: 48px;
-  background: var(--accent);
-  color: var(--bg);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  opacity: 0;
-  transition: var(--transition);
-}
-.gallery-item:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-}
-.gallery-item:hover img { transform: scale(1.05); }
-.gallery-item:hover::after {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-/* Animate opacity only — transform is reserved for the hover lift */
-.gallery-item { animation: galleryFadeIn 0.35s ease both; }
-@keyframes galleryFadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.gallery-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  padding: 3rem 1.25rem 1.1rem;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.92) 65%);
-  opacity: 0;
-  transform: translateY(10px);
-  transition: var(--transition);
-  pointer-events: none;
-}
-.gallery-item:hover .gallery-caption {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.gallery-client {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-.gallery-title {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.35;
-}
-
 /* ── Video Section ───────────────────────────────────────── */
 .video-grid {
   display: grid;
@@ -568,6 +478,15 @@ section { padding: 6rem 0; position: relative; }
   transform: translateY(-3px);
   box-shadow: 0 8px 25px var(--accent-glow);
 }
+/* Location is information, not a destination. It shares the tile styling
+   so the row reads as one set, but must not invite a click. */
+.contact-item.is-static,
+.contact-item.is-static:hover {
+  border-color: var(--border);
+  transform: none;
+  box-shadow: none;
+  cursor: default;
+}
 .contact-label {
   font-size: 0.7rem;
   letter-spacing: 2px;
@@ -592,126 +511,23 @@ footer p {
   letter-spacing: 0.5px;
 }
 
-/* ── Lightbox ────────────────────────────────────────────── */
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(10px);
-  z-index: 200;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 3rem 4.75rem;
-}
-.lightbox.active { display: flex; }
-
-.lightbox-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-  max-width: 92%;
-}
-
-.lightbox img {
-  max-width: 100%;
-  max-height: 74vh;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-}
-
-.lightbox-caption {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  max-width: 760px;
-  text-align: center;
-}
-.lightbox-client {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-.lightbox-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-.lightbox-desc {
-  font-size: 0.9rem;
-  color: var(--text-dim);
-  line-height: 1.65;
-}
-
-.lightbox-close,
-.lightbox-prev,
-.lightbox-next {
-  position: absolute;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  color: var(--text);
-  width: 48px; height: 48px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition);
-  z-index: 1;
-}
-.lightbox-close:hover,
-.lightbox-prev:hover,
-.lightbox-next:hover {
-  background: var(--accent);
-  color: var(--bg);
-  border-color: var(--accent);
-}
-.lightbox-close { top: 1.5rem; right: 1.5rem; }
-.lightbox-prev { left: 1.5rem; top: 50%; transform: translateY(-50%); }
-.lightbox-next { right: 1.5rem; top: 50%; transform: translateY(-50%); }
-
-.lightbox-counter {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--text-dim);
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-}
-
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .value-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery { columns: 2; }
   .video-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
   .skills-grid { grid-template-columns: 1fr; }
   .value-grid { grid-template-columns: 1fr; }
-  .gallery { columns: 1; }
   .contact-card { padding: 2.5rem 1.5rem; }
   .contact-item { min-width: auto; width: 100%; }
   section { padding: 4rem 0; }
   .container { padding: 0 1rem; }
 
   .filter-btn { padding: 0.5rem 1rem; font-size: 0.7rem; }
-
-  .lightbox { padding: 1rem 1rem 4rem; }
-  .lightbox-inner { max-width: 100%; gap: 0.9rem; }
-  .lightbox img { max-height: 55vh; }
-  .lightbox-desc { font-size: 0.82rem; }
-
-  /* Captions can't be hovered on touch — always show them */
-  .gallery-caption { opacity: 1; transform: none; }
 }
 
 /* ── Mobile Nav ──────────────────────────────────────────── */
