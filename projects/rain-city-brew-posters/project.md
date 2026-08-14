@@ -18,7 +18,7 @@ images:
 photos:
   01-sb-poster-on-easel.jpg: The 'Stache Bash poster on the door at the Seattle Creative Arts Center, November 2012
   02-sb-room.jpg: 'Stache Bash, November 2012 — the room at capacity
-  03-sb-mustache-cutouts.jpg: Mustache cutouts from the poster artwork, cut down for table props
+  03-sb-crowd.jpg: 'Stache Bash attendees, November 2012
   04-sb-stickers.jpg: Guests wearing the mustache mark
   05-sb-scorecard.jpg: Judging underway
   06-sb-pour.jpg: Pouring a competition entry
@@ -27,12 +27,12 @@ photos:
   09-sb-art-wall.jpg: Artists beside their pieces — artwork by the exhibiting artists
   10-sb-winner.jpg: A brewer with his bottle and its label art — label artwork by the exhibiting artist
   11-boa-room.jpg: Brews of Anime, April 2013
-  12-boa-ninkasi.jpg: Ninkasi Brewing, the event partner, pouring alongside the competition
+  12-boa-tasting.jpg: Brews of Anime — tasting and judging, April 2013
   13-boa-merch.jpg: Event shirts on the wall
   14-boa-table-pour.jpg: Pouring an entry for judging
   15-boa-pour.jpg: Brews of Anime — a dark entry going into the glass
   16-boa-cheers.jpg: Tasting glasses, Brews of Anime
-  17-boa-swag.jpg: Handing out prizes
+  17-boa-entries.jpg: Competition entries lined up for tasting, Brews of Anime
   18-boa-group.jpg: Guests at Brews of Anime
   19-boa-staff.jpg: The crew at the end of the night
   20-boa-backstage.jpg: Packing down after the event
