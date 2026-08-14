@@ -92,6 +92,9 @@ title: Label & Package Design
 client: Rain City Brew
 year: 2013
 category: Packaging
+division: business
+work_type: student
+context: Coursework, Everett Community College
 tags: packaging, label, print
 featured: true
 summary: One line, shown on the index card.
@@ -105,9 +108,44 @@ Body copy. `## ` makes a heading, `- ` makes a bullet.
 Then `npm run deploy`. No Illustrator, no site code. Add `status: draft`
 to keep a project out of the build until it's ready.
 
-The build resizes every image to full (1800px) and thumb (800px) variants,
-and **fails** if any file exceeds 25 MiB or the site exceeds 20,000 files —
-the two Cloudflare Pages limits.
+### The three axes
+
+Each answers a different question, and all three are optional.
+
+| Field | Values | Purpose |
+|-------|--------|---------|
+| `division` | `business` (default), `arts` | Top-level toggle on `/work/`. Deep-link with `/work/?type=arts` |
+| `category` | free text | Secondary filter — Packaging, Branding, Print… |
+| `work_type` | `client` (default), `student`, `competition`, `self`, `volunteer` | Honesty badge |
+
+The toggle only appears once **both** divisions have at least one project.
+
+### Labelling non-client work
+
+Anything that isn't `work_type: client` gets a badge plus a **generated**
+disclaimer above the write-up, e.g.
+
+> Self-directed student project. Rain City Brew was not a client and did
+> not commission this work. Coursework, Everett Community College.
+
+It is generated rather than hand-written so it can't be forgotten or drift
+out of sync with the badge. `context:` appends the where/when.
+
+`outcome:` is a free-text line for a **verifiable** result — an exhibition
+selection, a placing. Leave it empty otherwise; entering a competition is
+not a result, and an empty field renders nothing.
+
+### Images
+
+Images are only ever **downscaled** — to full (max 1800px) and thumb
+(max 800px) variants, aspect ratio preserved exactly. Anything already
+narrower is left at native size, and no figure is ever displayed wider
+than its true pixel width, so small logos aren't blown up. Images under
+700px wide and images taller than 1.35× their width get narrower display
+caps automatically. No manual sizing needed.
+
+The build **fails** if any file exceeds 25 MiB or the site exceeds 20,000
+files — the two Cloudflare Pages limits.
 
 Source assets for the back catalog live in
 `d:\Work\Inkboard Design\Client Folder` (82 clients). Those folders mix

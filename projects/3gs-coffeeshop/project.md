@@ -3,6 +3,9 @@ title: Logo, Menu & Loyalty Program
 client: 3G's Coffeeshop
 year: 2015
 category: Branding & Identity
+division: business
+work_type: student
+context: Coursework, Everett Community College
 tags: logo, menu, print, loyalty, hospitality
 featured: true
 summary: Seaside identity for a family-run Westport coffeeshop, extended into menus and a loyalty coupon program.

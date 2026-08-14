@@ -69,6 +69,28 @@ class ProjectImage:
     full_rel: str
     thumb_rel: str
     caption: str = ""
+    width: int = 0
+    height: int = 0
+    shape: str = "wide"  # wide | tall | small - drives display width
+
+
+# Primary split. Employers in these two worlds want to see different
+# halves of the portfolio, so this is the top-level toggle on /work/.
+DIVISIONS = {
+    "business": "Business",
+    "arts": "Arts &amp; Entertainment",
+}
+
+# How the work came about. This is a separate question from what kind of
+# design it is, and it must always be stated honestly - overstating spec
+# or student work as client work is the fastest way to lose credibility.
+WORK_TYPES = {
+    "client": "",  # the default; no badge needed
+    "student": "Student Project",
+    "competition": "Design Competition",
+    "self": "Self-Initiated",
+    "volunteer": "Volunteer / Pro Bono",
+}
 
 
 @dataclass
@@ -78,6 +100,10 @@ class Project:
     client: str = ""
     year: str = ""
     category: str = "Uncategorized"
+    division: str = "business"
+    work_type: str = "client"
+    context: str = ""  # e.g. "Everett Community College, 2015"
+    outcome: str = ""  # e.g. "1st place, 200 entries"
     summary: str = ""
     tags: list[str] = field(default_factory=list)
     featured: bool = False
@@ -91,6 +117,45 @@ class Project:
     @property
     def heading(self) -> str:
         return f"{self.client} - {self.title}" if self.client else self.title
+
+    @property
+    def division_label(self) -> str:
+        return DIVISIONS.get(self.division, DIVISIONS["business"])
+
+    @property
+    def type_label(self) -> str:
+        return WORK_TYPES.get(self.work_type, "")
+
+    @property
+    def disclaimer(self) -> str:
+        """Generated, not hand-written, so it can never be forgotten.
+
+        Any project that was not commissioned says so plainly, on the page
+        itself, near the top.
+        """
+        if self.work_type == "client":
+            return ""
+
+        who = self.client or "The brand shown"
+        base = {
+            "student": (
+                f"Self-directed student project. {who} was not a client and "
+                "did not commission this work."
+            ),
+            "competition": (
+                f"Created as a competition entry. {who} was not a client and "
+                "did not commission this work."
+            ),
+            "self": (
+                f"Self-initiated concept work. {who} was not a client and did "
+                "not commission this work."
+            ),
+            "volunteer": "Completed on a volunteer / pro bono basis.",
+        }.get(self.work_type, "")
+
+        if self.context:
+            base = f"{base} {self.context}." if base else f"{self.context}."
+        return base
 
 
 # ── Parsing ───────────────────────────────────────────────────────────
@@ -188,12 +253,38 @@ def load_project(folder: Path) -> Project | None:
     title = meta.get("title") or folder.name.replace("-", " ").title()
     tags = [t.strip() for t in meta.get("tags", "").split(",") if t.strip()]
 
+    division = meta.get("division", "").strip().lower()
+    if division in ("arts", "art", "entertainment", "arts & entertainment"):
+        division = "arts"
+    elif division in ("business", "commercial", "corporate"):
+        division = "business"
+    else:
+        if division:
+            print(f"  WARN {folder.name}: unknown division '{division}', using business")
+        division = "business"
+
+    work_type = meta.get("work_type", meta.get("type", "")).strip().lower()
+    if work_type in ("contest", "competition"):
+        work_type = "competition"
+    elif work_type in ("self", "self-initiated", "spec", "concept"):
+        work_type = "self"
+    elif work_type in ("volunteer", "probono", "pro bono"):
+        work_type = "volunteer"
+    elif work_type not in WORK_TYPES:
+        if work_type:
+            print(f"  WARN {folder.name}: unknown work_type '{work_type}', using client")
+        work_type = "client"
+
     proj = Project(
         slug=folder.name,
         title=title,
         client=meta.get("client", ""),
         year=meta.get("year", ""),
         category=meta.get("category", "Uncategorized"),
+        division=division,
+        work_type=work_type,
+        context=meta.get("context", ""),
+        outcome=meta.get("outcome", ""),
         summary=meta.get("summary", ""),
         tags=tags,
         featured=meta.get("featured", "").lower() in ("true", "yes", "1"),
@@ -223,7 +314,13 @@ def load_project(folder: Path) -> Project | None:
 # ── Images ────────────────────────────────────────────────────────────
 
 
-def resize_to(src: Path, dest: Path, max_w: int) -> None:
+def resize_to(src: Path, dest: Path, max_w: int) -> tuple[int, int]:
+    """Downscale to fit max_w and return the written size.
+
+    Only ever shrinks. Aspect ratio is preserved exactly, and images
+    narrower than max_w are left at their native size - upscaling a small
+    logo to poster width would just make it blurry.
+    """
     dest.parent.mkdir(parents=True, exist_ok=True)
     with Image.open(src) as im:
         has_alpha = im.mode in ("RGBA", "LA", "P") and "transparency" in im.info
@@ -240,11 +337,28 @@ def resize_to(src: Path, dest: Path, max_w: int) -> None:
                 im = im.convert("RGB")
             im.save(dest, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
 
+        return im.size
+
+
+def classify_shape(w: int, h: int) -> str:
+    """Pick a display treatment from the image's real proportions.
+
+    A logo and a tall event poster should not occupy the same width on the
+    page just because they are both 'images'.
+    """
+    if w < 700:
+        return "small"
+    if h and h / w > 1.35:
+        return "tall"
+    return "wide"
+
 
 def build_images(proj: Project, out_dir: Path) -> None:
     for image in proj.images:
-        resize_to(image.src, out_dir / image.full_rel, FULL_MAX_W)
+        w, h = resize_to(image.src, out_dir / image.full_rel, FULL_MAX_W)
         resize_to(image.src, out_dir / image.thumb_rel, THUMB_MAX_W)
+        image.width, image.height = w, h
+        image.shape = classify_shape(w, h)
 
 
 # ── HTML ──────────────────────────────────────────────────────────────
@@ -305,6 +419,24 @@ def render_project_page(proj: Project) -> str:
     ]
 
     meta_bits = [b for b in (proj.category, proj.year) if b]
+
+    # Non-client work is badged in the header and disclaimed above the
+    # write-up. Both are generated, so they can't be omitted by accident.
+    badge = (
+        f'<span class="proj-badge proj-badge-{proj.work_type}">'
+        f'{esc(proj.type_label)}</span>'
+        if proj.type_label
+        else ""
+    )
+    outcome = (
+        f'<p class="proj-outcome">{esc(proj.outcome)}</p>' if proj.outcome else ""
+    )
+    disclaimer = (
+        f'<p class="proj-disclaimer">{esc(proj.disclaimer)}</p>'
+        if proj.disclaimer
+        else ""
+    )
+
     parts.append(f"""
   <header class="proj-header">
     <div class="container">
@@ -315,9 +447,11 @@ def render_project_page(proj: Project) -> str:
         <span>/</span>
         <span class="crumb-current">{esc(proj.client or proj.title)}</span>
       </nav>
+      {badge}
       {f'<p class="proj-client">{esc(proj.client)}</p>' if proj.client else ''}
       <h1 class="proj-title">{esc(proj.title)}</h1>
       {f'<p class="proj-summary">{esc(proj.summary)}</p>' if proj.summary else ''}
+      {outcome}
       <div class="proj-meta">
         {''.join(f'<span class="proj-meta-item">{esc(b)}</span>' for b in meta_bits)}
       </div>
@@ -326,6 +460,7 @@ def render_project_page(proj: Project) -> str:
 
   <main class="container proj-main">
     <div class="proj-body">
+      {disclaimer}
       {proj.body_html}
       {('<div class="proj-tags">' + ''.join(f'<span class="proj-tag">{esc(t)}</span>' for t in proj.tags) + '</div>') if proj.tags else ''}
     </div>
@@ -339,9 +474,17 @@ def render_project_page(proj: Project) -> str:
             )
             # First image is above the fold; the rest can load lazily.
             loading = "eager" if i == 0 else "lazy"
-            parts.append(f"""      <figure class="proj-figure">
+            # Cap the figure at the image's true width so nothing is ever
+            # scaled up past its native resolution.
+            cap_px = f' style="max-width:{image.width}px"' if image.width else ""
+            dims = (
+                f' width="{image.width}" height="{image.height}"'
+                if image.width and image.height
+                else ""
+            )
+            parts.append(f"""      <figure class="proj-figure is-{image.shape}"{cap_px}>
         <a href="{image.full_rel}" target="_blank" rel="noopener">
-          <img src="{image.thumb_rel}" alt="{esc(image.caption or proj.heading)}" loading="{loading}">
+          <img src="{image.thumb_rel}" alt="{esc(image.caption or proj.heading)}"{dims} loading="{loading}">
         </a>
         {cap}
       </figure>""")
@@ -382,6 +525,23 @@ def render_work_index(projects: list[Project]) -> str:
             f'{esc(c)} <span class="filter-count">{n}</span></button>'
         )
 
+    # Primary split, above the category filters. Only rendered once both
+    # halves actually have work in them - a toggle with an empty side
+    # just looks broken.
+    divs = [d for d in DIVISIONS if any(p.division == d for p in projects)]
+    if len(divs) > 1:
+        btns = ['<button type="button" class="div-btn active" data-div="all">'
+                'All Work</button>']
+        for d in divs:
+            n = sum(1 for p in projects if p.division == d)
+            btns.append(
+                f'<button type="button" class="div-btn" data-div="{d}">'
+                f'{DIVISIONS[d]} <span class="filter-count">{n}</span></button>'
+            )
+        division_ui = f'<div class="division-toggle">{"".join(btns)}</div>'
+    else:
+        division_ui = ""
+
     parts.append(f"""
   <header class="work-header">
     <div class="container">
@@ -392,6 +552,7 @@ def render_work_index(projects: list[Project]) -> str:
       </nav>
       <h1 class="work-title">Work</h1>
       <p class="work-sub">{esc(desc)}</p>
+      {division_ui}
       <input type="search" id="work-search" class="work-search"
              placeholder="Search by client, project, or tag..."
              aria-label="Search projects">
@@ -414,9 +575,17 @@ def render_work_index(projects: list[Project]) -> str:
             if thumb
             else '<div class="work-card-noimg">No image</div>'
         )
+        # Badge the card too, so the nature of the work is clear before
+        # anyone clicks through.
+        card_badge = (
+            f'<span class="work-card-badge">{esc(p.type_label)}</span>'
+            if p.type_label
+            else ""
+        )
         parts.append(f"""      <a class="work-card" href="{p.slug}/"
-         data-cat="{esc(p.category)}" data-search="{esc(haystack)}">
-        <div class="work-card-img">{img}</div>
+         data-cat="{esc(p.category)}" data-div="{p.division}"
+         data-search="{esc(haystack)}">
+        <div class="work-card-img">{img}{card_badge}</div>
         <div class="work-card-info">
           {f'<span class="work-card-client">{esc(p.client)}</span>' if p.client else ''}
           <h2 class="work-card-title">{esc(p.title)}</h2>
@@ -435,10 +604,16 @@ def render_work_index(projects: list[Project]) -> str:
     (function () {
       var cards    = Array.prototype.slice.call(document.querySelectorAll('.work-card'));
       var buttons  = Array.prototype.slice.call(document.querySelectorAll('.filter-btn'));
+      var divBtns  = Array.prototype.slice.call(document.querySelectorAll('.div-btn'));
       var search   = document.getElementById('work-search');
       var countEl  = document.getElementById('work-count');
       var emptyEl  = document.getElementById('work-empty');
       var activeCat = 'all';
+      var activeDiv = 'all';
+
+      function inDiv(card) {
+        return activeDiv === 'all' || card.dataset.div === activeDiv;
+      }
 
       function apply() {
         var q = search.value.trim().toLowerCase();
@@ -446,12 +621,45 @@ def render_work_index(projects: list[Project]) -> str:
         cards.forEach(function (card) {
           var okCat = activeCat === 'all' || card.dataset.cat === activeCat;
           var okQ   = !q || card.dataset.search.indexOf(q) !== -1;
-          var show  = okCat && okQ;
+          var show  = inDiv(card) && okCat && okQ;
           card.hidden = !show;
           if (show) shown++;
         });
+
+        // Category filters are scoped to the active division, so switching
+        // to Arts doesn't leave dead Business-only categories on screen.
+        buttons.forEach(function (btn) {
+          var cat = btn.dataset.cat;
+          if (cat === 'all') { btn.hidden = false; return; }
+          var n = cards.filter(function (c) {
+            return inDiv(c) && c.dataset.cat === cat;
+          }).length;
+          btn.hidden = n === 0;
+          var badge = btn.querySelector('.filter-count');
+          if (badge) badge.textContent = n;
+        });
+
         countEl.textContent = shown + (shown === 1 ? ' project' : ' projects');
         emptyEl.hidden = shown !== 0;
+      }
+
+      function setDivision(name, push) {
+        activeDiv = name;
+        divBtns.forEach(function (b) {
+          b.classList.toggle('active', b.dataset.div === name);
+        });
+        // Reset the category when switching sides; the previous one may
+        // not exist over here.
+        activeCat = 'all';
+        buttons.forEach(function (b) {
+          b.classList.toggle('active', b.dataset.cat === 'all');
+        });
+        if (push && window.history.replaceState) {
+          var url = name === 'all' ? location.pathname
+                                   : location.pathname + '?type=' + name;
+          history.replaceState(null, '', url);
+        }
+        apply();
       }
 
       buttons.forEach(function (btn) {
@@ -461,8 +669,21 @@ def render_work_index(projects: list[Project]) -> str:
           apply();
         });
       });
+      divBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setDivision(btn.dataset.div, true);
+        });
+      });
       search.addEventListener('input', apply);
-      apply();
+
+      // Support /work/?type=business so a single link can open straight
+      // into the relevant half of the portfolio.
+      var wanted = new URLSearchParams(location.search).get('type');
+      if (wanted && divBtns.some(function (b) { return b.dataset.div === wanted; })) {
+        setDivision(wanted, false);
+      } else {
+        apply();
+      }
     })();
   </script>
 """)
