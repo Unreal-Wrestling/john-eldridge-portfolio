@@ -36,7 +36,7 @@ from datetime import date
 from pathlib import Path
 
 try:
-    from PIL import Image
+    from PIL import Image, ImageOps
 except ImportError:
     sys.exit("Pillow is required:  pip install Pillow")
 
@@ -504,6 +504,10 @@ def resize_to(src: Path, dest: Path, max_w: int) -> tuple[int, int]:
     """
     dest.parent.mkdir(parents=True, exist_ok=True)
     with Image.open(src) as im:
+        # Apply camera orientation before anything else. Without this, a
+        # portrait photo tagged orientation=8 ships sideways - the pixels
+        # are landscape, the EXIF flag says rotate, and we were ignoring it.
+        im = ImageOps.exif_transpose(im)
         has_alpha = im.mode in ("RGBA", "LA", "P") and "transparency" in im.info
         if im.width > max_w:
             ratio = max_w / im.width
