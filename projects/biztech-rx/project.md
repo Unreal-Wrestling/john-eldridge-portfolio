@@ -7,7 +7,7 @@ division: business
 work_type: client
 role: Creative Director
 context: Contract
-team: B. Robertson, B. Pollett, S. Odell
+team: Brandon Robertson, Bryce Pollett, Sabrina Odell
 tags: logo, identity, collateral, email, print, b2b
 featured: true
 summary: Full identity rollout for a B2B services firm, from logo through mailers, email banners, and operational forms.
