@@ -581,6 +581,39 @@ def render_work_card(p: Project, href: str) -> str:
       </a>"""
 
 
+def render_404() -> str:
+    """Without this, Cloudflare Pages answers every unmatched path with the
+    home page at HTTP 200, so a mistyped project link looks like it worked
+    and search engines index junk URLs as real pages."""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found &mdash; {esc(OWNER)}</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/work.css">
+</head>
+<body>
+  <header class="work-header">
+    <div class="container">
+      <h1 class="work-title">Page not found</h1>
+      <p class="work-sub">That page doesn't exist, or it moved.</p>
+      <div class="gallery-filters">
+        <a class="filter-btn" href="/">Home</a>
+        <a class="filter-btn" href="/work/">All work</a>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
+"""
+
+
 def render_home_cards(projects: list[Project]) -> str:
     """Project cards for the home page work section.
 
@@ -1024,6 +1057,7 @@ def main() -> int:
     copy_legacy(projects)
 
     (work_dir / "index.html").write_text(render_work_index(projects), encoding="utf-8")
+    (DIST / "404.html").write_text(render_404(), encoding="utf-8")
     (DIST / "sitemap.xml").write_text(render_sitemap(projects), encoding="utf-8")
     (DIST / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n", encoding="utf-8"
