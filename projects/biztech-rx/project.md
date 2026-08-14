@@ -7,14 +7,14 @@ division: business
 work_type: client
 role: Creative Director & Team Lead
 context: Contract
-team: Brandon Robertson, Bryce Pollett, Sabrina Odell, Eugene Capone
+team: Brandon Robertson, Bryce Pollett, Eugene Capone, Sabrina Odell
 tags: logo, identity, collateral, email, print, b2b
 featured: true
 summary: Full identity rollout for a B2B services firm, from logo through mailers, email banners, and operational forms.
 images:
   01-logo.jpg [small]: Primary logo
   02-logo-sting.mp4: Animated logo sting, built from the mark by Bryce Pollett
-  03-identity-overview.jpg: Identity system applied across print and digital collateral — elements by Brandon Robertson, Sabrina Odell, and Eugene Capone
+  03-identity-overview.jpg: Identity system applied across print and digital collateral — elements by Brandon Robertson, Eugene Capone, and Sabrina Odell
   04-email-banner.jpg: Email banner, one of a set of ten variations
   05-application-form.jpg: Employment application form
 ---
