@@ -439,7 +439,10 @@
    width, so nothing is ever scaled up past its true resolution. These
    classes narrow it further where full width would look wrong. */
 .proj-figure {
-  margin: 0 auto;
+  /* Left aligned, not centred. Body copy runs to a 680px measure from
+     the left edge, and a centred figure below it breaks the alignment
+     and reads as unrelated to the paragraph that introduces it. */
+  margin: 0;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
