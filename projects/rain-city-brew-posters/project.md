@@ -1,7 +1,7 @@
 ---
 title: Beer As Art — Posters, Label & Event Photography
 client: Rain City Brew
-year: 2013
+year: 2012-2013
 category: Event Design
 division: business
 work_type: internship

@@ -167,6 +167,17 @@ class Project:
         return int(m.group()) if m else 9999
 
     @property
+    def sort_end_year(self) -> int:
+        """Last four-digit year in the field, for breaking ties.
+
+        A project confined to 2012 should sort ahead of one running
+        2012-2013, so a range never jumps in front of the work that led
+        to it.
+        """
+        years = re.findall(r"\d{4}", self.year or "")
+        return int(years[-1]) if years else 9999
+
+    @property
     def division_label(self) -> str:
         return DIVISIONS.get(self.division, DIVISIONS["business"])
 
@@ -1210,7 +1221,9 @@ def main() -> int:
     # a progression - how the work and the style developed - so date order
     # beats any ranking by importance. Undated work sorts last rather than
     # silently landing in 1970.
-    projects.sort(key=lambda p: (p.sort_year, p.client.lower(), p.title.lower()))
+    projects.sort(
+        key=lambda p: (p.sort_year, p.sort_end_year, p.client.lower(), p.title.lower())
+    )
 
     work_dir = DIST / "work"
     work_dir.mkdir(parents=True, exist_ok=True)
