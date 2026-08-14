@@ -340,7 +340,8 @@ def render_youtube_embed(url: str, caption: str) -> str:
         '  <div class="video-frame">\n'
         f'    <iframe src="https://www.youtube.com/embed/{video_id}" '
         f'title="{esc(label)}" loading="lazy" allowfullscreen\n'
-        '            referrerpolicy="no-referrer"></iframe>\n'
+        '            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"\n'
+        '            referrerpolicy="strict-origin-when-cross-origin"></iframe>\n'
         "  </div>\n"
         f'  <figcaption>{esc(label)} '
         f'<a href="{esc(url)}" target="_blank" rel="noopener">Watch on YouTube &rarr;</a>'
@@ -554,7 +555,7 @@ def load_project(folder: Path) -> Project | None:
     photo_blocks_meta = meta.get("_photo_blocks", {})
     for block_name, captions in photo_blocks_meta.items():
         block_photos: list[ProjectImage] = []
-        for fname in sorted(captions.keys()):
+        for fname in captions:
             img_path = photo_dir / fname
             if not img_path.exists():
                 print(f"  WARN {folder.name}: photo '{fname}' not found in photos/")
@@ -920,8 +921,10 @@ def render_slideshow(proj: Project, photos: list[ProjectImage] | None = None,
         )
         slides.append(
             f'        <figure class="slide" data-i="{i}">\n'
-            f'          <img src="{photo.thumb_rel}" alt="{esc(photo.caption or proj.heading)}"'
+            f'          <div class="slide-frame">\n'
+            f'            <img src="{photo.thumb_rel}" alt="{esc(photo.caption or proj.heading)}"'
             f'{dims} loading="{"eager" if i == 0 else "lazy"}">\n'
+            f"          </div>\n"
             f"          {cap}\n"
             f"        </figure>"
         )
@@ -1167,7 +1170,13 @@ def render_project_page(proj: Project) -> str:
                 block_name = segment
                 if block_name:
                     photos = proj.photo_blocks.get(block_name, [])
-                    grid_cls = "proj-grid-wide" if segments[i + 1] == "wide" else ""
+                    mod = segments[i + 1]
+                    if mod == "wide":
+                        grid_cls = "proj-grid-wide"
+                    elif mod == "med":
+                        grid_cls = "proj-grid-med"
+                    else:
+                        grid_cls = ""
                     seg_parts.append(render_grid(proj, photos, block_name, grid_cls=grid_cls))
                     seg_photos_placed = True
                 continue

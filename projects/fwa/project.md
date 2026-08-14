@@ -20,13 +20,13 @@ images:
   04-twitter-cover.png: Twitter cover image — social media branding
   05-youtube-cover.png: YouTube cover image — social media branding
   06-patreon-header.jpg: Patreon page header — branded cover image
-  11-eoya-layout-1.png: Year End Awards — magazine spread layout
-  12-eoya-layout-2.png: Year End Awards — secondary spread layout
-  13-eoya-2022-header.png: Year End Awards 2022 — custom header design
-  14-commish-dcw.png: Commissioner Report — DCW promotion, multi-page layout
-  15-commish-nxt.jpg: Commissioner Report — NXT promotion, multi-page layout
-  16-howto-1.jpg: How To Manual — page 1, illustrated game guide
-  17-howto-2.jpg: How To Manual — page 2, illustrated game guide
+  11-eoya-layout-1.png [thumb-only]: Year End Awards — magazine spread layout
+  12-eoya-layout-2.png [thumb-only]: Year End Awards — secondary spread layout
+  13-eoya-2022-header.png [thumb-only]: Year End Awards 2022 — custom header design
+  14-commish-dcw.png [thumb-only]: Commissioner Report — DCW
+  15-commish-nxt.jpg [thumb-only]: Commissioner Report — NXT
+  16-howto-1.jpg [thumb-only]: How To Manual — page 1
+  17-howto-2.jpg [thumb-only]: How To Manual — page 2
 photos-brand-core:
   01-brand-fwa-logo.jpg: FWA primary logo — the Fantasy Wrestling Alliance wordmark
   02-brand-fwa-mascot.jpg: FWA mascot — custom character illustration
@@ -73,6 +73,19 @@ photos-ppv-posters:
   29-ppv-deviant-behavior-2022.png: Deviant Behavior — 2022 PPV poster
   38-ppv-hell-2-pay-2022.jpg: Hell 2 Pay — 2022 PPV poster
   43-ppv-summer-heat-2022-poster.png: Summer Heat — 2022 PPV poster
+photos-commish-dcw:
+  44-commish-dcw-p1.png: DCW Commissioner Report — Page 1
+  45-commish-dcw-p2.png: DCW Commissioner Report — Page 2
+  46-commish-dcw-p3.png: DCW Commissioner Report — Page 3
+  47-commish-dcw-p4.png: DCW Commissioner Report — Page 4
+photos-commish-other:
+  48-commish-mcrw-p1.png: MCRW Commissioner Report — Front Page
+  49-commish-wccw-p1.png: WCCW Commissioner Report — Front Page
+photos-howto:
+  50-howto-p1.jpg: How To Manual — Page 1
+  51-howto-p2.jpg: How To Manual — Page 2
+  52-howto-p3.jpg: How To Manual — Page 3
+  53-howto-p4.jpg: How To Manual — Page 4
 ---
 
 FWA — Fantasy Wrestling Alliance — is the flagship product of JCMG
@@ -105,11 +118,16 @@ distinct but clearly belonged to the same universe.
 
 The rebrand extended across every platform the promotion used.
 Facebook, Twitter, YouTube, and Patreon each got custom cover
-images built from the brand system using assets in various configurations. The Patreon page received its
-own branded header and a set of tier badges — Prelim, Mid-Card,
-Mid-Card Plus, and Main Event — each tied to a subscription level.
-A promotional video ad was produced in Premiere Pro, with
-greenscreen logo composites and custom motion graphics.
+images built from the brand system using assets in various
+configurations. The Patreon page received its own branded header
+and a set of tier badges — Prelim, Mid-Card, Mid-Card Plus, and
+Main Event — each tied to a subscription level. A promotional
+video ad was produced in Adobe Premiere Pro, combining licensed
+stock footage with custom motion design graphics — logo
+composites, animated transitions, and branded overlays built
+from the FWA identity system.
+
+[[youtube:https://youtu.be/EG8ZqMG9fkY|FWA promotional video ad — Premiere Pro, custom motion graphics over licensed stock footage]]
 
 [[03-facebook-cover.png]]
 
@@ -120,8 +138,6 @@ greenscreen logo composites and custom motion graphics.
 [[06-patreon-header.jpg]]
 
 [[grid:patreon-tiers]]
-
-[[youtube:https://youtu.be/EG8ZqMG9fkY|FWA promotional video ad — Premiere Pro, greenscreen composites, motion graphics]]
 
 ## PPV Event Posters
 
@@ -164,9 +180,13 @@ rankings, character profiles, and editorial content. I designed
 layouts for DCW, NXT, MCRW, and WCCW, including custom character
 redraws, logo design, and ranking graphics.
 
-[[14-commish-dcw.png]]
+### DCW — Full Report
 
-[[15-commish-nxt.jpg]]
+[[grid:commish-dcw:med]]
+
+### Other Promotions
+
+[[grid:commish-other:med]]
 
 ## Game Design
 
@@ -175,6 +195,4 @@ How To Manual for new players. The manual was a multi-page
 illustrated guide covering game mechanics, roster management, and
 promotion rules.
 
-[[16-howto-1.jpg]]
-
-[[17-howto-2.jpg]]
+[[grid:howto:med]]

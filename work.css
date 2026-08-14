@@ -527,7 +527,7 @@
    pieces of design work above them. Wider than the copy measure: these
    are photographs, and they earn the extra width the design flats don't. */
 .proj-slideshow {
-  max-width: 760px;
+  max-width: 500px;
   margin-bottom: 3.5rem;
 }
 
@@ -572,13 +572,23 @@
   margin-top: 0;
 }
 .slide { margin: 0; }
-.slide img {
-  display: block;
+.slide-frame {
   width: 100%;
-  height: auto;
+  aspect-ratio: 7 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius, 8px);
-  background: var(--bg-card);
+  overflow: hidden;
+}
+.slide-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 .slide-cap {
   margin-top: 0.85rem;
@@ -665,6 +675,13 @@
 .proj-grid-wide .grid-tile-img {
   aspect-ratio: 7 / 5;
 }
+.proj-grid-med {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 700px;
+}
+.proj-grid-med .grid-tile-img {
+  aspect-ratio: 7 / 10;
+}
 .grid-tile {
   margin: 0;
   display: flex;
@@ -704,7 +721,7 @@
   gap: 2.5rem;
   /* Never wider than the copy. Native resolution still caps each figure
      individually, but a 1800px source should not mean an 1800px figure. */
-  max-width: var(--measure);
+  max-width: 760px;
 }
 /* Copy and figures alternate down the page, so a gallery that is
    followed by more write-up needs the same breathing room the body
@@ -732,7 +749,7 @@
    inside the measure rather than push against it. */
 .proj-figure.is-small { max-width: min(400px, 100%) !important; }
 /* Posters, flyers, vertical layouts - cap so they don't dominate. */
-.proj-figure.is-tall  { max-width: min(640px, 100%) !important; }
+.proj-figure.is-tall  { max-width: min(760px, 100%) !important; }
 /* Landscape pieces that shouldn't run the full column - motion samples,
    secondary artwork. Between a mark and a full-bleed layout. Kept
    clearly under the measure, or it would be indistinguishable from
