@@ -17,12 +17,12 @@ images:
   01-cw-logo.png [thumb-only]: Chronos World — original logo
   02-cw-header.jpg [thumb-only]: Chronos World — channel header
   03-cwe-logo.jpg [thumb-only]: Chronos World Entertainment — rebrand logo
-  04-twitch-banner.jpg: Twitch channel banner
-  05-twitch-offline.jpg: Twitch offline screen
-  06-twitch-schedule.jpg: Weekly broadcast schedule
-  07-twitch-splash.jpg: Twitch splash page
-  08-youtube-banner.jpg: YouTube channel banner
-  09-facebook-banner.jpg: Facebook page banner
+  04-twitch-banner.jpg [thumb-only]: Twitch channel banner
+  05-twitch-offline.jpg [thumb-only]: Twitch offline screen
+  06-twitch-schedule.jpg [thumb-only]: Weekly broadcast schedule
+  07-twitch-splash.jpg [thumb-only]: Twitch splash page
+  08-youtube-banner.jpg [thumb-only]: YouTube channel banner
+  09-facebook-banner.jpg [thumb-only]: Facebook page banner
   10-twitch-ad.jpg [thumb-only]: Twitch stream advertisement
   11-merch-cole.png [thumb-only]: Character merchandise — Cole t-shirt design
   12-merch-kobold.png [thumb-only]: Character merchandise — Kobold Cowboy apparel
@@ -36,6 +36,7 @@ photos-original-logo:
 photos-social-banners:
   04-social-twitch-banner.jpg: Twitch channel banner
   05-social-twitch-offline.jpg: Twitch offline screen
+  06-social-twitch-schedule.jpg: Weekly broadcast schedule
   07-social-twitch-splash.jpg: Twitch splash page
   08-social-youtube-banner.jpg: YouTube channel banner
   09-social-facebook-banner.jpg: Facebook page banner
