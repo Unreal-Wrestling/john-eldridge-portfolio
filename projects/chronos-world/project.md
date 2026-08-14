@@ -14,7 +14,7 @@ tags: logo, identity, branding, twitch, streaming, ttrpg, motion graphics, video
 sections: Brand Identity, Original Logo, Show Logos, Stream Overlays, Social Media & Streaming, Show Openers & Motion Graphics, Game Design & Production
 summary: An ambitious entertainment network project producing live TTRPG gameplay shows six days a week for Twitch and YouTube — brand identity, show intros/outros, motion graphics, social media kit, Discord community, and full production pipeline.
 images:
-  01-cw-logo.png [thumb-only]: Chronos World — original logo
+  01-cw-logo.jpg [thumb-only]: Chronos World — original logo
   02-cw-header.jpg [thumb-only]: Chronos World — channel header
   03-cwe-logo.jpg [thumb-only]: Chronos World Entertainment — rebrand logo
   04-twitch-banner.jpg [thumb-only]: Twitch channel banner
@@ -32,7 +32,7 @@ photos-brand-core:
   03-brand-cwe-logo.jpg: Chronos World Entertainment — rebrand logo
   13-brand-cw-presents.png: CW Presents — show branding mark
 photos-original-logo:
-  01-brand-cw-logo.png: Chronos World — original logo
+  01-brand-cw-logo.jpg: Chronos World — original logo
 photos-social-banners:
   04-social-twitch-banner.jpg: Twitch channel banner
   05-social-twitch-offline.jpg: Twitch offline screen
