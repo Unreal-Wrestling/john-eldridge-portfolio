@@ -1,5 +1,5 @@
 ---
-title: Crypticon — Horror Convention Design & Photography
+title: Horror Convention Design & Photography
 client: Crypticon
 year: 2012-2017
 date: 2015-01
