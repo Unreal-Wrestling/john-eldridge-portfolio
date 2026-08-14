@@ -30,9 +30,10 @@ small business owners quickly.
 
 > What piece are you missing?
 
-That line did the work a service list couldn't. It reframes an abstract
-three-part offering as a question the prospect answers about their own
-business before they have finished reading it.
+That line was the centerpiece the whole project was built on. It did the
+work a service list couldn't, reframing an abstract three-part offering
+as a question the prospect answers about their own business before they
+have finished reading it.
 
 ## Process
 
