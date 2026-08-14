@@ -81,11 +81,6 @@ I was also the photographer on both nights. Roughly 350 frames across the
 two events, covering the brewers pouring, the judging, the artwork on the
 walls and the room itself.
 
-It is a useful thing to have shot the event you designed for. The poster
-by the door, the mustache cutouts on the tables, the shirts on the wall —
-these are the only record of any of it in use, and I would not have them
-if somebody else had been holding the camera.
-
 [[photos]]
 
 The artwork and labels visible in these photographs are the work of the
