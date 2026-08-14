@@ -46,7 +46,3 @@ The identity was applied across the full set of pieces the business ran on:
 - A set of ten email banner variations
 - Vertical retractable banners for events
 - Operational paperwork, including multi-page employment application forms
-
-The banner set is worth noting. Ten variations meant the client could rotate
-creative across campaigns without coming back for new artwork each time —
-one handoff instead of ten small jobs.
