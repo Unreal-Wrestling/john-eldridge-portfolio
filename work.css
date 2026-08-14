@@ -365,6 +365,18 @@
 .proj-figure.is-tall  { max-width: min(640px, 100%) !important; }
 .proj-figure:hover { border-color: var(--accent-dim); }
 .proj-figure a { display: block; }
+
+/* Marks and wordmarks are usually supplied on white and sit awkwardly
+   when they run to the edge of the frame. Matte them instead. The
+   padding goes on the link rather than the figure so the caption stays
+   on the dark card below. */
+.proj-figure.is-small a {
+  background: #fff;
+  padding: 2.25rem 2.5rem;
+}
+@media (max-width: 600px) {
+  .proj-figure.is-small a { padding: 1.5rem 1.75rem; }
+}
 .proj-figure img {
   width: 100%;
   height: auto;
