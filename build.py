@@ -324,7 +324,7 @@ def load_project(folder: Path) -> Project | None:
             if m:
                 hint, caption = m.group(1).lower(), val
                 break
-        if hint and hint not in ("wide", "tall", "small"):
+        if hint and hint not in ("wide", "medium", "tall", "small"):
             print(f"  WARN {folder.name}: unknown shape '{hint}' on {img.name}")
             hint = ""
 

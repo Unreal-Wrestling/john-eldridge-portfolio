@@ -399,6 +399,9 @@
 .proj-figure.is-small { max-width: min(460px, 100%) !important; }
 /* Posters, flyers, vertical layouts - cap so they don't dominate. */
 .proj-figure.is-tall  { max-width: min(640px, 100%) !important; }
+/* Landscape pieces that shouldn't run the full column - motion samples,
+   secondary artwork. Between a mark and a full-bleed layout. */
+.proj-figure.is-medium { max-width: min(700px, 100%) !important; }
 .proj-figure:hover { border-color: var(--accent-dim); }
 .proj-figure a { display: block; }
 

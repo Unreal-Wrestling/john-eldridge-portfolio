@@ -158,7 +158,8 @@ images:
   02-logo.jpg [small]: Primary logo
 ```
 
-Valid hints are `small` (460px), `tall` (640px), and `wide` (full width).
+Valid hints are `small` (460px), `tall` (640px), `medium` (700px), and
+`wide` (full width).
 
 The build **fails** if any file exceeds 25 MiB or the site exceeds 20,000
 files — the two Cloudflare Pages limits.
