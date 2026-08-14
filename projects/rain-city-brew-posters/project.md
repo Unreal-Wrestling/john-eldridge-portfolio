@@ -94,13 +94,16 @@ site — the company, what they did, and where to find them — and built out
 pages for each event as it came up, so a poster in a bar had somewhere to
 send people.
 
-The site itself is long gone, but the Internet Archive caught it. This
-[capture from September 2012](https://web.archive.org/web/20120902211059/http://raincitybrew.com/)
-is the site as it ran during the internship, with the 'Stache Bash call for
-artists on the front page, two months out from the event. There is
-[another from June 2013](https://web.archive.org/web/20130623120439/http://raincitybrew.com/)
-after the second show.
+The site itself is long gone, but the Internet Archive caught it. Here is
+the front page in September 2012, two months out from 'Stache Bash, with
+the call for artists on it:
 
-Fair warning on both: the Archive kept the pages but not all of the assets,
-so they render rough. Still the actual thing, though, and I would rather
-point at a broken capture than describe work nobody can check.
+[[web:https://web.archive.org/web/20120902211059/http://raincitybrew.com/ | Rain City Brew, 2 September 2012]]
+
+And in June 2013, after the second show:
+
+[[web:https://web.archive.org/web/20130623120439/http://raincitybrew.com/ | Rain City Brew, 23 June 2013]]
+
+The Archive kept the pages but not every asset, so both render rough in
+places. It is still the real thing, and a broken capture beats describing
+work nobody can check.

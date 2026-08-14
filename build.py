@@ -291,6 +291,29 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
     return meta, body.strip()
 
 
+def render_web_embed(url: str, caption: str) -> str:
+    """Embed a live web page, used for Internet Archive captures.
+
+    Wayback serves the same snapshot without its own toolbar when `if_` is
+    appended to the timestamp, so the frame shows the archived page and
+    nothing else. The visible link keeps the plain URL, which does include
+    the toolbar - useful once you are actually over there.
+    """
+    framed = re.sub(r"/web/(\d{14})/", r"/web/\1if_/", url)
+    label = caption or "Archived page"
+    return (
+        '<figure class="web-embed">\n'
+        '  <div class="web-frame">\n'
+        f'    <iframe src="{esc(framed)}" title="{esc(label)}" loading="lazy"\n'
+        '            referrerpolicy="no-referrer"></iframe>\n'
+        "  </div>\n"
+        f'  <figcaption>{esc(label)} '
+        f'<a href="{esc(url)}" target="_blank" rel="noopener">Open the capture &rarr;</a>'
+        "</figcaption>\n"
+        "</figure>"
+    )
+
+
 def render_body(text: str) -> str:
     """Render a deliberately small Markdown subset.
 
@@ -320,6 +343,9 @@ def render_body(text: str) -> str:
 
         if block.startswith("## "):
             out.append(f"<h2>{inline(block[3:].strip())}</h2>")
+        elif block.startswith("[[web:") and block.endswith("]]"):
+            url, _, cap = block[6:-2].partition("|")
+            out.append(render_web_embed(url.strip(), cap.strip()))
         elif re.fullmatch(r"\[\[[^\[\]]+\]\]", block):
             # Image or slideshow placed inline in the write-up. Resolved
             # after the images are processed, since dimensions aren't
