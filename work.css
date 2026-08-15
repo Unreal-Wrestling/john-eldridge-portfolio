@@ -682,6 +682,20 @@
 .proj-grid-med .grid-tile-img {
   aspect-ratio: 7 / 10;
 }
+.proj-grid-large {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1100px;
+}
+.proj-grid-large .grid-tile-img {
+  aspect-ratio: 1 / 1;
+}
+.proj-grid-large .grid-tile-img img {
+  max-width: 92%;
+  max-height: 92%;
+}
+.proj-grid-large .grid-cap {
+  font-size: 0.8rem;
+}
 .grid-tile {
   margin: 0;
   display: flex;

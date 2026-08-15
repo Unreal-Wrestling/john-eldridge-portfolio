@@ -1175,6 +1175,8 @@ def render_project_page(proj: Project) -> str:
                         grid_cls = "proj-grid-wide"
                     elif mod == "med":
                         grid_cls = "proj-grid-med"
+                    elif mod == "large":
+                        grid_cls = "proj-grid-large"
                     else:
                         grid_cls = ""
                     seg_parts.append(render_grid(proj, photos, block_name, grid_cls=grid_cls))

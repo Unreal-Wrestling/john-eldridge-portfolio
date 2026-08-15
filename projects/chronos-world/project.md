@@ -133,7 +133,7 @@ Fireside Tales' illustrated crest to Saltmarsh Legends'
 nautical map treatment, every show needed to be instantly
 recognizable on a Twitch thumbnail or YouTube guide.
 
-[[grid:show-logos]]
+[[grid:show-logos:large]]
 
 ## Stream Overlays
 
