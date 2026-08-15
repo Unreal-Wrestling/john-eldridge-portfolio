@@ -115,11 +115,12 @@ adapting the campaign into an episodic audio format.
 
 ## Brand Identity
 
-The Chronos World Entertainment rebrand established the visual
-foundation for the network. The new logo — a cleaner, more
-professional wordmark — replaced the original Chronos World
-identity and was designed to work across Twitch, YouTube,
-Facebook, Patreon, and Discord.
+The original Chronos World logo was used exclusively during the
+network's original run across Twitch, YouTube, Facebook, Patreon,
+and Discord. The new Chronos World Entertainment logo was created
+recently for the upcoming podcast project — a cleaner, more
+professional wordmark that reflects the evolution from live
+broadcast network to episodic audio production.
 
 [[grid:brand-core]]
 
