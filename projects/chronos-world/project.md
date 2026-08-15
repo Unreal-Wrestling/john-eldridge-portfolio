@@ -61,17 +61,16 @@ photos-merch:
   11-merch-cole.png: Cole — character t-shirt design
   12-merch-kobold.png: Kobold Cowboy — character apparel design
 photos-show-logos:
-  30-logo-battle-arena.png: Battle Arena — show logo
-  31-logo-fireside-tales.png: Fireside Tales — show logo (early version)
-  32-logo-fireside-tales-final.png: Fireside Tales — final logo treatment
-  33-logo-frost-maidens.png: Frost Maidens — show logo
-  34-logo-frost-maidens-v2.png: Frost Maidens — logo v2
+  30-logo-fireside-tales.png: Fireside Tales — show logo
+  31-logo-harmony-city.png: Harmony City — show logo
+  32-logo-x-hunter.png: X-Hunter — show logo
+  33-logo-one-shot-adventures.png: One Shot Adventures — show logo
+  34-logo-dead-man.png: Dead Man — show logo
   35-logo-new-london.png: New London — show logo
-  36-logo-harmony-city.png: Harmony City — show logo
-  37-logo-legends-of-eden.png: Legends of Eden — typeface treatment
-  38-logo-one-shot-adventures.png: One Shot Adventures — show logo
-  39-logo-porvenir.png: Secret of the Porvenir — special event logo
-  40-logo-saltmarsh-legends.png: Saltmarsh Legends — logo treatment
+  36-logo-frost-maidens.png: Frost Maidens — show logo
+  37-logo-saltmarsh-legends.png: Saltmarsh Legends — show logo
+  38-logo-blackberry-winter.png: The Blackberry Winter — show logo
+  39-logo-battle-arena.png: Battle Arena — show logo
 photos-overlays:
   41-overlay-battle-arena.png: Battle Arena — stream overlay
   42-overlay-fireside-tales-01.jpg: Fireside Tales — overlay design 1
