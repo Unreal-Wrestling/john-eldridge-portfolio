@@ -5,13 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John S. Eldridge, Jr. — Design, Marketing & Content Production</title>
   <meta name="description" content="Portfolio of John S. Eldridge, Jr. — designer, marketer, and content creator based in Marysville, WA. Brand identity, campaign and ad design, print and environmental graphics, photography, video editing, and motion graphics for businesses of every size.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- This is the URL that gets pasted into applications, LinkedIn messages,
+       and email. Without these it previews as a bare link with no image. -->
+  <link rel="canonical" href="https://john-eldridge-portfolio.pages.dev/">
+  <meta property="og:title" content="John S. Eldridge, Jr. — Design, Marketing & Content Production">
+  <meta property="og:description" content="Designer, marketer, and content creator based in Marysville, WA. Brand identity, campaign design, environmental graphics, photography, and motion graphics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://john-eldridge-portfolio.pages.dev/">
+  <meta property="og:image" content="https://john-eldridge-portfolio.pages.dev/Artboard%201.png">
+  <meta property="og:image:alt" content="Selected work by John S. Eldridge, Jr.">
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+  <!-- Same-origin, so no preconnect and no render-blocking third-party
+       stylesheet. crossorigin is required even here: fonts are always
+       fetched in CORS mode, and without it the preload is discarded and
+       the file downloads twice. -->
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="work.css">
+  <!-- Runs before first paint so a stored light preference never
+       flashes the dark theme on the way in. Inline on purpose: an
+       external file would arrive too late to prevent the flash. -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') {
+          document.documentElement.setAttribute('data-theme', t);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- ── Hero ──────────────────────────────────────────────── -->
   <section id="hero">
@@ -33,6 +62,8 @@
       </div>
     </div>
   </section>
+
+  <main id="main">
 
   <!-- ── About / Skills ────────────────────────────────────── -->
   <section id="about">
@@ -195,13 +226,16 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ── Footer ────────────────────────────────────────────── -->
   <footer>
     <p>© 2026 John S. Eldridge, Jr. — Design, Marketing & Content Production</p>
   </footer>
 
   <!-- ── Mobile Nav ────────────────────────────────────────── -->
-  <button id="mobile-nav-toggle" aria-label="Open navigation">☰</button>
+  <button id="mobile-nav-toggle" aria-label="Open navigation"
+          aria-expanded="false" aria-controls="mobile-nav">☰</button>
   <div id="mobile-nav" class="mobile-nav">
     <a href="#about">About</a>
     <a href="#value">How I Can Help</a>
@@ -212,6 +246,13 @@
   <!-- ── Back to Top ──────────────────────────────────────── -->
   <button id="back-to-top" aria-label="Back to top">↑</button>
 
+  <!-- ── Theme ─────────────────────────────────────── -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+    <span class="icon-light" aria-hidden="true">☀</span>
+    <span class="icon-dark" aria-hidden="true">☾</span>
+  </button>
+
   <script src="script.js"></script>
+  <script src="theme.js"></script>
 </body>
 </html>

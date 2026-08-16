@@ -44,10 +44,13 @@
 
 .work-title,
 .proj-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: var(--display-stretch);
+  text-transform: uppercase;
   font-size: clamp(2.5rem, 7vw, 5rem);
   line-height: 1;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 .work-sub,
 .proj-summary {
@@ -56,6 +59,50 @@
   color: var(--text-dim);
   font-size: 1.05rem;
   line-height: 1.6;
+}
+
+/* ── Work index: context tabs ────────────────────────────────
+   The primary split, so these read heavier than the division toggle
+   and the category filters below them. Underline rather than pill:
+   a tab bar should look like it changes what you are looking at,
+   not like one more filter chip. */
+.work-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.work-tab {
+  position: relative;
+  padding: 0.7rem 1.1rem;
+  bottom: -1px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.work-tab:hover { color: var(--text); }
+.work-tab.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+.work-tab .filter-count {
+  margin-left: 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.work-tab.active .filter-count { color: var(--accent); }
+
+@media (max-width: 600px) {
+  .work-tab { padding: 0.6rem 0.75rem; font-size: 0.82rem; }
 }
 
 /* ── Work index: search ──────────────────────────────────── */
@@ -109,10 +156,39 @@
   color: inherit;
   transition: var(--transition);
 }
+/* Cards keep their chrome, and deliberately so. This is the inverse of
+   the rule applied to artwork: a card is a target, not a piece of work,
+   and the border plus lift is what tells you it can be clicked. */
 .work-card:hover {
   border-color: var(--accent);
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 32px var(--shadow);
+}
+
+/* ── Home page: bento ───────────────────────────────────────
+   Only the home page. It is a highlights reel, so letting the stronger
+   work claim more room gives the grid a rhythm; the /work/ index stays
+   uniform because a dense filterable record is easier to scan when
+   every row is the same height.
+
+   Four fixed columns rather than auto-fill, because a span of 2 needs a
+   known column count to land predictably. Declared after .work-grid at
+   equal specificity, so source order decides - no !important. */
+.bento { grid-template-columns: repeat(4, 1fr); }
+.bento .bento-lg { grid-column: span 2; }
+/* Wider crop, not a taller tile. Spanning rows would need fixed row
+   heights, and every card carries a different length of text under the
+   image, so the rows would either clip or leave gaps. */
+.bento .bento-lg .work-card-img { aspect-ratio: 16 / 10; }
+
+@media (max-width: 1100px) {
+  .bento { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .bento { grid-template-columns: 1fr; }
+  /* One column: a span of 2 would overflow the grid. */
+  .bento .bento-lg { grid-column: span 1; }
+  .bento .bento-lg .work-card-img { aspect-ratio: 4 / 3; }
 }
 
 .work-card-img {
@@ -247,8 +323,10 @@
   font-size: 1.15rem;
 }
 .proj-body h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.75rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
   letter-spacing: 0.5px;
   margin: 2.5rem 0 1rem;
 }
@@ -774,9 +852,13 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  /* Never wider than the copy. Native resolution still caps each figure
-     individually, but a 1800px source should not mean an 1800px figure. */
-  max-width: 760px;
+  /* Wide enough for a landscape spread to break out past the copy measure.
+     Text and images are different problems: 760px is a comfortable line
+     length, but a two-page spread rendered 760px wide gives each page ~380px,
+     which is too small to read the type or judge the layout. Each figure is
+     still capped individually by its own tier and native resolution, so this
+     is a ceiling rather than a width. */
+  max-width: 1180px;
 }
 /* Copy and figures alternate down the page, so a gallery that is
    followed by more write-up needs the same breathing room the body
@@ -784,45 +866,80 @@
 .proj-gallery + .proj-body { margin-top: 3.5rem; }
 .proj-body-close { margin-top: 3.5rem; }
 
-/* Display width is driven by the image's real proportions. The inline
-   max-width emitted by build.py caps every figure at its native pixel
-   width, so nothing is ever scaled up past its true resolution. These
-   classes narrow it further where full width would look wrong. */
+/* Display width is driven by the image's real proportions. build.py hands
+   each figure its native pixel width as --native-w, and the tiers below
+   take min(native, tier) - so nothing is ever scaled up past its true
+   resolution, and nothing runs wider than its treatment allows. */
 .proj-figure {
   /* Left aligned, not centred. Body copy runs to a 680px measure from
      the left edge, and a centred figure below it breaks the alignment
      and reads as unrelated to the paragraph that introduces it. */
   margin: 0;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
+  /* No card around the work. Two reasons, and the first is a defect:
+     border-radius with overflow:hidden was clipping the corners off
+     every image, and on a cover or a poster the corners are part of
+     the composition. The second is judgement - a bordered rounded
+     panel puts a rectangle around a rectangle and competes with the
+     piece it is supposed to present. The artwork provides its own
+     edge. */
+  background: none;
+  border: 0;
+  border-radius: 0;
   transition: var(--transition);
 }
+/* Tier caps. These mirror SHAPE_CAP in build.py, which uses the same numbers
+   to write each image's `sizes` attribute - if they drift apart the browser
+   downloads the wrong candidate. Composed against --native-w rather than
+   overriding it, so no tier needs !important to win. */
+
+/* Landscape work - spreads, layouts, campaign pieces. Allowed to break out
+   past the copy measure, because this is the work itself and it should be
+   large enough to actually read. */
+.proj-figure.is-wide { max-width: min(var(--native-w, 100%), 1180px); }
+/* Posters, flyers, vertical layouts - cap so they don't dominate. */
+.proj-figure.is-tall { max-width: min(var(--native-w, 100%), 760px); }
+/* Landscape pieces that shouldn't run the full column - motion samples,
+   secondary artwork. Between a mark and a full-bleed layout. */
+.proj-figure.is-medium { max-width: min(var(--native-w, 100%), 560px); }
 /* Logos, marks, small assets - full width would just blow them up. A mark
    is read as a whole shape, not examined, so it wants to sit clearly
    inside the measure rather than push against it. */
-.proj-figure.is-small { max-width: min(400px, 100%) !important; }
-/* Posters, flyers, vertical layouts - cap so they don't dominate. */
-.proj-figure.is-tall  { max-width: min(760px, 100%) !important; }
-/* Landscape pieces that shouldn't run the full column - motion samples,
-   secondary artwork. Between a mark and a full-bleed layout. Kept
-   clearly under the measure, or it would be indistinguishable from
-   is-wide once the gallery is capped. */
-.proj-figure.is-medium { max-width: min(560px, 100%) !important; }
-.proj-figure:hover { border-color: var(--accent-dim); }
-.proj-figure a { display: block; }
+.proj-figure.is-small { max-width: min(var(--native-w, 100%), 400px); }
+/* The frame is gone, but these figures still open a lightbox, so the
+   affordance has to come from somewhere. zoom-in states the action
+   literally, and the hover shadow reads as liftable without painting a
+   permanent box. */
+.proj-figure a {
+  display: block;
+  cursor: zoom-in;
+}
+.proj-figure a:hover img { box-shadow: 0 12px 34px var(--shadow); }
+.proj-figure img { transition: box-shadow var(--transition); }
+/* Without the border there is nothing for a focus ring to sit against,
+   so it gets explicit offset rather than inheriting the global style. */
+.proj-figure a:focus-visible {
+  outline: 2px solid var(--action);
+  outline-offset: 4px;
+}
 
 /* Marks and wordmarks are usually supplied on white and sit awkwardly
-   when they run to the edge of the frame. Matte them instead. Applied
-   only where the build detected a white background, so full-bleed
-   artwork doesn't get a border it was never designed to have. The
-   padding goes on the link rather than the figure so the caption stays
-   on the dark card below. */
+   when they run straight to the edge. Matte them instead. Applied only
+   where the build detected a white background, so full-bleed artwork
+   doesn't get a border it was never designed to have. The padding goes
+   on the link rather than the figure, which keeps the caption outside
+   the white and on the page surface where it belongs. */
 .proj-figure.has-matte a {
   background: #fff;
   padding: 2.25rem 2.5rem;
+  /* The one place a border is still correct: white matte on the light
+     theme's off-white surface has no edge of its own, and the mark
+     would appear to float in nothing. Radius is safe here because the
+     padding already insets the artwork from the corners. */
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
+.proj-figure.has-matte a:hover { border-color: var(--action); }
+.proj-figure.has-matte a:hover img { box-shadow: none; }
 @media (max-width: 600px) {
   .proj-figure.has-matte a { padding: 1.5rem 1.75rem; }
 }
@@ -834,10 +951,14 @@
 }
 /* Motion pieces sit on black so letterboxing reads as intentional. */
 .proj-figure video { background: #000; }
+/* A caption is a note about the work, not a label riveted to it. Once
+   the panel is gone the divider and the inset padding have nothing to
+   divide or sit inside, so it becomes plain text under the image, held
+   to a readable measure rather than the image's full width. */
 .proj-figure figcaption {
-  padding: 1rem 1.5rem;
-  border-top: 1px solid var(--border);
-  color: var(--text-dim);
+  padding: 0.85rem 0 0;
+  max-width: 680px;
+  color: var(--text-2);
   font-size: 0.85rem;
   line-height: 1.5;
 }

@@ -1,23 +1,175 @@
 /* ═══════════════════════════════════════════════════════════
    John S. Eldridge, Jr. — Portfolio
-   Dark theme · Emerald accents · Rock-star professional
+   Dual theme · Neutral frame · One accent, interaction only
+   ═══════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════
+   Type
+
+   Self-hosted, so there is no third-party request in the critical
+   path and no visitor data leaves the origin to render a heading.
+
+   Two variable files replace what used to be seven static instances
+   fetched from Google: Archivo carries every weight AND width in
+   88 KB, Inter every weight in 47 KB. The width axis is what makes
+   Archivo a real replacement for Bebas Neue - condensed display caps
+   come from font-stretch rather than a separate font file.
+
+   font-display: swap on both. A portfolio's first impression is the
+   work, not the lettering; invisible text while a font downloads is
+   the worse failure.
+   ═══════════════════════════════════════════════════════════ */
+
+@font-face {
+  font-family: 'Archivo Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  src: url('/fonts/archivo-latin-standard-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter-latin-wght-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Tokens
+
+   Named by ROLE, not by colour. A portfolio's interface has to stay
+   still while the work changes on every page, so "surface" and
+   "action" are stable contracts - the hue behind them can be swapped
+   in one place without touching a single component.
+
+   Proportion is deliberate (60/30/10): neutrals do almost all the
+   work, and the accent is reserved for interaction only. The work
+   itself should always be the most colourful thing on screen.
    ═══════════════════════════════════════════════════════════ */
 
 :root {
-  --bg: #0a0a0a;
-  --bg-elev: #141414;
-  --bg-card: #1a1a1a;
-  --border: #2a2a2a;
-  --text: #f0f0f0;
-  --text-dim: #aaa;
-  --text-muted: #777;
-  --accent: #00d97e;
-  --accent-dim: #00a862;
-  --accent-glow: rgba(0, 217, 126, 0.15);
+  /* ── Dark: the default. Image-heavy arts and photography work
+        reads better against near-black. Not pure #000 - a hair of
+        warmth stops it going flat and lets borders register. */
+  --surface:       #0b0b0c;  /* canvas */
+  --surface-2:     #141416;  /* cards, raised panels */
+  --surface-3:     #1c1c1f;  /* hover, active fills */
+  --border:        #2a2a2e;
+  --border-strong: #3a3a40;
+
+  --text:   #f4f4f5;  /* primary  ~18:1 */
+  --text-2: #a1a1aa;  /* secondary ~7.6:1 */
+  --text-3: #8a8a93;  /* muted    ~5.7:1 */
+
+  /* Interaction only: links, hover, focus, active state. */
+  --action:       #7cc4ff;  /* 10.5:1 on surface */
+  --action-hover: #a5d8ff;
+  --action-quiet: rgba(124, 196, 255, 0.14);
+
   --gold: #d4af37;
+
+  /* Decorative. Hardcoding these is what usually breaks a theme
+     switch: a white grid overlay vanishes on white, and a heavy
+     black drop shadow looks like grime on a light surface. */
+  --glow-a:    rgba(124, 196, 255, 0.10);
+  --glow-b:    rgba(212, 175, 55, 0.07);
+  --grid-line: rgba(255, 255, 255, 0.015);
+  --shadow:    rgba(0, 0, 0, 0.45);
+
+  --font-display: 'Archivo Variable', 'Archivo', system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system,
+    'Segoe UI', sans-serif;
+  /* Bebas Neue was permanently condensed. Archivo is not, so the
+     narrowness that made headings feel like headings now comes from
+     the width axis - and only on the large display sizes. Small caps
+     labels stay at normal width, where condensing hurts legibility. */
+  --display-stretch: 78%;
+
   --radius: 12px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Legacy aliases ────────────────────────────────────────
+     The rest of the stylesheet still speaks the old names. Mapping
+     them here means the whole site re-themes from the tokens above
+     without a risky find-and-replace across 57 call sites. */
+  --bg: var(--surface);
+  --bg-elev: var(--surface-2);
+  --bg-card: var(--surface-2);
+  --text-dim: var(--text-2);
+  --text-muted: var(--text-3);
+  --accent: var(--action);
+  --accent-dim: var(--action-hover);
+  --accent-glow: var(--action-quiet);
 }
+
+/* ── Light: warm neutral, not cold white ────────────────────
+   Long case-study copy and process writing read better on light,
+   and #FFFFFF looks default rather than chosen. The values are
+   duplicated in the two selectors below because plain CSS cannot
+   share a declaration block between a media query and an attribute
+   selector - the attribute wins when a visitor has made a choice,
+   the media query covers everyone who has not. */
+[data-theme="light"] {
+  --surface:       #fafaf8;
+  --surface-2:     #f1f0ec;
+  --surface-3:     #e8e7e2;
+  --border:        #d8d6d0;
+  --border-strong: #b9b7b0;
+
+  --text:   #17171a;  /* ~17:1 */
+  --text-2: #52525b;  /* ~7.5:1 */
+  --text-3: #6b6b73;  /* ~5.3:1 */
+
+  --action:       #0b62b0;  /* 6.0:1 on surface */
+  --action-hover: #084c8a;
+  --action-quiet: rgba(11, 98, 176, 0.1);
+
+  --gold: #8a6d1f;
+
+  --glow-a:    rgba(11, 98, 176, 0.07);
+  --glow-b:    rgba(138, 109, 31, 0.05);
+  --grid-line: rgba(0, 0, 0, 0.035);
+  --shadow:    rgba(0, 0, 0, 0.12);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --surface:       #fafaf8;
+    --surface-2:     #f1f0ec;
+    --surface-3:     #e8e7e2;
+    --border:        #d8d6d0;
+    --border-strong: #b9b7b0;
+
+    --text:   #17171a;
+    --text-2: #52525b;
+    --text-3: #6b6b73;
+
+    --action:       #0b62b0;
+    --action-hover: #084c8a;
+    --action-quiet: rgba(11, 98, 176, 0.1);
+
+    --gold: #8a6d1f;
+
+    --glow-a:    rgba(11, 98, 176, 0.07);
+    --glow-b:    rgba(138, 109, 31, 0.05);
+    --grid-line: rgba(0, 0, 0, 0.035);
+    --shadow:    rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Both modes share one surface contract, so anything that was
+   hardcoded to a dark assumption gets caught here rather than in
+   thirty separate rules. */
+html { background: var(--surface); }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -25,8 +177,60 @@
 
 html { scroll-behavior: smooth; }
 
+/* ── View transitions ────────────────────────────────────────
+   Cross-document, so navigating from a card to its project page morphs
+   the thumbnail into the full image instead of cutting to a new page.
+   build.py pairs them by giving both elements the same
+   view-transition-name derived from the project slug.
+
+   Gated on motion preference rather than disabled afterwards: a visitor
+   who asked for less motion should never have the animation start.
+   Browsers without support ignore the at-rule and navigate normally,
+   which is the correct fallback and needs no feature detection. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+
+  ::view-transition-group(*) {
+    animation-duration: 0.32s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* ── Skip link ───────────────────────────────────────────────
+   First focusable thing on the page, visually hidden until it has
+   focus. Without it, a keyboard or screen-reader user tabs through
+   the whole quick-nav before reaching any content. */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -4rem;
+  z-index: 200;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 0.5rem; }
+
+/* ── Focus ───────────────────────────────────────────────────
+   :focus-visible only, so a mouse click never leaves a ring behind,
+   but every keyboard stop is unmistakable. The default UA outline is
+   effectively invisible against this palette. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -50,9 +254,9 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(0, 217, 126, 0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(0, 217, 126, 0.06) 0%, transparent 60%);
+    radial-gradient(ellipse at 20% 50%, var(--glow-a) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, var(--glow-b) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, var(--glow-a) 0%, transparent 60%);
   animation: heroPulse 8s ease-in-out infinite alternate;
 }
 @keyframes heroPulse {
@@ -65,8 +269,8 @@ body {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -92,12 +296,18 @@ body {
 }
 
 .hero-title {
-  font-family: 'Bebas Neue', sans-serif;
+  /* Bebas had no lowercase, so mixed-case markup rendered as caps.
+     Archivo does have lowercase - without text-transform every
+     heading on the site would quietly change case. */
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: var(--display-stretch);
+  text-transform: uppercase;
   font-size: clamp(3rem, 9vw, 7rem);
   line-height: 0.9;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 1rem;
-  background: linear-gradient(180deg, #fff 0%, #888 100%);
+  background: linear-gradient(180deg, var(--text) 0%, var(--text-3) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -163,16 +373,21 @@ section { padding: 6rem 0; position: relative; }
 }
 .section-num {
   display: block;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: 1rem;
   color: var(--accent);
   letter-spacing: 3px;
   margin-bottom: 0.5rem;
 }
 .section-header h2 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: var(--display-stretch);
+  text-transform: uppercase;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
 .section-desc {
@@ -242,7 +457,7 @@ section { padding: 6rem 0; position: relative; }
 .skill-card:hover {
   border-color: var(--accent-dim);
   transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px var(--shadow);
 }
 .skill-card:hover::before { transform: scaleX(1); }
 
@@ -292,12 +507,14 @@ section { padding: 6rem 0; position: relative; }
 .value-card:hover {
   border-color: var(--accent-dim);
   transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px var(--shadow);
 }
 .value-card:hover::before { transform: scaleX(1); }
 
 .value-icon {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: 2rem;
   color: var(--accent);
   margin-bottom: 1rem;
@@ -376,7 +593,7 @@ section { padding: 6rem 0; position: relative; }
 }
 .video-card:hover {
   border-color: var(--accent-dim);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
 .video-wrapper {
@@ -441,9 +658,12 @@ section { padding: 6rem 0; position: relative; }
 }
 
 .contact-card h2 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: var(--display-stretch);
+  text-transform: uppercase;
   font-size: clamp(2rem, 5vw, 3.5rem);
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -574,7 +794,7 @@ footer p {
   transform: translateY(-10px);
   pointer-events: none;
   transition: var(--transition);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px var(--shadow);
 }
 .mobile-nav.open {
   opacity: 1;
@@ -642,6 +862,48 @@ footer p {
   box-shadow: 0 0 20px var(--accent-glow);
 }
 
+/* ── Theme toggle ─────────────────────────────────────────────
+   Sits with the back-to-top control rather than in the nav: it is a
+   viewing preference, not navigation. Always reachable, never the
+   first thing competing for attention. */
+.theme-toggle {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 5.5rem;
+  z-index: 95;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-2);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--action);
+  transform: translateY(-2px);
+}
+/* One glyph per mode, swapped in CSS so the button needs no JS to
+   look right on first paint. */
+.theme-toggle .icon-dark { display: none; }
+.theme-toggle .icon-light { display: block; }
+[data-theme="light"] .theme-toggle .icon-dark { display: block; }
+[data-theme="light"] .theme-toggle .icon-light { display: none; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .theme-toggle .icon-dark { display: block; }
+  :root:not([data-theme="dark"]) .theme-toggle .icon-light { display: none; }
+}
+
+@media (max-width: 600px) {
+  .theme-toggle { width: 40px; height: 40px; right: 1rem; bottom: 4.75rem; }
+}
+
 /* ── Scroll Reveal ───────────────────────────────────────── */
 .reveal {
   opacity: 0;
@@ -651,4 +913,29 @@ footer p {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ── Reduced motion ──────────────────────────────────────────
+   Honour the OS-level setting. Scroll-reveal is the important one:
+   the elements have to end up visible, so the transform is dropped
+   rather than the opacity change being left half-applied. Smooth
+   scrolling goes too - it is the part that actually triggers motion
+   sickness, and both back-to-top buttons rely on it. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
 }

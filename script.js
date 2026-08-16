@@ -6,27 +6,58 @@
    from the project pages themselves.
    ═══════════════════════════════════════════════════════════ */
 
+// Respects the OS setting for anything scripted. The CSS handles declarative
+// motion, but scrollTo({ behavior: 'smooth' }) is invisible to a stylesheet
+// and has to be opted out of here.
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const scrollBehavior = () => (reduceMotion.matches ? 'auto' : 'smooth');
+
 // ── Back to Top ────────────────────────────────────────────
+// Passive: this listener never calls preventDefault, and saying so lets the
+// browser keep scrolling on the compositor instead of waiting on JS.
 const backToTop = document.getElementById('back-to-top');
-window.addEventListener('scroll', () => {
-  backToTop.classList.toggle('visible', window.scrollY > 400);
-});
+window.addEventListener(
+  'scroll',
+  () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  },
+  { passive: true }
+);
 backToTop.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: scrollBehavior() });
 });
 
 // ── Mobile Nav ─────────────────────────────────────────────
 const mobileNavToggle = document.getElementById('mobile-nav-toggle');
 const mobileNav = document.getElementById('mobile-nav');
+
+// aria-expanded is the only thing that tells assistive tech whether the menu
+// is open; the class toggle is purely visual.
+function setNav(open) {
+  mobileNavToggle.classList.toggle('active', open);
+  mobileNav.classList.toggle('open', open);
+  mobileNavToggle.setAttribute('aria-expanded', String(open));
+  mobileNavToggle.setAttribute(
+    'aria-label',
+    open ? 'Close navigation' : 'Open navigation'
+  );
+}
+
 mobileNavToggle.addEventListener('click', () => {
-  mobileNavToggle.classList.toggle('active');
-  mobileNav.classList.toggle('open');
+  setNav(!mobileNav.classList.contains('open'));
 });
+
 mobileNav.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    mobileNavToggle.classList.remove('active');
-    mobileNav.classList.remove('open');
-  });
+  link.addEventListener('click', () => setNav(false));
+});
+
+// Escape closes the menu and hands focus back to the button that opened it,
+// matching how the lightbox on the project pages already behaves.
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+    setNav(false);
+    mobileNavToggle.focus();
+  }
 });
 
 // ── Scroll Reveal ──────────────────────────────────────────

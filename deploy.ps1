@@ -79,8 +79,8 @@ try {
 
         # Each entry: label, pattern, whether the pattern should be present.
         $checks = @(
-            @{ Label = 'category filters'; Pattern = 'id="gallery-filters"'; Expect = $true  },
-            @{ Label = 'lightbox caption'; Pattern = 'id="lightbox-caption"'; Expect = $true  },
+            @{ Label = 'contact section'; Pattern = 'id="contact"';     Expect = $true  },
+            @{ Label = 'back to top';     Pattern = 'id="back-to-top"'; Expect = $true  },
             @{ Label = 'mobile nav';       Pattern = 'id="mobile-nav"';      Expect = $true  },
             @{ Label = 'name spelling';    Pattern = 'Eldrige';              Expect = $false },
             @{ Label = 'no old client';    Pattern = 'Remedy';               Expect = $false },

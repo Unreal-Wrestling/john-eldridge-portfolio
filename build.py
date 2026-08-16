@@ -48,11 +48,46 @@ SITE_URL = "https://john-eldridge-portfolio.pages.dev"
 OWNER = "John S. Eldridge, Jr."
 
 # Files copied verbatim from the project root into dist/.
-LEGACY_FILES = ["index.html", "styles.css", "script.js", "work.css"]
+LEGACY_FILES = ["index.html", "styles.css", "script.js", "work.css", "theme.js"]
 LEGACY_GLOBS: list[str] = []
 
 # Replaced in index.html at build time with generated project cards.
 HOME_CARDS_MARKER = "<!--CASE_STUDIES-->"
+
+# Cloudflare Pages reads dist/_headers on deploy. Two jobs here.
+#
+# Caching: generated images under /work/*/img/ are rewritten only when the
+# source art changes, and a changed image gets redeployed anyway, so they are
+# safe to cache hard. HTML is not - it has to revalidate or a visitor keeps
+# seeing yesterday's write-up.
+#
+# NOTE: image filenames are NOT content-hashed. If an image is replaced under
+# the same filename, a visitor who already has it cached will keep the old one
+# for up to a year. Rename the file when replacing art, or drop this to a
+# shorter max-age.
+#
+# Security: this is a static site with no forms, cookies, or auth, so these are
+# cheap hardening rather than anything load-bearing.
+HEADERS = """/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+/work/:project/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+"""
 
 IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp"}
 # Copied through untouched - there is no transcoding step, so source files
@@ -79,6 +114,10 @@ class ProjectImage:
     matte: bool = False  # white-background mark, safe to pad with white
     width: int = 0
     height: int = 0
+    # Width of the thumb actually written to disk. Needed for srcset: the
+    # browser can only pick the right candidate if it knows how wide each
+    # one really is, and a narrow source is never upscaled to THUMB_MAX_W.
+    thumb_w: int = 0
     shape: str = "wide"  # wide | tall | small - drives display width
     shape_hint: str = ""  # explicit override from project.md, if given
     thumb_only: bool = False  # used as card thumbnail only, not shown in body
@@ -106,6 +145,32 @@ WORK_TYPES = {
 # Work that was actually commissioned - by a client, an employer, or an
 # internship host. Real briefs with real stakeholders, so no disclaimer.
 COMMISSIONED = {"client", "internship"}
+
+# The top-level split on /work/, by the context the work was made in rather
+# than what kind of design it is. A creative director wants to separate
+# professional practice from coursework immediately.
+#
+# Self-initiated sits under Professional because it is professional-grade work
+# made outside school - and every card keeps its own "Self-Initiated" badge, so
+# grouping it here never implies it was commissioned.
+WORK_GROUPS = {
+    "professional": "Professional",
+    "student": "School",
+    "competition": "Competition",
+}
+
+WORK_GROUP_OF = {
+    "client": "professional",
+    "internship": "professional",
+    "self": "professional",
+    "volunteer": "professional",
+    "student": "student",
+    "competition": "competition",
+}
+
+# Opens here on load. Leading with 11 student projects undersells the
+# professional work, so the default is the tab a hiring reader wants first.
+DEFAULT_WORK_GROUP = "professional"
 
 
 @dataclass
@@ -215,6 +280,11 @@ class Project:
     @property
     def type_label(self) -> str:
         return WORK_TYPES.get(self.work_type, "")
+
+    @property
+    def work_group(self) -> str:
+        """Which /work/ tab this project belongs in."""
+        return WORK_GROUP_OF.get(self.work_type, "professional")
 
     @property
     def disclaimer(self) -> str:
@@ -518,11 +588,15 @@ def load_project(folder: Path) -> Project | None:
             )
             continue
 
+        # A PNG source only stays a PNG when its pixels need one. Everything
+        # else - including every photograph saved as a PNG - ships as JPEG.
+        ext = png_delivery_ext(img) if suffix == ".png" else ".jpg"
+
         proj.images.append(
             ProjectImage(
                 src=img,
-                full_rel=f"img/{stem}.jpg" if suffix != ".png" else f"img/{stem}.png",
-                thumb_rel=f"img/{stem}-thumb.jpg" if suffix != ".png" else f"img/{stem}-thumb.png",
+                full_rel=f"img/{stem}{ext}",
+                thumb_rel=f"img/{stem}-thumb{ext}",
                 caption=caption,
                 shape_hint=hint,
                 thumb_only=thumb_only,
@@ -579,6 +653,64 @@ def load_project(folder: Path) -> Project | None:
 
 
 # ── Images ────────────────────────────────────────────────────────────
+
+# Modes that can carry an alpha channel. "P" is handled separately, since a
+# palette image only has transparency when it declares one.
+ALPHA_MODES = ("RGBA", "LA", "PA")
+
+# Above this many distinct colours an image is treated as photographic. Flat
+# vector art, logos, and screenshots of type sit far below it; photographs and
+# gradient meshes blow past it immediately.
+FLAT_COLOR_CEILING = 4096
+
+
+def png_delivery_ext(src: Path) -> str:
+    """Decide whether a PNG source should ship as PNG or JPEG.
+
+    PNG is the correct container for flat art and anything with real
+    transparency. It is the wrong one for photographs, where it routinely
+    costs ten times what an equivalent JPEG would - a 1 MB thumbnail is
+    always a PNG holding a photograph.
+
+    Converting blindly would wreck both edge cases, so this inspects the
+    actual pixels and keeps PNG when:
+
+    * any pixel is genuinely transparent - converting would flatten it
+    * the image has few distinct colours, meaning vector art or a logo,
+      where JPEG would ring visibly around every hard edge
+
+    Everything else is photographic and becomes a JPEG.
+    """
+    try:
+        with Image.open(src) as im:
+            im = ImageOps.exif_transpose(im)
+
+            if im.mode == "P":
+                im = im.convert("RGBA" if "transparency" in im.info else "RGB")
+
+            if im.mode in ALPHA_MODES:
+                # Present but fully opaque is common in exported art. Only
+                # actual transparency forces PNG.
+                if im.getchannel("A").getextrema()[0] < 255:
+                    return ".png"
+                im = im.convert("RGB")
+
+            # Counted at full resolution deliberately. Downscaling first is
+            # faster, but it collapses the very signal being measured: a dark
+            # photograph subsampled to 400px can fall under the ceiling and
+            # get misread as flat art. getcolors bails out as soon as it
+            # passes maxcolors, so the full-size scan is cheap anyway.
+            #
+            # None means the image blew past the cap, which is exactly the
+            # signal that it is photographic.
+            return (
+                ".png"
+                if im.convert("RGB").getcolors(maxcolors=FLAT_COLOR_CEILING)
+                else ".jpg"
+            )
+    except OSError as exc:
+        print(f"  WARN could not inspect {src.name} ({exc}); keeping PNG")
+        return ".png"
 
 
 def resize_to(src: Path, dest: Path, max_w: int) -> tuple[int, int]:
@@ -697,8 +829,9 @@ def build_images(proj: Project, out_dir: Path) -> None:
             continue
 
         w, h = resize_to(image.src, out_dir / image.full_rel, FULL_MAX_W)
-        resize_to(image.src, out_dir / image.thumb_rel, THUMB_MAX_W)
+        tw, _th = resize_to(image.src, out_dir / image.thumb_rel, THUMB_MAX_W)
         image.width, image.height = w, h
+        image.thumb_w = tw
         image.shape = image.shape_hint or classify_shape(w, h)
         # Marks are usually supplied on white and look cramped against the
         # frame edge. Full-bleed artwork is not, and would just get a white
@@ -709,15 +842,17 @@ def build_images(proj: Project, out_dir: Path) -> None:
 
     for photo in proj.photos:
         w, h = resize_to(photo.src, out_dir / photo.full_rel, FULL_MAX_W)
-        resize_to(photo.src, out_dir / photo.thumb_rel, THUMB_MAX_W)
+        tw, _th = resize_to(photo.src, out_dir / photo.thumb_rel, THUMB_MAX_W)
         photo.width, photo.height = w, h
+        photo.thumb_w = tw
         photo.shape = classify_shape(w, h)
 
     for block_photos in proj.photo_blocks.values():
         for photo in block_photos:
             w, h = resize_to(photo.src, out_dir / photo.full_rel, FULL_MAX_W)
-            resize_to(photo.src, out_dir / photo.thumb_rel, THUMB_MAX_W)
+            tw, _th = resize_to(photo.src, out_dir / photo.thumb_rel, THUMB_MAX_W)
             photo.width, photo.height = w, h
+            photo.thumb_w = tw
             photo.shape = classify_shape(w, h)
 
 
@@ -735,13 +870,27 @@ HEAD = """<!DOCTYPE html>
   <meta property="og:description" content="{description}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{canonical}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Same-origin fonts: no preconnect, no third-party render block. -->
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{css_prefix}styles.css">
   <link rel="stylesheet" href="{css_prefix}work.css">
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+  <!-- Before first paint, or a stored light preference flashes dark. -->
+  <script>
+    (function () {{
+      try {{
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') {{
+          document.documentElement.setAttribute('data-theme', t);
+        }}
+      }} catch (e) {{}}
+    }})();
+  </script>
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
 """
 
 FOOTER = """
@@ -749,38 +898,50 @@ FOOTER = """
     <p>&copy; {year} {owner} &mdash; Design, Marketing &amp; Content Production</p>
   </footer>
   <button id="back-to-top" aria-label="Back to top">&uarr;</button>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+    <span class="icon-light" aria-hidden="true">&#9728;</span>
+    <span class="icon-dark" aria-hidden="true">&#9790;</span>
+  </button>
   <div id="lightbox" class="lightbox" hidden>
     <button class="lightbox-close" aria-label="Close">&times;</button>
     <img id="lightbox-img" alt="">
   </div>
   <script>
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    function scrollBehavior() {{ return reduceMotion.matches ? 'auto' : 'smooth'; }}
     var btt = document.getElementById('back-to-top');
     window.addEventListener('scroll', function () {{
       btt.classList.toggle('visible', window.scrollY > 400);
-    }});
+    }}, {{ passive: true }});
     btt.addEventListener('click', function () {{
-      window.scrollTo({{ top: 0, behavior: 'smooth' }});
+      window.scrollTo({{ top: 0, behavior: scrollBehavior() }});
     }});
     (function() {{
       var lb = document.getElementById('lightbox');
       var lbImg = document.getElementById('lightbox-img');
       var lbClose = lb.querySelector('.lightbox-close');
-      function open(src, alt) {{
+      // Remembers what opened the lightbox so focus can go back there on
+      // close - otherwise a keyboard user is dumped at the top of the page.
+      var lastTrigger = null;
+      function open(src, alt, trigger) {{
+        lastTrigger = trigger || null;
         lbImg.src = src;
         lbImg.alt = alt || '';
         lb.hidden = false;
         document.body.style.overflow = 'hidden';
+        lbClose.focus();
       }}
       function close() {{
         lb.hidden = true;
         lbImg.src = '';
         document.body.style.overflow = '';
+        if (lastTrigger) {{ lastTrigger.focus(); lastTrigger = null; }}
       }}
       document.querySelectorAll('a.lightbox-trigger').forEach(function(a) {{
         a.addEventListener('click', function(e) {{
           e.preventDefault();
           var img = a.querySelector('img');
-          open(a.getAttribute('href'), img ? img.getAttribute('alt') : '');
+          open(a.getAttribute('href'), img ? img.getAttribute('alt') : '', a);
         }});
       }});
       lb.addEventListener('click', function(e) {{
@@ -791,6 +952,8 @@ FOOTER = """
       }});
     }})();
   </script>
+  <!-- Absolute, so one path is correct from /work/ and /work/slug/ alike. -->
+  <script src="/theme.js"></script>
 </body>
 </html>
 """
@@ -800,9 +963,14 @@ def esc(s: str) -> str:
     return html.escape(s or "", quote=True)
 
 
-def render_work_card(p: Project, href: str) -> str:
+def render_work_card(p: Project, href: str, tile: str = "") -> str:
     """One project card. Shared by /work/ and the home page, so the two
-    can never drift apart or show a different set of projects."""
+    can never drift apart or show a different set of projects.
+
+    `tile` adds a bento size class on the home page. The index stays
+    uniform: a dense, filterable record is easier to scan when every row
+    is the same height, and varied tiles would fight the filters.
+    """
     still = p.card_image
     thumb = f"{href}{still.thumb_rel}" if still else ""
     # A logo cropped to fill a 4:3 card loses its ends. Marks get contained
@@ -811,8 +979,13 @@ def render_work_card(p: Project, href: str) -> str:
     haystack = " ".join(
         [p.title, p.client, p.category, p.year, " ".join(p.tags), p.summary]
     ).lower()
+    # Half of a cross-document view transition. The project page gives its
+    # first figure this same name, so the browser morphs the thumbnail into
+    # the full image instead of cutting to a new page. Names have to be
+    # unique per document, and a slug appears once per grid, so this holds.
+    vt = f' style="view-transition-name:shot-{p.slug}"'
     img = (
-        f'<img src="{thumb}" alt="{esc(p.heading)}" loading="lazy">'
+        f'<img src="{thumb}" alt="{esc(p.heading)}" loading="lazy"{vt}>'
         if thumb
         else '<div class="work-card-noimg">No image</div>'
     )
@@ -823,8 +996,9 @@ def render_work_card(p: Project, href: str) -> str:
         if p.type_label
         else ""
     )
-    return f"""      <a class="work-card" href="{href}"
+    return f"""      <a class="work-card{tile}" href="{href}"
          data-cat="{esc(p.category)}" data-div="{p.division}"
+         data-work="{p.work_group}"
          data-search="{esc(haystack)}">
         <div class="work-card-img{mark_cls}">{img}{card_badge}</div>
         <div class="work-card-info">
@@ -849,9 +1023,8 @@ def render_404() -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page not found &mdash; {esc(OWNER)}</title>
   <meta name="robots" content="noindex">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/work.css">
 </head>
@@ -890,16 +1063,56 @@ def render_home_cards(projects: list[Project]) -> str:
         print("  WARN no featured projects; home page is showing all of them")
         picked = projects
 
-    cards = "\n".join(render_work_card(p, f"work/{p.slug}/") for p in picked)
-    return f'<div class="work-grid">\n{cards}\n      </div>'
+    # Bento rhythm, deterministic rather than random so the build is
+    # reproducible and a rebuild never reshuffles the page. Every fifth
+    # tile is double width, which walks the wide tile across the rows and
+    # keeps a four-column grid exactly full: 2+1+1, then 1+2+1, then
+    # 1+1+2. No gaps to fill and no masonry needed.
+    cards = "\n".join(
+        render_work_card(
+            p, f"work/{p.slug}/", tile=" bento-lg" if i % 5 == 0 else ""
+        )
+        for i, p in enumerate(picked)
+    )
+    return f'<div class="work-grid bento">\n{cards}\n      </div>'
+
+
+# Display cap per shape tier, in CSS pixels. Mirrors the tiers in work.css -
+# the two have to agree or `sizes` lies to the browser and it picks the wrong
+# candidate. Kept here as the single source of truth for both.
+SHAPE_CAP = {"wide": 1180, "tall": 760, "medium": 560, "small": 400}
+
+
+def srcset_attrs(image: ProjectImage, cap: int | None = None) -> str:
+    """Responsive candidates for one image, as ` srcset="..." sizes="..."`.
+
+    The thumb alone is enough at 1x, but a 760-1180px figure on a 2x display
+    needs roughly double that in real pixels, and the full-size render is
+    already on disk for the lightbox. Offering both lets the browser take the
+    small file on a phone and the large one on a retina laptop.
+
+    Returns an empty string when there is no second candidate to offer, so a
+    narrow source never advertises a width it does not have.
+    """
+    if not image.thumb_w or not image.width or image.width <= image.thumb_w:
+        return ""
+
+    box = cap if cap is not None else SHAPE_CAP.get(image.shape, 760)
+    srcset = f"{image.thumb_rel} {image.thumb_w}w, {image.full_rel} {image.width}w"
+    # Below the breakpoint the figure is fluid to the viewport; above it, the
+    # tier caps it. Stated in that order because the browser takes the first
+    # matching clause.
+    sizes = f"(min-width: {box + 80}px) {box}px, 100vw"
+    return f' srcset="{srcset}" sizes="{sizes}"'
 
 
 def render_figure(image: ProjectImage, proj: Project, eager: bool) -> str:
     """One gallery figure. Shared by inline placement and the trailing set."""
     cap = f"<figcaption>{esc(image.caption)}</figcaption>" if image.caption else ""
-    # Cap the figure at the asset's true width so nothing is ever scaled
-    # up past its native resolution.
-    cap_px = f' style="max-width:{image.width}px"' if image.width else ""
+    # The figure's own native width, handed to CSS as a custom property so
+    # the shape tiers can compose with it - `min(native, tier)` - instead of
+    # having to out-specify an inline style with !important.
+    cap_px = f' style="--native-w:{image.width}px"' if image.width else ""
     dims = (
         f' width="{image.width}" height="{image.height}"'
         if image.width and image.height
@@ -917,9 +1130,24 @@ def render_figure(image: ProjectImage, proj: Project, eager: bool) -> str:
 
     matte = " has-matte" if image.matte else ""
     loading = "eager" if eager else "lazy"
+    # The other half of the view transition, and it pairs on the card image
+    # specifically - that is the exact still the thumbnail was showing, so
+    # the morph lands on the same picture rather than cross-fading into a
+    # different one.
+    #
+    # Identity, not `eager`. Two duplicate names in one document make the
+    # transition invalid and the browser silently drops it, and `eager` is
+    # computed separately by the inline and trailing render paths, so both
+    # can believe they are first. Only one image object can be the card
+    # image, so this is unique by construction.
+    vt = (
+        f' style="view-transition-name:shot-{proj.slug}"'
+        if image is proj.card_image
+        else ""
+    )
     return f"""      <figure class="proj-figure is-{image.shape}{matte}"{cap_px}>
         <a href="{image.full_rel}" class="lightbox-trigger">
-          <img src="{image.thumb_rel}" alt="{esc(image.caption or proj.heading)}"{dims} loading="{loading}">
+          <img src="{image.thumb_rel}"{srcset_attrs(image)} alt="{esc(image.caption or proj.heading)}"{dims} loading="{loading}" decoding="async"{vt}>
         </a>
         {cap}
       </figure>"""
@@ -1152,7 +1380,7 @@ def render_project_page(proj: Project) -> str:
     </div>
   </header>
 
-  <main class="container proj-main">""")
+  <main id="main" class="container proj-main">""")
 
     # The write-up is split at any inline image reference so figures sit
     # between blocks of copy at full container width. Text keeps its
@@ -1399,7 +1627,35 @@ def render_work_index(projects: list[Project]) -> str:
             f'{esc(c)} <span class="filter-count">{n}</span></button>'
         )
 
-    # Primary split, above the category filters. Only rendered once both
+    # Top-level tabs: the context the work was made in. A group with nothing
+    # in it is skipped entirely rather than rendered empty, so the Competition
+    # tab appears on its own the first time a competition project is added.
+    groups = [g for g in WORK_GROUPS if any(p.work_group == g for p in projects)]
+    if len(groups) > 1:
+        tabs = []
+        for g in groups:
+            n = sum(1 for p in projects if p.work_group == g)
+            active = " active" if g == DEFAULT_WORK_GROUP else ""
+            tabs.append(
+                f'<button type="button" role="tab" class="work-tab{active}"'
+                f' data-work="{g}"'
+                f' aria-selected="{"true" if active else "false"}">'
+                f'{WORK_GROUPS[g]} <span class="filter-count">{n}</span></button>'
+            )
+        # "All Work" last, so the three contexts read as the primary choice
+        # rather than an afterthought next to a catch-all.
+        tabs.append(
+            '<button type="button" role="tab" class="work-tab" data-work="all"'
+            f' aria-selected="false">All Work <span class="filter-count">{len(projects)}</span></button>'
+        )
+        work_tabs = (
+            '<div class="work-tabs" role="tablist" aria-label="Work context">'
+            f'{"".join(tabs)}</div>'
+        )
+    else:
+        work_tabs = ""
+
+    # Secondary split, above the category filters. Only rendered once both
     # halves actually have work in them - a toggle with an empty side
     # just looks broken.
     divs = [d for d in DIVISIONS if any(p.division == d for p in projects)]
@@ -1426,6 +1682,7 @@ def render_work_index(projects: list[Project]) -> str:
       </nav>
       <h1 class="work-title">Full Portfolio</h1>
       <p class="work-sub">{esc(desc)}</p>
+      {work_tabs}
       {division_ui}
       <input type="search" id="work-search" class="work-search"
              placeholder="Search by client, project, or tag..."
@@ -1435,7 +1692,7 @@ def render_work_index(projects: list[Project]) -> str:
     </div>
   </header>
 
-  <main class="container work-main">
+  <main id="main" class="container work-main">
     <div class="work-grid" id="work-grid">
 """)
 
@@ -1445,20 +1702,37 @@ def render_work_index(projects: list[Project]) -> str:
     parts.append("""    </div>
     <p class="work-empty" id="work-empty" hidden>No projects match that search.</p>
   </main>
-
+""")
+    # Injected rather than hardcoded in the script, so the Python constant
+    # stays the single source of truth for which tab opens first.
+    parts.append(f"""
   <script>
-    (function () {
+    var WORK_DEFAULT = "{DEFAULT_WORK_GROUP}";
+""")
+    parts.append("""    (function () {
       var cards    = Array.prototype.slice.call(document.querySelectorAll('.work-card'));
       var buttons  = Array.prototype.slice.call(document.querySelectorAll('.filter-btn'));
       var divBtns  = Array.prototype.slice.call(document.querySelectorAll('.div-btn'));
+      var workTabs = Array.prototype.slice.call(document.querySelectorAll('.work-tab'));
       var search   = document.getElementById('work-search');
       var countEl  = document.getElementById('work-count');
       var emptyEl  = document.getElementById('work-empty');
       var activeCat = 'all';
       var activeDiv = 'all';
+      var activeWork = WORK_DEFAULT;
+
+      // Scope is cumulative: the tab picks the context, the division narrows
+      // it, the category narrows that, and search narrows whatever is left.
+      function inWork(card) {
+        return activeWork === 'all' || card.dataset.work === activeWork;
+      }
 
       function inDiv(card) {
         return activeDiv === 'all' || card.dataset.div === activeDiv;
+      }
+
+      function inScope(card) {
+        return inWork(card) && inDiv(card);
       }
 
       function apply() {
@@ -1467,22 +1741,32 @@ def render_work_index(projects: list[Project]) -> str:
         cards.forEach(function (card) {
           var okCat = activeCat === 'all' || card.dataset.cat === activeCat;
           var okQ   = !q || card.dataset.search.indexOf(q) !== -1;
-          var show  = inDiv(card) && okCat && okQ;
+          var show  = inScope(card) && okCat && okQ;
           card.hidden = !show;
           if (show) shown++;
         });
 
-        // Category filters are scoped to the active division, so switching
-        // to Arts doesn't leave dead Business-only categories on screen.
+        // Category filters are scoped to the active tab and division, so
+        // switching context never leaves dead categories on screen.
         buttons.forEach(function (btn) {
           var cat = btn.dataset.cat;
           if (cat === 'all') { btn.hidden = false; return; }
           var n = cards.filter(function (c) {
-            return inDiv(c) && c.dataset.cat === cat;
+            return inScope(c) && c.dataset.cat === cat;
           }).length;
           btn.hidden = n === 0;
           var badge = btn.querySelector('.filter-count');
           if (badge) badge.textContent = n;
+        });
+
+        // Same for the division toggle: a side with nothing in the current
+        // tab would filter to an empty grid.
+        divBtns.forEach(function (btn) {
+          var d = btn.dataset.div;
+          if (d === 'all') { btn.hidden = false; return; }
+          btn.hidden = !cards.some(function (c) {
+            return inWork(c) && c.dataset.div === d;
+          });
         });
 
         countEl.textContent = shown + (shown === 1 ? ' project' : ' projects');
@@ -1508,6 +1792,31 @@ def render_work_index(projects: list[Project]) -> str:
         apply();
       }
 
+      function setWork(name, push) {
+        activeWork = name;
+        workTabs.forEach(function (b) {
+          var on = b.dataset.work === name;
+          b.classList.toggle('active', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        // Reset the narrower filters - the previous division or category may
+        // hold nothing in this context.
+        activeDiv = 'all';
+        activeCat = 'all';
+        divBtns.forEach(function (b) {
+          b.classList.toggle('active', b.dataset.div === 'all');
+        });
+        buttons.forEach(function (b) {
+          b.classList.toggle('active', b.dataset.cat === 'all');
+        });
+        if (push && window.history.replaceState) {
+          var url = name === WORK_DEFAULT ? location.pathname
+                                          : location.pathname + '?work=' + name;
+          history.replaceState(null, '', url);
+        }
+        apply();
+      }
+
       buttons.forEach(function (btn) {
         btn.addEventListener('click', function () {
           activeCat = btn.dataset.cat;
@@ -1520,15 +1829,28 @@ def render_work_index(projects: list[Project]) -> str:
           setDivision(btn.dataset.div, true);
         });
       });
+      workTabs.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setWork(btn.dataset.work, true);
+        });
+      });
       search.addEventListener('input', apply);
 
-      // Support /work/?type=business so a single link can open straight
-      // into the relevant half of the portfolio.
-      var wanted = new URLSearchParams(location.search).get('type');
-      if (wanted && divBtns.some(function (b) { return b.dataset.div === wanted; })) {
-        setDivision(wanted, false);
+      // Deep links: ?work= opens a context tab, ?type= opens a division.
+      // Both are honoured, so existing ?type= links keep working - but a
+      // ?type= link has to widen the tab out of the default first, or it
+      // would filter inside Professional and look broken.
+      var params = new URLSearchParams(location.search);
+      var wantWork = params.get('work');
+      var wantDiv = params.get('type');
+
+      if (wantWork && workTabs.some(function (b) { return b.dataset.work === wantWork; })) {
+        setWork(wantWork, false);
+      } else if (wantDiv && divBtns.some(function (b) { return b.dataset.div === wantDiv; })) {
+        setWork('all', false);
+        setDivision(wantDiv, false);
       } else {
-        apply();
+        setWork(WORK_DEFAULT, false);
       }
     })();
   </script>
@@ -1574,6 +1896,15 @@ def copy_legacy(projects: list[Project]) -> None:
     for pattern in LEGACY_GLOBS:
         for src in ROOT.glob(pattern):
             shutil.copy2(src, DIST / src.name)
+
+    # Fonts keep their directory, unlike LEGACY_GLOBS which flattens into
+    # the dist root - the @font-face and preload URLs both say /fonts/.
+    fonts = ROOT / "fonts"
+    if not fonts.is_dir():
+        print("  WARN missing fonts/ - headings will fall back to system-ui")
+    else:
+        shutil.copytree(fonts, DIST / "fonts", dirs_exist_ok=True)
+        print(f"  OK   fonts/ ({len(list(fonts.glob('*.woff2')))} files)")
 
 
 def check_sizes() -> int:
@@ -1631,6 +1962,7 @@ def main() -> int:
     (DIST / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n", encoding="utf-8"
     )
+    (DIST / "_headers").write_text(HEADERS, encoding="utf-8")
 
     files = [p for p in DIST.rglob("*") if p.is_file()]
     total_mb = sum(p.stat().st_size for p in files) / (1024 * 1024)
