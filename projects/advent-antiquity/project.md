@@ -14,12 +14,12 @@ thumb: 01-front-cover.png
 summary: A complete book design for Graph 251, built around a personal concept — a fictional band called Advent Antiquity and their album Nothing is Trivial, exploring the ideas of life, love, and who we are as humans. Full design from cover to closing page with photography, artwork, and songwriting.
 images:
   01-front-cover.png [small]: Front cover — hand-lettered title in brush and ink on a dark ground
-  02-spread-01.png: Table of contents spread — hand-lettered section titles listing the album's tracks
-  03-spread-02.png: Opening lyrics spread — the first song's text set on the modular grid
-  04-spread-03.png: Lyrics spread — text on the grid with a hand-lettered song title
-  05-spread-04.png: Lyrics spread — song text with a hand-lettered title
-  06-spread-05.png: Lyrics spread — text continuing the album's narrative
-  07-spread-06.png: Lyrics spread — a quieter text page with more negative space
+  02-spread-01.png: Title page — the book's title with author attribution
+  03-spread-02.png: Acknowledgements page
+  04-spread-03.png: Memorandum page — a dedication to my mother
+  05-spread-04.png: Table of contents — hand-lettered section titles listing the album's tracks
+  06-spread-05.png: Introduction page
+  07-spread-06.png: Chapter 1 title page
   08-spread-07.png: "On My Own" — a photograph digitized in Illustrator and Photoshop, paired with hand-set type
   09-spread-08.png: Full-bleed photograph spread — image carries across the gutter
   10-spread-09.png: Full-bleed photograph spread — photograph runs edge to edge across both pages
