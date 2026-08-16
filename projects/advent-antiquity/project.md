@@ -20,8 +20,8 @@ images:
   05-spread-04.png: Table of contents — hand-lettered section titles listing the album's tracks
   06-spread-05.png: Introduction page
   07-spread-06.png: Chapter 1 title page
-  08-spread-07.png: "On My Own" — a photograph digitized in Illustrator and Photoshop, paired with hand-set type
-  09-spread-08.png: Full-bleed photograph spread — image carries across the gutter
+  08-spread-07.png: "Suicide" — hand-lettered title in brush and ink, song lyrics set on the right page
+  09-spread-08.png: "On My Own" — a photograph digitized in Illustrator and Photoshop, paired with hand-set type
   10-spread-09.png: Full-bleed photograph spread — photograph runs edge to edge across both pages
   11-spread-10.png: Photography spread — image paired with lyrics text
   12-spread-11.png: Photography spread — image with text set in the margin
