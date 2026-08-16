@@ -583,13 +583,15 @@
   border-radius: var(--radius, 8px);
   overflow: hidden;
 }
-.slide-frame img {
+.slide-frame img,
+.slide-frame a {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
 }
+.slide-frame a { display: flex; align-items: center; justify-content: center; }
 .slide-cap {
   margin-top: 0.85rem;
   color: var(--text-muted);
@@ -888,4 +890,55 @@
   .proj-gallery { gap: 1.5rem; }
   .proj-body p { font-size: 1rem; }
   .proj-nav-btn { flex: 1; text-align: center; }
+}
+
+/* ── Lightbox ────────────────────────────────────────────── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.92);
+  padding: 2rem;
+}
+.lightbox[hidden] { display: none; }
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Ensure lightbox trigger links don't break layouts */
+a.lightbox-trigger {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.grid-tile-img a.lightbox-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }

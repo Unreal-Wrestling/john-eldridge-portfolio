@@ -10,7 +10,7 @@ role: Designer & Editor
 context: Coursework, Everett Community College
 tags: editorial design, print
 featured: false
-thumb: 01-cover.jpg
+thumb: 01-cover-thumb.jpg
 summary: A complete art magazine design for Everett Community College's Vibrations art exhibition — cover, editorial spreads, and a digital companion screen layout.
 images:
   01-cover.jpg: Magazine cover — the front of the Vibrations art exhibition magazine

@@ -10,7 +10,7 @@ role: Designer
 context: Coursework, Everett Community College — Graph 213
 tags: brand identity, logo design
 featured: false
-thumb: 01-logo.png
+thumb: 02-presentation.png
 summary: A brand identity for a fictional alpine technology company — a mountain form built from negative space, presented with color palette and brand application.
 images:
   01-logo.png [small]: Alpine Tech logo — the primary mark, a mountain peak formed through negative space in the letter A

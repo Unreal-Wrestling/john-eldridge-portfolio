@@ -10,12 +10,12 @@ role: Designer
 context: Coursework, Everett Community College — Graph 299
 tags: editorial design, photography
 featured: false
-thumb: 01-cover.jpg
+thumb: 03-logo-concept.jpg
 summary: A cover design for Poetry Northwest, a literary journal of national circulation — including the final cover, an alternate concept, and logo exploration.
 images:
   01-cover.jpg: Final cover — the Spring 2013 cover design for Poetry Northwest
   02-cover-concept-sphere.png: Alternate cover concept — a spherical photographic direction explored before the final was chosen
-  03-logo-concept.jpg: Logo concept — a photography-driven wordmark direction for the journal
+  03-logo-concept.jpg [small]: Logo concept — a photography-driven wordmark direction for the journal
   04-logo-mark.png [small]: Logo mark — a simplified version of the Poetry Northwest identity
 ---
 

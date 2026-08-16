@@ -749,6 +749,10 @@ FOOTER = """
     <p>&copy; {year} {owner} &mdash; Design, Marketing &amp; Content Production</p>
   </footer>
   <button id="back-to-top" aria-label="Back to top">&uarr;</button>
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" alt="">
+  </div>
   <script>
     var btt = document.getElementById('back-to-top');
     window.addEventListener('scroll', function () {{
@@ -757,6 +761,35 @@ FOOTER = """
     btt.addEventListener('click', function () {{
       window.scrollTo({{ top: 0, behavior: 'smooth' }});
     }});
+    (function() {{
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      var lbClose = lb.querySelector('.lightbox-close');
+      function open(src, alt) {{
+        lbImg.src = src;
+        lbImg.alt = alt || '';
+        lb.hidden = false;
+        document.body.style.overflow = 'hidden';
+      }}
+      function close() {{
+        lb.hidden = true;
+        lbImg.src = '';
+        document.body.style.overflow = '';
+      }}
+      document.querySelectorAll('a.lightbox-trigger').forEach(function(a) {{
+        a.addEventListener('click', function(e) {{
+          e.preventDefault();
+          var img = a.querySelector('img');
+          open(a.getAttribute('href'), img ? img.getAttribute('alt') : '');
+        }});
+      }});
+      lb.addEventListener('click', function(e) {{
+        if (e.target === lb || e.target === lbClose) close();
+      }});
+      document.addEventListener('keydown', function(e) {{
+        if (e.key === 'Escape' && !lb.hidden) close();
+      }});
+    }})();
   </script>
 </body>
 </html>
@@ -885,7 +918,7 @@ def render_figure(image: ProjectImage, proj: Project, eager: bool) -> str:
     matte = " has-matte" if image.matte else ""
     loading = "eager" if eager else "lazy"
     return f"""      <figure class="proj-figure is-{image.shape}{matte}"{cap_px}>
-        <a href="{image.full_rel}" target="_blank" rel="noopener">
+        <a href="{image.full_rel}" class="lightbox-trigger">
           <img src="{image.thumb_rel}" alt="{esc(image.caption or proj.heading)}"{dims} loading="{loading}">
         </a>
         {cap}
@@ -922,8 +955,8 @@ def render_slideshow(proj: Project, photos: list[ProjectImage] | None = None,
         slides.append(
             f'        <figure class="slide" data-i="{i}">\n'
             f'          <div class="slide-frame">\n'
-            f'            <img src="{photo.thumb_rel}" alt="{esc(photo.caption or proj.heading)}"'
-            f'{dims} loading="{"eager" if i == 0 else "lazy"}">\n'
+            f'            <a href="{photo.full_rel}" class="lightbox-trigger"><img src="{photo.thumb_rel}" alt="{esc(photo.caption or proj.heading)}"'
+            f'{dims} loading="{"eager" if i == 0 else "lazy"}"></a>\n'
             f"          </div>\n"
             f"          {cap}\n"
             f"        </figure>"
@@ -1012,8 +1045,8 @@ def render_grid(proj: Project, photos: list[ProjectImage],
         tiles.append(
             f'        <figure class="grid-tile">\n'
             f'          <div class="grid-tile-img">\n'
-            f'            <img src="{photo.thumb_rel}" alt="{esc(photo.caption or proj.heading)}"'
-            f'{dims} loading="{"eager" if i < 4 else "lazy"}">\n'
+            f'            <a href="{photo.full_rel}" class="lightbox-trigger"><img src="{photo.thumb_rel}" alt="{esc(photo.caption or proj.heading)}"'
+            f'{dims} loading="{"eager" if i < 4 else "lazy"}"></a>\n'
             f"          </div>\n"
             f"          {cap}\n"
             f"        </figure>"
