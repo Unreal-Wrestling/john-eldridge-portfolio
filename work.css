@@ -137,7 +137,10 @@
 }
 
 /* ── Work index: grid ────────────────────────────────────── */
-.work-main { padding: 3rem 0 6rem; }
+/* Same double-class trap as .proj-main - the grid was reaching the
+   viewport edge with no gutter. Max-width is left at .container's 1400px
+   here, because a browsable index benefits from the extra columns. */
+.work-main { padding: 3rem 2rem 6rem; }
 
 .work-grid {
   display: grid;
@@ -300,13 +303,43 @@
   text-transform: uppercase;
 }
 
-.proj-main { padding: 3.5rem 0 6rem; }
+/* This element carries BOTH .container and .proj-main, so the shorthand
+   below was silently cancelling .container's `0 2rem` and letting content
+   run to the viewport edge - invisible on a wide desktop, but on a phone
+   the copy touched both sides of the screen. */
+.proj-main { padding: 3.5rem 2rem 6rem; }
 
 /* One measure for the whole write-up. Copy and figures share it, so a
    project page reads as a single column rather than text at reading
    width with images sprawling to the full container behind it. Change
    this one value to widen or narrow the whole page. */
-:root { --measure: 680px; }
+:root {
+  --measure: 680px;
+  /* The widest a figure is allowed to run, matching the is-wide tier and
+     SHAPE_CAP in build.py. */
+  --column: 1180px;
+  /* .container is border-box, so its max-width has to carry its own
+     2rem side padding for the content box to land on --column. */
+  --page-max: calc(var(--column) + 4rem);
+}
+
+/* A project page is one centred column, not a left-pinned block inside a
+   1400px shell. Previously the copy sat at 680px hard against the left
+   edge of a near-full-width container, so on a 1440px display roughly
+   half the screen was empty and the first thing a reader saw was dead
+   space. Centring the column turns that into symmetric gutters.
+
+   Header and main share the value deliberately: narrowing only one would
+   leave the project title out of alignment with the copy beneath it.
+
+   Note the selectors are not symmetrical, because the markup is not:
+   the header wraps a child .container, while main IS the container
+   (`<main class="container proj-main">`). A `.proj-main > .container`
+   rule matches nothing at all. */
+.proj-header > .container,
+.proj-main {
+  max-width: var(--page-max);
+}
 
 .proj-body {
   max-width: var(--measure);
@@ -397,7 +430,11 @@
   padding: 0.35rem 0.85rem;
   border: 1px solid var(--accent-dim);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.03);
+  /* Was a 3% white wash, which is a dark-mode assumption: on the light
+     theme's off-white surface it rendered as nothing and the badge lost
+     its fill entirely. --surface-2 is a step away from the canvas in
+     either direction. */
+  background: var(--surface-2);
   color: var(--accent);
   font-size: 0.72rem;
   font-weight: 700;
@@ -553,12 +590,7 @@
   inset: 0;
   pointer-events: none;
 }
-.web-embed figcaption {
-  margin-top: 0.85rem;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  line-height: 1.6;
-}
+/* Appearance comes from the shared media-caption rule further down. */
 .web-embed figcaption a {
   color: var(--accent);
   text-decoration: none;
@@ -587,12 +619,7 @@
   height: 100%;
   border: 0;
 }
-.video-embed figcaption {
-  margin-top: 0.85rem;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  line-height: 1.6;
-}
+/* Appearance comes from the shared media-caption rule further down. */
 .video-embed figcaption a {
   color: var(--accent);
   text-decoration: none;
@@ -670,12 +697,7 @@
   object-fit: contain;
 }
 .slide-frame a { display: flex; align-items: center; justify-content: center; }
-.slide-cap {
-  margin-top: 0.85rem;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  line-height: 1.6;
-}
+/* .slide-cap is styled by the shared media-caption rule further down. */
 
 /* Before the script runs, every slide is visible - a plain vertical run
    of photos. The controls only appear once they can actually do something. */
@@ -839,27 +861,42 @@
   height: auto;
   object-fit: contain;
 }
+/* Grid tiles are centred, so their captions are too - a left rule here
+   would fight the tile it sits under. Sized up from 0.72rem, which was
+   small enough to read as a footnote nobody was meant to bother with. */
 .grid-cap {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   text-align: center;
-  color: var(--text-muted);
-  font-size: 0.72rem;
-  line-height: 1.4;
+  color: var(--text-2);
+  font-size: 0.78rem;
+  line-height: 1.45;
 }
 
 /* ── Project images ──────────────────────────────────────── */
 .proj-gallery {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  /* Wide enough that a caption is unmistakably closer to the image above
+     it than to the next figure below. With the old 2.5rem the two gaps
+     were near enough to equal that captions read as floating between
+     images rather than belonging to one. */
+  gap: 4rem;
   /* Wide enough for a landscape spread to break out past the copy measure.
      Text and images are different problems: 760px is a comfortable line
      length, but a two-page spread rendered 760px wide gives each page ~380px,
      which is too small to read the type or judge the layout. Each figure is
      still capped individually by its own tier and native resolution, so this
      is a ceiling rather than a width. */
-  max-width: 1180px;
+  max-width: var(--column);
 }
+/* Every inline [[image]] in a write-up is emitted as its OWN gallery
+   holding a single figure, so `gap` above never applies between two
+   consecutive images - and nothing else spaced them either. The result
+   was a caption sitting 0.9rem under its own image and flush against the
+   next one, so it read as labelling the image below it rather than the
+   one it belongs to. Matches the intra-gallery gap. */
+.proj-gallery + .proj-gallery { margin-top: 4rem; }
+
 /* Copy and figures alternate down the page, so a gallery that is
    followed by more write-up needs the same breathing room the body
    blocks give each other. */
@@ -951,16 +988,35 @@
 }
 /* Motion pieces sit on black so letterboxing reads as intentional. */
 .proj-figure video { background: #000; }
-/* A caption is a note about the work, not a label riveted to it. Once
-   the panel is gone the divider and the inset padding have nothing to
-   divide or sit inside, so it becomes plain text under the image, held
-   to a readable measure rather than the image's full width. */
-.proj-figure figcaption {
-  padding: 0.85rem 0 0;
-  max-width: 680px;
+/* ── Media captions ─────────────────────────────────────────
+   One rule for every caption that describes a piece of media. It is a
+   single declaration on purpose: these had drifted into five separate
+   definitions across three font sizes and two colours, which is why
+   captions looked unrelated to each other from page to page.
+
+   A caption is a note about the work, not a label riveted to it - but
+   removing the figure panel in the chrome pass left it as bare text
+   adrift in whitespace, reading as stray body copy. The rule on the left
+   is what fixes that: it marks the text as a deliberate annotation, and
+   being a vertical edge it points back up at the media it describes.
+
+   Capped at the reading measure so a caption under a 1180px spread never
+   runs to an uncomfortable line length.
+
+   Testimonial figcaptions are deliberately NOT included - those are
+   attributions, not descriptions, and they carry their own em-dash and
+   uppercase treatment. */
+.proj-figure figcaption,
+.slide-cap,
+.web-embed figcaption,
+.video-embed figcaption {
+  margin-top: 0.9rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--border-strong);
+  max-width: var(--measure);
   color: var(--text-2);
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 0.82rem;
+  line-height: 1.55;
 }
 
 /* ── Project footer nav ──────────────────────────────────── */
@@ -1005,10 +1061,11 @@
   .proj-header { padding: 5rem 0 2.5rem; }
 
   .work-grid { grid-template-columns: 1fr; gap: 1.25rem; }
-  .work-main { padding: 2rem 0 4rem; }
-  .proj-main { padding: 2.5rem 0 4rem; }
+  .work-main { padding: 2rem 1.25rem 4rem; }
+  .proj-main { padding: 2.5rem 1.25rem 4rem; }
 
   .proj-gallery { gap: 1.5rem; }
+  .proj-gallery + .proj-gallery { margin-top: 2.5rem; }
   .proj-body p { font-size: 1rem; }
   .proj-nav-btn { flex: 1; text-align: center; }
 }
