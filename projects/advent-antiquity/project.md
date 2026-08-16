@@ -14,37 +14,36 @@ thumb: 01-front-cover.png
 summary: A complete book design for Graph 251, built around a personal concept — a fictional band called Advent Antiquity and their album Nothing is Trivial, exploring the ideas of life, love, and who we are as humans. Full design from cover to closing page with photography, artwork, and songwriting.
 images:
   01-front-cover.png [small]: Front cover — hand-lettered title in brush and ink on a dark ground
-  02-spread-01.png: Title and colophon spread — the book's title page and publication credits
-  03-spread-02.png: Table of contents spread — hand-lettered section titles listing the album's tracks
-  04-spread-03.png: Opening lyrics spread — the first song's text set on the modular grid
-  05-spread-04.png: Lyrics spread — text on the grid with a hand-lettered song title
-  06-spread-05.png: Lyrics spread — song text with a hand-lettered title
-  07-spread-06.png: Lyrics spread — text continuing the album's narrative
-  08-spread-07.png: Lyrics spread — a quieter text page with more negative space
-  09-spread-08.png: "On My Own" — a photograph digitized in Illustrator and Photoshop, paired with hand-set type
-  10-spread-09.png: Full-bleed photograph spread — image carries across the gutter
-  11-spread-10.png: Full-bleed photograph spread — photograph runs edge to edge across both pages
-  12-spread-11.png: Photography spread — image paired with lyrics text
-  13-spread-12.png: Photography spread — image with text set in the margin
-  14-spread-13.png: Lyrics spread — text carrying the narrative forward
-  15-spread-14.png: Photography and lyrics spread — image paired with song text
-  16-spread-15.png: Photography and text spread — image with text on the grid
-  17-spread-16.png: Photography spread — image-led layout
-  18-spread-17.png: Full-bleed photography spread — image with text
-  19-spread-18.png: Photography and lyrics spread — image with song text
-  20-spread-19.png: Full-bleed photograph spread — image runs edge to edge
-  21-spread-20.png: Photography and text spread — image with lyrics
-  22-spread-21.png: Full-bleed photograph spread — image with a quiet typographic page
-  23-spread-22.png: Text and image spread — the book winding down
-  24-spread-23.png: Lyrics spread — quieter pages, more negative space
-  25-spread-24.png: Text and image spread — lyrics and photography
-  26-spread-25.png: Lyrics spread — minimal layout, negative space doing the work
-  27-spread-26.png: "Breathe" — a photograph of a model, digitized in Illustrator and Photoshop, with lyrics and hand-lettered title
-  28-spread-27.png: Photography and text spread — image with lyrics
-  29-spread-28.png: Lyrics spread — a quiet text page near the end
-  30-spread-29.png: Lyrics spread — the album's final pages
-  31-spread-30.png: Closing spread — the last interior pages before the back cover
-  32-back-cover.png [small]: Back cover — the exterior back cover
+  02-spread-01.png: Table of contents spread — hand-lettered section titles listing the album's tracks
+  03-spread-02.png: Opening lyrics spread — the first song's text set on the modular grid
+  04-spread-03.png: Lyrics spread — text on the grid with a hand-lettered song title
+  05-spread-04.png: Lyrics spread — song text with a hand-lettered title
+  06-spread-05.png: Lyrics spread — text continuing the album's narrative
+  07-spread-06.png: Lyrics spread — a quieter text page with more negative space
+  08-spread-07.png: "On My Own" — a photograph digitized in Illustrator and Photoshop, paired with hand-set type
+  09-spread-08.png: Full-bleed photograph spread — image carries across the gutter
+  10-spread-09.png: Full-bleed photograph spread — photograph runs edge to edge across both pages
+  11-spread-10.png: Photography spread — image paired with lyrics text
+  12-spread-11.png: Photography spread — image with text set in the margin
+  13-spread-12.png: Lyrics spread — text carrying the narrative forward
+  14-spread-13.png: Photography and lyrics spread — image paired with song text
+  15-spread-14.png: Photography and text spread — image with text on the grid
+  16-spread-15.png: Photography spread — image-led layout
+  17-spread-16.png: Full-bleed photography spread — image with text
+  18-spread-17.png: Photography and lyrics spread — image with song text
+  19-spread-18.png: Full-bleed photograph spread — image runs edge to edge
+  20-spread-19.png: Photography and text spread — image with lyrics
+  21-spread-20.png: Full-bleed photograph spread — image with a quiet typographic page
+  22-spread-21.png: Text and image spread — the book winding down
+  23-spread-22.png: Lyrics spread — quieter pages, more negative space
+  24-spread-23.png: Text and image spread — lyrics and photography
+  25-spread-24.png: Lyrics spread — minimal layout, negative space doing the work
+  26-spread-25.png: "Breathe" — a photograph of a model, digitized in Illustrator and Photoshop, with lyrics and hand-lettered title
+  27-spread-26.png: Photography and text spread — image with lyrics
+  28-spread-27.png: Lyrics spread — a quiet text page near the end
+  29-spread-28.png: Lyrics spread — the album's final pages
+  30-spread-29.png: Closing spread — the last interior pages before the back cover
+  31-back-cover.png [small]: Back cover — the exterior back cover
 ---
 
 Advent Antiquity was a book design project for Graph 251 at Everett
@@ -142,14 +141,12 @@ process as the rest of the book.
 
 [[30-spread-29.png]]
 
-[[31-spread-30.png]]
-
 ## Back cover
 
 The back cover closes the book the same way it opened — quiet, dark,
 and deliberate.
 
-[[32-back-cover.png]]
+[[31-back-cover.png]]
 
 ## Production
 
