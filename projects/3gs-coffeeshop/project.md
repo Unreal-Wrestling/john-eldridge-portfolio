@@ -3,12 +3,12 @@ title: Logo, Menu & Loyalty Program
 client: 3G's Coffeeshop
 year: 2015
 date: 2015-06
-category: Branding & Identity
+category: Brand Identity
 division: business
 work_type: client
 role: Creative Director
 context: Inkboard Design
-tags: logo, menu, print, loyalty, hospitality
+tags: brand identity, print
 featured: false
 summary: Seaside identity for a family-run Westport coffeeshop, extended into menus and a loyalty coupon program.
 images:

@@ -3,14 +3,14 @@ title: FWA — Fantasy Wrestling Alliance
 client: JCMG Fantasy Sports
 year: 2021-2023
 date: 2022-06
-category: Brand Identity & Event Design
+category: Brand Identity
 division: entertainment
 work_type: client
 role: Creative Director
 context: Contract
 featured: true
 thumb: 01-fwa-logo.jpg
-tags: logo, identity, branding, social media, event design, poster, editorial, magazine, game design, wrestling
+tags: brand identity, event design, editorial design, game design
 sections: Brand Identity, Social Media & Marketing, PPV Event Posters, Year End Awards Magazine, Commissioner Reports, Game Design
 summary: Full creative direction for a fantasy wrestling promotion — brand identity, 14 promotion logos, social media kit, 20+ PPV event posters, an annual year-end awards magazine, multi-page commissioner reports, and game design materials.
 images:

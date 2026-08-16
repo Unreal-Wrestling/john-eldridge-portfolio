@@ -10,7 +10,7 @@ role: Design Intern, Photographer & Webmaster
 context: Internship
 featured: false
 thumb: 00-rain-city-logo.jpg
-tags: poster, print, label, event, beverage, illustration
+tags: event design, print, digital illustration
 sections: 'Stache Bash, Brews of Anime
 summary: Posters for two nights of the brewery's Beer As Art competition series, the label for a spiced pale amber brewed by one of the owners, and the photography from both events.
 images:

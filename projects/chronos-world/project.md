@@ -3,14 +3,14 @@ title: TTRPG Entertainment Network
 client: Chronos World Entertainment
 year: 2020-2021
 date: 2020-06
-category: Brand Identity & Video Production
+category: Brand Identity
 division: entertainment
 work_type: client
 role: Creative Director / Game Master / Producer
 context: Owned and operated
 featured: true
 thumb: 03-cwe-logo.jpg
-tags: logo, identity, branding, twitch, streaming, ttrpg, motion graphics, video editing, social media, show design, discord, game design
+tags: brand identity, video production, social media, game design
 sections: Brand Identity, Show Logos, Stream Overlays, Social Media & Streaming, Show Openers & Motion Graphics, Game Design & Production
 summary: An ambitious entertainment network project producing live TTRPG gameplay shows six days a week for Twitch and YouTube — brand identity, show intros/outros, motion graphics, social media kit, Discord community, and full production pipeline.
 images:
@@ -28,6 +28,7 @@ images:
   12-merch-kobold.png [thumb-only]: Character merchandise — Kobold Cowboy apparel
   13-cw-presents.png [thumb-only]: CW Presents — show branding mark
   14-cw-image.jpeg [thumb-only]: Chronos World promotional image
+  15-cw-logo-sting.mp4: CW Logo Sting — animated logo reveal
 photos-brand-core:
   03-brand-cwe-logo.jpg: Chronos World Entertainment — rebrand logo
   01-brand-cw-logo.jpg: Chronos World — original logo
@@ -58,8 +59,7 @@ photos-sub-icons:
   15-sub-icon-cole.png: Cole4ever
   16-sub-icon-scoundrel.png: Honorable Scoundrel
 photos-merch:
-  11-merch-cole.png: Cole — character t-shirt design
-  12-merch-kobold.png: Kobold Cowboy — character apparel design
+  12-merch-kobold.png: Kobold Cowboy — character t-shirt design
 photos-show-logos:
   30-logo-fireside-tales.png: Fireside Tales — show logo
   31-logo-harmony-city.png: Harmony City — show logo
@@ -73,16 +73,9 @@ photos-show-logos:
   39-logo-battle-arena.png: Battle Arena — show logo
 photos-overlays:
   41-overlay-battle-arena.png: Battle Arena — stream overlay
-  42-overlay-fireside-tales-01.jpg: Fireside Tales — overlay design 1
-  43-overlay-fireside-tales-02.png: Fireside Tales — overlay design 2
-  44-overlay-fireside-tales-03.png: Fireside Tales — overlay design 3
-  45-overlay-fireside-tales-04.png: Fireside Tales — overlay design 4
-  46-overlay-new-london-01.png: New London — overlay design 1
-  47-overlay-new-london-02.png: New London — overlay design 2
-  48-overlay-harmony-city-01.png: Harmony City — overlay design 1
-  49-overlay-harmony-city-02.png: Harmony City — overlay design 2
-  50-overlay-harmony-city-03.png: Harmony City — overlay design 3
-  51-overlay-harmony-city-04.png: Harmony City — overlay design 4
+  45-overlay-fireside-tales-04.png: Fireside Tales — overlay design
+  46-overlay-new-london-01.png: New London — overlay design
+  51-overlay-harmony-city-04.png: Harmony City — overlay design
   52-overlay-ravens.png: Ravens — stream overlay
   53-overlay-osa-monsterhearts.png: One Shot Adventures (Monsterhearts) — overlay
 photos-splash-pages:
@@ -123,6 +116,8 @@ broadcast network to episodic audio production.
 
 [[grid:brand-core]]
 
+[[15-cw-logo-sting.mp4]]
+
 ## Show Logos
 
 Each show in the network received its own logo identity,
@@ -145,41 +140,29 @@ palette while maintaining network-wide consistency. Multiple
 iterations were produced per show as the production pipeline
 evolved.
 
-[[grid:overlays]]
-
-### Show Splash Pages
-
-Each show also got a branded splash page used as a "be right
-back" interstitial during streams and as social media
-promotion art.
-
-[[grid:splash-pages]]
+[[grid:overlays:xl]]
 
 ## Social Media & Streaming
 
-Every platform got custom-branded assets. The Twitch channel
-received a full set of panels, an offline screen, a splash page,
-and a broadcast schedule. YouTube and Facebook each got
-platform-specific banners. A stream advertisement was produced
-for Twitch promotion. Patreon received custom tier icons for
-subscriber badges, and Twitch subscriber badges were designed
-for individual community supporters.
+Every platform got custom-branded assets. Each show got a
+branded splash page used as a "be right back" interstitial
+during streams and as social media promotion art. The Twitch
+channel received a full set of panels, an offline screen, a
+splash page, and a broadcast schedule. YouTube and Facebook
+each got platform-specific banners. A stream advertisement was
+produced for Twitch promotion.
+
+### Show Splash Pages
+
+[[grid:splash-pages:xl]]
 
 ### Platform Banners
 
-[[grid:social-banners]]
+[[grid:social-banners:xl]]
 
 ### Twitch Panels
 
-[[grid:twitch-panels]]
-
-### Patreon Tier Icons
-
-[[grid:patreon-tiers]]
-
-### Twitch Subscriber Badges
-
-[[grid:sub-icons]]
+[[grid:twitch-panels:wide]]
 
 ## Show Openers & Motion Graphics
 
@@ -209,21 +192,37 @@ as base material where needed.
 Beyond the broadcast layer, I designed and produced all game
 content — custom token packs, battle maps, character art, and
 stream overlay templates. A token creation pipeline was built
-using Clip Studio Paint and a custom TokenTool workflow, allowing
-rapid production of character and NPC tokens for live play.
+using Adobe Photoshop and a custom workflow, allowing rapid
+production of character and NPC tokens for live play.
 Merchandise designs were produced for community supporters,
 featuring original character art from the shows.
 
 ### Merchandise
 
-[[grid:merch:med]]
+[[grid:merch:feature]]
+
+### Production
 
 The network ran shows across multiple game systems and original
-settings — Battle Arena (combat-focused one-shots), New London
-(post-apocalyptic campaign), Saltmarsh Legends (nautical
-adventure), Fireside Tales (anthology storytelling), Frost
-Maidens (ice-themed campaign), and One-Shot Adventures
-(individual stories using systems like Monsterhearts). Each
+settings — Battle Arena (combat-focused one-shots using Dungeons
+& Dragons), New London (post-apocalyptic campaign, Dungeons &
+Dragons), Saltmarsh Legends (nautical adventure, Dungeons &
+Dragons), Fireside Tales (anthology storytelling, Dungeons &
+Dragons), Frost Maidens (ice-themed campaign, Dungeons &
+Dragons), Harmony City (Shadowrun), X-Hunter (Marvel Superheroes),
+Dead Man (All Flesh Must Be Eaten), The Blackberry Winter (Mouse
+Guard), and One-Shot Adventures (individual stories where the GM
+chose the system — Monsterhearts was one such one-shot). Each
 required its own visual identity within the Chronos World brand
 system, plus game preparation, token art, and production
 planning for live broadcast.
+
+Bringing a six-day-a-week TTRPG entertainment network to life
+required wearing every hat in the production stack — Creative
+Director, Game Master, Producer, Game Designer, Community
+Developer, Discord Developer, Discord Admin, Broadcast Engineer,
+Motion Graphics Designer, Video Editor, Graphic Designer, Brand
+Identity Designer, Social Media Manager, and Talent Coordinator.
+Each role was a full-time job on its own; together they formed a
+one-person production pipeline that turned tabletop roleplaying
+into broadcast entertainment.

@@ -1,0 +1,1264 @@
+
+Dir
+---
+D:\Work\Chronos World\Administrative
+D:\Work\Chronos World\Administrative\ChronosWorld_Subcontractors
+D:\Work\Chronos World\Administrative\ChronosWorld_Subcontractors\SplatteredInk Samples
+D:\Work\Chronos World\Administrative\Contract INFO
+D:\Work\Chronos World\Administrative\Contracts
+D:\Work\Chronos World\Administrative\Forge Access Instructions
+D:\Work\Chronos World\Administrative\Logo
+D:\Work\Chronos World\Administrative\Milestones
+D:\Work\Chronos World\Administrative\Partner Logos
+D:\Work\Chronos World\Administrative\Sponsor Logos
+D:\Work\Chronos World\Asset Production
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Inspiration
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\1st Level Spells
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\2nd Level Spells
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Acid Splash
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Blade Barrier
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Booming Blade
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Chill Touch
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Create Bonfire
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Dancing Lights
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Eldritch Blast
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Encode Thoughts
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Fire Bolt
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Friends
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Frostbite
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Green Flame Blade
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Guiding Hand
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Gust
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Hand of Radiance
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Infestation
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Light
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Lightning Lure
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Mage Hand
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Magic Stone
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Mind Fist
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Mind Sliver
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Mind Strike
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Mold Earth
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Poison Spray
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Primal Savagery
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Produce Flame
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Ray of Frost
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Sacred Flame
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Shape Water
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Shillelagh
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Shocking Grasp
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Sword Burst
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Thorn Whip
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Thunderclap
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Toll the Dead
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\True Strike
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Vicious Mockery
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Spell Fx\Cantrips\Word of Radiance
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Status Fx
+D:\Work\Chronos World\Asset Production\CW_Token-Pack-Art\Status Fx\Poisoned
+D:\Work\Chronos World\Asset Production\Merch
+D:\Work\Chronos World\Asset Production\Overlay
+D:\Work\Chronos World\Asset Production\TokenTool
+D:\Work\Chronos World\Asset Production\TokenTool\app
+D:\Work\Chronos World\Asset Production\Unity
+D:\Work\Chronos World\Jocasta_CityOfDreams
+D:\Work\Chronos World\Live Show Assets
+D:\Work\Chronos World\Live Show Assets\Elder Ridge
+D:\Work\Chronos World\Live Show Assets\OLD
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\Logo Sting\Adobe After Effects Auto-Save
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\Logo Sting\BA_LogoSting_AME
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\Maps
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Battle Arena\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Character Assets\NPC\Ally
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Character Assets\NPC\Enemy
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Production
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Production\Maps
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Dead Man\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Character Assets\Frames
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Character Assets\NPC\Ally
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Character Assets\NPC\Enemy
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Character Assets\PC\old
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\End Credits\Adobe After Effects Auto-Save
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\End Credits\Final
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\End Credits\Final\OLD
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\End Credits\FST_CreditScroll_AME
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\End Credits\Motion Graphics Template Media
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\End Credits\Motion Graphics Template Media\13123ddc-3b5a-41fb-a840-706a602fc53c
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Logo Sting\Adobe Premiere Pro Audio Previews
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Logo Sting\Adobe Premiere Pro Audio Previews\FST_Opener_FINAL.PRV
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Logo Sting\Adobe Premiere Pro Audio Previews\FST_Opener_FINAL.PRV\Peak Files
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Logo Sting\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Logo Sting\FST_LogoSting01_AME
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Sound Design
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Sound Design\OpeningTheTomb
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Sound Design\OpeningTheTomb\Conformed Files
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Sound Design\OpeningTheTomb\Imported Files
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Adobe Premiere Pro Audio Previews
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Adobe Premiere Pro Audio Previews\FST_S1_E049_05-24-2020.PRV
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Adobe Premiere Pro Audio Previews\FST_S1_E049_05-24-2020.PRV\Peak Files
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Adobe Premiere Pro Captured Video
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Adobe Premiere Pro Captured Video\FST_S1_E049_05-24-2020
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\00ec66f0-57c8-42ea-8016-603cbb0aa045
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\13123ddc-3b5a-41fb-a840-706a602fc53c
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\336cbf2a-26ef-4dc8-b14f-d4a669742727
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\336cbf2a-26ef-4dc8-b14f-d4a669742727\Modern Title
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\33b6741a-103f-498f-b87b-5f2a7cec618c
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\50daa744-ac65-4739-ac84-a43af467950c
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\a5eec787-92af-4ebe-8660-1e48061c2a81
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\aa19f7c3-b32b-4c20-9998-564ca3aad793
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\Trailer\Motion Graphics Template Media\e2aaa665-be6a-45f8-8c28-eb10056adc2b
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\VTT Exports
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Production\VTT Modules
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Setting Assets\Locations\0023_jungle_acrophobiaAbyss-10minAudio
+D:\Work\Chronos World\Live Show Assets\OLD\Fireside Tales\Setting Assets\Locations\0023_jungle_acrophobiaAbyss-animated
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Logo Sting\Adobe After Effects Auto-Save
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Logo Sting\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Logo Sting\FrostMaidens_Logo_AME
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Logo Sting\FrostMaidens_Logo_noBG_AME
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Logo Sting\FrostMaidens_Logo_noBG2_AME
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Frost Maidens\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Charcter Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Charcter Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Charcter Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Production
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\OLD\Harmony City\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Production
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\OLD\Legends of Eden\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Production
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Setting Assets\Card System
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\OLD\Mouse Guard\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\OLD\New London
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Character Assets\PC\old
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Production
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\OLD\New London\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Dread
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Production
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Monsterhearts\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Production
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Mouse Guard\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Production
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\One Shot Adventures\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Character Assets\NPC\Ally
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Character Assets\NPC\Enemy
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Character Assets\NPC\Enemy\Unassigned Villains
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Production
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\Ravens\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\Special Events
+D:\Work\Chronos World\Live Show Assets\OLD\Special Events\Secret of the Porvenir
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Character Assets
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Character Assets\NPC\Ally
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Character Assets\NPC\Enemy
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Character Assets\PC\Hazard
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Production
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Production\Logo
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Errata\News_Materials
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\FragMaps
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker\1 Way Room
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker\12x6 Pods
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker\2 Way
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker\3 Way
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker\4 Way
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker\Filler
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker\Hanger
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\2012_Bunker_Tile_Set_by_ProBono\2012 Bunker\Rails
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\6x4_Thecolony_TheYard__0000_Layer 24
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\6x4_Thecolony_Warehouse__0000_Layer 24
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\New\6x4_zMart__0000_Layer 24
+D:\Work\Chronos World\Live Show Assets\OLD\X Hunter\Setting Assets\Locations\Maps\Unused
+D:\Work\Chronos World\Live Show Assets\Saltmarsh
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets\NPC
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets\NPC\Ally
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets\NPC\Dieties
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets\NPC\Enemy
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets\NPC\Neutral
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets\PC
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets\PC\old
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Character Assets\PC\Porvenir
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 001
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 002
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 003
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 004
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 005
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 006
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 007
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 008
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 009
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 010
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 011
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 012
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 013
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 014
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 015
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 016
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 017
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 018
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 019
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 020
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 021
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 022
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 022\craig-yBM73bJsI5q3
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 023
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 023\craig-QUnBEA3OdgEG
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 024
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 024\craig-R2dr78QNL5SW
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 025
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 025\craig-ExjDjtbghHG7
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 026
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 026\craig-miMGdKNcdPMA
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 027
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 028
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 028\craig-DhCPNWOrIwEi
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 029
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 029\emcRaTjUJ6os_data
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 030
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 030\craig-emcRaTjUJ6os
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 031
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 032
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 033
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 034
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 034\craig-sQjj2yVvECEW
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 035
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 035\craig-aZLjPmbL8zlD
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 036
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 036\craig-GXQCiazPb5pI
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 037
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 037\craig-M2mkaBkTuzg6
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 038
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 038\craig-Vss9nPXhd6Se
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 039
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 039\craig-w4nPjDsCd9t9
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 040
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 040\craig-aw1IBCYIrnek
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 041
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 041\craig-Ps5Iu0o0QW5F
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 042
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 042\craig-rCjQ7TEQUFWc
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 043
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 044
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Audio Recordings\Week 044\craig-GrLiCIrEv9WT
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Campaign Planning
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\End Credits
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\End Credits\Adobe After Effects Auto-Save
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\End Credits\SL_CreditScroll_AME
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe After Effects Auto-Save
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Audio Previews
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Audio Previews\Saltmarsh_closer_logo_sequence.PRV
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Audio Previews\Saltmarsh_closer_logo_sequence.PRV\Peak Files
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Audio Previews\Saltmarsh_opener_logo_sequence.PRV
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Audio Previews\Saltmarsh_opener_logo_sequence.PRV\Peak Files
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Audio Previews\Saltmarsh_opener_sequence.PRV
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Audio Previews\Saltmarsh_opener_sequence.PRV\Peak Files
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Captured Video
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Adobe Premiere Pro Captured Video\Saltmarsh_opener_logo_sequence
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\laughing-witch-RN6B4XV
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\sea-monster-moan-13051-UCNBHXB
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\sea-monster-moaning-R3NRRLH
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\sea-monster-moaning-R3NRRLH\__MACOSX
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\sea-monster-moaning-R3NRRLH\__MACOSX\Sea Monster Moaning
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\sea-monster-moaning-R3NRRLH\Sea Monster Moaning
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\sea-serpent-scream-3-H8YZRAB
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\underwater-sea-ambience-MZPLGUT
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Audio\underwater-sea-ambience-MZPLGUT\__MACOSX
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\epic-pirate-logo-VW89VCU
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\epic-pirate-logo-VW89VCU\footage
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\epic-pirate-logo-VW89VCU\footage\1
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\epic-pirate-logo-VW89VCU\footage\4
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\epic-pirate-logo-VW89VCU\footage\5
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\epic-pirate-logo-VW89VCU\Project File
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\epic-pirate-logo-VW89VCU\Project File\Adobe After Effects Auto-Save
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Saltmarsh_closer_logo_AME
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Logo Sting\Saltmarsh_opener_logo_AME
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Overlay Design
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Social Media
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Production\Trailer
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Errata
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Items
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\Danger at Dunwater Map
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\Danger at Dunwater Map\HIGHRESS
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\Danger at Dunwater Map\ROLL20
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\Danger at Dunwater Map\ROLL20\nogrid
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_FinalEnemy_HighRes_Files
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_FinalEnemy_HighRes_Files\png_high_grid
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_FinalEnemy_HighRes_Files\png_high_nogrid
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files\HighRes_Files
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files\HighRes_Files\firewatch_island_day
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files\HighRes_Files\firewatch_island_day\grid_version
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files\HighRes_Files\firewatch_island_day\nogrid_version
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files\HighRes_Files\firewatch_island_night
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files\HighRes_Files\firewatch_island_night\grid_version
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files\HighRes_Files\firewatch_island_night\nogrid_version
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_TammerautsFate_HighRes_Files\HighRes_Files\pit_of_hatred
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_Taverns_of_Saltmarsh_Roll20_Files
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_Taverns_of_Saltmarsh_Roll20_Files\farmers_hall [5040x4620]
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_Taverns_of_Saltmarsh_Roll20_Files\saltdog_inn [5600x4200]
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\FranzWarm_Taverns_of_Saltmarsh_Roll20_Files\smugglers_den [3500x3500]
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\Haunted Mansion Map Pack
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\Haunted Mansion Map Pack\roll20
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\Sea Ghost Map Pack
+D:\Work\Chronos World\Live Show Assets\Saltmarsh\Setting Assets\Locations\Sea Ghost Map Pack\withgrid
+D:\Work\Chronos World\Live Show Assets\Superhero Pics
+D:\Work\Chronos World\Social Media
+D:\Work\Chronos World\Social Media\CW_Discord
+D:\Work\Chronos World\Social Media\CW_Discord\Bots
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\command
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\command\criticalrole
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\command\custom
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\command\dice
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\command\dice\expressions
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\command\game
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\config
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\database
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\listener
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\java\nl\codefox\gilmore\util
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\resources
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\resources\images
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\main\resources\sql
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\test\java
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\test\java\nl
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\test\java\nl\codefox
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\test\java\nl\codefox\gilmore
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore-master\src\travis
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\command
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\command\criticalrole
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\command\custom
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\command\dice
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\command\dice\expressions
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\command\game
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\config
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\database
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\listener
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\java\nl\codefox\gilmore\util
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\resources
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\resources\images
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\main\resources\sql
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\test\java
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\test\java\nl
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\test\java\nl\codefox
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\test\java\nl\codefox\gilmore
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Gilmore Bot\gilmore\src\travis
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Git
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\GitHub
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\DLLs
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Doc
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\include
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\asyncio
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\asyncio\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\collections
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\collections\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\concurrent
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\concurrent\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\concurrent\futures
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\concurrent\futures\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ctypes
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ctypes\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ctypes\macholib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ctypes\macholib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ctypes\test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ctypes\test\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\curses
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\curses\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\dbm
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\dbm\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\distutils
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\distutils\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\distutils\command
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\distutils\command\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\distutils\tests
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\distutils\tests\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\email
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\email\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\email\mime
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\email\mime\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\encodings
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\encodings\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ensurepip
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ensurepip\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\ensurepip\_bundled
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\html
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\html\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\http
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\http\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\idlelib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\idlelib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\idlelib\Icons
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\idlelib\idle_test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\idlelib\idle_test\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\importlib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\importlib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\json
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\json\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\fixes
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\fixes\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\pgen2
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\pgen2\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\tests
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\tests\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\tests\data
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\tests\data\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\tests\data\fixers
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\tests\data\fixers\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\tests\data\fixers\myfixes
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\lib2to3\tests\data\fixers\myfixes\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\logging
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\logging\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\msilib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\msilib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\multiprocessing
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\multiprocessing\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\multiprocessing\dummy
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\multiprocessing\dummy\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\pydoc_data
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\pydoc_data\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip-9.0.1.dist-info
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\cachecontrol
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\cachecontrol\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\cachecontrol\caches
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\cachecontrol\caches\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\colorama
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\colorama\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\distlib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\distlib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\distlib\_backport
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\distlib\_backport\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\_trie
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\_trie\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\filters
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\filters\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\treeadapters
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\treeadapters\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\treebuilders
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\treebuilders\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\treewalkers
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\html5lib\treewalkers\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\lockfile
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\lockfile\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\packaging
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\packaging\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\pkg_resources
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\pkg_resources\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\progress
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\progress\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\chardet
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\chardet\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\contrib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\contrib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\ssl_match_hostname
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\packages\ssl_match_hostname\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\util
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\requests\packages\urllib3\util\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\webencodings
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\_vendor\webencodings\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\commands
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\commands\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\compat
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\compat\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\models
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\models\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\operations
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\operations\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\req
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\req\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\utils
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\utils\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\vcs
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pip\vcs\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pkg_resources
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pkg_resources\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pkg_resources\_vendor
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pkg_resources\_vendor\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pkg_resources\_vendor\packaging
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pkg_resources\_vendor\packaging\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pkg_resources\extern
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\pkg_resources\extern\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\setuptools
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\setuptools-28.8.0.dist-info
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\setuptools\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\setuptools\command
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\setuptools\command\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\setuptools\extern
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\site-packages\setuptools\extern\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\sqlite3
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\sqlite3\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\sqlite3\test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\sqlite3\test\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\audiodata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\capath
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\cjkencodings
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\crashers
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\crashers\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\data
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\decimaltestdata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\dtracedata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\dtracedata\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\eintrdata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\eintrdata\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\encoded_modules
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\encoded_modules\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\imghdrdata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\leakers
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\leakers\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\libregrtest
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\libregrtest\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\sndhdrdata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\subprocessdata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\subprocessdata\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\support
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\support\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_asyncio
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_asyncio\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_email
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_email\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_email\data
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data\circular_imports
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data\circular_imports\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data\circular_imports\subpkg
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data\circular_imports\subpkg\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data\package
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data\package\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data\package2
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_import\data\package2\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\builtin
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\builtin\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\extension
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\extension\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\frozen
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\frozen\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\import_
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\import_\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\both_portions
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\both_portions\foo
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\both_portions\foo\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\module_and_namespace_package
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\module_and_namespace_package\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\module_and_namespace_package\a_test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\not_a_namespace_pkg
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\not_a_namespace_pkg\foo
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\not_a_namespace_pkg\foo\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\portion1
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\portion1\foo
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\portion1\foo\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\portion2
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\portion2\foo
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\portion2\foo\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project1
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project1\parent
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project1\parent\child
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project1\parent\child\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project2
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project2\parent
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project2\parent\child
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project2\parent\child\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project3
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project3\parent
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project3\parent\child
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\namespace_pkgs\project3\parent\child\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\source
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_importlib\source\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_json
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_json\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_tools
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_tools\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_warnings
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_warnings\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_warnings\data
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\test_warnings\data\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\tracedmodules
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\tracedmodules\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\test\xmltestdata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\tkinter
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\tkinter\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\tkinter\test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\tkinter\test\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\tkinter\test\test_tkinter
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\tkinter\test\test_tkinter\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\tkinter\test\test_ttk
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\tkinter\test\test_ttk\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\turtledemo
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\turtledemo\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\unittest
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\unittest\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\unittest\test
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\unittest\test\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\unittest\test\testmock
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\unittest\test\testmock\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\urllib
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\urllib\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\venv
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\venv\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\venv\scripts
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\venv\scripts\common
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\venv\scripts\nt
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\venv\scripts\posix
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\wsgiref
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\wsgiref\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\dom
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\dom\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\etree
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\etree\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\parsers
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\parsers\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\sax
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xml\sax\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xmlrpc
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Lib\xmlrpc\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\libs
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Scripts
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\dde1.4
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\reg1.3
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\encoding
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\http1.0
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\msgs
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\opt0.4
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Africa
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\America
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\America\Argentina
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\America\Indiana
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\America\Kentucky
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\America\North_Dakota
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Antarctica
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Arctic
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Asia
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Atlantic
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Australia
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Brazil
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Canada
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Chile
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Etc
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Europe
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Indian
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Mexico
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\Pacific
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\SystemV
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8.6\tzdata\US
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8\8.4
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8\8.4\platform
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8\8.5
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tcl8\8.6
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tix8.4.3
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tix8.4.3\bitmaps
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tix8.4.3\demos
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tix8.4.3\demos\bitmaps
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tix8.4.3\demos\samples
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tix8.4.3\pref
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tix8.4.3\pref\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tk8.6
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tk8.6\demos
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tk8.6\demos\images
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tk8.6\images
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tk8.6\msgs
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\tcl\tk8.6\ttk
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\demo
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\demo\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\i18n
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\i18n\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\parser
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\parser\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\pynche
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\pynche\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\pynche\X
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\scripts
+D:\Work\Chronos World\Social Media\CW_Discord\Bots\Python\Tools\scripts\__pycache__
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-30-fantasy-elements-in-flat-design-TDEWPAV-2019-03-19
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-30-fantasy-elements-in-flat-design-TDEWPAV-2019-03-19\30 RPG and Fantasy
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-30-fantasy-elements-in-flat-design-TDEWPAV-2019-03-19\30 RPG and Fantasy\EPS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-30-fantasy-elements-in-flat-design-TDEWPAV-2019-03-19\30 RPG and Fantasy\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-30-fantasy-elements-in-flat-design-TDEWPAV-2019-03-19\30 RPG and Fantasy\SVG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\65 supernatural icons vivid series.iconjar
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\65 supernatural icons vivid series.iconjar\icons
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\AI
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\EPS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\PNG\256 px
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\PNG\512 px
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\PSD
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-65-supernatural-icons-vivid-series-L2YZYRY-2019-10-30\SVG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\70 supernatural icons astute series.iconjar
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\70 supernatural icons astute series.iconjar\icons
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\AI
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\EPS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\PDF
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\PNG\256 px
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\PNG\512 px
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-astute-series-VLGDRQR-2019-10-30\SVG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\70 supernatural icons malibu series.iconjar
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\70 supernatural icons malibu series.iconjar\icons
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\AI
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\EPS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\PDF
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\PNG\256 px
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\PNG\512 px
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-70-supernatural-icons-malibu-series-LUPY2TT-2020-02-03\SVG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-collection-of-trees-CFCW4C-2019-02-21
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-collection-of-trees-CFCW4C-2019-02-21\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-collection-of-trees-CFCW4C-2019-02-21\__MACOSX\trees
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-collection-of-trees-CFCW4C-2019-02-21\__MACOSX\trees\png
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-collection-of-trees-CFCW4C-2019-02-21\__MACOSX\trees\SVG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-collection-of-trees-CFCW4C-2019-02-21\trees
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-collection-of-trees-CFCW4C-2019-02-21\trees\png
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-collection-of-trees-CFCW4C-2019-02-21\trees\SVG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\__MACOSX\Main Files - Icons
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\__MACOSX\Main Files - Icons\Affinity
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\__MACOSX\Main Files - Icons\JPEG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\__MACOSX\Main Files - Icons\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\__MACOSX\Main Files - Icons\PNG\512_with background
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\__MACOSX\Main Files - Icons\PNG\512_without background
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\__MACOSX\Main Files - Icons\PSD
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\Main Files - Icons
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\Main Files - Icons\Affinity
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\Main Files - Icons\JPEG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\Main Files - Icons\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\Main Files - Icons\PNG\512_with background
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\Main Files - Icons\PNG\512_without background
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-colorful-game-icons-F5859C-2017-01-17\Main Files - Icons\PSD
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-fire-and-flames-vector-icons-GM28RZ-2017-08-23
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-fire-and-flames-vector-icons-GM28RZ-2017-08-23\fire_icons_READY
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-fire-and-flames-vector-icons-GM28RZ-2017-08-23\fire_icons_READY\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-fire-and-flames-vector-icons-GM28RZ-2017-08-23\fire_icons_READY\PNG\color
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-fire-and-flames-vector-icons-GM28RZ-2017-08-23\fire_icons_READY\PNG\fill
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-fire-and-flames-vector-icons-GM28RZ-2017-08-23\fire_icons_READY\PNG\line
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-fire-and-flames-vector-icons-GM28RZ-2017-08-23\fire_icons_READY\PNG\textured
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gems-and-diamonds-icons-set-9GTQU5A-2019-09-12
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gems-and-diamonds-icons-set-9GTQU5A-2019-09-12\AI
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gems-and-diamonds-icons-set-9GTQU5A-2019-09-12\Background
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gems-and-diamonds-icons-set-9GTQU5A-2019-09-12\EPS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gems-and-diamonds-icons-set-9GTQU5A-2019-09-12\JPG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gems-and-diamonds-icons-set-9GTQU5A-2019-09-12\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gems-and-diamonds-icons-set-9GTQU5A-2019-09-12\PSD
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gold-chicken-mascot-esports-logo-CXLVYR6-2019-07-13
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gold-chicken-mascot-esports-logo-CXLVYR6-2019-07-13\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gold-chicken-mascot-esports-logo-CXLVYR6-2019-07-13\__MACOSX\main file
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-gold-chicken-mascot-esports-logo-CXLVYR6-2019-07-13\main file
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-in-game-currency-icon-pack-HP562D-2016-07-25
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-in-game-currency-icon-pack-HP562D-2016-07-25\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-in-game-currency-icon-pack-HP562D-2016-07-25\__MACOSX\In-game Currency Icon Pack
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-in-game-currency-icon-pack-HP562D-2016-07-25\__MACOSX\In-game Currency Icon Pack\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-in-game-currency-icon-pack-HP562D-2016-07-25\__MACOSX\In-game Currency Icon Pack\Previews
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-in-game-currency-icon-pack-HP562D-2016-07-25\In-game Currency Icon Pack
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-in-game-currency-icon-pack-HP562D-2016-07-25\In-game Currency Icon Pack\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-in-game-currency-icon-pack-HP562D-2016-07-25\In-game Currency Icon Pack\Previews
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-little-critters-monster-extended-pack-CFB7XN-2016-07-27
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-little-critters-monster-extended-pack-CFB7XN-2016-07-27\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-little-critters-monster-extended-pack-CFB7XN-2016-07-27\__MACOSX\Little Critters Monster Extended Pack
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-little-critters-monster-extended-pack-CFB7XN-2016-07-27\__MACOSX\Little Critters Monster Extended Pack\PNGs
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-little-critters-monster-extended-pack-CFB7XN-2016-07-27\Little Critters Monster Extended Pack
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-little-critters-monster-extended-pack-CFB7XN-2016-07-27\Little Critters Monster Extended Pack\PNGs
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-pirate-adventures-game-icon-set-SJUHLC-2016-07-27
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-pirate-adventures-game-icon-set-SJUHLC-2016-07-27\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-pirate-adventures-game-icon-set-SJUHLC-2016-07-27\__MACOSX\Low Poly Pirate Adventures Game Icon Set
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-pirate-adventures-game-icon-set-SJUHLC-2016-07-27\__MACOSX\Low Poly Pirate Adventures Game Icon Set\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-pirate-adventures-game-icon-set-SJUHLC-2016-07-27\Low Poly Pirate Adventures Game Icon Set
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-pirate-adventures-game-icon-set-SJUHLC-2016-07-27\Low Poly Pirate Adventures Game Icon Set\PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-viking-adventures-game-icon-set-P5B57A-2016-07-27
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-viking-adventures-game-icon-set-P5B57A-2016-07-27\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-viking-adventures-game-icon-set-P5B57A-2016-07-27\__MACOSX\Low Poly Viking Adventures Game Icon Set
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-viking-adventures-game-icon-set-P5B57A-2016-07-27\__MACOSX\Low Poly Viking Adventures Game Icon Set\PNGs
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-viking-adventures-game-icon-set-P5B57A-2016-07-27\Low Poly Viking Adventures Game Icon Set
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-low-poly-viking-adventures-game-icon-set-P5B57A-2016-07-27\Low Poly Viking Adventures Game Icon Set\PNGs
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-magic-potions-game-icon-pack-EG5AK4-2016-07-27
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-magic-potions-game-icon-pack-EG5AK4-2016-07-27\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-magic-potions-game-icon-pack-EG5AK4-2016-07-27\__MACOSX\Magic Potions Game Icon Pack
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-magic-potions-game-icon-pack-EG5AK4-2016-07-27\__MACOSX\Magic Potions Game Icon Pack\PNGs
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-magic-potions-game-icon-pack-EG5AK4-2016-07-27\Magic Potions Game Icon Pack
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-magic-potions-game-icon-pack-EG5AK4-2016-07-27\Magic Potions Game Icon Pack\PNGs
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-medieval-gameplay-icon-set-PY298A-2016-07-20
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-medieval-gameplay-icon-set-PY298A-2016-07-20\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-medieval-gameplay-icon-set-PY298A-2016-07-20\__MACOSX\Final
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-medieval-gameplay-icon-set-PY298A-2016-07-20\__MACOSX\Final\03 PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-medieval-gameplay-icon-set-PY298A-2016-07-20\__MACOSX\Final\04 eps-pdf-svg
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-medieval-gameplay-icon-set-PY298A-2016-07-20\Final
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-medieval-gameplay-icon-set-PY298A-2016-07-20\Final\03 PNG
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-medieval-gameplay-icon-set-PY298A-2016-07-20\Final\04 eps-pdf-svg
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\COINS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\COINS\1024
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\COINS\128
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\COINS\256
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\COINS\32
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\COINS\512
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\COINS\64
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\GIF
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\PACK
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\PACK\1024
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\PACK\128
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\PACK\256
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\PACK\32
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\PACK\512
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\PACK\64
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\PSD
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\SPIN & FLIP
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\SPIN & FLIP\128
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\SPIN & FLIP\256
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\SPIN & FLIP\32
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\SPIN & FLIP\512
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\__MACOSX\Vokr Coin Icon Pack 1\SPIN & FLIP\64
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\COINS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\COINS\1024
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\COINS\128
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\COINS\256
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\COINS\32
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\COINS\512
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\COINS\64
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\GIF
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\PACK
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\PACK\1024
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\PACK\128
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\PACK\256
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\PACK\32
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\PACK\512
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\PACK\64
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\PSD
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\SPIN & FLIP
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\SPIN & FLIP\128
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\SPIN & FLIP\256
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\SPIN & FLIP\32
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\SPIN & FLIP\512
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\elements-vokr-gold-coin-with-dollar-sign-icon-pack-1-B8RFQJ4-2020-01-30\Vokr Coin Icon Pack 1\SPIN & FLIP\64
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\HOMER_SIDEEYE_IXORAPRINTS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\HOMER_SIDEEYE_IXORAPRINTS\HOMER_SIDEEYE_IXORAPRINTS
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Resized
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Resized\__MACOSX
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Resized\__MACOSX\Resized
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Resized\Resized
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Sprites
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Sprites\King
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Sprites\King\JustEffects
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Sprites\King\NoBkgColor
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Sprites\King\NoEffects
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\Sprites\King\WithBkgColor
+D:\Work\Chronos World\Social Media\CW_Discord\Emoji\toxi2c
+D:\Work\Chronos World\Social Media\CW_Facebook
+D:\Work\Chronos World\Social Media\CW_Facebook\CW_Banner
+D:\Work\Chronos World\Social Media\CW_Facebook\CW_Profile
+D:\Work\Chronos World\Social Media\CW_Patreon
+D:\Work\Chronos World\Social Media\CW_Patreon\CW_Banner
+D:\Work\Chronos World\Social Media\CW_Patreon\CW_Profile
+D:\Work\Chronos World\Social Media\CW_Patreon\CW_TierIcons
+D:\Work\Chronos World\Social Media\CW_Twitch
+D:\Work\Chronos World\Social Media\CW_Twitch\CW_Ads
+D:\Work\Chronos World\Social Media\CW_Twitch\CW_Icons
+D:\Work\Chronos World\Social Media\CW_Twitch\CW_Twitch_Banner
+D:\Work\Chronos World\Social Media\CW_Twitch\CW_Twitch_Panels
+D:\Work\Chronos World\Social Media\CW_Twitch\CW_Twitch_SoundFx
+D:\Work\Chronos World\Social Media\CW_Twitch\CW_Twitch_SoundFx\Sound Files
+D:\Work\Chronos World\Social Media\CW_Twitch\CW_Twitch_SoundFx\StreamFx_Adjutant
+D:\Work\Chronos World\Social Media\CW_Twitch\CW_Twitch_SoundFx\StreamFx_Darkest
+D:\Work\Chronos World\Social Media\CW_Twitch\Stream Screens
+D:\Work\Chronos World\Social Media\CW_Twitter
+D:\Work\Chronos World\Social Media\CW_Twitter\CW_Banner
+D:\Work\Chronos World\Social Media\CW_Twitter\CW_Profile
+D:\Work\Chronos World\Social Media\CW_YouTube
+D:\Work\Chronos World\Social Media\CW_YouTube\CW_Banner
+D:\Work\Chronos World\Social Media\CW_YouTube\CW_Profile
+D:\Work\Chronos World\Social Media\CW_YouTube\youtube-subscribe-like-follow-reminder-4FGSJZV
+D:\Work\Chronos World\Social Media\CW_YouTube\youtube-subscribe-like-follow-reminder-4FGSJZV\Free Font
+D:\Work\Chronos World\Social Media\CW_YouTube\youtube-subscribe-like-follow-reminder-4FGSJZV\Help File
+D:\Work\Chronos World\Social Media\Tier Icons
+D:\Work\Chronos World\Social Media\Tier Icons\18x18 PNGs
+D:\Work\Chronos World\Social Media\Tier Icons\36x36 PNGs
+D:\Work\Chronos World\Social Media\Tier Icons\72x72 PNGs
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS\LUCKY.BALLOON.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS\LUCKY.HAT.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS\LUCKY.HEART.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS\LUCKY.MOON.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS\LUCKY.RAINBOW.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS\LUCKY.SHOE.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS\LUCKY.STAR.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\__MACOSX\LUCKY.MARSHMALLOWS\LUCKY.UNICORN.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS\LUCKY.BALLOON.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS\LUCKY.HAT.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS\LUCKY.HEART.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS\LUCKY.MOON.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS\LUCKY.RAINBOW.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS\LUCKY.SHOE.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS\LUCKY.STAR.badge
+D:\Work\Chronos World\Social Media\Tier Icons\LUCKY.MARSHMALLOWS\LUCKY.MARSHMALLOWS\LUCKY.UNICORN.badge
+D:\Work\Chronos World\Stream Resources
+D:\Work\Chronos World\Stream Resources\SceneMaker
+D:\Work\Chronos World\Stream Resources\SceneMaker\assets
+D:\Work\Chronos World\Stream Resources\SceneMaker\assets\css
+D:\Work\Chronos World\Stream Resources\SceneMaker\assets\js
+D:\Work\Chronos World\Stream Resources\SceneMaker\Background
+D:\Work\Chronos World\Stream Resources\SceneMaker\Logo
+D:\Work\Chronos World\Stream Resources\SceneMaker\Settings
+D:\Work\Chronos World\Stream Resources\Text Files
+D:\Work\Chronos World\Stream Resources\Text Image Files
+D:\Work\Chronos World\Video Production
+D:\Work\Chronos World\Video Production\CW_Credits
+D:\Work\Chronos World\Video Production\CW_Credits\cinema-film-credits-pack-VNSAH7Q
+D:\Work\Chronos World\Video Production\CW_Credits\film-credits-VHBSA6D
+D:\Work\Chronos World\Video Production\CW_Credits\film-credits-VHBSA6D\__MACOSX
+D:\Work\Chronos World\Video Production\CW_Credits\film-credits-VHBSA6D\__MACOSX\Film_Credits_Essential_Graphics_v1.0
+D:\Work\Chronos World\Video Production\CW_Credits\film-credits-VHBSA6D\__MACOSX\Film_Credits_Essential_Graphics_v1.0\Documentation
+D:\Work\Chronos World\Video Production\CW_Credits\film-credits-VHBSA6D\Film_Credits_Essential_Graphics_v1.0
+D:\Work\Chronos World\Video Production\CW_Credits\film-credits-VHBSA6D\Film_Credits_Essential_Graphics_v1.0\Documentation
+D:\Work\Chronos World\Video Production\CW_Credits\film-credits-VHBSA6D\Film_Credits_Essential_Graphics_v1.0\Files
+D:\Work\Chronos World\Video Production\CW_LogoSting
+D:\Work\Chronos World\Video Production\CW_LogoSting\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Video Production\CW_LogoSting\cpu-technology-title-UL73W2Z
+D:\Work\Chronos World\Video Production\CW_LogoSting\cpu-technology-title-UL73W2Z\CPUTechnologyTitle
+D:\Work\Chronos World\Video Production\CW_LogoSting\cpu-technology-title-UL73W2Z\CPUTechnologyTitle\SoundFX
+D:\Work\Chronos World\Video Production\CW_ProductionAssets
+D:\Work\Chronos World\Video Production\CW_ProductionAssets\Audio
+D:\Work\Chronos World\Video Production\CW_ProductionAssets\Image
+D:\Work\Chronos World\Video Production\CW_ProductionAssets\Video
+D:\Work\Chronos World\Video Production\Games
+D:\Work\Chronos World\Video Production\Games\BG3
+D:\Work\Chronos World\Video Production\Games\Crowfall
+D:\Work\Chronos World\Video Production\Games\Crowfall\CF_Final
+D:\Work\Chronos World\Video Production\Games\Crowfall\Working
+D:\Work\Chronos World\Video Production\Games\League of Legends
+D:\Work\Chronos World\Video Production\Games\League of Legends\LoL_Final
+D:\Work\Chronos World\Video Production\Games\League of Legends\Working
+D:\Work\Chronos World\Video Production\Games\League of Legends\Working\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Video Production\Games\League of Legends\Working\Adobe Premiere Pro Captured Video
+D:\Work\Chronos World\Video Production\Games\League of Legends\Working\Adobe Premiere Pro Captured Video\Hearthstone_Gameplay
+D:\Work\Chronos World\Video Production\Games\Random Games
+D:\Work\Chronos World\Video Production\Games\Random Games\RG_Final
+D:\Work\Chronos World\Video Production\Games\Random Games\Working
+D:\Work\Chronos World\Video Production\OBS
+D:\Work\Chronos World\Video Production\Raw
+D:\Work\Chronos World\Video Production\Shows
+D:\Work\Chronos World\Video Production\Shows\Battle Arena
+D:\Work\Chronos World\Video Production\Shows\Battle Arena\BA_Final
+D:\Work\Chronos World\Video Production\Shows\Battle Arena\Working
+D:\Work\Chronos World\Video Production\Shows\Champions
+D:\Work\Chronos World\Video Production\Shows\Champions\CH_Final
+D:\Work\Chronos World\Video Production\Shows\Champions\Working
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\FST_Final
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\FST_Final\Season 2
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S1_E050_06-01-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S1_E050_06-01-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E001_07-05-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E001_07-05-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E001_07-30-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E001_07-30-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E002_07-12-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E002_07-12-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E002_08-16-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E002_08-16-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E006_09-25-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E006_09-25-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E007_10-11-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E007_10-11-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E008_10-18-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E008_10-18-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E009_10-25-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E009_10-25-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E011_11-22-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E011_11-22-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E012_11-29-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Audio Previews\FST_S2_E012_11-29-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Video Production\Shows\Fireside Tales\Working\RAW
+D:\Work\Chronos World\Video Production\Shows\Frost Maidens
+D:\Work\Chronos World\Video Production\Shows\Harmony City
+D:\Work\Chronos World\Video Production\Shows\Harmony City\HC_Final
+D:\Work\Chronos World\Video Production\Shows\Harmony City\Working
+D:\Work\Chronos World\Video Production\Shows\New London
+D:\Work\Chronos World\Video Production\Shows\New London\NL_Final
+D:\Work\Chronos World\Video Production\Shows\New London\Working
+D:\Work\Chronos World\Video Production\Shows\One Shot Adventures
+D:\Work\Chronos World\Video Production\Shows\One Shot Adventures\OSA_Final
+D:\Work\Chronos World\Video Production\Shows\One Shot Adventures\Working
+D:\Work\Chronos World\Video Production\Shows\Porvenir
+D:\Work\Chronos World\Video Production\Shows\Porvenir\Adobe Premiere Pro Audio Previews
+D:\Work\Chronos World\Video Production\Shows\Porvenir\Adobe Premiere Pro Audio Previews\Porvenir_Project_01.PRV
+D:\Work\Chronos World\Video Production\Shows\Porvenir\Adobe Premiere Pro Audio Previews\Porvenir_Project_01.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Porvenir\Adobe Premiere Pro Audio Previews\PorvenirProject_Part1.PRV
+D:\Work\Chronos World\Video Production\Shows\Porvenir\Adobe Premiere Pro Audio Previews\PorvenirProject_Part1.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Porvenir\Adobe Premiere Pro Audio Previews\SecretOfThePorvenir.PRV
+D:\Work\Chronos World\Video Production\Shows\Porvenir\Adobe Premiere Pro Audio Previews\SecretOfThePorvenir.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Porvenir\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Video Production\Shows\Porvenir\FINAL
+D:\Work\Chronos World\Video Production\Shows\Ravens
+D:\Work\Chronos World\Video Production\Shows\Ravens\Ravens_Final
+D:\Work\Chronos World\Video Production\Shows\Ravens\Working
+D:\Work\Chronos World\Video Production\Shows\Reaction Vids
+D:\Work\Chronos World\Video Production\Shows\Reaction Vids\Reaction_Final
+D:\Work\Chronos World\Video Production\Shows\Reaction Vids\Working
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\SL_Final
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_closer_FINAL.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_closer_FINAL.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E001_07-09-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E001_07-09-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E002_07-16-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E002_07-16-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E003_07-23-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E003_07-23-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E004_07-30-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E004_07-30-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E005_08-06-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E005_08-06-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E006_08-13-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E006_08-13-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E007_08-20-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E007_08-20-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E008_10-08-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E008_10-08-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E009_10-15-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E009_10-15-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E010_10-22-2020.PRV
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Audio Previews\SL_S1_E010_10-22-2020.PRV\Peak Files
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\Video Production\Shows\Saltmarsh Legends\Working\RAW
+D:\Work\Chronos World\YouTube Videos
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Audio Previews
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Audio Previews\BA_Intro.PRV
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Audio Previews\BA_Intro.PRV\Peak Files
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Audio Previews\BA_LIVE_sequence.PRV
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Audio Previews\BA_LIVE_sequence.PRV\Peak Files
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Auto-Save
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Captured Audio
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Captured Audio\BA_Intro
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Captured Video
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Captured Video\BA_Intro
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Video Previews
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Video Previews\BA_Intro.PRV
+D:\Work\Chronos World\YouTube Videos\Adobe Premiere Pro Video Previews\BA_LIVE_sequence.PRV
+D:\Work\Chronos World\YouTube Videos\Converted
+D:\Work\Chronos World\YouTube Videos\FINAL
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\0876f73f-94e5-4517-a107-8977c1e22188
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\13569ca3-1004-42b8-910e-5fbe80fefa48
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\150035ed-433f-4551-8bcc-c26d786d8afc
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\1638ce07-dfc9-4e63-94dd-45e7c677e79f
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\57ab9cb0-7045-4e3f-b625-b1ee4806f22b
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\61ff59da-65f5-411d-b7ca-091704819332
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\7ecc657e-c5da-4210-b94d-8ba90c07c9be
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\903efdda-db35-4860-92eb-388b7f64640f
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\91f0adf9-236d-4182-99ad-41cb100fb557
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\95e27de0-e878-433f-abce-b09d98064bff
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\a3c4a935-da49-4ce6-a2d9-e290af9ce07f
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\af9e8810-c9bb-4eff-899e-a2b839ed15bb
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\c367d3f0-3202-4db9-94e2-375fb5adc01f
+D:\Work\Chronos World\YouTube Videos\Motion Graphics Template Media\ef9fc506-d988-4ac8-bd66-c3f661745f41
+

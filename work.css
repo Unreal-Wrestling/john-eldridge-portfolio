@@ -696,6 +696,45 @@
 .proj-grid-large .grid-cap {
   font-size: 0.8rem;
 }
+.proj-grid-xl {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1100px;
+}
+.proj-grid-xl .grid-tile-img {
+  aspect-ratio: 16 / 9;
+}
+.proj-grid-xl .grid-tile-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.proj-grid-xl .grid-cap {
+  font-size: 0.85rem;
+}
+.proj-grid-feature {
+  grid-template-columns: 1fr;
+  max-width: 800px;
+}
+.proj-grid-feature .grid-tile-img {
+  aspect-ratio: auto;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+.proj-grid-feature .grid-tile-img img {
+  max-width: 100%;
+  max-height: none;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.proj-grid-feature .grid-cap {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
 .grid-tile {
   margin: 0;
   display: flex;

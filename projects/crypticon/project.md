@@ -10,7 +10,7 @@ role: Lead Designer & Staff Photographer
 context: Convention
 featured: true
 thumb: 14-crypticon-logo.jpg
-tags: poster, print, badge, branding, photography, horror, convention, event
+tags: event design, print, photography
 sections: Crypticon 2014, Crypticon 2015, Convention Photography
 summary: Lead designer and staff photographer for a Pacific Northwest horror convention. Two years of event posters, celebrity guest flyers, vouchers, magazine ads, badge systems, branding, social media, and four years of convention-floor photography.
 images:

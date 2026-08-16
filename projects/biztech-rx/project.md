@@ -3,13 +3,13 @@ title: Brand Identity & Business Collateral
 client: BizTech RX
 year: 2014
 date: 2014-06
-category: Branding & Identity
+category: Brand Identity
 division: business
 work_type: client
 role: Creative Director & Team Lead
 context: Contract
 team: Brandon Robertson, Bryce Pollett, Eugene Capone, Sabrina Odell
-tags: logo, identity, collateral, email, print, b2b
+tags: brand identity, print
 featured: true
 thumb: 02-logo.jpg
 summary: Full identity rollout for a B2B services firm, from logo through mailers, email banners, and operational forms.
