@@ -12,7 +12,8 @@ featured: true
 thumb: 01-fwa-logo.jpg
 tags: brand identity, event design, editorial design, game design
 sections: Brand Identity, Social Media & Marketing, PPV Event Posters, Year End Awards Magazine, Commissioner Reports, Game Design
-summary: Full creative direction for a fantasy wrestling promotion — brand identity, 14 promotion logos, social media kit, 20+ PPV event posters, an annual year-end awards magazine, multi-page commissioner reports, and game design materials.
+outcome: The rebrand brought new players in; keeping them past the learning curve was still unsolved when I left
+summary: Full creative direction for a fantasy wrestling promotion — rebuilding an identity assembled from stock art and borrowed logos into an original system spanning 12 promotion brands, two years of event art, an annual awards magazine, commissioner reports, and player onboarding.
 images:
   01-fwa-logo.jpg [thumb-only]: FWA primary logo — the Fantasy Wrestling Alliance wordmark
   02-fwa-mascot.jpg [thumb-only]: FWA mascot — custom character illustration
@@ -89,14 +90,32 @@ photos-howto:
 ---
 
 FWA — Fantasy Wrestling Alliance — is the flagship product of JCMG
-Fantasy Sports, a fantasy wrestling promotion where players manage
-rosters, cut promos, and compete across multiple in-game wrestling
-organizations. I spent a year as Creative Director, running the full
-visual identity system and designing every PPV event poster, the
-annual Year End Awards magazine, and the commissioner report layouts.
-Beyond the design work, I also served as Game Designer, Game Admin,
-Community Developer, Special Events Coordinator, Discord Developer,
-and Discord Admin.
+Fantasy Sports: a fantasy wrestling promotion where players manage
+rosters, cut promos, and compete across multiple in-game organisations.
+I was brought in as Creative Director to rebuild the brand at every
+level.
+
+What existed was inconsistent and amateur. Basic graphics, stock
+images, and logos taken from the internet rather than made for the
+game — including the marks for the in-game promotions players were
+supposed to identify with. The company's own logo was rudimentary.
+Nothing shared a system, and almost none of it was originated in-house.
+
+The constraints arrived all at once: no budget, a volunteer player
+base, stock-only source material, and a monthly event cadence that
+never paused for a redesign. Seventeen in-game promotions each had to
+read as its own brand while still belonging to one universe. The remit
+kept widening — alongside the design system I worked as game designer,
+game admin, community developer, special events coordinator, and
+Discord developer and admin, and took on operations, budgeting and
+payroll, and community management. I built the company's Discord from
+nothing.
+
+The rebrand did its job at the top of the funnel: it got people
+interested and signing up. Holding them was the harder problem, and the
+honest answer is that I did not finish solving it. The game takes real
+time to learn, and retention past that first stretch was still open
+when I left. The onboarding manual was the first serious attempt at it.
 
 ## Brand Identity
 
@@ -141,12 +160,13 @@ from the FWA identity system.
 
 ## PPV Event Posters
 
-Each month brought a new PPV event, and each event got its own
-poster. The posters were the most visible creative output —
-announcing the event, setting the tone, and giving the community
-something to rally around. 18 posters were produced across
-2021 and 2022, each with custom theming, stock photography, and
-vector artwork.
+Each month brought a new PPV event, and each event needed art — the
+most visible creative output there was, announcing the show, setting
+its tone, and giving the community something to rally around. Sixteen
+events ran across 2021 and 2022: nineteen header pieces once the
+multi-day tournaments are counted separately, with four events worked
+up as full portrait posters. Every one was themed from scratch out of
+stock photography and vector artwork, on a cadence that never moved.
 
 ### Event Headers
 
@@ -190,9 +210,27 @@ redraws, logo design, and ranking graphics.
 
 ## Game Design
 
-Beyond the visual work, I designed game materials including a
-How To Manual for new players. The manual was a multi-page
-illustrated guide covering game mechanics, roster management, and
-promotion rules.
+New players kept stalling in the same places, and the same questions
+kept coming back in Discord — how to create a manager, where the point
+values live, why a wrestler had been disqualified. Answering them one
+at a time did not scale, and each unanswered one was a player stopped
+at the door.
+
+So I wrote the manual that answers them in order. Four pages, every
+step hand-lettered beside a cropped screenshot of the real interface,
+with arrows drawn to the exact control being described — because the
+failure was rarely that players could not follow the rules, it was that
+they could not find the button the rules referred to.
+
+It covers a complete first session: creating a manager, a wrestler, and
+a tag or six-man team; downloading the hold-value spreadsheet and
+reading it for trends; entering moves without tripping the
+duplicate-hold disqualification; signing matches; and writing
+out-of-ring action.
 
 [[grid:howto:med]]
+
+After it shipped the repeat questions fell away and onboarding got
+easier. Retention past that first week did not follow. The system takes
+real time to get good at, and closing that gap was still an open
+problem when I left.
