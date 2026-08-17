@@ -14,12 +14,7 @@ tags: brand identity, video production, social media, game design
 sections: Brand Identity, Show Logos, Stream Overlays, Social Media & Streaming, Show Openers & Motion Graphics, Game Design & Production
 summary: An ambitious entertainment network project producing live TTRPG gameplay shows six days a week for Twitch and YouTube — brand identity, show intros/outros, motion graphics, social media kit, Discord community, and full production pipeline.
 images:
-  02-cw-header.jpg [thumb-only]: Chronos World — channel header
   03-cwe-logo.jpg [thumb-only]: Chronos World Entertainment — rebrand logo
-  10-twitch-ad.jpg [thumb-only]: Twitch stream advertisement
-  11-merch-cole.png [thumb-only]: Character merchandise — Cole t-shirt design
-  12-merch-kobold.png [thumb-only]: Character merchandise — Kobold Cowboy apparel
-  14-cw-image.jpeg [thumb-only]: Chronos World promotional image
   15-cw-logo-sting.mp4: CW Logo Sting — animated logo reveal
 photos-brand-core:
   03-brand-cwe-logo.jpg: Chronos World Entertainment — rebrand logo
