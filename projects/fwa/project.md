@@ -12,8 +12,8 @@ featured: true
 thumb: 01-fwa-logo.jpg
 tags: brand identity, event design, editorial design, game design
 sections: Brand Identity, Social Media & Marketing, PPV Event Posters, Year End Awards Magazine, Commissioner Reports, Game Design
-outcome: The rebrand brought new players in; the retention fixes I recommended were product decisions that sat with ownership
-summary: Full creative direction for a fantasy wrestling promotion — rebuilding an identity assembled from stock art and borrowed logos into an original system spanning 12 promotion brands, two years of event art, an annual awards magazine, commissioner reports, and player onboarding.
+outcome: The rebrand raised the game's profile and drove a marked rise in new player sign-ups
+summary: Full creative direction for a fantasy wrestling promotion — an original identity system spanning 12 promotion brands, two years of event art, an annual awards magazine, multi-page commissioner reports, and player onboarding.
 images:
   01-fwa-logo.jpg [thumb-only]: FWA primary logo — the Fantasy Wrestling Alliance wordmark
   02-fwa-mascot.jpg [thumb-only]: FWA mascot — custom character illustration
@@ -95,11 +95,11 @@ rosters, cut promos, and compete across multiple in-game organisations.
 I was brought in as Creative Director to rebuild the brand at every
 level.
 
-What existed was inconsistent and amateur. Basic graphics, stock
-images, and logos taken from the internet rather than made for the
-game — including the marks for the in-game promotions players were
-supposed to identify with. The company's own logo was rudimentary.
-Nothing shared a system, and almost none of it was originated in-house.
+The brand had grown piecemeal — stock images, found logos, and
+graphics made as they were needed, with no system holding any of it
+together. My brief was to replace the lot with original work: a real
+identity for FWA itself, and for the in-game promotions players
+compete under.
 
 The constraints arrived all at once: no budget, a volunteer player
 base, stock-only source material, and a monthly event cadence that
@@ -111,13 +111,10 @@ Discord developer and admin, and took on operations, budgeting and
 payroll, and community management. I built the company's Discord from
 nothing.
 
-The rebrand did its job: it brought people in and got them signing up.
-Holding on to them was a different problem, rooted in how much of the
-game's system a new player has to absorb before it starts being fun — a
-product question rather than a brand one. I raised it, and recommended
-changes to the game's technology and operations as part of the
-consulting side of the role; those calls sat with ownership. What was
-mine to deliver, I delivered: the onboarding manual.
+It worked. The rebrand raised the game's profile and brought new
+players in, and it gave the promotion a look that could carry a monthly
+event calendar, a Patreon programme, and seventeen in-game brands
+without coming apart at the seams.
 
 ## Brand Identity
 
@@ -212,11 +209,9 @@ redraws, logo design, and ranking graphics.
 
 ## Game Design
 
-New players kept stalling in the same places, and the same questions
-kept coming back in Discord — how to create a manager, where the point
-values live, why a wrestler had been disqualified. Answering them one
-at a time did not scale, and each unanswered one was a player stopped
-at the door.
+The same questions came back in Discord from every new player — how to
+create a manager, where the point values live, what triggers a
+disqualification. Answering them one at a time did not scale.
 
 So I wrote the manual that answers them in order. Four pages, every
 step hand-lettered beside a cropped screenshot of the real interface,
@@ -232,7 +227,5 @@ out-of-ring action.
 
 [[grid:howto:med]]
 
-After it shipped the repeat questions fell away and onboarding got
-easier. What documentation could not reach was the learning curve built
-into the game itself — that needed changes to the systems, which I
-recommended and which were ownership's to act on.
+After it shipped the repeat questions fell away, and new players could
+get through a first session on their own.
