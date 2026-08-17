@@ -2,7 +2,7 @@
 title: FWA — Fantasy Wrestling Alliance
 client: JCMG Fantasy Sports
 year: 2021-2022
-date: 2022-06
+date: 2022-12
 category: Brand Identity
 division: entertainment
 work_type: client
@@ -92,8 +92,8 @@ photos-howto:
 FWA — Fantasy Wrestling Alliance — is the flagship product of JCMG
 Fantasy Sports: a fantasy wrestling promotion where players manage
 rosters, cut promos, and compete across multiple in-game organisations.
-I served as Creative Director for just over a year, brought in to
-rebuild the brand at every level.
+I served as Creative Director from November 2021 to the end of December
+2022, brought in to rebuild the brand at every level.
 
 The brand had grown piecemeal — stock images, found logos, and
 graphics made as they were needed, with no system holding any of it
