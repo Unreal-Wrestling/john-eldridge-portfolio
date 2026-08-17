@@ -4,6 +4,7 @@
   "description": "Design, Marketing & Content Production Portfolio — John S. Eldridge, Jr.",
   "scripts": {
     "build": "echo 'No build needed'",
+    "check": "python audit.py",
     "dev": "python serve.py",
     "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy.ps1",
     "deploy:preview": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy.ps1 -Preview"

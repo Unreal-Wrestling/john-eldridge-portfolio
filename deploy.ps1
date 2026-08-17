@@ -7,7 +7,11 @@
     the Git repo. Pushing to GitHub does NOT deploy the site. This script is
     the only thing that publishes changes.
 
-    Runs build.py first, which generates the deployable site into dist/:
+    Runs audit.py first, which refuses the deploy if any page would claim
+    something its files cannot support - a caption on a missing file, or a
+    placement that resolves to nothing.
+
+    Then runs build.py, which generates the deployable site into dist/:
     the legacy single-page site plus a generated page per project under
     /work/. Only dist/ is uploaded, so the .mp4 masters (one is 160 MB, far
     over Cloudflare's 25 MiB per-file limit) can never reach the CDN.
@@ -43,6 +47,13 @@ $Branch = if ($Preview) { 'preview' } else { 'main' }
 $Root = $PSScriptRoot
 Push-Location $Root
 try {
+    # -- Audit ------------------------------------------------------
+    # Checked before anything is built. A broken caption or a placement
+    # pointing at nothing is a claim the files cannot support, and that
+    # is worse on a live portfolio than a deploy that did not happen.
+    python (Join-Path $Root 'audit.py')
+    if ($LASTEXITCODE -ne 0) { throw "audit.py found errors - nothing was deployed" }
+
     # -- Build ------------------------------------------------------
     # build.py resizes images, enforces the 25 MiB and 20,000-file
     # ceilings, and fails non-zero rather than letting a bad upload start.
