@@ -15,7 +15,7 @@ sections: Brand Identity, Social Media & Marketing, PPV Event Posters, Year End 
 outcome: The rebrand raised the game's profile and drove a marked rise in new player sign-ups
 summary: Full creative direction for a fantasy wrestling promotion — an original identity system spanning 12 promotion brands, event art for sixteen PPVs, two annual awards magazines, multi-page commissioner reports, and player onboarding.
 images:
-  01-fwa-logo.jpg [thumb-only]: FWA primary logo — the Fantasy Wrestling Alliance wordmark
+  01-fwa-logo.jpg [thumb-only]: FWA primary logo, used as this project's card thumbnail
   03-facebook-cover.png: Facebook cover image — social media branding
   04-twitter-cover.png: Twitter cover image — social media branding
   05-youtube-cover.png: YouTube cover image — social media branding

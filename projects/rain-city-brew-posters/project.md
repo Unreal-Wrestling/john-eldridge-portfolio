@@ -30,13 +30,13 @@ photos-sb:
   09-sb-stickers.jpg: Guests wearing the mustache mark
   10-sb-poster-display.jpg: 'Stache Bash poster on display, November 2012
 photos-boa:
-  11-boa-room.jpg: Brews of Anime, April 2013
+  11-boa-room.jpg: Brews of Anime — the room filling up, April 2013
   12-boa-tasting.jpg: Brews of Anime — tasting and judging, April 2013
   13-boa-merch.jpg: Event shirts on the wall
   14-boa-table-pour.jpg: Pouring an entry for judging
   15-boa-pour.jpg: Brews of Anime — a dark entry going into the glass
   16-boa-cheers.jpg: Tasting glasses, Brews of Anime
-  17-boa-glasses.jpg: Brews of Anime, April 2013
+  17-boa-glasses.jpg: Tasting glasses left on the table after the judging
   18-boa-group.jpg: Guests at Brews of Anime
   19-boa-staff.jpg: The crew at the end of the night
   20-boa-backstage.jpg: Packing down after the event

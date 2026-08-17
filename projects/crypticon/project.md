@@ -32,15 +32,15 @@ images:
   16-facebook-cover.jpg: Facebook cover image — 2015 social media
 photos-2014:
   01-2014-cosplayer-portrait.jpg: Crypticon 2014 — cosplayer portrait
-  02-2014-cosplayer-costume.jpg: Crypticon 2014 — costume detail
-  03-2014-cosplayer-detail.jpg: Crypticon 2014 — cosplayer on the floor
-  04-2014-cosplayer-character.jpg: Crypticon 2014 — character cosplay
-  05-2014-cosplayer-poser.jpg: Crypticon 2014 — posing in character
-  06-2014-cosplayer-mask.jpg: Crypticon 2014 — mask work
-  07-2014-cosplayer-makeup.jpg: Crypticon 2014 — makeup and prosthetics
-  08-2014-cosplayer-group.jpg: Crypticon 2014 — group cosplay
-  09-2014-cosplayer-creature.jpg: Crypticon 2014 — creature cosplay
-  10-2014-cosplayer-horror.jpg: Crypticon 2014 — horror icon cosplay
+  02-2014-cosplayer-costume.jpg: Crypticon 2014 — costume build and material detail
+  03-2014-cosplayer-detail.jpg: Crypticon 2014 — cosplayer working the floor
+  04-2014-cosplayer-character.jpg: Crypticon 2014 — screen-accurate character build
+  05-2014-cosplayer-poser.jpg: Crypticon 2014 — holding a signature character pose
+  06-2014-cosplayer-mask.jpg: Crypticon 2014 — mask construction and paint finish
+  07-2014-cosplayer-makeup.jpg: Crypticon 2014 — prosthetic makeup with blended edges
+  08-2014-cosplayer-group.jpg: Crypticon 2014 — cosplay group from the same series
+  09-2014-cosplayer-creature.jpg: Crypticon 2014 — creature build with textured skin
+  10-2014-cosplayer-horror.jpg: Crypticon 2014 — classic horror franchise icon
   11-2014-cosplayer-iconic.jpg: Crypticon 2014 — iconic character
   12-2014-cosplayer-fan.jpg: Crypticon 2014 — fan portrait
   13-2014-cosplayer-elaborate.jpg: Crypticon 2014 — elaborate build
@@ -49,38 +49,38 @@ photos-2014:
   16-2014-cosplayer-posing.jpg: Crypticon 2014 — posing for the camera
   17-2014-cosplayer-grand-finale.jpg: Crypticon 2014 — grand finale
 photos-2012:
-  01-2012-convention-1.jpg: Crypticon 2012 — convention floor
-  02-2012-convention-2.jpg: Crypticon 2012 — cosplayer on the floor
-  03-2012-convention-3.jpg: Crypticon 2012 — character cosplay
-  04-2012-convention-4.jpg: Crypticon 2012 — costume detail
-  05-2012-convention-5.jpg: Crypticon 2012 — posing in character
-  06-2012-convention-6.jpg: Crypticon 2012 — mask work
-  07-2012-convention-7.jpg: Crypticon 2012 — makeup and prosthetics
-  08-2012-convention-8.jpg: Crypticon 2012 — group cosplay
-  09-2012-convention-9.jpg: Crypticon 2012 — creature cosplay
-  10-2012-convention-10.jpg: Crypticon 2012 — horror icon cosplay
+  01-2012-convention-1.jpg: Crypticon 2012 — evening event, attendees socializing with drinks
+  02-2012-convention-2.jpg: Crypticon 2012 — crowd at the bar during the evening event
+  03-2012-convention-3.jpg: Crypticon 2012 — cosplayer in an elaborate costume posing for a portrait
+  04-2012-convention-4.jpg: Crypticon 2012 — close-up of armor and fabric craftsmanship
+  05-2012-convention-5.jpg: Crypticon 2012 — cosplayer holding a character pose against the convention backdrop
+  06-2012-convention-6.jpg: Crypticon 2012 — gore makeup cosplayer at the step-and-repeat banner
+  07-2012-convention-7.jpg: Crypticon 2012 — prosthetic wounds and airbrushed makeup
+  08-2012-convention-8.jpg: Crypticon 2012 — cosplay group gathered together on the floor
+  09-2012-convention-9.jpg: Crypticon 2012 — full-body creature costume with detailed prosthetics
+  10-2012-convention-10.jpg: Crypticon 2012 — cosplayer channeling a classic slasher villain
 photos-2013:
-  01-2013-convention-1.jpg: Crypticon 2013 — convention floor
-  02-2013-convention-2.jpg: Crypticon 2013 — cosplayer on the floor
-  03-2013-convention-3.jpg: Crypticon 2013 — character cosplay
-  04-2013-convention-4.jpg: Crypticon 2013 — costume detail
-  05-2013-convention-5.jpg: Crypticon 2013 — posing in character
-  06-2013-convention-6.jpg: Crypticon 2013 — mask work
-  07-2013-convention-7.jpg: Crypticon 2013 — makeup and prosthetics
-  08-2013-convention-8.jpg: Crypticon 2013 — group cosplay
-  09-2013-convention-9.jpg: Crypticon 2013 — creature cosplay
-  10-2013-convention-10.jpg: Crypticon 2013 — horror icon cosplay
+  01-2013-convention-1.jpg: Crypticon 2013 — convention floor looking down the main aisle
+  02-2013-convention-2.jpg: Crypticon 2013 — cosplayer walking the floor in full regalia
+  03-2013-convention-3.jpg: Crypticon 2013 — screen-accurate character cosplay portrait
+  04-2013-convention-4.jpg: Crypticon 2013 — costume prop and accessory detail
+  05-2013-convention-5.jpg: Crypticon 2013 — cosplayer in mid-pose, staying in character
+  06-2013-convention-6.jpg: Crypticon 2013 — latex mask and appliance work
+  07-2013-convention-7.jpg: Crypticon 2013 — creature effects makeup with contact lenses
+  08-2013-convention-8.jpg: Crypticon 2013 — group cosplay lineup from the same franchise
+  09-2013-convention-9.jpg: Crypticon 2013 — creature build with full-head appliance
+  10-2013-convention-10.jpg: Crypticon 2013 — cosplayer as a recognizable horror villain
 photos-2017:
-  01-2017-convention-1.jpg: Crypticon 2017 — convention floor
-  02-2017-convention-2.jpg: Crypticon 2017 — cosplayer on the floor
-  03-2017-convention-3.jpg: Crypticon 2017 — character cosplay
-  04-2017-convention-4.jpg: Crypticon 2017 — costume detail
-  05-2017-convention-5.jpg: Crypticon 2017 — posing in character
-  06-2017-convention-6.jpg: Crypticon 2017 — mask work
-  07-2017-convention-7.jpg: Crypticon 2017 — makeup and prosthetics
-  08-2017-convention-8.jpg: Crypticon 2017 — group cosplay
-  09-2017-convention-9.jpg: Crypticon 2017 — creature cosplay
-  10-2017-convention-10.jpg: Crypticon 2017 — horror icon cosplay
+  01-2017-convention-1.jpg: Crypticon 2017 — wide shot of the convention floor crowd
+  02-2017-convention-2.jpg: Crypticon 2017 — cosplayer posing among the convention crowd
+  03-2017-convention-3.jpg: Crypticon 2017 — detailed character recreation on the convention floor
+  04-2017-convention-4.jpg: Crypticon 2017 — costume texture and material close-up
+  05-2017-convention-5.jpg: Crypticon 2017 — cosplayer holding a dynamic action pose
+  06-2017-convention-6.jpg: Crypticon 2017 — sculpted mask and face appliance
+  07-2017-convention-7.jpg: Crypticon 2017 — airbrushed body paint and prosthetic appliances
+  08-2017-convention-8.jpg: Crypticon 2017 — cosplay group photo on the convention floor
+  09-2017-convention-9.jpg: Crypticon 2017 — creature cosplay with full-body paint and appliances
+  10-2017-convention-10.jpg: Crypticon 2017 — cosplayer as an iconic horror movie character
 ---
 
 Crypticon is a horror-themed convention that runs each spring near

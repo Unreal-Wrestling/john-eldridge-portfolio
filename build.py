@@ -1069,8 +1069,8 @@ def render_home_cards(projects: list[Project]) -> str:
 
     Only `featured: true` projects appear here - the home page is a
     highlights reel, and /work/ is the complete record. They keep the same
-    chronological order as the index so moving between the two never feels
-    like moving between two different sites.
+    most-recent-first order as the index so moving between the two never
+    feels like moving between two different sites.
 
     If nothing is flagged featured, everything shows: a silently empty work
     section on the home page would be far worse than an unfiltered one.
@@ -1625,8 +1625,8 @@ def render_project_page(proj: Project) -> str:
 def render_work_index(projects: list[Project]) -> str:
     cats = sorted({p.category for p in projects})
     desc = (
-        f"Every published project by {OWNER}, in order from earliest to "
-        "most recent - design, branding, packaging, marketing and photography."
+        f"Every published project by {OWNER}, in order from most recent to "
+        "earliest - design, branding, packaging, marketing and photography."
     )
 
     parts = [
@@ -1954,11 +1954,10 @@ def main() -> int:
             if proj:
                 projects.append(proj)
 
-    # Chronological, earliest first. The full index is meant to be read as
-    # a progression - how the work and the style developed - so date order
-    # beats any ranking by importance. Undated work sorts last rather than
+    # Chronological, most recent first. A hiring reader sees the strongest,
+    # current work before anything older. Undated work sorts last rather than
     # silently landing in 1970.
-    projects.sort(key=lambda p: p.sort_key)
+    projects.sort(key=lambda p: p.sort_key, reverse=True)
 
     work_dir = DIST / "work"
     work_dir.mkdir(parents=True, exist_ok=True)
