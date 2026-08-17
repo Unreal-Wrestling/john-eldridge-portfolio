@@ -6,24 +6,28 @@ date: 2013-05-03
 category: Editorial Design
 division: business
 work_type: student
-role: Designer & Editor
-context: Coursework, Everett Community College
+role: Designer — concept and execution
+context: Final project, Everett Community College
+outcome: Selected by our team as its submission; not chosen by the college for development
 tags: editorial design, print
 featured: false
-summary: Volume 56 of Everett Community College's student art magazine — cover to back cover, plus the slide sequence that promoted it on campus.
+summary: A pitch for Everett Community College's student art magazine — my concept and execution, chosen by our team as its submission for our final project.
 images:
   01-cover.jpg: Front cover — "Vibrations 2013" hand-lettered in brush and ink over a field of inked grass, a single blue bloom the only colour on the uncoated cream stock
   02-spread-1.jpg: Feature spread — a monochrome portrait and greeked columns on the verso, a full-page colour reproduction of the subject's painting on the recto, ink-splatter marks bleeding off the outer edge
   03-spread-2.jpg: Feature spread — a poetry excerpt set ragged-right and airy on the verso, answered by an archival portrait over three tight columns on the recto
   04-back-cover.jpg: Back cover — the cover's inked grass carried over with the bloom shifted from blue to gold, the college mark centred at the head
-  05-screen-1.jpg: Promotional slide, 1 of 3 — the title card, condensed caps reversed out of black for the campus display screens
-  06-screen-2.jpg: Promotional slide, 2 of 3 — the call to action, pointing readers to the Art Showcase for a free copy
-  07-screen-3.jpg: Promotional slide, 3 of 3 — venue and date, closing the sequence
+  05-screen-1.jpg: Proposed campus slide, 1 of 3 — the title card, condensed caps reversed out of black
+  06-screen-2.jpg: Proposed campus slide, 2 of 3 — the call to action, pointing readers to the Art Showcase for a free copy
+  07-screen-3.jpg: Proposed campus slide, 3 of 3 — venue and date, closing the sequence
 ---
 
-Vibrations is Everett Community College's student art magazine. I
-designed volume 56 in InDesign — cover to back cover — along with the
-slides that promoted it on campus.
+Vibrations is Everett Community College's student art magazine. Our
+final project was to pitch a design for it. We worked as a team, but we
+each developed our own concept independently, and the team picked mine
+as the one we submitted — what follows is my concept and my execution,
+end to end. The college chose a different direction to develop. I still
+think this one holds up.
 
 ## The magazine
 
@@ -48,17 +52,19 @@ content is not a system.
 
 [[04-back-cover.jpg]]
 
-The subjects and the body copy are both stand-ins: the text is greeked
-and the features borrow published artists. The deliverable was the
-layout system, not the editorial.
+Being a pitch, the content is all stand-in: the copy is greeked and the
+features borrow published artists — Alex Grey and Khalil Gibran — to
+load the pages with something real to react to. What was on the table
+was the layout system, not the editorial.
 
 ## Promotion
 
-Three slides ran on the campus display screens — the title, the call to
-pick up a free copy, and the date and venue. They share nothing with
-the magazine's palette, and should not: condensed caps reversed out of
-black have to land in a second from across a hallway, where the cover
-can afford to be picked up and read.
+The pitch covered the campus display screens too, because a magazine
+nobody hears about does not get picked up. Three slides: the title, the
+call to collect a free copy, and the date and venue. They share nothing
+with the magazine's palette, and should not — condensed caps reversed
+out of black have to land in a second from across a hallway, where the
+cover can afford to be picked up and read.
 
 [[grid:05-screen-1:med]]
 

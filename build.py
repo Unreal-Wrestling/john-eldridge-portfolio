@@ -298,8 +298,12 @@ class Project:
 
         who = self.client or "The brand shown"
         base = {
+            # Not "self-directed" - most of these are set briefs, some are
+            # team assignments, and the word contradicted the context line
+            # sitting right next to it. `self` is the work type for work
+            # that genuinely was self-initiated.
             "student": (
-                f"Self-directed student project. {who} was not a client and "
+                f"Student project. {who} was not a client and "
                 "did not commission this work."
             ),
             "competition": (
