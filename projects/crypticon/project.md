@@ -12,7 +12,8 @@ featured: true
 thumb: 14-crypticon-logo.jpg
 tags: event design, print, photography
 sections: Crypticon 2014, Crypticon 2015, Convention Photography
-summary: Lead designer and staff photographer for a Pacific Northwest horror convention. Two years of event posters, celebrity guest flyers, vouchers, magazine ads, badge systems, branding, social media, and four years of convention-floor photography.
+outcome: Two years of design across every print and digital surface the convention touched, plus four years of floor photography documenting the community
+summary: Lead designer and staff photographer for a Pacific Northwest horror convention — event posters, celebrity guest flyers, vouchers, magazine ads, badge systems, branding, social media, and four years of convention-floor photography.
 images:
   01-crypticon-2014-poster.jpg: Crypticon 2014 — main event poster
   02-reggie-lee-flyer.jpg: Celebrity guest flyer for Reggie Lee, 2014
@@ -83,60 +84,70 @@ photos-2017:
   10-2017-convention-10.jpg: Crypticon 2017 — cosplayer as an iconic horror movie character
 ---
 
-Crypticon is a horror-themed convention that runs each spring near
-Sea-Tac Airport, south of Seattle. I worked as a staff photographer
-for the 2012, 2013, 2014, and 2017 events, and came on as Lead
-Designer for the 2014 and 2015 events. The Creative Director set the
-visual direction; my job was to execute it across posters, flyers,
-vouchers, magazine ads, badges, branding, and social media — and to
-shoot the convention floor.
+Crypticon is a horror convention that runs each spring near Sea-Tac
+Airport, south of Seattle. I shot the floor as a staff photographer
+in 2012, 2013, 2014, and 2017. In 2014 and 2015 I came on as Lead
+Designer, working under the Creative Director who set the visual
+direction. My job was to execute it across every surface the
+convention touched — posters, flyers, vouchers, magazine ads,
+badges, branding, social media — and to keep shooting the floor
+when the design work was done.
 
 ## Crypticon 2014
 
-The 2014 event poster was the centerpiece. The convention had an
-established visual identity from prior years, and my job was to carry
-it forward with the new guest lineup and event details.
+The main event poster was the centerpiece. The convention had an
+established visual identity from prior years, and my job was to
+carry it forward with the new guest lineup and event details
+without losing what made it recognizable.
 
 [[01-crypticon-2014-poster.jpg]]
 
-Each celebrity guest got their own promotional flyer. Reggie Lee was
-one of the headliners that year.
+Each celebrity guest got a dedicated promotional flyer. Reggie Lee
+was one of the 2014 headliners — the flyer needed to work as a
+standalone piece and as part of the larger guest announcement
+campaign.
 
 [[02-reggie-lee-flyer.jpg]]
 
-The convention ran a "Dig It" themed event with its own poster. The
-Creeper line art is by Nick "The Hat" Gucker — I did the coloring on
-that piece, and the poster layout and design are mine.
+The "Dig It" themed event had its own poster. The Creeper line art
+is by Nick "The Hat" Gucker — I did the coloring on that piece,
+and the poster layout and typography are mine.
 
 [[03-dig-it-poster.jpg]]
 
-A magazine ad for a "Creeper vs Bigfoot" feature event ran in local
-publications ahead of the convention. The artwork is by Nick "The
-Hat" Gucker — my work was the ad layout, composition, and print
-preparation.
+A "Creeper vs Bigfoot" magazine ad ran in local publications ahead
+of the convention. The artwork is Nick "The Hat" Gucker's — my
+work was the ad layout, composition, and print preparation, making
+sure it held up at magazine size and in newsprint.
 
 [[04-bigfoot-magazine-ad.jpg]]
 
-A discount voucher was designed as a promotional insert — printed and
-distributed ahead of the convention to drive advance ticket sales.
+A discount voucher was designed as a promotional insert — printed
+and distributed ahead of the convention to drive advance ticket
+sales. Small format, but it had to carry the brand and the offer
+in a single glance.
 
 [[05-voucher-2014.jpg]]
 
-The VIP brunch had its own ticket, printed and distributed to
-attendees.
+The VIP brunch had its own ticket — printed, numbered, and
+distributed to attendees. A small piece of print, but it was
+someone's first physical touchpoint with the event.
 
 [[06-brunch-ticket.jpg]]
 
-I was also on the floor with a camera for both days. Roughly 350
-frames covering cosplayers, guests, and the convention atmosphere.
+Between design duties I was on the floor with a camera for both
+days. Roughly 350 frames covering cosplayers, guests, and the
+convention atmosphere — from full-body creature builds to
+prosthetic makeup close-ups to group shots on the floor.
 
 [[photos:2014]]
 
 ## Crypticon 2015
 
-For 2015 I focused on the special event posters — themed programming
-like Dutch Sinister, Rocky Horror Picture Show, and Drag Night each
-got their own poster.
+In 2015 the design scope expanded. The themed programming — Dutch
+Sinister, Rocky Horror Picture Show, Drag Night — each needed its
+own poster with a distinct visual language that still read as
+Crypticon.
 
 [[07-dutch-sinister-poster.jpg]]
 
@@ -144,24 +155,30 @@ got their own poster.
 
 [[09-drag-poster.jpg]]
 
-A two-page promotional handbill was printed and distributed ahead of
-the convention.
+A two-sided promotional handbill was printed and distributed ahead
+of the convention — the front carried the event branding and
+headline guests, the back had the full schedule and logistics.
 
 [[10-promo-handbill-front.jpg]]
 
 [[11-promo-handbill-back.jpg]]
 
-The 2015 badge system was a full set — VIP, celebrity, press, staff,
-security, sponsor, vendor, and volunteer — each with its own color
-coding and layout, all built from a master template.
+The 2015 badge system was the largest single piece of design work.
+A full set — VIP, celebrity, press, staff, security, sponsor,
+vendor, and volunteer — each with its own color coding and layout,
+all built from a master template so they looked like a family at a
+glance. Getting the hierarchy right mattered: a security badge and
+a vendor badge needed to be distinguishable from across a crowded
+convention floor.
 
 [[12-badge-template-full.jpg]]
 
 [[13-badge-single.jpg]]
 
-I also handled the branding package: the Crypticon logo isolated for
-reuse, an email banner for the newsletter, and the Facebook cover
-image for the social media presence.
+The branding package included the Crypticon logo isolated for
+reuse across print and digital, an email banner for the newsletter
+campaign, and the Facebook cover image for the social media
+presence.
 
 [[14-crypticon-logo.jpg]]
 
@@ -173,7 +190,11 @@ image for the social media presence.
 
 Beyond the design work, I was on the convention floor with a camera
 across four different years — 2012, 2013, 2014, and 2017. Each year
-brought a different cast of cosplayers, guests, and atmosphere.
+brought a different cast of cosplayers, guests, and atmosphere. The
+throughline was the community: people who spent months building
+creature suits, sculpting latex appliances, and airbrushing
+prosthetics, all for a weekend where they could walk the floor in
+character and be seen.
 
 ### 2012
 
