@@ -610,6 +610,22 @@ def load_project(folder: Path) -> Project | None:
     if not proj.images:
         print(f"  WARN {folder.name}: no images found")
 
+    # `[thumb-only]` means "use as the card thumbnail, keep it out of the
+    # body". It earns that only if `thumb:` actually points at the file.
+    # When it does not, and the image is not placed inline either, the
+    # image renders nowhere at all - which is how a commissioner report
+    # stayed invisible while the copy claimed it had been designed.
+    placed = set(re.findall(r"\[\[([^\]]+)\]\]", body))
+    for img in proj.images:
+        if not img.thumb_only:
+            continue
+        name = img.src.name
+        if name != proj.thumb and name not in placed:
+            print(
+                f"  WARN {folder.name}: {name} is marked thumb-only but "
+                f"`thumb:` is {proj.thumb or 'unset'} - renders nowhere"
+            )
+
     photo_captions = meta.get("_photos", {})
     photo_dir = folder / "photos"
     photo_blocks_meta = meta.get("_photo_blocks", {})

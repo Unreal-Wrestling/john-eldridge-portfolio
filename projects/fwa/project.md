@@ -16,7 +16,6 @@ outcome: The rebrand raised the game's profile and drove a marked rise in new pl
 summary: Full creative direction for a fantasy wrestling promotion — an original identity system spanning 12 promotion brands, event art for sixteen PPVs, two annual awards magazines, multi-page commissioner reports, and player onboarding.
 images:
   01-fwa-logo.jpg [thumb-only]: FWA primary logo — the Fantasy Wrestling Alliance wordmark
-  02-fwa-mascot.jpg [thumb-only]: FWA mascot — custom character illustration
   03-facebook-cover.png: Facebook cover image — social media branding
   04-twitter-cover.png: Twitter cover image — social media branding
   05-youtube-cover.png: YouTube cover image — social media branding
@@ -24,10 +23,7 @@ images:
   11-eoya-layout-1.png [thumb-only]: Year End Awards — magazine spread layout
   12-eoya-layout-2.png [thumb-only]: Year End Awards — secondary spread layout
   13-eoya-2022-header.png [thumb-only]: Year End Awards 2022 — custom header design
-  14-commish-dcw.png [thumb-only]: Commissioner Report — DCW
   15-commish-nxt.jpg: NXT Elite Wrestling — The Performance Report, front page of the December 2022 issue: masthead over a darkened ring shot, the Supernova Championship card, and a recruitment panel offering a reader the open contender's spot
-  16-howto-1.jpg [thumb-only]: How To Manual — page 1
-  17-howto-2.jpg [thumb-only]: How To Manual — page 2
 photos-brand-core:
   01-brand-fwa-logo.jpg: FWA primary logo — the Fantasy Wrestling Alliance wordmark
   02-brand-fwa-mascot.jpg: FWA mascot — custom character illustration
@@ -107,14 +103,12 @@ never paused for a redesign. Seventeen in-game promotions each had to
 read as its own brand while still belonging to one universe. The remit
 kept widening — alongside the design system I worked as game designer,
 game admin, community developer, special events coordinator, and
-Discord developer and admin, and took on operations, budgeting and
-payroll, and community management. I built the company's Discord from
+Discord developer and admin, and community management. I built the company's Discord from
 nothing.
 
 It worked. The rebrand raised the game's profile and brought new
 players in, and it gave the promotion a look that could carry a monthly
-event calendar, a Patreon programme, and seventeen in-game brands
-without coming apart at the seams.
+event calendar, a complete social media and Patreon programme, and seventeen in-game brands.
 
 ## Brand Identity
 
