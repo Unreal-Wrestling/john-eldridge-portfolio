@@ -25,7 +25,7 @@ images:
   12-eoya-layout-2.png [thumb-only]: Year End Awards — secondary spread layout
   13-eoya-2022-header.png [thumb-only]: Year End Awards 2022 — custom header design
   14-commish-dcw.png [thumb-only]: Commissioner Report — DCW
-  15-commish-nxt.jpg [thumb-only]: Commissioner Report — NXT
+  15-commish-nxt.jpg: NXT Elite Wrestling — The Performance Report, front page of the December 2022 issue: masthead over a darkened ring shot, the Supernova Championship card, and a recruitment panel offering a reader the open contender's spot
   16-howto-1.jpg [thumb-only]: How To Manual — page 1
   17-howto-2.jpg [thumb-only]: How To Manual — page 2
 photos-brand-core:
@@ -207,6 +207,8 @@ redraws, logo design, and ranking graphics.
 ### Other Promotions
 
 [[grid:commish-other:med]]
+
+[[15-commish-nxt.jpg]]
 
 ## Game Design
 
