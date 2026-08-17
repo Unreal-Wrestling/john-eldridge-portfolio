@@ -1,7 +1,7 @@
 ---
 title: FWA — Fantasy Wrestling Alliance
 client: JCMG Fantasy Sports
-year: 2021-2023
+year: 2021-2022
 date: 2022-06
 category: Brand Identity
 division: entertainment
@@ -13,7 +13,7 @@ thumb: 01-fwa-logo.jpg
 tags: brand identity, event design, editorial design, game design
 sections: Brand Identity, Social Media & Marketing, PPV Event Posters, Year End Awards Magazine, Commissioner Reports, Game Design
 outcome: The rebrand raised the game's profile and drove a marked rise in new player sign-ups
-summary: Full creative direction for a fantasy wrestling promotion — an original identity system spanning 12 promotion brands, two years of event art, an annual awards magazine, multi-page commissioner reports, and player onboarding.
+summary: Full creative direction for a fantasy wrestling promotion — an original identity system spanning 12 promotion brands, event art for sixteen PPVs, two annual awards magazines, multi-page commissioner reports, and player onboarding.
 images:
   01-fwa-logo.jpg [thumb-only]: FWA primary logo — the Fantasy Wrestling Alliance wordmark
   02-fwa-mascot.jpg [thumb-only]: FWA mascot — custom character illustration
@@ -92,8 +92,8 @@ photos-howto:
 FWA — Fantasy Wrestling Alliance — is the flagship product of JCMG
 Fantasy Sports: a fantasy wrestling promotion where players manage
 rosters, cut promos, and compete across multiple in-game organisations.
-I was brought in as Creative Director to rebuild the brand at every
-level.
+I served as Creative Director for just over a year, brought in to
+rebuild the brand at every level.
 
 The brand had grown piecemeal — stock images, found logos, and
 graphics made as they were needed, with no system holding any of it
@@ -183,7 +183,8 @@ Illustrated. I built the full layout in InDesign — cover design,
 rankings pages, award spreads, and custom retro design elements
 including year markers and border artwork. Two editions were
 produced (2021 and 2022), each with custom header designs and
-editorial layouts.
+editorial layouts. The 2022 edition was the last piece I delivered for
+FWA, finishing out my time there that December.
 
 [[11-eoya-layout-1.png]]
 
