@@ -82,10 +82,10 @@ photos-commish-other:
   48-commish-mcrw-p1.png: MCRW Commissioner Report — Front Page
   49-commish-wccw-p1.png: WCCW Commissioner Report — Front Page
 photos-howto:
-  50-howto-p1.jpg: How To Manual — Page 1
-  51-howto-p2.jpg: How To Manual — Page 2
-  52-howto-p3.jpg: How To Manual — Page 3
-  53-howto-p4.jpg: How To Manual — Page 4
+  50-howto-p1.jpg: Page 1 — Steps 1 to 3, creating a manager, a wrestler, and a tag or six-man team, each instruction hand-lettered beside a cropped screenshot of the actual dashboard
+  51-howto-p2.jpg: Page 2 — Step 4, finding the point-values page and downloading the hold-value spreadsheet, with drawn arrows tying every instruction to the control it refers to
+  52-howto-p3.jpg: Page 3 — Step 4 continued, reading the hold-value data for trends and entering the chosen moves, including the warning that repeating a hold risks disqualification
+  53-howto-p4.jpg: Page 4 — Steps 5 and 6, signing matches and writing out-of-ring action
 ---
 
 FWA — Fantasy Wrestling Alliance — is the flagship product of JCMG

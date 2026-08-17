@@ -10,55 +10,58 @@ role: Designer & Editor
 context: Coursework, Everett Community College
 tags: editorial design, print
 featured: false
-thumb: 01-cover-thumb.jpg
-summary: A complete art magazine design for Everett Community College's Vibrations art exhibition — cover, editorial spreads, and a digital companion screen layout.
+summary: Volume 56 of Everett Community College's student art magazine — cover to back cover, plus the slide sequence that promoted it on campus.
 images:
-  01-cover.jpg: Magazine cover — the front of the Vibrations art exhibition magazine
-  02-spread-1.jpg: Editorial spread — artist features and exhibition photography
-  03-spread-2.jpg: Editorial spread — gallery coverage and event content
-  04-spread-3.jpg: Editorial spread — artist interviews and exhibition layout
-  05-screen-1.jpg: Digital companion — screen layout 1 for the online exhibition companion
-  06-screen-2.jpg: Digital companion — screen layout 2 for the online exhibition companion
-  07-screen-3.jpg: Digital companion — screen layout 3 for the online exhibition companion
+  01-cover.jpg: Front cover — "Vibrations 2013" hand-lettered in brush and ink over a field of inked grass, a single blue bloom the only colour on the uncoated cream stock
+  02-spread-1.jpg: Feature spread — a monochrome portrait and greeked columns on the verso, a full-page colour reproduction of the subject's painting on the recto, ink-splatter marks bleeding off the outer edge
+  03-spread-2.jpg: Feature spread — a poetry excerpt set ragged-right and airy on the verso, answered by an archival portrait over three tight columns on the recto
+  04-back-cover.jpg: Back cover — the cover's inked grass carried over with the bloom shifted from blue to gold, the college mark centred at the head
+  05-screen-1.jpg: Promotional slide, 1 of 3 — the title card, condensed caps reversed out of black for the campus display screens
+  06-screen-2.jpg: Promotional slide, 2 of 3 — the call to action, pointing readers to the Art Showcase for a free copy
+  07-screen-3.jpg: Promotional slide, 3 of 3 — venue and date, closing the sequence
 ---
 
-Vibrations was Everett Community College's annual art exhibition, and
-the magazine was its printed companion — a full-color publication
-covering the show, the artists, and the work on display.
+Vibrations is Everett Community College's student art magazine. I
+designed volume 56 in InDesign — cover to back cover — along with the
+slides that promoted it on campus.
 
-## The print magazine
+## The magazine
 
-I designed the magazine from cover to closing page in InDesign. The
-cover sets the tone with a bold treatment of the exhibition title
-over artist imagery. Inside, the spreads mix artist features,
-exhibition photography, and gallery coverage on a modular grid.
+The cover is hand-lettered rather than typeset. "Vibrations 2013" is
+brushed in ink above a field of inked grass, with a single blue bloom
+as the only colour on an uncoated cream stock. The back cover repeats
+the motif and shifts that bloom to gold, so the two halves read as a
+pair when the magazine is closed.
 
 [[01-cover.jpg]]
+
+Inside, each feature runs as a full spread on a three-column grid:
+portrait and headline on the verso, the subject's work given the room
+it needs on the recto. The two here deliberately stress the grid from
+opposite directions — a full-page painting on one, a long poetry
+excerpt on the other — because a layout that only survives one kind of
+content is not a system.
 
 [[02-spread-1.jpg]]
 
 [[03-spread-2.jpg]]
 
-The artist interview spreads run longer text columns alongside
-full-bleed images, giving each artist a page that feels like their
-own.
+[[04-back-cover.jpg]]
 
-[[04-spread-3.jpg]]
+The subjects and the body copy are both stand-ins: the text is greeked
+and the features borrow published artists. The deliverable was the
+layout system, not the editorial.
 
-## The digital companion
+## Promotion
 
-Alongside the print magazine, I designed screen layouts for a digital
-companion — a way to extend the exhibition content online without
-just posting a PDF. Three screen designs covered the main views: the
-landing page, the gallery browse, and the artist detail view.
+Three slides ran on the campus display screens — the title, the call to
+pick up a free copy, and the date and venue. They share nothing with
+the magazine's palette, and should not: condensed caps reversed out of
+black have to land in a second from across a hallway, where the cover
+can afford to be picked up and read.
 
 [[grid:05-screen-1:med]]
 
 [[grid:06-screen-2:med]]
 
 [[07-screen-3.jpg]]
-
-The whole project — print and digital — was built as one system.
-Same grid, same type, same color palette. The magazine lives on a
-coffee table and the screens live on a phone, but they read as the
-same publication.
