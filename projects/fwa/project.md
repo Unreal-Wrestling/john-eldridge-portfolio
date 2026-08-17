@@ -12,7 +12,7 @@ featured: true
 thumb: 01-fwa-logo.jpg
 tags: brand identity, event design, editorial design, game design
 sections: Brand Identity, Social Media & Marketing, PPV Event Posters, Year End Awards Magazine, Commissioner Reports, Game Design
-outcome: The rebrand brought new players in; keeping them past the learning curve was still unsolved when I left
+outcome: The rebrand brought new players in; the retention fixes I recommended were product decisions that sat with ownership
 summary: Full creative direction for a fantasy wrestling promotion — rebuilding an identity assembled from stock art and borrowed logos into an original system spanning 12 promotion brands, two years of event art, an annual awards magazine, commissioner reports, and player onboarding.
 images:
   01-fwa-logo.jpg [thumb-only]: FWA primary logo — the Fantasy Wrestling Alliance wordmark
@@ -111,11 +111,13 @@ Discord developer and admin, and took on operations, budgeting and
 payroll, and community management. I built the company's Discord from
 nothing.
 
-The rebrand did its job at the top of the funnel: it got people
-interested and signing up. Holding them was the harder problem, and the
-honest answer is that I did not finish solving it. The game takes real
-time to learn, and retention past that first stretch was still open
-when I left. The onboarding manual was the first serious attempt at it.
+The rebrand did its job: it brought people in and got them signing up.
+Holding on to them was a different problem, rooted in how much of the
+game's system a new player has to absorb before it starts being fun — a
+product question rather than a brand one. I raised it, and recommended
+changes to the game's technology and operations as part of the
+consulting side of the role; those calls sat with ownership. What was
+mine to deliver, I delivered: the onboarding manual.
 
 ## Brand Identity
 
@@ -231,6 +233,6 @@ out-of-ring action.
 [[grid:howto:med]]
 
 After it shipped the repeat questions fell away and onboarding got
-easier. Retention past that first week did not follow. The system takes
-real time to get good at, and closing that gap was still an open
-problem when I left.
+easier. What documentation could not reach was the learning curve built
+into the game itself — that needed changes to the systems, which I
+recommended and which were ownership's to act on.
