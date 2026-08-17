@@ -177,18 +177,42 @@ def check(folder: Path, report: Report) -> None:
             if not caption:
                 report.warn(name, f"empty caption: {block}/{fname}")
 
-    # Two pieces sharing one caption in the curated set means one of them
-    # is unlabelled in practice. Slideshow blocks are exempt: a run of
-    # convention photographs or "Tier 1 / Tier 2 / Tier 3" is a sequence,
-    # and numbering it is the correct answer rather than a lazy one.
-    seen: dict[str, str] = {}
-    for fname, caption in declared.items():
-        if not caption:
-            continue
-        key = caption.lower().strip()
-        if key in seen:
-            report.warn(name, f"caption identical to {seen[key]}: {fname}")
-        seen[key] = fname
+    # Two files sharing one caption means at least one of them is
+    # described by a sentence written for something else. This is checked
+    # across every block, including slideshows: a caption template pasted
+    # onto three different years of convention photography is exactly the
+    # failure it looks like, and exempting slideshows to quieten the
+    # output would have hidden thirty wrong captions.
+    #
+    # An index is not a duplicate. "Tier 1 / Tier 2" and "Page 1 / Page 2"
+    # differ, and differ correctly, so only identical text is reported.
+    exact: dict[str, str] = {}
+    # Keyed on the caption with every number blanked, so "Crypticon 2012 -
+    # mask work" and "Crypticon 2013 - mask work" collide. Within a single
+    # block that collision is a legitimate sequence - "Tier 1", "Tier 2" -
+    # so only a collision ACROSS blocks is reported. That is the shape of
+    # a template pasted onto a second set of photographs.
+    pattern: dict[str, tuple[str, str]] = {}
+
+    for block, entries in blocks.items():
+        for fname, caption in entries.items():
+            if not caption:
+                continue
+
+            key = caption.lower().strip()
+            if key in exact and exact[key] != fname:
+                report.warn(name, f"caption identical to {exact[key]}: {fname}")
+            exact[key] = fname
+
+            shape = re.sub(r"\d+", "#", key)
+            prior = pattern.get(shape)
+            if prior and prior[0] != block:
+                report.warn(
+                    name,
+                    f"caption reuses the wording of {prior[1]} "
+                    f"({prior[0]}): {fname}",
+                )
+            pattern[shape] = (block, fname)
 
     # Photos in the folder that no block claims never render. That is
     # often deliberate, so it is only ever a warning.
