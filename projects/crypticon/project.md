@@ -17,7 +17,7 @@ summary: Lead designer and staff photographer for a Pacific Northwest horror con
 images:
   01-crypticon-2014-poster.jpg: Crypticon 2014 — main event poster
   02-reggie-lee-flyer.jpg: Celebrity guest flyer for Reggie Lee, 2014
-  03-dig-it-poster.jpg: Dig It — event poster, 2014. Creeper line art by Nick "The Hat" Gucker; coloring by John Eldridge
+  03-dig-it-poster.jpg: Dig It — event poster, 2014. Creeper line art by Nick "The Hat" Gucker; Creeper coloring by John Eldridge
   04-bigfoot-magazine-ad.jpg: Creeper vs Bigfoot — magazine ad, 2014. Artwork by Nick "The Hat" Gucker; my work was the ad layout and design
   05-voucher-2014.jpg: Crypticon 2014 — discount voucher, printed and distributed as a promotional insert
   06-brunch-ticket.jpg: VIP brunch ticket, 2014
@@ -110,7 +110,7 @@ campaign.
 [[02-reggie-lee-flyer.jpg]]
 
 The "Dig It" themed event had its own poster. The Creeper line art
-is by Nick "The Hat" Gucker — I did the coloring on that piece,
+is by Nick "The Hat" Gucker — I did the coloring on the Creeper,
 and the poster layout and typography are mine.
 
 [[03-dig-it-poster.jpg]]
@@ -136,9 +136,11 @@ someone's first physical touchpoint with the event.
 [[06-brunch-ticket.jpg]]
 
 Between design duties I was on the floor with a camera for both
-days. Roughly 350 frames covering cosplayers, guests, and the
-convention atmosphere — from full-body creature builds to
-prosthetic makeup close-ups to group shots on the floor.
+days. Most of my photography each year was for the Official Special
+Fx Make-Up Contest — documenting the prosthetic appliances, airbrushed
+body paint, and creature builds that the contestants brought to the
+competition. The rest was convention floor shots: cosplayers, guests,
+and the atmosphere of the event.
 
 [[photos:2014]]
 
@@ -189,10 +191,13 @@ presence.
 ## Convention Photography
 
 Beyond the design work, I was on the convention floor with a camera
-across four different years — 2012, 2013, 2014, and 2017. Each year
-brought a different cast of cosplayers, guests, and atmosphere. The
-throughline was the community: people who spent months building
-creature suits, sculpting latex appliances, and airbrushing
+across four different years — 2012, 2013, 2014, and 2017. Most of my
+photography each year was for the Official Special Fx Make-Up Contest,
+documenting the contestants' prosthetic appliances, airbrushed body
+paint, and full-body creature builds. The rest was convention floor
+shots — cosplayers in character, guests, and the atmosphere of the
+event. The throughline was the community: people who spent months
+building creature suits, sculpting latex appliances, and airbrushing
 prosthetics, all for a weekend where they could walk the floor in
 character and be seen.
 
