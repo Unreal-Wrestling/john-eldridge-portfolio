@@ -12,7 +12,8 @@ featured: true
 thumb: 03-cwe-logo.jpg
 tags: brand identity, video production, social media, game design
 sections: Brand Identity, Show Logos, Stream Overlays, Social Media & Streaming, Show Openers & Motion Graphics, Game Design & Production
-summary: An ambitious entertainment network project producing live TTRPG gameplay shows six days a week for Twitch and YouTube — brand identity, show intros/outros, motion graphics, social media kit, Discord community, and full production pipeline.
+outcome: The network did not survive, but the brand system held ten shows together across seven game systems and every major streaming platform
+summary: A one-person TTRPG broadcast network — ten shows, six days a week on Twitch and YouTube, with full brand identity, show logos, stream overlays, motion graphics, social media systems, and game production built by a single person.
 images:
   03-cwe-logo.jpg [thumb-only]: Chronos World Entertainment rebrand logo, used as this project's card thumbnail
   15-cw-logo-sting.mp4: CW Logo Sting — animated logo reveal
@@ -74,32 +75,32 @@ photos-splash-pages:
   59-splash-mouse-guard.png: Mouse Guard — splash page
 ---
 
-Chronos World Entertainment was my attempt to build an entire
-TTRPG entertainment network — live tabletop gaming shows running
-six days a week on Twitch and YouTube, with full social media
-support, motion graphics, custom branding, and community
-infrastructure. I wore every hat: Creative Director, Game Master,
-Producer, Game Designer, Community Developer, Discord Developer,
-and Discord Admin.
+Chronos World Entertainment was a one-person broadcast network —
+live tabletop roleplaying shows six days a week on Twitch and YouTube,
+with full branding, motion graphics, social media, community
+infrastructure, and game production behind every episode. I built it
+from nothing during the COVID lockdowns, when the question "can
+tabletop gaming become broadcast entertainment" stopped being
+hypothetical and became something I could test by doing it.
 
-This was a COVID-era effort to realize a dream of turning
-tabletop roleplaying into broadcast entertainment. All shows
-were produced concurrently during this period. The network
-didn't survive, but the body of work — brand identity, show
-openers, motion design, social media systems, and game production
-assets — represents a massive creative output across multiple
-disciplines. Full audio recordings were captured for every
-Saltmarsh Legends session, archived for a planned podcast series
-adapting the campaign into an episodic audio format.
+I held every role: Creative Director, Game Master, Producer, Game
+Designer, Community Developer, Discord Developer, Discord Admin,
+Broadcast Engineer, Motion Graphics Designer, Video Editor, Graphic
+Designer, Brand Identity Designer, Social Media Manager, and Talent
+Coordinator. The network ran ten concurrent shows across seven game
+systems. It did not survive — but the body of work it produced is a
+complete case study in building a brand system under the hardest
+constraints I have worked with: no team, no budget, and a six-day
+broadcast cadence that never paused for a redesign.
 
 ## Brand Identity
 
-The original Chronos World logo was used exclusively during the
-network's original run across Twitch, YouTube, Facebook, Patreon,
-and Discord. The new Chronos World Entertainment logo was created
-recently for the upcoming podcast project — a cleaner, more
-professional wordmark that reflects the evolution from live
-broadcast network to episodic audio production.
+The network needed a parent brand that could hold ten shows together
+without flattening them. The original Chronos World wordmark — a
+layered, ornate design — carried the live broadcast run across every
+platform. The newer Chronos World Entertainment logo was built for
+the podcast project that followed, a cleaner wordmark that reflects
+the shift from live streaming to episodic audio.
 
 [[grid:brand-core]]
 
@@ -107,37 +108,37 @@ broadcast network to episodic audio production.
 
 ## Show Logos
 
-Each show in the network received its own logo identity,
-designed in Illustrator and Photoshop to sit within the
-Chronos World brand system while having its own visual
-language. From Battle Arena's sword-and-shield mark to
-Fireside Tales' illustrated crest to Saltmarsh Legends'
-nautical map treatment, every show needed to be instantly
-recognizable on a Twitch thumbnail or YouTube guide.
+Ten shows, each with its own identity inside the Chronos World
+system. Battle Arena's crossed-sword mark, Fireside Tales'
+illustrated crest, Saltmarsh Legends' nautical map treatment, New
+London's post-apocalyptic stencil, Frost Maidens' ice-lettering —
+every logo was designed in Illustrator and Photoshop to read
+instantly on a Twitch thumbnail at 128 pixels, while still holding
+up on a full YouTube channel banner.
 
 [[grid:show-logos:large]]
 
 ## Stream Overlays
 
-Every show needed custom overlay designs for live broadcast —
-webcam frames, chat windows, character stat displays, and
-scene transitions built in Photoshop and composited in OBS.
-Each overlay was tailored to the show's theme and color
-palette while maintaining network-wide consistency. Multiple
-iterations were produced per show as the production pipeline
-evolved.
+Live broadcast means overlays — the webcam frame, the chat window,
+the character stat panel, the scene transition. Every show got its
+own overlay set built in Photoshop and composited in OBS, themed to
+the show's palette and visual language while keeping network-wide
+consistency in typography and layout. Multiple iterations per show
+tracked the production pipeline as it matured.
 
 [[grid:overlays:xl]]
 
 ## Social Media & Streaming
 
-Every platform got custom-branded assets. Each show got a
-branded splash page used as a "be right back" interstitial
-during streams and as social media promotion art. The Twitch
-channel received a full set of panels, an offline screen, a
-splash page, and a broadcast schedule. YouTube and Facebook
-each got platform-specific banners. A stream advertisement was
-produced for Twitch promotion.
+Every platform the network touched got custom-branded assets. The
+Twitch channel received a full panel set — donations, games,
+leaderboards, merch, Patreon, rules, schedule, support — an offline
+screen, a splash page, and a weekly broadcast schedule. YouTube and
+Facebook each got platform-specific banners sized to their own
+dimensions. Each show got a branded splash page used as a "be right
+back" interstitial during streams and as social media promotion art
+between episodes.
 
 ### Show Splash Pages
 
@@ -151,16 +152,26 @@ produced for Twitch promotion.
 
 [[grid:twitch-panels:wide]]
 
+### Patreon Tiers & Subscriber Icons
+
+The Patreon programme had four tiers, each with its own badge
+design. Twitch subscriber icons were custom-built for individual
+supporters — a small but visible reward for the community that kept
+the network running.
+
+[[grid:patreon-tiers]]
+
+[[grid:sub-icons]]
+
 ## Show Openers & Motion Graphics
 
-Each show in the network got custom intro and outro sequences
-produced in Adobe Premiere Pro, with motion graphics templates,
-animated logos, and branded transitions. A network-wide logo
-sting was created, plus individual show openers and closers for
-Fireside Tales, Saltmarsh Legends, Battle Arena, and Frost
-Maidens. All motion design, logo composites, and animated
-transitions were custom-built — licensed stock footage was used
-as base material where needed.
+Every show got custom intro and outro sequences built in Premiere
+Pro — motion graphics templates, animated logos, branded
+transitions. A network-wide logo sting tied the shows together.
+Fireside Tales and Saltmarsh Legends each received full opener and
+closer packages; Battle Arena and Frost Maidens got animated logo
+stings. All motion design was custom-built, with licensed stock
+footage as base material where the production needed it.
 
 [[youtube:https://youtu.be/gyg35mU7aus|The Fireside Tales — Show Opener — custom motion graphics, animated logos, broadcast intro]]
 
@@ -176,40 +187,41 @@ as base material where needed.
 
 ## Game Design & Production
 
-Beyond the broadcast layer, I designed and produced all game
-content — custom token packs, battle maps, character art, and
-stream overlay templates. A token creation pipeline was built
-using Adobe Photoshop and a custom workflow, allowing rapid
-production of character and NPC tokens for live play.
-Merchandise designs were produced for community supporters,
-featuring original character art from the shows.
+Beyond the broadcast layer, I designed and produced all game content
+— custom token packs, battle maps, character art, and a token
+creation pipeline in Photoshop that let me generate character and NPC
+tokens fast enough for live play. Merchandise designs featured
+original character art from the shows, produced for community
+supporters.
 
 ### Merchandise
 
 [[grid:merch:feature]]
 
-### Production
+### The Shows
 
-The network ran shows across multiple game systems and original
-settings — Battle Arena (combat-focused one-shots using Dungeons
-& Dragons), New London (post-apocalyptic campaign, Dungeons &
-Dragons), Saltmarsh Legends (nautical adventure, Dungeons &
-Dragons), Fireside Tales (anthology storytelling, Dungeons &
-Dragons), Frost Maidens (ice-themed campaign, Dungeons &
-Dragons), Harmony City (Shadowrun), X-Hunter (Marvel Superheroes),
-Dead Man (All Flesh Must Be Eaten), The Blackberry Winter (Mouse
-Guard), and One-Shot Adventures (individual stories where the GM
-chose the system — Monsterhearts was one such one-shot). Each
-required its own visual identity within the Chronos World brand
-system, plus game preparation, token art, and production
-planning for live broadcast.
+The network ran ten shows across seven game systems, all produced
+concurrently:
 
-Bringing a six-day-a-week TTRPG entertainment network to life
-required wearing every hat in the production stack — Creative
-Director, Game Master, Producer, Game Designer, Community
-Developer, Discord Developer, Discord Admin, Broadcast Engineer,
-Motion Graphics Designer, Video Editor, Graphic Designer, Brand
-Identity Designer, Social Media Manager, and Talent Coordinator.
-Each role was a full-time job on its own; together they formed a
-one-person production pipeline that turned tabletop roleplaying
-into broadcast entertainment.
+- **Battle Arena** — combat-focused one-shots (Dungeons & Dragons)
+- **New London** — post-apocalyptic campaign (Dungeons & Dragons)
+- **Saltmarsh Legends** — nautical adventure campaign (Dungeons & Dragons)
+- **Fireside Tales** — anthology storytelling (Dungeons & Dragons)
+- **Frost Maidens** — ice-themed campaign (Dungeons & Dragons)
+- **Harmony City** — cyberpunk noir (Shadowrun)
+- **X-Hunter** — superhero action (Marvel Superheroes)
+- **Dead Man** — zombie survival horror (All Flesh Must Be Eaten)
+- **The Blackberry Winter** — small-scale military adventure (Mouse Guard)
+- **One Shot Adventures** — rotating one-shots where the system changed each time (Monsterhearts was one)
+
+Each required its own visual identity within the Chronos World brand
+system, plus game preparation, token art, and production planning for
+live broadcast. Full audio recordings were captured for every
+Saltmarsh Legends session, archived for a planned podcast series
+adapting the campaign into an episodic audio format.
+
+The network did not survive. But the work it took to build — ten
+show brands, a parent identity, a full social media system, motion
+graphics packages, and a game production pipeline, all produced by
+one person on a six-day weekly cadence — is the strongest evidence I
+have that a constraint is just a design problem with a deadline.
