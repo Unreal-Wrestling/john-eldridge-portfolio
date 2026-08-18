@@ -80,6 +80,11 @@ Runs from any folder, including a USB stick. Plain
 
 ## Adding a project
 
+Every project gets the **full case study treatment** — see
+[`STYLE_GUIDE.md`](STYLE_GUIDE.md) for structure, tone, caption rules,
+and a pre-deploy checklist. The guide also tracks which existing
+projects still need the treatment.
+
 Projects are generated into real pages at `/work/<slug>/` with selectable,
 indexable text — unlike the legacy artboards, which bake their copy into
 pixels.
