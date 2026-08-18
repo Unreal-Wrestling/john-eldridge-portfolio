@@ -1100,7 +1100,7 @@ def render_home_cards(projects: list[Project]) -> str:
 # Display cap per shape tier, in CSS pixels. Mirrors the tiers in work.css -
 # the two have to agree or `sizes` lies to the browser and it picks the wrong
 # candidate. Kept here as the single source of truth for both.
-SHAPE_CAP = {"wide": 1180, "tall": 760, "medium": 560, "small": 400}
+SHAPE_CAP = {"wide": 960, "tall": 640, "medium": 560, "small": 400}
 
 
 def srcset_attrs(image: ProjectImage, cap: int | None = None) -> str:

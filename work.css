@@ -932,9 +932,9 @@
 /* Landscape work - spreads, layouts, campaign pieces. Allowed to break out
    past the copy measure, because this is the work itself and it should be
    large enough to actually read. */
-.proj-figure.is-wide { max-width: min(var(--native-w, 100%), 1180px); }
+.proj-figure.is-wide { max-width: min(var(--native-w, 100%), 960px); }
 /* Posters, flyers, vertical layouts - cap so they don't dominate. */
-.proj-figure.is-tall { max-width: min(var(--native-w, 100%), 760px); }
+.proj-figure.is-tall { max-width: min(var(--native-w, 100%), 640px); }
 /* Landscape pieces that shouldn't run the full column - motion samples,
    secondary artwork. Between a mark and a full-bleed layout. */
 .proj-figure.is-medium { max-width: min(var(--native-w, 100%), 560px); }
