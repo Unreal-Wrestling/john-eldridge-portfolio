@@ -11,6 +11,8 @@ context: Coursework, Everett Community College — Graph 110 & Graph 113
 tags: digital illustration, typography
 featured: false
 thumb: 04-typeface.png
+sections: Movie Poster, Gradient Mesh, Technical Illustration, The V Project
+outcome: The V Project earned an artist spotlight in Vibrations Magazine
 summary: Four vector projects spanning technical illustration, gradient mesh rendering, custom typeface design, and The V Project — a Guy Fawkes mask built entirely from the letter V that earned an artist spotlight in Vibrations Magazine.
 images:
   01-movie-poster.jpg: Movie poster — full composition with title treatment, credits, and atmospheric imagery

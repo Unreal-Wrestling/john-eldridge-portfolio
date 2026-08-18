@@ -11,6 +11,8 @@ context: Self-initiated pitch to Stevens Pass
 tags: apparel design, digital illustration
 featured: false
 thumb: 01-tshirt-mockup.jpg
+sections: The Design, The Components
+outcome:
 summary: A t-shirt design for Stevens Pass ski resort featuring a snow splatter graphic with illustrated typography, presented as a full apparel mockup.
 images:
   01-tshirt-mockup.jpg: Finished t-shirt mockup — the design on a garment, showing placement and scale

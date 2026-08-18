@@ -10,6 +10,9 @@ role: Creative Director
 context: Inkboard Design
 tags: brand identity, print
 featured: false
+thumb: 01-logo.jpg
+sections: The Mark, The Rest of It
+outcome:
 summary: Seaside identity for a family-run Westport coffeeshop, extended into menus and a loyalty coupon program.
 images:
   01-logo.jpg [small]: Primary logo — the Westport Lookout Tower and jetty, with three gulls for the three generations
@@ -40,10 +43,13 @@ After the logo they needed the things a shop uses every day. A full cafe
 menu covering the deli sandwiches, salads, bagels and box lunches, and a
 free coffee loyalty coupon.
 
-I laid the coupons out eight to a page so staff could run off a sheet, cut
-them up and hand them out. No separate print job, no minimum order.
-
 [[02-cafe-menu.jpg]]
+
+I laid the coupons out eight to a page so staff could run off a sheet, cut
+them up and hand them out. No separate print job, no minimum order — just
+the logo and a stamp grid that fits on standard letterstock.
+
+[[03-loyalty-coupon.png]]
 
 The owners know their regulars by name. That's what the identity had to feel
 like.

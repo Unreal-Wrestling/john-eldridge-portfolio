@@ -11,6 +11,8 @@ context: Coursework, Everett Community College
 tags: brand identity
 featured: false
 thumb: 01-logo-primary.png
+sections: The Strategy, The Mark, The System
+outcome:
 summary: A full brand identity system for a cloud media company, including a primary mark, sub-brand logos for CloudBooks and CloudFilms, and a creative brief documenting the strategy behind the design.
 images:
   01-logo-primary.png [small]: Primary logo — the Cloudlifter Media mark, combining cloud and media symbolism

@@ -10,6 +10,8 @@ role: Student
 context: Coursework, Everett Community College
 tags: packaging, print
 featured: false
+thumb: 01-sixpack.jpg
+sections: The Label, Printed
 outcome: Led to a design internship with the brewery
 summary: Bottle label and six-pack carrier for a Seattle brewery, built on Pacific Northwest storm-and-lighthouse imagery. The project led to an internship with the client.
 images:

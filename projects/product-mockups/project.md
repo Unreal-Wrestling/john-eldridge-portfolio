@@ -11,6 +11,8 @@ context: Coursework, Everett Community College
 tags: product mockup, apparel design
 featured: false
 thumb: 08-starbucks-mockup.png
+sections: Skullcandy — Apparel, Skullcandy — Device Mockups, Starbucks — Gift Card
+outcome:
 summary: Product mockup and merchandise design across two brands — Skullcandy headphones on devices and apparel, and a Starbucks gift card with packaging presentation.
 images:
   01-skullcandy-tshirt.png: Skullcandy t-shirt — full apparel mockup with branding on garment

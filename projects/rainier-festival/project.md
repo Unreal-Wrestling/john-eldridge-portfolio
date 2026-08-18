@@ -11,6 +11,8 @@ context: Coursework, Everett Community College
 tags: print design, advertising
 featured: false
 thumb: 01-festival-full-ad.jpg
+sections: The Full-Page Ad, The Newspaper Ad, Web Banners, The Logo
+outcome:
 summary: A cross-format advertising campaign for a mountain festival — full-page print ad, newspaper ad, and web banners — all built from the same visual system.
 images:
   01-festival-full-ad.jpg: Full-page festival ad — the hero piece, with photography and event details

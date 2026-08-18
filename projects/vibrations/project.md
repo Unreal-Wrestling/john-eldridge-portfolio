@@ -11,6 +11,8 @@ context: Coursework, Everett Community College — Vibrations art exhibitions
 tags: digital art
 featured: false
 thumb: 01-troy-arisen.jpg
+sections: Troy Arisen, The Process
+outcome: Troy Arisen was selected for the Vibrations Magazine student art spotlight issue
 summary: A series of large-format digital art pieces created for the Vibrations art exhibitions at Everett Community College — including Troy Arisen, which earned a spot in the Vibrations Magazine student art spotlight issue.
 images:
   01-troy-arisen.jpg: Troy Arisen — a man with a guitar, the piece that earned a spot in the Vibrations Magazine student art spotlight issue

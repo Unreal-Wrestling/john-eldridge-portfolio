@@ -11,6 +11,7 @@ context: Final project, Everett Community College
 outcome: Selected by our team as its submission; not chosen by the college for development
 tags: editorial design, print
 featured: false
+sections: The Magazine, Promotion
 summary: A pitch for Everett Community College's student art magazine — my concept and execution, chosen by our team as its submission for our final project.
 images:
   01-cover.jpg: Front cover — "Vibrations 2013" hand-lettered in brush and ink over a field of inked grass, a single blue bloom the only colour on the uncoated cream stock

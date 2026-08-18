@@ -11,6 +11,8 @@ context: Coursework, Everett Community College — Graph 251
 tags: editorial design, typography, album design
 featured: false
 thumb: 01-front-cover.png
+sections: The Cover, The Interior, Back Cover, Production, Credits
+outcome:
 summary: A complete book design for Graph 251, built around a personal concept — a fictional band called Advent Antiquity and their album Nothing is Trivial, exploring the ideas of life, love, and who we are as humans. Full design from cover to closing page with photography, artwork, and songwriting.
 images:
   01-front-cover.png [small]: Front cover — the hand-lettered album title in brush and ink, reversed white out of a dark ground, sitting inside a dense field of handwritten lyric fragments in low-contrast grey

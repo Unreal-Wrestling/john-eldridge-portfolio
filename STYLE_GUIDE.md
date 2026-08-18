@@ -247,28 +247,30 @@ Before deploying a new or updated case study:
 7. `date` field positions the project correctly in the timeline
 8. `thumb` image is clean and reads well at small card size
 
-## Projects still needing the treatment
+## Project status
 
-As of this writing, these projects do not yet have the full case study:
+All projects now have the full case study treatment — `sections` and
+`outcome` fields are present, narratives follow the arc, and captions
+are specific and unique.
 
 | Project | Status |
 |---------|--------|
-| 3gs-coffeeshop | No sections, no outcome |
-| advent-antiquity | No sections, no outcome |
-| alpine-tech | No sections, no outcome |
-| biztech-rx | No sections, no outcome |
-| cloudlifter-media | No sections, no outcome |
-| david-carson-study | No sections, no outcome |
-| poetry-northwest | No sections, no outcome |
-| product-mockups | No sections, no outcome |
-| rain-city-brew | No sections, has outcome |
-| rain-city-brew-posters | Has sections, no outcome |
-| rainier-festival | No sections, no outcome |
-| stevens-pass | No sections, no outcome |
-| vector-illustration | No sections, no outcome |
-| vibrations | No sections, no outcome |
-| vibrations-magazine | No sections, has outcome |
-
-Work through these one at a time, with user approval before starting
-each one. Review the source images in `d:\Work\Inkboard Design\Client
-Folder` or the project's `photos/` folder before writing captions.
+| fwa | Done (reference example) |
+| chronos-world | Done |
+| crypticon | Done |
+| byvm | Done |
+| 3gs-coffeeshop | Done |
+| advent-antiquity | Done |
+| alpine-tech | Done |
+| biztech-rx | Done |
+| cloudlifter-media | Done |
+| david-carson-study | Done |
+| poetry-northwest | Done |
+| product-mockups | Done |
+| rain-city-brew | Done |
+| rain-city-brew-posters | Done |
+| rainier-festival | Done |
+| stevens-pass | Done |
+| vector-illustration | Done |
+| vibrations | Done |
+| vibrations-magazine | Done |

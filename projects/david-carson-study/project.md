@@ -11,6 +11,8 @@ context: Coursework, Seattle Art Museum — David Carson retrospective
 tags: typography, editorial design
 featured: false
 thumb: 01-cover.jpg
+sections: The Approach, Deconstruction, Image and Type, Layering, Closing
+outcome:
 summary: A complete editorial booklet studying David Carson's groundbreaking typography — deconstructed grids, layered text, and broken hierarchy built as a tribute to his radical approach to print design.
 images:
   01-cover.jpg [small]: Cover — the title page with deconstructed typography setting the tone for the booklet
