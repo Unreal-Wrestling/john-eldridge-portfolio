@@ -2,14 +2,14 @@
 title: Blank You Very Much — Brand Design Contests
 client: Blank You Very Much
 year: 2014-2015
-date: 2014-08
+date: 2015-04
 category: Brand Design
 division: business
 work_type: competition
 role: Designer
 context: Contest Platform
 featured: false
-thumb: 08-grenco-boxcut-01.jpg
+thumb: 01-asphalt-design-01.jpg
 tags: brand design, apparel, packaging, contest
 sections: Asphalt Yacht Club, Grenco G Pen Pro, Modernica, Red Bull Global Rallycross
 outcome: No contracts won, but placed highly in every contest entered — competitive design work measured against a national field of creatives
