@@ -21,58 +21,58 @@ photos-brand-core:
   03-brand-cwe-logo.jpg: Chronos World Entertainment — rebrand logo
   01-brand-cw-logo.jpg: Chronos World — original logo
 photos-social-banners:
-  04-social-twitch-banner.jpg: Twitch channel banner
-  05-social-twitch-offline.jpg: Twitch offline screen
-  06-social-twitch-schedule.jpg: Weekly broadcast schedule
-  07-social-twitch-splash.jpg: Twitch splash page
-  08-social-youtube-banner.jpg: YouTube channel banner
-  09-social-facebook-banner.jpg: Facebook page banner
+  04-social-twitch-banner.jpg: Twitch channel banner — network branding with show logo collage
+  05-social-twitch-offline.jpg: Twitch offline screen — branded holding image with CW logo and network identity
+  06-social-twitch-schedule.jpg: Weekly broadcast schedule — grid showing all ten shows by day and time
+  07-social-twitch-splash.jpg: Twitch splash page — network interstitial with branding, used during stream breaks
+  08-social-youtube-banner.jpg: YouTube channel banner — network branding with show logos, sized for YouTube's layout
+  09-social-facebook-banner.jpg: Facebook page banner — network identity sized for Facebook's cover dimensions
 photos-twitch-panels:
-  01-panel-donations.jpg: Donations
-  02-panel-games.jpg: Games
-  03-panel-leaders.jpg: Leaderboards
-  04-panel-merch.jpg: Merch
-  05-panel-patreon.jpg: Patreon
-  06-panel-rules.jpg: Community Rules
-  07-panel-schedule.jpg: Schedule
-  08-panel-support.jpg: Support
+  01-panel-donations.jpg: Donations — support panel with contribution call-to-action
+  02-panel-games.jpg: Games — panel listing the game systems featured across the network's shows
+  03-panel-leaders.jpg: Leaderboards — community ranking panel with competitive standings
+  04-panel-merch.jpg: Merch — product showcase panel featuring the Kobold Cowboy design
+  05-panel-patreon.jpg: Patreon — support panel with tier info and subscription details
+  06-panel-rules.jpg: Community Rules — guidelines panel setting conduct expectations for the Discord and chat
+  07-panel-schedule.jpg: Schedule — weekly broadcast schedule panel with show times
+  08-panel-support.jpg: Support — contact and technical support panel for viewers
 photos-patreon-tiers:
-  09-patreon-tier1.png: Tier 1
-  10-patreon-tier2.png: Tier 2
-  11-patreon-tier3.png: Tier 3
-  12-patreon-tier4.png: Tier 4
+  09-patreon-tier1.png: Tier 1 — bronze-tone hexagonal badge, the entry-level Patreon support tier
+  10-patreon-tier2.png: Tier 2 — silver-tone hexagonal badge with winged motif, mid-level support tier
+  11-patreon-tier3.png: Tier 3 — gold-tone hexagonal badge with crest element, upper support tier
+  12-patreon-tier4.png: Tier 4 — dark premium badge with bright accent, top support tier
 photos-sub-icons:
-  13-sub-icon-fire.png: SubFire
-  14-sub-icon-shadowcat.png: Shadowcat
-  15-sub-icon-cole.png: Cole4ever
-  16-sub-icon-scoundrel.png: Honorable Scoundrel
+  13-sub-icon-fire.png: SubFire — flame emblem in red and orange, custom Twitch subscriber icon
+  14-sub-icon-shadowcat.png: Shadowcat — cat silhouette in dark purple, custom subscriber icon
+  15-sub-icon-cole.png: Cole4ever — character portrait icon, custom subscriber icon for a community member
+  16-sub-icon-scoundrel.png: Honorable Scoundrel — rogue emblem with pirate flair, custom subscriber icon
 photos-merch:
-  12-merch-kobold.png: Kobold Cowboy — character t-shirt design
+  12-merch-kobold.png: Kobold Cowboy — original character art from the shows, a kobold in western attire designed as a community t-shirt
 photos-show-logos:
-  30-logo-fireside-tales.png: Fireside Tales — show logo
-  31-logo-harmony-city.png: Harmony City — show logo
-  32-logo-x-hunter.png: X-Hunter — show logo
-  33-logo-one-shot-adventures.png: One Shot Adventures — show logo
-  34-logo-dead-man.png: Dead Man — show logo
-  35-logo-new-london.png: New London — show logo
-  36-logo-frost-maidens.png: Frost Maidens — show logo
-  37-logo-saltmarsh-legends.png: Saltmarsh Legends — show logo
-  38-logo-blackberry-winter.png: The Blackberry Winter — show logo
-  39-logo-battle-arena.png: Battle Arena — show logo
+  30-logo-fireside-tales.png: Fireside Tales — illustrated crest with campfire and tent, warm storybook aesthetic
+  31-logo-harmony-city.png: Harmony City — cyberpunk logo with neon city skyline treatment
+  32-logo-x-hunter.png: X-Hunter — bold superhero logo with angular X motif
+  33-logo-one-shot-adventures.png: One Shot Adventures — adventure-themed logo with dice imagery
+  34-logo-dead-man.png: Dead Man — horror logo with skull and distressed typography
+  35-logo-new-london.png: New London — post-apocalyptic stenciled logo with worn, weathered treatment
+  36-logo-frost-maidens.png: Frost Maidens — ice-crystal lettering with frozen texture and cold color palette
+  37-logo-saltmarsh-legends.png: Saltmarsh Legends — nautical cartography treatment with compass rose and ocean map elements
+  38-logo-blackberry-winter.png: The Blackberry Winter — Mouse Guard-themed logo with small creature and winter berry motif
+  39-logo-battle-arena.png: Battle Arena — crossed-swords combat emblem with arena framing
 photos-overlays:
-  41-overlay-battle-arena.png: Battle Arena — stream overlay
-  45-overlay-fireside-tales-04.png: Fireside Tales — overlay design
-  46-overlay-new-london-01.png: New London — overlay design
-  51-overlay-harmony-city-04.png: Harmony City — overlay design
-  52-overlay-ravens.png: Ravens — stream overlay
-  53-overlay-osa-monsterhearts.png: One Shot Adventures (Monsterhearts) — overlay
+  41-overlay-battle-arena.png: Battle Arena — arena-themed overlay with combat framing, stat panels, and battle HUD elements
+  45-overlay-fireside-tales-04.png: Fireside Tales — warm campfire-bordered overlay with storybook framing and character stat panels
+  46-overlay-new-london-01.png: New London — wasteland-themed overlay with industrial framing and post-apocalyptic UI elements
+  51-overlay-harmony-city-04.png: Harmony City — cyberpunk overlay with neon city framing and holographic UI elements
+  52-overlay-ravens.png: Ravens — dark raven-themed overlay with gothic framing
+  53-overlay-osa-monsterhearts.png: One Shot Adventures (Monsterhearts) — teen horror overlay with dark monster aesthetic
 photos-splash-pages:
-  54-splash-battle-arena.png: Battle Arena — splash page
-  55-splash-new-london.png: New London — splash page
-  56-splash-harmony-city.png: Harmony City — splash page
-  57-splash-x-hunter.png: X Hunter — splash page
-  58-splash-dead-man.png: Dead Man — splash page
-  59-splash-mouse-guard.png: Mouse Guard — splash page
+  54-splash-battle-arena.png: Battle Arena — crossed-swords combat splash with arena branding, used as a stream interstitial
+  55-splash-new-london.png: New London — post-apocalyptic cityscape splash with distressed branding
+  56-splash-harmony-city.png: Harmony City — cyberpunk city splash with neon skyline and branded overlay
+  57-splash-x-hunter.png: X Hunter — superhero splash with bold action branding and comic-inspired treatment
+  58-splash-dead-man.png: Dead Man — horror splash with dark, grim imagery and distressed typography
+  59-splash-mouse-guard.png: The Blackberry Winter — winter forest splash with small creature silhouette and seasonal palette
 ---
 
 Chronos World Entertainment was a one-person broadcast network —
