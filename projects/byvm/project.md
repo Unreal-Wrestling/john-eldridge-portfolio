@@ -34,7 +34,6 @@ images:
   17-redbull-shirt-02.jpg: Red Bull Global Rallycross — dark-ground tee with GRC logo treatment and rallycross racing graphics
   18-redbull-shirt-03.jpg: Red Bull Global Rallycross — alternate racing graphic on a different color ground, checkered flag and course elements
   19-redbull-shirt-04.jpg: Red Bull Global Rallycross — fourth shirt design with a distinct approach to the motorsport theme
-  20-redbull-map-01.jpg: Red Bull Global Rallycross — stylized rallycross course diagram, Illustrator-built track layout with sector markers and branding
 ---
 
 Blank You Very Much was a contest-based platform that paired major
@@ -54,7 +53,7 @@ packaging, furniture brand design, and motorsport apparel. None of
 them won the contract. I placed highly in all of them.
 
 The value was in the range. Four brands, four design problems, four
-sets of constraints — and twenty pieces that held their own against a
+sets of constraints — and nineteen pieces that held their own against a
 national field of working creatives.
 
 ## Asphalt Yacht Club
@@ -152,21 +151,13 @@ racing on mixed-surface circuits with dirt jumps and tarmac sections.
 The contest brief called for tee shirt designs that could sell at
 events and online, plus supporting graphics.
 
-I submitted four shirt designs and a rally course map. The shirts were
-built in Illustrator for the vector graphics — checkered flag motifs,
-series branding, and racing iconography — and mocked up in Photoshop
-for presentation. The red-ground tee with the checkered flag was the
-boldest color entry; the dark-ground pieces let the racing graphics
-and GRC logo treatment carry the weight. Each shirt took a different
-angle on the motorsport theme while staying inside Red Bull's visual
-world.
-
-The course map was a separate piece — a stylized diagram of a
-rallycross circuit built in Illustrator, with sector markers, track
-layout, and series branding. It was the one piece in the set that was
-purely informational design, and it rounded out the submission with
-something that could work as event signage or print collateral beyond
-apparel.
+I submitted four shirt designs. The shirts were built in Illustrator
+for the vector graphics — checkered flag motifs, series branding, and
+racing iconography — and mocked up in Photoshop for presentation. The
+red-ground tee with the checkered flag was the boldest color entry;
+the dark-ground pieces let the racing graphics and GRC logo treatment
+carry the weight. Each shirt took a different angle on the motorsport
+theme while staying inside Red Bull's visual world.
 
 [[16-redbull-shirt-01.jpg]]
 
@@ -175,5 +166,3 @@ apparel.
 [[18-redbull-shirt-03.jpg]]
 
 [[19-redbull-shirt-04.jpg]]
-
-[[20-redbull-map-01.jpg]]
