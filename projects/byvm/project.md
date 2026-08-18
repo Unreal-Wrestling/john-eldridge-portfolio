@@ -28,8 +28,8 @@ images:
   11-grenco-concept-01.jpg: Grenco G Pen Pro — product lifestyle mockup, the vaporizer staged in a dark environment with green brand lighting
   12-grenco-concept-02.jpg: Grenco G Pen Pro — alternate lifestyle mockup with a different presentation angle and brand treatment
   13-grenco-concept-03.jpg: Grenco G Pen Pro — full presentation board with multiple product views, brand elements, and lifestyle context
-  14-modernica-design-01.jpg: Modernica — fiberglass shell chair in a photographic lifestyle setting with Modernica wordmark, positioning the furniture as a design object
-  15-modernica-design-02.jpg: Modernica — alternate layout with the shell chair in a different environment, graphic treatment pushing the brand beyond the product
+  14-modernica-design-01.jpg: Modernica — early version of the shell chair lifestyle design, photographic setting with Modernica wordmark before the layout was refined
+  15-modernica-design-02.jpg: Modernica — final version, refined layout with the shell chair in a stronger environment and graphic treatment pushing the brand beyond the product
   16-redbull-shirt-01.jpg: Red Bull Global Rallycross — red-ground tee with checkered flag motif and GRC series branding, the boldest color entry
   17-redbull-shirt-02.jpg: Red Bull Global Rallycross — dark-ground tee with GRC logo treatment and rallycross racing graphics
   18-redbull-shirt-03.jpg: Red Bull Global Rallycross — alternate racing graphic on a different color ground, checkered flag and course elements
@@ -134,13 +134,12 @@ produce using the original presses. The contest brief called for brand
 designs that connected the furniture to a broader lifestyle context,
 positioning it beyond the product itself.
 
-I submitted two designs. Each used photography of the shell chair in a
-lifestyle environment, paired with graphic treatment and the Modernica
-wordmark. The first placed the chair as a design object in a
-photographic setting — the furniture as something you build a room
-around. The second took a different environment and a different layout
-approach, pushing the brand identity past the product shot and into
-something that felt like a lifestyle campaign.
+I submitted one design that went through a clear iteration. The early
+version placed the chair as a design object in a photographic setting
+with the Modernica wordmark — the furniture as something you build a
+room around. The final version refined the layout, pushing the brand
+identity past the product shot and into something that felt like a
+lifestyle campaign.
 
 [[14-modernica-design-01.jpg]]
 
