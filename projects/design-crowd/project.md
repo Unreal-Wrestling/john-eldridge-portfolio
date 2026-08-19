@@ -12,19 +12,19 @@ featured: false
 thumb: 05-velvethoney-logo.png
 tags: logo design, brand identity, contest
 sections: Logos, Brand Presentations, Apparel & Print
-outcome: No contracts won, but twenty-one submissions across industries from legal services to fitness brands — competitive identity work measured against an international field of designers
-summary: Contest submissions for Design Crowd, a platform connecting clients with creatives through logo design competitions. Twenty-one entries across industries — none won, all show range in identity design.
+outcome: No contracts won, but twenty-seven submissions across industries from legal services to fitness brands — competitive identity work measured against an international field of designers
+summary: Contest submissions for Design Crowd, a platform connecting clients with creatives through logo design competitions. Twenty-seven entries across industries — none won, all show range in identity design.
 images:
   01-ef-logo.png: EF — interlocking monogram in a clean sans-serif, professional services identity
-  02-xtreme-logo.png: Xtreme — aggressive angular wordmark with dynamic slash, extreme sports brand
-  03-gym-logo.png: Whit Gym — barbell-and-initials mark in a circular badge, fitness brand identity
-  04-resonance-logo.png: Resonance — concentric sound wave rings emanating from a central point, audio brand identity
-  05-velvethoney-logo.png: Velvet Honey — honey dipper illustration with elegant serif wordmark, artisan food brand
-  06-peninsula-logo.png: Peninsula — flamingo standing in shallow water, hospitality destination brand
-  07-simplyprobate-logo.png: Simply Probate — quill pen writing in ink, legal services brand with traditional craft connotation
-  08-traemand-logo.png: Traemand — stylized tree with exposed root system, environmental or forestry brand
-  09-greenlife-logo.png: Greenlife — cannabis leaf integrated into medical cross, medical cannabis dispensary identity
-  10-onyourmarks-logo.png: On Your Marks — racing starter pistol and track elements, motorsport event brand
+  02-xtreme-logo.png: Xtreme Airsoft — aggressive angular wordmark with dynamic slash, airsoft gun company for professional players
+  03-gym-logo.png: Whitsunday Weightlifting — barbell-and-initials mark in a circular badge, weightlifting gym identity
+  04-resonance-logo.png: Resonance Center — concentric sound wave rings emanating from a central point, audiology medical facility
+  05-velvethoney-logo.png: Royal Velvet — honey dipper illustration with elegant serif wordmark, line of honey products
+  06-peninsula-logo.png: Peninsula on the Intracoastal — flamingo standing in shallow water, 55+ living community in Florida
+  07-simplyprobate-logo.png: Simply Probate — quill pen writing in ink, probate services brand with old-world traditional feel
+  08-traemand-logo.png: Traemand — stylized tree with exposed root system, paper company identity
+  09-greenlife-logo.png: Greenlife Express — cannabis leaf integrated into medical cross, cannabis delivery business
+  10-onyourmarks-logo.png: On Your Marks — racing starter pistol and track elements, learning assessment system for children
   11-iqra-logo.png: IQra — open book with diagonal slash element, educational platform identity
   12-otto-logo.png: Otto — stencil-cut wordmark in industrial lettering, manufacturing or fabrication brand
   13-saem-logo.png: SAEM — circular emblem with academic seal treatment, professional association identity
@@ -36,6 +36,12 @@ images:
   19-triathlon-shirt.png: Triathlon Series — event logo with swimming, cycling, and running iconography, race series identity
   20-triathlon-mockup.jpg: Triathlon Series — logo applied to technical tee mockup, event apparel presentation
   21-button-cover.png: Button Cover — decorative button cover design with textured surface treatment, fashion accessory print piece
+  22-haughton-logo.png: Haughton — architectural crest with serif wordmark, estate and place name identity
+  23-jg-logo.png: JG — monogram set against a Singapore skyline, label and tag brand identity
+  24-adultmedia-logo.png: Adult Media — silhouette figure with sunset gradient, adult entertainment media brand
+  25-bidbuddy-logo.png: BidBuddy — auction gavel and speech bubble combination, bidding assistant platform identity
+  26-mysurgicalcost-logo.png: My Surgical Cost — medical cross over a US map, surgical cost comparison service
+  27-palmerair-logo.png: Palmer Air — airbrush nozzle and airflow swirl, custom airbrush and painting service
 ---
 
 Design Crowd was a contest-based platform that connected clients with
@@ -47,17 +53,18 @@ campaigns for major labels. Each brief was a single mark: a company's
 entire identity compressed into one readable symbol.
 
 I submitted work for over twenty clients between 2013 and 2014. The
-briefs ranged from a legal services firm that wanted a quill pen to a
-honey brand that needed an artisan feel to a medical cannabis
-dispensary looking for a leaf-and-cross mark. Some came with reference
-images and competitor analysis. Some came with a name and a sentence.
-The constraint was always the same: the logo had to read at business
-card size and billboard size, in one color and full color, on a
-website and on a delivery truck.
+briefs ranged from a probate firm that wanted a quill pen to a honey
+brand that needed an artisan feel to a cannabis delivery business
+looking for a leaf-and-cross mark. Some came with reference images and
+competitor analysis. Some came with a name and a sentence. The
+constraint was always the same: the logo had to read at business card
+size and billboard size, in one color and full color, on a website and
+on a delivery truck.
 
-I didn't win any of the contests. But the range was the point — over
-twenty identity systems across industries that had nothing in common,
-each one a different design problem with a different set of constraints.
+I didn't win any of the contests. But the range was the point —
+twenty-seven identity systems across industries that had nothing in
+common, each one a different design problem with a different set of
+constraints.
 
 ## Logos
 
@@ -67,17 +74,20 @@ direction they provided — and ended as a finished mark built in
 Illustrator.
 
 The EF monogram was a clean interlocking letter treatment for a
-professional services firm. Xtreme was an aggressive angular wordmark
-for an extreme sports brand. The Whit Gym logo put a barbell inside a
-circular badge for a fitness brand. Resonance used concentric sound
-wave rings for an audio company. Velvet Honey paired a honey dipper
-illustration with elegant serif typography for an artisan food brand.
-Peninsula used a flamingo standing in shallow water for a hospitality
-destination. Simply Probate took a quill pen writing in ink for a
-legal services firm. Traemand built a stylized tree with exposed roots
-for an environmental brand. Greenlife integrated a cannabis leaf into
-a medical cross for a dispensary. On Your Marks combined a racing
-starter pistol with track elements for a motorsport event.
+professional services firm. Xtreme Airsoft was an aggressive angular
+wordmark for an airsoft gun company targeting professional players.
+Whitsunday Weightlifting put a barbell inside a circular badge for a
+weightlifting gym. The Resonance Center used concentric sound wave
+rings for an audiology medical facility. Royal Velvet paired a honey
+dipper illustration with elegant serif typography for a line of honey
+products. Peninsula on the Intracoastal used a flamingo standing in
+shallow water for a 55+ living community in Florida. Simply Probate
+took a quill pen writing in ink for a probate services firm, giving
+the piece an old-world feel. Traemand built a stylized tree with
+exposed roots for a paper company. Greenlife Express integrated a
+cannabis leaf into a medical cross for a cannabis delivery business.
+On Your Marks combined a racing starter pistol with track elements
+for a learning assessment system for children.
 
 [[01-ef-logo.png]]
 
@@ -98,6 +108,27 @@ starter pistol with track elements for a motorsport event.
 [[09-greenlife-logo.png]]
 
 [[10-onyourmarks-logo.png]]
+
+Haughton used an architectural crest with a serif wordmark for an
+estate identity. JG set a monogram against a Singapore skyline for a
+label brand. Adult Media paired a silhouette figure with a sunset
+gradient for an adult entertainment brand. BidBuddy combined an auction
+gavel with a speech bubble for a bidding assistant platform. My
+Surgical Cost placed a medical cross over a US map for a surgical cost
+comparison service. Palmer Air used an airbrush nozzle and airflow
+swirl for a custom airbrush and painting service.
+
+[[22-haughton-logo.png]]
+
+[[23-jg-logo.png]]
+
+[[24-adultmedia-logo.png]]
+
+[[25-bidbuddy-logo.png]]
+
+[[26-mysurgicalcost-logo.png]]
+
+[[27-palmerair-logo.png]]
 
 ## Brand Presentations
 
