@@ -13,7 +13,7 @@ outcome: Final logo delivered in vector, PNG, and PDF formats for print and web 
 summary: Logo design for Cafe Wylde, a vegan restaurant in Everett, Washington — twelve iterations over ten days exploring hand-lettered wordmarks before arriving at the final mark.
 thumb: cafe-wylde-logo-final.png
 images:
-  cafe-wylde-logo-final.png: Final logo — hand-lettered "Cafe Wylde" wordmark with organic, slightly irregular letterforms that read as both rustic and modern, fitting for a plant-based restaurant
+  cafe-wylde-logo-final.png: Final logo — hand-lettered "Cafe Wylde" wordmark centered on a white square, with organic, slightly irregular letterforms that read as both rustic and modern, fitting for a plant-based restaurant
 photos-design-process:
   concept-01.jpg: Concept one — first exploration, serif typeface with decorative flourishes and a leaf motif integrated into the wordmark
   concept-02.jpg: Concept two — shifted to a rounder, softer serif with tighter spacing, testing a cleaner and more approachable direction
