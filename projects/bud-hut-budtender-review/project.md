@@ -11,7 +11,9 @@ tags: print design, form design, quality control, cannabis retail, internal oper
 sections: Review Sheet
 outcome: Adopted as the standard QC review tool across Bud Hut retail locations
 summary: A quality control review sheet for sales associates at Bud Hut, designed to standardize budtender performance evaluations.
+thumb: bud-hut-logo.png
 images:
+  bud-hut-logo.png [thumb-only]: Bud Hut logo — green cannabis leaf mark with "Bud Hut" wordmark, used as the project thumbnail
   review-sheet-v1.jpg: First version — full review sheet layout with QC logo header, evaluation criteria sections, and rating fields for budtender performance reviews
   review-sheet-v2.png: Revised version — streamlined layout with condensed evaluation criteria, improved field spacing, and updated QC logo placement for cleaner printing
   qc-logo.png: Budtender QC logo — circular badge mark with "Budtender QC" text, designed as a header element for the review sheet and internal QC materials
