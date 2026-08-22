@@ -11,9 +11,10 @@ tags: t-shirt design, apparel, cannabis branding, hip-hop, collaboration, vector
 sections: Design Process, Final Design, Store Display
 outcome: T-shirt produced and sold through Caviar Gold's retail locations, with a revised redux version printed in 2019
 summary: Collaboration T-shirt design for Caviar Gold and Redman — combining the cannabis brand's gold-and-black aesthetic with the rapper's logo across multiple color iterations.
-thumb: caviar-gold-redman-final.png
+thumb: redman-shirt-mockup.png
 images:
-  caviar-gold-redman-final.png [thumb-only]: Final design — Redman logo in gold foil treatment with Caviar Gold branding, vector artwork sized at 720 x 1440 pixels for full-bleed garment printing
+  redman-shirt-mockup.png [thumb-only]: T-shirt mockup — Redman x Caviar Gold collaboration shirt shown on a black garment with the gold foil logo treatment, photographed as a flat product shot
+  caviar-gold-redman-final.png: Final design — Redman logo in gold foil treatment with Caviar Gold branding, vector artwork sized at 720 x 1440 pixels for full-bleed garment printing
 photos-design-process:
   concept-01.jpg: Concept one — initial placement of Redman logo on black garment, testing scale and positioning with the Caviar Gold brand mark
   concept-02.jpg: Concept two — recolor exploration shifting the logo treatment to warmer gold tones, adjusting contrast against the black background
