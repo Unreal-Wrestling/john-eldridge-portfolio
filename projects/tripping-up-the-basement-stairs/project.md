@@ -2,7 +2,7 @@
 title: Tripping Up the Basement Stairs Before Dawn
 client: John Seymour Eldridge
 year: 2014-2015
-date: 2015-06
+date: 2015-01
 category: Book Design
 division: arts
 work_type: client
