@@ -78,6 +78,12 @@ date so it sorts with the most recent work in that span — but be aware
 this can push it above projects that were actually completed later.
 Adjust `date` to position a project honestly within the timeline.
 
+**Always check source file timestamps.** Before setting `year` and
+`date`, review the modification dates of the original source files in
+the client/project folder. Use the earliest and latest timestamps to
+determine the actual span of work. Do not guess or estimate — the
+file system has the answer.
+
 ## Narrative structure
 
 The body text after the `---` follows a consistent arc. Not every
