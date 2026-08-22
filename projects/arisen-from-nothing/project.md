@@ -9,13 +9,13 @@ work_type: client
 role: Photographer & Designer
 context: Band
 featured: true
-thumb: press-01.png
+thumb: afn-logo.png
 tags: live music photography, promo photography, graphic design, cd artwork, poster design, band branding
 sections: Live Music Photography, Promo/Press Photography, Graphic Design / Branding
 outcome: All press materials, CD artwork, and promotional imagery used by the band across a four-year relationship spanning six venues and three release cycles
 summary: Photography and design for Arisen From Nothing — live shows at six venues, press and promo shoots, CD release artwork, and event posters over four years.
 images:
-  afn-logo.png [small]: AFN band logo — white text treatment on transparent background, used across print and web
+  afn-logo.png: AFN band logo — white text treatment on transparent background, used across print and web
   press-01.png: Press shot one — full band posed against dark backdrop, dramatic side lighting from camera left
   press-02.png: Press shot two — band in casual formation, outdoor natural light with shallow depth of field
   press-03.png: Press shot three — individual member portrait, tight crop, moody low-key lighting

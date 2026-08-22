@@ -11,9 +11,10 @@ tags: advertising, print design, social media, event posters, holiday promos, re
 sections: Holiday Promos, Theme Nights
 outcome: Holiday social media graphics and event posters adopted across the restaurant's promotional calendar
 summary: Holiday social media graphics, event headers, and theme night flyers for Buzz Inn Steakhouse, a neighborhood steakhouse and bar in Washington.
-thumb: theme-poker-night.png
+thumb: buzz-inn-logo.png
 images:
-  theme-poker-night.png [thumb-only]: Poker Night theme flyer — full-bleed design with playing card imagery, royal flush illustration, and event details for the restaurant's recurring poker night
+  buzz-inn-logo.png [thumb-only]: Buzz Inn Steakhouse logo — circular badge with a fork and knife crossed over a stylized bee, "Buzz Inn Steakhouse" set in a custom rustic wordmark
+  theme-poker-night.png: Poker Night theme flyer — full-bleed design with playing card imagery, royal flush illustration, and event details for the restaurant's recurring poker night
 photos-holiday-promos:
   holiday-st-patricks-header.png: St. Patrick's Day event header — social media header with shamrock graphics, whiskey imagery, and green and gold color palette for the restaurant's St. Patrick's Day promotion
   holiday-st-patricks-flyer.png: St. Patrick's Day flyer — print flyer with Celtic typography, clover motifs, and drink special messaging for the holiday event
