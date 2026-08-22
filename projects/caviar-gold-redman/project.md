@@ -1,15 +1,15 @@
 ---
 title: Caviar Gold x Redman — T-Shirt Design
 client: Caviar Gold
-year: 2015-2019
-date: 2019-05
+year: 2015
+date: 2015-02
 category: Apparel Design
 division: business
 work_type: client
 context: Collaboration T-shirt for Caviar Gold and rapper Redman
 tags: t-shirt design, apparel, cannabis branding, hip-hop, collaboration, vector illustration
 sections: Design Process, Final Design, Store Display
-outcome: T-shirt produced and sold through Caviar Gold's retail locations, with a revised redux version printed in 2019
+outcome: T-shirt produced and sold through Caviar Gold's retail locations in Washington
 summary: Collaboration T-shirt design for Caviar Gold and Redman — combining the cannabis brand's gold-and-black aesthetic with the rapper's logo across multiple color iterations.
 thumb: redman-shirt-mockup.png
 images:
@@ -21,7 +21,7 @@ photos-design-process:
   concept-03.jpg: Concept three — refined gold variant with tighter integration between Redman and Caviar Gold branding, testing a unified lockup
   concept-04.jpg: Concept four — alternate gold treatment with adjusted spacing and proportions, near-final iteration before the production-ready artwork
 photos-final-design:
-  tshirt-redux.jpg: 2019 redux — revised T-shirt mockup with updated garment color and print treatment, produced four years after the original run
+  tshirt-redux.jpg: Redux mockup — revised T-shirt mockup with updated garment color and print treatment, produced as a refresh of the original design
 photos-store-display:
   store-display.jpg: Store display — T-shirt shown on a retail display rack in a Caviar Gold shop, demonstrating the in-store merchandising context
 ---
@@ -56,9 +56,9 @@ fonts or linked images — everything was outlined and self-contained
 for the printer.
 
 The original T-shirt was produced and sold through Caviar Gold's
-retail locations in 2015. Four years later, in May 2019, I revisited
-the design for a redux print run with an updated garment color and
-refined print treatment.
+retail locations in Washington. A revised redux version with an
+updated garment color was printed later, but the core design work
+was a one-off completed in February 2015.
 
 ## Design Process
 
