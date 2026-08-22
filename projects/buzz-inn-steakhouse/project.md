@@ -1,7 +1,7 @@
 ---
 title: Buzz Inn Steakhouse
 client: Buzz Inn Steakhouse
-year: 2012-2017
+year: 2016-2017
 date: 2017-05
 category: Brand & Advertising Design
 division: business
@@ -72,8 +72,8 @@ imagery and a royal flush illustration to set the mood.
 All of the advertising was built on the same visual foundation: the
 logo, a consistent font system, and a library of professional food
 photography that I art-directed and organized. The work spanned
-roughly five years, from the initial logo design in 2012 through the
-advertising campaigns in 2017.
+roughly 2016 through 2017, covering the full range of the
+restaurant's advertising needs.
 
 ## Logo
 
