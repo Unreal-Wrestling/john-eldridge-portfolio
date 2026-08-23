@@ -17,7 +17,7 @@ summary: A cross-format advertising campaign for a mountain festival — full-pa
 images:
   01-festival-full-ad.jpg: Full-page festival ad — the hero piece, with photography and event details
   02-newspaper-ad.jpg: Newspaper ad — print-specific layout with tighter column structure
-  03-banner-box.jpg: Box banner — square web banner format
+  03-banner-box.jpg [medium]: Box banner — square web banner format
   04-banner-leader.jpg: Leaderboard banner — horizontal web banner format
   05-festival-logo.png [small]: Festival logo — the mark used across all campaign materials
 ---
@@ -50,7 +50,7 @@ The banner ads condense the campaign into its smallest footprints. A
 square box banner and a horizontal leaderboard, each carrying the
 festival logo and a single call to action.
 
-[[grid:03-banner-box:med]]
+[[03-banner-box.jpg]]
 
 [[04-banner-leader.jpg]]
 

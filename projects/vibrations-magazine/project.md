@@ -11,6 +11,7 @@ context: Final project, Everett Community College
 outcome: Selected by our team as its submission; not chosen by the college for development
 tags: editorial design, print
 featured: false
+thumb: 01-cover.jpg
 sections: The Magazine, Promotion
 summary: A pitch for Everett Community College's student art magazine — my concept and execution, chosen by our team as its submission for our final project.
 images:
@@ -18,8 +19,8 @@ images:
   02-spread-1.jpg: Feature spread — a monochrome portrait and greeked columns on the verso, a full-page colour reproduction of the subject's painting on the recto, ink-splatter marks bleeding off the outer edge
   03-spread-2.jpg: Feature spread — a poetry excerpt set ragged-right and airy on the verso, answered by an archival portrait over three tight columns on the recto
   04-back-cover.jpg: Back cover — the cover's inked grass carried over with the bloom shifted from blue to gold, the college mark centred at the head
-  05-screen-1.jpg: Proposed campus slide, 1 of 3 — the title card, condensed caps reversed out of black
-  06-screen-2.jpg: Proposed campus slide, 2 of 3 — the call to action, pointing readers to the Art Showcase for a free copy
+  05-screen-1.jpg [medium]: Proposed campus slide, 1 of 3 — the title card, condensed caps reversed out of black
+  06-screen-2.jpg [medium]: Proposed campus slide, 2 of 3 — the call to action, pointing readers to the Art Showcase for a free copy
   07-screen-3.jpg: Proposed campus slide, 3 of 3 — venue and date, closing the sequence
 ---
 
@@ -67,8 +68,8 @@ with the magazine's palette, and should not — condensed caps reversed
 out of black have to land in a second from across a hallway, where the
 cover can afford to be picked up and read.
 
-[[grid:05-screen-1:med]]
+[[05-screen-1.jpg]]
 
-[[grid:06-screen-2:med]]
+[[06-screen-2.jpg]]
 
 [[07-screen-3.jpg]]

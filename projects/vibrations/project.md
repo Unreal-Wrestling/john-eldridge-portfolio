@@ -16,7 +16,7 @@ outcome: Troy Arisen was selected for the Vibrations Magazine student art spotli
 summary: A series of large-format digital art pieces created for the Vibrations art exhibitions at Everett Community College — including Troy Arisen, which earned a spot in the Vibrations Magazine student art spotlight issue.
 images:
   01-troy-arisen.jpg: Troy Arisen — a man with a guitar, the piece that earned a spot in the Vibrations Magazine student art spotlight issue
-  02-vibrations-ii.png: Vibrations II — the largest and most ambitious piece in the series, a layered composite of photography, texture, and digital painting
+  02-vibrations-ii.png [wide]: Vibrations II — the largest and most ambitious piece in the series, a layered composite of photography, texture, and digital painting
   03-vibrations-i.png: Vibrations I — an atmospheric surreal composition exploring depth and negative space
   04-vibrations-iii.png: Vibrations III — a textured, layered piece with a darker palette
 ---
@@ -44,7 +44,7 @@ and composited elements that didn't belong to the original frames. The
 goal was to make something that read as a painting from across the room
 but revealed its photographic bones up close.
 
-[[grid:02-vibrations-ii:xl]]
+[[02-vibrations-ii.png]]
 
 Vibrations I is the quietest piece in the series. It leans on
 atmosphere — depth, light, negative space — rather than density.

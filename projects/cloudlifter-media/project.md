@@ -16,11 +16,11 @@ outcome:
 summary: A full brand identity system for a cloud media company, including a primary mark, sub-brand logos for CloudBooks and CloudFilms, and a creative brief documenting the strategy behind the design.
 images:
   01-logo-primary.png [small]: Primary logo — the Cloudlifter Media mark, combining cloud and media symbolism
-  02-creative-brief-1.png: Creative brief — page 1, establishing the brand positioning and audience
-  03-creative-brief-2.png: Creative brief — page 2, mapping the competitive landscape and visual direction
-  04-creative-brief-3.png: Creative brief — page 3, defining the logo requirements and application contexts
+  02-creative-brief-1.png [wide]: Creative brief — page 1, establishing the brand positioning and audience
+  03-creative-brief-2.png [wide]: Creative brief — page 2, mapping the competitive landscape and visual direction
+  04-creative-brief-3.png [wide]: Creative brief — page 3, defining the logo requirements and application contexts
   05-logo-alt.png: Alternate logo direction — a simplified treatment of the same brand concept
-  06-logo-mark-light.png: Logo mark — light variant for use on dark backgrounds
+  06-logo-mark-light.png [medium]: Logo mark — light variant for use on dark backgrounds
   07-logo-mark-dark.png: Logo mark — dark variant for use on light backgrounds
 ---
 
@@ -36,11 +36,11 @@ it, but because a logo without a strategy is just decoration. The brief
 established the audience, the competitive landscape, and the
 requirements before any drawing started.
 
-[[grid:02-creative-brief-1:wide]]
+[[02-creative-brief-1.png]]
 
-[[grid:03-creative-brief-2:wide]]
+[[03-creative-brief-2.png]]
 
-[[grid:04-creative-brief-3:wide]]
+[[04-creative-brief-3.png]]
 
 ## The mark
 
@@ -61,7 +61,7 @@ The mark was built to work across light and dark backgrounds, which
 meant maintaining both variants from the start rather than inverting
 one later.
 
-[[grid:06-logo-mark-light:med]]
+[[06-logo-mark-light.png]]
 
 [[07-logo-mark-dark.png]]
 

@@ -7,67 +7,99 @@ category: Apparel Design
 division: business
 work_type: client
 context: Collaboration T-shirt for Caviar Gold and rapper Redman
-tags: t-shirt design, apparel, cannabis branding, hip-hop, collaboration, vector illustration
-sections: Design Process, Final Design, Store Display
-outcome: T-shirt produced and sold through Caviar Gold's retail locations in Washington
-summary: Collaboration T-shirt design for Caviar Gold and Redman — combining the cannabis brand's gold-and-black aesthetic with the rapper's logo across multiple color iterations.
+tags: t-shirt design, apparel, cannabis branding, hip-hop, collaboration, vector illustration, screen print
+sections: Colour Studies, Placing the Brand, Final Artwork, 2019 Redux
+outcome: Delivered February 5 2015 as a packaged 720 x 1440 px CMYK Illustrator file with every element outlined, no fonts and no linked images, and revised into a second version in May 2019
+summary: Collaboration T-shirt for Caviar Gold and Redman — a traced vector portrait in a crown, where the fix was to stop placing the brand next to the artist and hang it around his neck instead.
 thumb: redman-shirt-mockup.png
 images:
-  redman-shirt-mockup.png [thumb-only]: T-shirt mockup — Redman x Caviar Gold collaboration shirt shown on a black garment with the gold foil logo treatment, photographed as a flat product shot
-  caviar-gold-redman-final.png: Final design — Redman logo in gold foil treatment with Caviar Gold branding, vector artwork sized at 720 x 1440 pixels for full-bleed garment printing
-photos-design-process:
-  concept-01.jpg: Concept one — initial placement of Redman logo on black garment, testing scale and positioning with the Caviar Gold brand mark
-  concept-02.jpg: Concept two — recolor exploration shifting the logo treatment to warmer gold tones, adjusting contrast against the black background
-  concept-03.jpg: Concept three — refined gold variant with tighter integration between Redman and Caviar Gold branding, testing a unified lockup
-  concept-04.jpg: Concept four — alternate gold treatment with adjusted spacing and proportions, near-final iteration before the production-ready artwork
-photos-final-design:
-  tshirt-redux.jpg: Redux mockup — revised T-shirt mockup with updated garment color and print treatment, produced as a refresh of the original design
-photos-store-display:
-  store-display.jpg: Store display — T-shirt shown on a retail display rack in a Caviar Gold shop, demonstrating the in-store merchandising context
+  redman-shirt-mockup.png [thumb-only]: Presentation mockup — the finished print on a black tee, the red tag across the shoulders, the portrait in white and grey, and the gold Caviar Gold medallion sitting at the bottom of the chains
+  caviar-gold-redman-final.png: Delivered print film — the artwork as it goes to the printer, red tag, grey crown, white portrait and gold medallion isolated with no garment behind them, built at 720 x 1440 px in CMYK with everything outlined
+photos-colour:
+  concept-01.jpg: First vector pass — the whole illustration in a single olive-gold, tag included, sitting on a gold panel with a "CaviGold Records" credit set beside the head
+  concept-02.jpg: Second pass — the portrait dropped to greyscale with a white crown and the tag switched to red, which separated the artist's name from the illustration for the first time
+photos-brand:
+  concept-03.jpg: Brand as badge — the Caviar Gold laurel roundel floated top right, where it reads as a sticker applied over the picture rather than part of it
+  concept-04.jpg: Brand as jewellery — the roundel moved onto the chain to hang as a pendant, the credit text deleted, and the backing panel opened up to white
+photos-redux:
+  tshirt-redux.jpg: 2019 revision — the Caviar Gold medallion removed entirely, the chains recoloured gold, and a small gold repeat of the tag added at the hem, leaving a shirt with no client mark on it at all
+photos-mockup:
+  store-display.jpg: Studio mockup — the print staged flat on a black tee against grey for presentation, carried out under my own Inkboard Design watermark
 ---
 
-Caviar Gold is a cannabis brand selling pre-rolled cones and
-accessories through retail locations in Washington. Redman — the
-rapper, not the wrestler — has his own cannabis brand and a
-collaboration was in the works. They needed a co-branded T-shirt
-that could sell in Caviar Gold's stores and at events.
+Caviar Gold is a Washington cannabis brand selling infused pre-rolls
+and accessories. In early 2015 they had a collaboration going with
+Redman and wanted a shirt out of it. The whole job ran a week, from
+sourcing reference on January 29 to the packaged file on February 5.
 
-The brief was straightforward: combine the Redman logo with Caviar
-Gold's gold-and-black visual identity on a garment that would hold
-up in print. The execution was not. Redman's logo is a text-based
-mark with specific proportions and color expectations. Caviar Gold's
-brand leans on metallic gold foil and deep black. Making the two
-work together on a single garment meant solving for contrast, scale,
-and print method simultaneously.
+Two of the three elements were not mine to draw, and it is worth
+being clear about that. The tag reading REDMAN is the artist's own
+existing logo. The portrait is traced from a photograph by Jason
+Goodrich — I built it as a vector illustration, reducing the photo
+to flat shapes that would survive a screen print, but the pose, the
+lighting and the crown are his picture. What I contributed was the
+vector work, the colour, the composition, and the one structural
+idea the shirt turns on.
 
-I started with reference material — Redman's official logo, press
-shots, and the Caviar Gold brand assets. The first concepts placed
-the Redman mark on a black tee with the Caviar Gold logo as a
-secondary element. Scale and positioning were the first decisions:
-too small and the collaboration read as an afterthought, too large
-and it became a Redman shirt with a sticker on it.
+That idea took four passes to find, and the problem was the client's
+logo. A collaboration shirt has to carry two names, and the second
+name is always the awkward one — too small and the brand paid for
+nothing, too large and it stops being a Redman shirt anyone would
+wear.
 
-The recolor iterations were where the design found its footing.
-Shifting the Redman logo into a gold foil treatment unified it with
-Caviar Gold's palette and made the collaboration feel intentional
-rather than two logos slapped on a shirt. The final artwork was
-built as a 720 x 1440 pixel vector file in CMYK, with no embedded
-fonts or linked images — everything was outlined and self-contained
-for the printer.
+The first pass ignored the problem and went for atmosphere: the
+entire illustration in one olive-gold ink, tag included, on a gold
+panel, with a "CaviGold Records" credit set in beside the head. It
+was cohesive and it was dead. Everything sat at the same value, so
+the face had no more presence than the background, and the credit
+line read like a watermark.
 
-The original T-shirt was produced and sold through Caviar Gold's
-retail locations in Washington. A revised redux version with an
-updated garment color was printed later, but the core design work
-was a one-off completed in February 2015.
+The second pass split it. Portrait to greyscale with a white crown,
+tag to red. Now the artist's name came forward off the picture and
+the face had contrast to work with. But the client credit was still
+text parked next to a head.
 
-## Design Process
+The third pass tried the laurel roundel top right, and that is the
+version that made the answer obvious by being wrong. Placed in the
+corner, the mark reads as a sticker somebody applied over the
+artwork — it belongs to the shirt, not to the picture.
 
-[[grid:design-process]]
+So in the fourth pass I moved it onto the chain. Redman is already
+wearing two of them; the Caviar Gold laurel became the pendant
+hanging at the bottom, in gold, the only gold left in the design. It
+stopped being a logo placed on the artwork and became something the
+subject was wearing. The brand gets the strongest position on the
+shirt — dead centre, at the bottom of the two lines your eye
+already follows down — and it does not fight the portrait to get it.
+The credit text came out and the backing panel opened up to white.
 
-## Final Design
+I delivered on February 5 as a 720 by 1440 pixel CMYK Illustrator
+file, everything outlined, no fonts and no linked images, so nothing
+could substitute or go missing at the printer.
 
-[[grid:final-design]]
+Four years later, in May 2019, the design was revised. The Caviar
+Gold medallion came off, the chains were recoloured gold, and a
+small gold repeat of the tag went in at the hem. The result is a
+clean shirt and, from a branding point of view, a strange one: the
+thing the whole composition had been rebuilt to accommodate was
+removed, leaving no client mark anywhere on it. I do not have a
+record of what either version sold. The garment images here are
+mockups I built to present the work.
 
-## Store Display
+## Colour Studies
 
-[[grid:store-display]]
+[[grid:colour]]
+
+## Placing the Brand
+
+[[grid:brand]]
+
+## Final Artwork
+
+[[caviar-gold-redman-final.png]]
+
+[[grid:mockup]]
+
+## 2019 Redux
+
+[[grid:redux]]

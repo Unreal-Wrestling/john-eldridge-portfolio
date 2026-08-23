@@ -6,67 +6,86 @@ date: 2015-03
 category: Apparel Design
 division: business
 work_type: client
-context: T-shirt design for Cavigold Records, a record label brand
-tags: t-shirt design, apparel, record label, music branding, mockup, vector illustration
-sections: Concept Exploration, Garment Mockups, Final Design
-outcome: T-shirt produced in multiple garment colors with final artwork delivered as vector EPS and PNG
-summary: T-shirt design for Cavigold Records — two concept directions exploring logo placement and visual identity across five garment colors before arriving at the final gold-on-black design.
-thumb: cavigold-records-mockup.png
+context: Merchandise and promo graphics for a Seattle record label
+tags: t-shirt design, apparel, record label, music branding, crest, roster print, vector illustration
+sections: Promo Graphic, Crest Shirt, Label Roster Shirt
+outcome: Two shirt designs and a video promo graphic produced between February and March 2015, delivered as vector EPS and AI with the crest tested across five garment colourways
+summary: Merch and promo work for Cavigold Records, the label arm of Caviar Gold — a chest crest reducing the Redman artwork to a laurel badge, a label roster shirt built around thirteen acts, and an equation graphic pushing traffic to a video.
+thumb: cavigold-records-thumb.png
 images:
-  cavigold-records-mockup.png [thumb-only]: T-shirt mockup — Cavigold Records design shown on a black garment with gold logo treatment, flat product shot for retail display
-photos-concept-exploration:
-  concept-01-logo.png: Concept one — logo placement study with the Cavigold Records wordmark and Redman video still integrated into the shirt layout, testing scale and composition
-photos-garment-mockups:
-  mockup-black.jpg: Black garment mockup — logo treatment on a black T-shirt, the highest-contrast option and the strongest read for the gold foil print
-  mockup-charcoal.jpg: Charcoal garment mockup — same design on a heather charcoal substrate, testing how the gold treatment holds up against a lighter dark tone
-  mockup-navy.jpg: Navy garment mockup — design on a navy blue T-shirt, exploring whether the brand palette could extend beyond black
-  mockup-brown.jpg: Brown garment mockup — design on a warm brown T-shirt, testing an earthy alternative that paired with the gold accent
-  mockup-cigar.jpg: Cigar garment mockup — design on a deep brown cigar-toned T-shirt, the warmest garment option tested in the mockup series
-photos-final-design:
-  final-design.png: Final design — Cavigold Records logo in gold treatment with clean vector paths, sized for full-bleed garment printing
-  final-gold.jpg: Final gold variant — production-ready artwork with refined gold foil simulation, delivered as both vector EPS and high-resolution PNG
+  cavigold-records-thumb.png [thumb-only]: Cavigold Records crest — a distressed dusty-rose shield carrying "CAVIGOLD" in condensed blackletter over "Records," a die-cut ribbon reading "SEATTLE, WA.," an "est. 2012" line and a cut-gem shape at the point, with fine sunburst rays behind
+photos-promo:
+  concept-01-logo.png: Video teaser graphic — the campaign stated as arithmetic on black: the red Redman tag, a plus sign, the Caviar Gold laurel, an equals sign, and a YouTube URL as the answer
+photos-crest:
+  mockup-black.jpg: Crest on black — the Redman artwork reduced to a left-chest badge, the crowned head shrunk inside the Caviar Gold laurel wreath with the wordmark beneath, printed in gold and cream
+  mockup-charcoal.jpg: Crest on charcoal — the same badge on a lighter neutral, where the cream in the crown starts to lose separation from the cloth
+  mockup-navy.jpg: Crest on navy — the one colourway that fights the palette, the cool ground pulling the gold toward green
+  mockup-brown.jpg: Crest on brown — a warm mid ground that harmonises with the gold but flattens the brown inside the face to near-invisibility
+  mockup-cigar.jpg: Crest on cigar — the darkest and warmest of the browns, the closest the earth tones get to holding the badge's full contrast
+photos-roster:
+  final-design.png: Label roster shirt — the crest above thirteen act names, each set vertically in a distressed condensed face and stepped in length so the block resolves into a downward wedge pointing away from the crest
 ---
 
-Cavigold Records was a record label that needed merchandising —
-specifically a T-shirt that could sell at events, in stores, and
-online. The brand already had a logo and a visual identity built
-around gold and black. The job was to translate that onto a garment
-that looked good on a rack and on a person.
+Cavigold Records is the label arm of Caviar Gold, run out of Seattle.
+Directly after the Redman collaboration shirt I carried on with them
+through February and March 2015 on label merchandise and promo, which
+came to three pieces: a graphic to push a video, a chest crest, and a
+shirt for the roster.
 
-The first concept direction pulled in video stills and lifestyle
-imagery — Redman footage, shop photography, cigar aesthetics. The
-idea was to build a richer graphic than just a logo on a shirt. A
-concrete wall texture, a perspective-distorted logo, a cigar photo
-as a background element. It was ambitious. It was also too busy for
-a print run that needed to work across multiple garment colors at a
-reasonable cost.
+The promo graphic was the smallest job and the one I like most. It had
+to get people to a YouTube video, and rather than write a sentence I
+set it out as arithmetic — the red Redman tag, a plus sign, the Caviar
+Gold laurel, an equals sign, and the URL as the answer. Two logos most
+of the audience already recognised, one operator between them, and the
+position of the link makes the claim: this collaboration produced
+something, and here it is. No copy to read and nothing to translate.
 
-The second direction stripped everything back to the logo itself.
-Gold foil on dark fabric. No background imagery, no texture, no
-lifestyle elements. Just the wordmark, sized large and centered,
-with the gold treatment doing the visual work. This was the
-direction that held.
+The crest was a reduction problem. The collaboration artwork was a
+full-torso print, and the label wanted something wearable at
+left-chest scale, which is a different piece of design rather than the
+same one scaled down. Cropping the portrait would have lost the crown,
+and the crown is what makes the picture. So I kept the crowned head
+and dropped everything else, then set it inside the Caviar Gold laurel
+wreath with the wordmark below. The wreath does the work the shoulders
+used to — it gives the head an enclosure so it reads as an emblem
+rather than a floating cutout, and at that size the silhouette of
+crown-inside-wreath is legible even when the face is not.
 
-I mocked up the final design across five garment colors — black,
-charcoal, navy, brown, and a deep cigar tone. Black was the
-strongest read. The gold foil popped hardest against it, and the
-contrast made the logo legible from a distance. Charcoal was the
-runner-up. The warmer tones — brown and cigar — looked good up
-close but the gold lost impact at a distance. Navy was the odd one
-out; the brand didn't live in blue.
+I tested it on five garments: black, charcoal, navy, brown and cigar.
+Black won on contrast and it was not close. The badge relies on cream
+and gold against a dark ground, so charcoal immediately costs the
+crown its separation, and brown swallows the darker tones inside the
+face. Navy was the informative failure — a cool ground drags gold
+toward green, and the whole palette is warm. Cigar, the darkest brown,
+was the only earth tone that came close to holding.
 
-The final artwork was delivered as a vector EPS and a high-
-resolution PNG in March 2015. The shirt went into production on
-black garments with the gold foil treatment.
+The roster shirt was the last piece and the most conventional, which
+is the point — a label roster print has a form and fighting it helps
+nobody. The crest sits at the top: a distressed shield with CAVIGOLD
+in condensed blackletter over Records, a die-cut ribbon carrying
+SEATTLE, WA., an est. 2012 line, a cut-gem shape at the point, and
+fine sunburst rays behind to lift it off the cloth. Under it go
+thirteen acts, Redman and Crooked I and Layzie Bone among them.
 
-## Concept Exploration
+The decision worth explaining there is the type direction. Set the
+names horizontally and thirteen lines of varying length make a ragged
+paragraph you have to read. Set them vertically and stepped by length,
+and they resolve into a wedge that tapers to a point below the crest —
+so the block becomes a shape first and a list second, the crest keeps
+its authority at the top, and the whole print reads at a distance
+before a single name is legible. Which is the correct order for a
+shirt.
 
-[[grid:concept-exploration]]
+I have no record of the print quantities or the sales.
 
-## Garment Mockups
+## Promo Graphic
 
-[[grid:garment-mockups]]
+[[grid:promo]]
 
-## Final Design
+## Crest Shirt
 
-[[grid:final-design]]
+[[grid:crest]]
+
+## Label Roster Shirt
+
+[[grid:roster]]

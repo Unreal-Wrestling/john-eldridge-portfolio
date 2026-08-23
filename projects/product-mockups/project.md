@@ -16,14 +16,14 @@ outcome:
 summary: Product mockup and merchandise design across two brands — Skullcandy headphones on devices and apparel, and a Starbucks gift card with packaging presentation.
 images:
   01-skullcandy-tshirt.png: Skullcandy t-shirt — full apparel mockup with branding on garment
-  02-skullcandy-sheet-1.jpg: Skullcandy product sheet — page 1, headphones across device mockups
-  03-skullcandy-sheet-2.jpg: Skullcandy product sheet — page 2, alternate product configurations
-  04-skullcandy-iphone.png: Skullcandy on iPhone — device skin mockup
-  05-skullcandy-laptop.png: Skullcandy on laptop — device skin mockup
+  02-skullcandy-sheet-1.jpg [wide]: Skullcandy product sheet — page 1, headphones across device mockups
+  03-skullcandy-sheet-2.jpg [wide]: Skullcandy product sheet — page 2, alternate product configurations
+  04-skullcandy-iphone.png [medium]: Skullcandy on iPhone — device skin mockup
+  05-skullcandy-laptop.png [medium]: Skullcandy on laptop — device skin mockup
   06-skullcandy-jetpack.png: Skullcandy jetpack — portable speaker mockup
   07-skullcandy-vneck.png: Skullcandy v-neck — alternate apparel mockup
   08-starbucks-mockup.png: Starbucks gift card — card design with presentation mockup
-  09-starbucks-card-sheet.jpg: Starbucks gift card — product sheet with packaging and card variants
+  09-starbucks-card-sheet.jpg [wide]: Starbucks gift card — product sheet with packaging and card variants
 ---
 
 Two product mockup projects from coursework, both built around the
@@ -49,13 +49,13 @@ speakers. Each one had to feel like the brand actually lived on the
 device, not like a sticker slapped on top. The product sheets pull
 everything together into presentation-ready layouts.
 
-[[grid:02-skullcandy-sheet-1:wide]]
+[[02-skullcandy-sheet-1.jpg]]
 
-[[grid:03-skullcandy-sheet-2:wide]]
+[[03-skullcandy-sheet-2.jpg]]
 
-[[grid:04-skullcandy-iphone:med]]
+[[04-skullcandy-iphone.png]]
 
-[[grid:05-skullcandy-laptop:med]]
+[[05-skullcandy-laptop.png]]
 
 [[06-skullcandy-jetpack.png]]
 
@@ -69,7 +69,7 @@ and variant designs.
 
 [[08-starbucks-mockup.png]]
 
-[[grid:09-starbucks-card-sheet:wide]]
+[[09-starbucks-card-sheet.jpg]]
 
 Both projects were built in Photoshop and Illustrator — the mockups
 in Photoshop with layer comps for each device, and the brand art in
