@@ -6,58 +6,70 @@ date: 2021-05
 category: Apparel Design
 division: arts
 work_type: client
-context: Charity T-shirt for JDRF Type 1 Diabetes fun run
-tags: apparel design, t-shirt design, charity, type 1 diabetes, JDRF, illustration
+context: Charity T-shirt for a neighborhood JDRF fundraiser
+tags: apparel design, t-shirt design, charity, type 1 diabetes, JDRF, typography, word cloud
 sections: Design
-outcome: Printed by Shoes n Feet and worn by Team Brynn and Lauren at the Beat the Ridge fun run
-summary: A T-shirt design for Beat the Ridge, a neighborhood fun run raising money for Breakthrough T1D (formerly JDRF) in support of a friend's daughter fighting Type 1 Diabetes.
+outcome: Printed by Shoes n Feet and worn by Team Brynn and Lauren at the Beat the Ridge fun run, May 2021
+summary: A charity T-shirt for Beat the Ridge, a neighborhood fun run raising money for Type 1 Diabetes research — a rainbow word cloud built from the affirmations the girl it was run for chose herself.
+thumb: shirt-mockup.jpg
 images:
-  shirt-mockup.jpg: Mockup on heather gray t-shirt — the final design shown on a product mockup with the Beat the Ridge wordmark and mountain ridge illustration
-  design-v1.jpg: First design version — early pass with the ridge line and text layout before refinement
-  design-final.png: Final design — clean vector illustration of a mountain ridge with bold hand-lettered "Beat the Ridge" wordmark, sized for chest placement
-  design-final.jpg: Final design flat — the finished artwork on white background showing the full color palette and detail of the ridge illustration
+  shirt-mockup.jpg [thumb-only]: Print mockup — the finished artwork placed on a heather gray tee, showing the word cloud at the scale it printed on the chest
+  design-final.png: Final artwork — a cross-shaped word cloud of affirmations running left to right through a red, orange, yellow, green, blue, and violet sequence, with the "Beat the Ridge" wordmark in an outlined retro slab at the center and "Team Brynn and Lauren" set beneath it
+photos-design:
+  design-v1.jpg: First pass — the same word cloud composition with the wordmark carrying a lighter outline and a softer shadow, which tested weak against the surrounding type
+  design-final.jpg: Final flat — the delivered artwork on white with the wordmark outline and drop shadow thickened so the title holds its own against the color field once printed on fabric
 ---
 
-In May 2021, my friend Scott Finholm reached out to me to design a
-T-shirt for a grassroots fun run. The official Seattle "Beat the
-Bridge" race — a major annual event for JDRF, the Juvenile Diabetes
-Research Foundation — couldn't happen normally that year. So Scott's
-group organized a neighborhood-level fallback event called "Beat the
-Ridge."
-
-The run was for Team Brynn and Lauren. Brynn is a friend's daughter
-who fights Type 1 Diabetes. The money raised went directly to
-Breakthrough T1D, formerly known as JDRF, funding Type 1 Diabetes
+In May 2021 my friend Scott Finholm asked me to design a T-shirt for
+a fun run. The Seattle "Beat the Bridge" race — the big annual
+fundraiser for JDRF, now Breakthrough T1D — could not run normally
+that year, so his group organised a neighborhood version and called
+it Beat the Ridge. The team was Team Brynn and Lauren. Brynn is a
+friend's daughter living with Type 1 Diabetes, and the money went to
 research.
 
-The design needed to feel personal, not clinical. Brynn herself chose
-the words that surround the typography — Smart, Artistic, Brave,
-Tremendous, Intelligent, Rad — traits she wanted to represent
-strength and resilience. I built those into a word cloud around the
-"Beat the Ridge" wordmark, paired with a mountain ridge illustration
-that carries the event name's metaphor.
+The brief had one hard requirement that decided the whole design.
+Brynn picked the words. Not a theme, not a color, the actual
+vocabulary: smart, artistic, brave, tremendous, intelligent, rad,
+invincible, and a line that anchors the rest — illness does not
+define me. My job was to build something that let a dozen-odd
+affirmations chosen by a kid carry the shirt without turning into a
+motivational poster.
 
-I started with a first version that established the ridge line and
-text layout. The early pass was close but the illustration felt too
-flat and the lettering needed more personality. I refined the ridge
-into a cleaner vector illustration with more dimension and reworked
-the wordmark into a bold, hand-lettered style that reads strong at
-small sizes. I converted all the typography to shapes so the local
-printer, Shoes n Feet, could print them cleanly onto the team shirts
-without font issues.
+A word cloud was the obvious structure and the risky one, because
+word clouds usually read as filler. What keeps this one from
+collapsing is that it is not random. The words are set on a strict
+horizontal and vertical grid in a cross formation, so the eye reads
+in rows rather than hunting around the shirt, and the color runs a
+deliberate spectrum from red at the left edge through orange,
+yellow, green, and blue to violet at the right. The rainbow is doing
+structural work, not decoration — it gives the block a direction to
+be read in and keeps thirty-odd words from flattening into noise.
 
-The final design is a mountain ridge in layered blues and greens with
-a hand-lettered "Beat the Ridge" wordmark and Brynn's word cloud of
-uplifting traits. The artwork was delivered as print-ready vector
-files in AI, EPS, PNG, and JPG formats, sized for chest placement on
-the team shirts.
+Weight and style carry the hierarchy. The affirmations shift between
+bold, light, italic, and vertical settings so no two neighbours look
+alike, which is what stops the grid from reading as a spreadsheet.
+"Illness does not define me" runs full width directly under the
+title, in italic, as the one line that gets the whole row to itself.
+"Team Brynn and Lauren" sits immediately beneath the wordmark in
+plain capitals, because the shirt needed to say who was running
+before it said anything else.
+
+The title itself is the only piece of drawn lettering — an outlined
+retro slab with a hard drop shadow, deliberately at odds with the
+clean sans around it so it reads as a mark rather than another
+entry in the cloud. The first pass gave it a thinner outline and a
+softer shadow, and it lost the fight with the surrounding color. I
+thickened both for the final so it would hold on fabric, where ink
+spread and a textured heather ground both work against fine detail.
+
+I converted all the type to outlines and delivered vector AI and EPS
+with PNG and JPG rasters, sized for chest placement, so Shoes n
+Feet could print without font substitution. The shirts were printed
+and worn at the run.
 
 ## Design
 
-[[shirt-mockup.jpg]]
-
-[[design-v1.jpg]]
-
 [[design-final.png]]
 
-[[design-final.jpg]]
+[[grid:design]]

@@ -5,71 +5,90 @@ year: 2014
 date: 2014-11
 category: Logo Design
 division: business
-work_type: contest
-context: City logo design contest for Everett, Washington — placed 2nd
-tags: logo design, city branding, civic design, contest, Everett, Washington, Pacific Northwest, vector illustration
-sections: Reference, Initial Concepts, Semifinalist Entries
-outcome: 2nd place in the City of Everett logo design contest; semifinalist entry advanced to final round
-summary: Logo design for the City of Everett, Washington's branding contest — three initial concepts exploring the city's identity as a Boeing town, a naval port, and a Pacific Northwest destination, refined into two semifinalist entries. Placed 2nd overall.
+work_type: competition
+context: Open logo design contest run by the City of Everett, Washington
+tags: logo design, city branding, civic identity, contest, Everett, Washington, wordmark, Garamond
+sections: Reference, First Round, Semifinal Systems
+outcome: 2nd place; both submitted concepts advanced from the open round to the semifinal, where the brief expanded from a single mark to a departmental identity system
+summary: An entry in the City of Everett's open logo design contest — a serif civic wordmark tested against mountain and skyline motifs, developed into two full identity systems with departmental lockups. Placed 2nd.
 thumb: everett-logo-thumb.jpg
 images:
-  everett-logo-thumb.jpg [thumb-only]: Semifinalist concept — "Everett" wordmark with a stylized aircraft and mountain silhouette, the entry that advanced to the final round of the city's logo design contest
+  everett-logo-thumb.jpg [thumb-only]: Everett civic mark — a hand-drawn mountain range over "EVERETT" in Garamond capitals, with "est. 1893" set between two rules beneath
 photos-reference:
-  ref-skyline.jpg: Everett skyline — reference photo of the Everett Station area and downtown skyline, used to understand the city's visual identity and landmark architecture
-  ref-boeing.jpg: Boeing Everett — reference image of a Boeing aircraft taking off, representing Everett's identity as home to the Boeing assembly plant and Paine Field
-photos-initial-concepts:
-  concept-01.jpg: Concept one — first direction exploring a clean civic wordmark with a mountain silhouette, testing how "Everett" could read as both a place name and a brand mark
-  concept-02.jpg: Concept two — second direction incorporating aviation imagery with the wordmark, connecting the logo to Everett's Boeing heritage and Paine Field
-  concept-03.jpg: Concept three — third direction with a more illustrative approach, integrating water and mountain elements to represent Everett's location on Port Gardner Bay
-photos-semifinalist-entries:
-  semifinal-01.jpg: Semifinalist entry one — refined version of the aviation concept, with a cleaner wordmark and a stylized aircraft silhouette integrated into the letterforms, the strongest read at small sizes
-  semifinal-02.jpg: Semifinalist entry two — alternative direction with a more emblematic treatment, combining the city name with a mountain and water motif in a circular badge format
+  ref-skyline.jpg: Downtown Everett from the station — the reference photograph the skyline silhouette was traced from, showing the mid-rise office blocks, the brick hotel, and the cable-stayed masts at the transit center
+photos-first-round:
+  concept-01.jpg: First submission — a single unbroken pen stroke forming a jagged range above "EVERETT" in wide-tracked serif capitals, the loosest and most gestural of the round
+  concept-02.jpg: Mountain lockup — the range redrawn as a solid silhouette with a cleaner peak profile, the wordmark tightened and "est. 1893" added between two rules to anchor the base
+  concept-03.jpg: Skyline lockup — the same structure with the mountains swapped for a traced downtown silhouette, the transit center masts breaking the roofline at right over a hand-drawn waterline
+photos-semifinal-systems:
+  semifinal-01.jpg: Mountain system — the primary lockup, a reversed version on a solid black field, and three departmental variants for Parks & Recreation, Health Department, and Inspectional Services, all set in Garamond
+  semifinal-02.jpg: Skyline system — the same three-part treatment built on the downtown silhouette, showing the mark holding up reversed and at the reduced size the departmental lockups demanded
 ---
 
-The City of Everett ran an open logo design contest to develop a
-new civic mark. Everett is a working city — Boeing's wide-body
-assembly plant, a naval base, a deep-water port, and a minor-league
-hockey and baseball scene. The brief asked for a logo that could
-represent all of that without feeling like a tourism ad.
+In the autumn of 2014 the City of Everett ran an open contest for a
+new civic logo. Anyone could enter, entrants signed an artist
+agreement assigning rights to the winning mark, and the city
+narrowed the field to a semifinal round before picking a winner. I
+entered, made the semifinal with two concepts, and finished 2nd.
 
-I started by pulling reference. The Everett skyline from the
-station. A Boeing aircraft against the sky. The Silvertips and
-AquaSox logos — not to copy, but to understand what visual language
-already existed in the city's sports branding. The challenge was
-finding something that felt civic without feeling generic, and
-specific to Everett without being literal.
+Everett is a working city — a Boeing assembly plant, a naval
+station, a deep-water port on Port Gardner Bay, and the Cascades on
+the eastern horizon. The temptation with a brief like this is to
+put all of it on the mark. That was the thing to avoid. A city logo
+has to sit on a parks sign, a health inspection placard, a utility
+invoice, and a truck door, which rules out anything busy, anything
+that depends on color, and anything that only works large.
 
-The first three concepts went in different directions. One was a
-clean wordmark with a mountain silhouette — quiet, civic, readable.
-The second pulled in aviation imagery, connecting the logo to
-Boeing's presence in the city. The third was more illustrative,
-combining water and mountain elements in a way that felt more like
-a destination mark than a city seal.
+So I fixed the structure first and tested the imagery inside it.
+Every concept used the same skeleton: a silhouette on top, EVERETT
+in wide-tracked Garamond capitals underneath, and the founding date
+set small between two rules. Garamond because a civic mark should
+look like it has been there a while, and because its old-style
+figures make "est. 1893" read as a date rather than a number.
 
-The aviation concept was the strongest. It connected to something
-real about Everett without being a picture of a plane. I refined
-it into two semifinalist entries — one with the aircraft integrated
-into the wordmark, and one as a circular emblem with mountain and
-water motifs. The integrated wordmark was the better design. It
-held up at small sizes, read instantly, and didn't rely on color
-to communicate.
+The variable was what sat above the wordmark. The first pass was a
+single gestural pen stroke of a mountain range — the most
+expressive version, and the weakest, because the thin stroke would
+have disappeared at sign scale. The second solidified the range
+into a filled silhouette with a cleaner peak profile. The third
+swapped the mountains for downtown, traced from a photograph taken
+at Everett Station: the mid-rise blocks, the brick hotel, and the
+cable-stayed masts at the transit center breaking the roofline,
+over a hand-drawn waterline standing in for the bay.
 
-The contest ran through the fall of 2014. I signed the artist
-agreement in late September, submitted initial concepts, and
-advanced to the semifinalist round with two entries in November.
-The final result was 2nd place — not the win, but a strong showing
-in an open public contest. The experience was a good exercise in
-civic branding, where the design has to serve a broader audience
-than a typical client project.
+Both the mountain and skyline versions advanced, and the semifinal
+brief was a different job. A single mark was no longer the ask — the
+city wanted to see the identity working across departments. That
+turns a logo into a system, and it exposes weaknesses a standalone
+mark can hide. I built each direction out three ways: the primary
+lockup, a reversed treatment on solid black, and departmental
+variants for Parks & Recreation, the Health Department, and
+Inspectional Services, with the department name set in a condensed
+sans beneath the civic mark so the hierarchy stayed unambiguous.
+
+The system work is what separated the two directions. The mountain
+silhouette survived reduction cleanly — three peaks, a clear
+profile, still legible at the size a departmental lockup forces it
+down to. The skyline did not fare as well. The detail that made it
+specific to Everett, particularly the transit center masts, started
+to fill in and mush at small sizes. It is the better illustration
+and the worse trademark.
+
+I placed 2nd. The city went another direction, and in an open
+contest with a rights-assignment agreement that means the work goes
+back in the drawer. What it was worth was the semifinal round —
+being made to prove a mark across a department structure is a
+harder and more useful exercise than drawing a logo, and it is the
+part of this project I would still defend.
 
 ## Reference
 
 [[grid:reference]]
 
-## Initial Concepts
+## First Round
 
-[[grid:initial-concepts]]
+[[grid:first-round]]
 
-## Semifinalist Entries
+## Semifinal Systems
 
-[[grid:semifinalist-entries]]
+[[grid:semifinal-systems]]
