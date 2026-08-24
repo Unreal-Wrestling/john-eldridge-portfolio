@@ -10,7 +10,7 @@ role: Photographer, Designer & Mix Engineer
 context: Inkboard Design — largely unpaid, taken on to build a music-industry portfolio
 featured: true
 thumb: afn-logo.png
-tags: live music photography, promo photography, logo design, ep artwork, poster design, band branding, mixing
+tags: live music photography, promo photography, logo design, ep artwork, social media, poster design, band branding, mixing
 sections: Live Music Photography, Press & Promo Photography, In Nothing We Trust, Design & Mixing
 outcome: A logo used across the band's print and web presence, the sleeve design for their 2014 EP, event posters, and four years of live and promotional photography — plus a mix and master credit on two EP tracks
 summary: Four years with a Pacific Northwest rock band — live shows at six venues, press and promo sessions, their logo, their EP sleeve, and a mix credit on the record.
@@ -37,9 +37,10 @@ images:
   cd-release-03.png: In Nothing We Trust session
   cd-release-05.png: In Nothing We Trust session
   cd-release-06.png: In Nothing We Trust session
-  rockfest-poster-01.jpg: Rockfest poster
-  rockfest-poster-02.jpg: Rockfest poster
-  rockfest-poster-04.jpg: Rockfest poster
+  rockfest-poster-01.jpg: Rockfest — bassist mid-set in full outdoor daylight
+  rockfest-poster-02.jpg: Rockfest
+  rockfest-poster-04.jpg: Rockfest
+  social-banner-01.jpg: Social banner — my composition and wordmark over a treated eye image. The seal top-left is the band's own. [wide]
 photos-hempfest:
   hempfest-01.jpg: Hempfest
   hempfest-02.jpg: Hempfest
@@ -113,6 +114,14 @@ because you do not get to adjust it and you do not get a second take.
 [[grid:firefighter]]
 
 [[grid:evergreen]]
+
+Rockfest was another outdoor date in the same run.
+
+[[rockfest-poster-01.jpg]]
+
+[[rockfest-poster-02.jpg]]
+
+[[rockfest-poster-04.jpg]]
 
 ## Press & Promo Photography
 
@@ -190,11 +199,10 @@ mixed and mastered the rest of the record.
 
 [[ep-sleeve-01.jpg]]
 
-I designed event posters for Rockfest and other shows across the same
-stretch of years.
+For social media I built a banner around a treated close-up, running the
+wordmark across it with the band's seal set into the corner.
 
-[[rockfest-poster-01.jpg]]
+[[social-banner-01.jpg]]
 
-[[rockfest-poster-02.jpg]]
-
-[[rockfest-poster-04.jpg]]
+I also designed show posters for them across the same stretch of years,
+including a Hard Rock Cafe date and a 2013 tour poster.
