@@ -70,7 +70,20 @@ try {
     Write-Host "  Deploying to '$Branch'..." -ForegroundColor Cyan
     Write-Host ""
 
-    npx --yes wrangler@latest pages deploy $Stage --project-name=$ProjectName --branch=$Branch --commit-dirty=true
+    # Use the pinned wrangler from node_modules, NOT 'npx wrangler@latest'.
+    # Two reasons. First, @latest re-resolves on every deploy, so a bad
+    # upstream release breaks publishing with no change on our side.
+    # Second, npm cannot write workerd.exe into the npx cache on this
+    # machine - the extract fails with EPERM and leaves a package folder
+    # with no binary in it, which produces a confusing 'installed on
+    # another platform' error. Installing into node_modules avoids that
+    # path entirely. Run 'npm install' if the binary is missing.
+    $Wrangler = Join-Path $Root 'node_modules\.bin\wrangler.cmd'
+    if (-not (Test-Path $Wrangler)) {
+        throw "wrangler not found at $Wrangler - run 'npm install' first"
+    }
+
+    & $Wrangler pages deploy $Stage --project-name=$ProjectName --branch=$Branch --commit-dirty=true
 
     if ($LASTEXITCODE -ne 0) { throw "wrangler exited with code $LASTEXITCODE" }
 

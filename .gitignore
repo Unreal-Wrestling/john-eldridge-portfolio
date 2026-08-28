@@ -12,6 +12,10 @@ dist/
 # Local contact sheets for reviewing shoot archives - scratch, not assets
 .review/
 
+# Node - wrangler is pinned in package.json and installed with 'npm install'.
+# node_modules holds a ~97 MB workerd.exe and must never be committed.
+node_modules/
+
 # Python
 __pycache__/
 *.pyc

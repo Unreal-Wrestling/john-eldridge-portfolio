@@ -8,5 +8,8 @@
     "dev": "python serve.py",
     "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy.ps1",
     "deploy:preview": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy.ps1 -Preview"
+  },
+  "devDependencies": {
+    "wrangler": "^4.127.0"
   }
 }
