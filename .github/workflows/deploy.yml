@@ -1,0 +1,63 @@
+# Deploys the portfolio to Cloudflare Pages from GitHub's Linux runners.
+#
+# Why this exists: wrangler bundles workerd.exe, a large unsigned native
+# binary that Avast repeatedly flags on John's Windows machine. Running the
+# deploy here means that binary never executes locally.
+#
+# This workflow is inert until the CLOUDFLARE_API_TOKEN repository secret
+# exists. Local `npm run deploy` keeps working either way.
+
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# Never let two deploys race each other to production.
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install build dependencies
+        run: pip install -r requirements.txt
+
+      # audit.py refuses the deploy if any page claims something its files
+      # cannot support - a caption on a missing image, or a placement that
+      # resolves to nothing.
+      - name: Audit project content
+        run: python audit.py
+
+      - name: Build the site
+        run: python build.py
+
+      - name: Confirm the build produced output
+        run: test -f dist/index.html
+
+      # 'main' is the Cloudflare production branch label. It is a server-side
+      # setting on the Pages project and has nothing to do with git branches -
+      # this repo only has master. Changing it produces a preview deployment
+      # instead of updating the live site.
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: >-
+            pages deploy dist
+            --project-name=john-eldridge-portfolio
+            --branch=main
+            --commit-dirty=true

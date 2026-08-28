@@ -1,0 +1,3 @@
+# Build dependencies for audit.py and build.py.
+# Pillow resizes and re-encodes project images during the build.
+Pillow>=10.0.0
