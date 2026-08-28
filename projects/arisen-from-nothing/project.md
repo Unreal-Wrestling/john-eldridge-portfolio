@@ -10,10 +10,10 @@ role: Photographer, Designer & Mix Engineer
 context: Inkboard Design — largely unpaid, taken on to build a music-industry portfolio
 featured: true
 thumb: afn-logo.png
-tags: live music photography, promo photography, behind the scenes, logo design, ep artwork, social media, poster design, band branding, mixing
-sections: Live Music Photography, On Set, CD Release Show, Press & Promo Photography, Design & Mixing
-outcome: A logotype used across the band's print and web presence, the sleeve for their 2014 EP, three show posters, and five years of live, promotional and behind-the-scenes photography — plus a mix and master credit on two EP tracks
-summary: Five years with a Pacific Northwest rock band — bars, festivals and a reunion date, a music video shoot, a CD release night, their logotype, their EP sleeve, their show posters, and a mix credit on the record.
+tags: live music photography, promo photography, logo design, ep artwork, social media, poster design, band branding, mixing
+sections: Live Music Photography, CD Release Show, Press & Promo Photography, Design & Mixing
+outcome: A logotype used across the band's print and web presence, the sleeve for their 2014 EP, three show posters, and five years of live and promotional photography — plus a mix and master credit on two EP tracks
+summary: Five years with a Pacific Northwest rock band — bar shows and festival dates, a CD release night, their logotype, their EP sleeve, their show posters, and a mix credit on the record.
 images:
   afn-logo.png: The logotype I designed for the band, black version. The anarchy A came from the bass player, who already used the symbol. [small]
   ep-sleeve-01.jpg: EP sleeve, 2014 — the full wrap, back panel left and front panel right. Layout, typography and logo are mine; the skull-and-revolvers emblem was supplied by the band. [wide]
@@ -40,23 +40,6 @@ images:
   rockfest-poster-01.jpg: Bassist mid-set in full outdoor daylight — no house rig to work with, just sun.
   rockfest-poster-02.jpg: Wider frame from the same outdoor set, stage and PA stack together.
   rockfest-poster-04.jpg: Guitarist against open sky, shot low so the horizon falls out of the frame.
-  bubbas-01.jpg: Bubba's Roadhouse, Sultan — the whole band on a floor-level stage under the venue's banner. Neon, wood panelling and about four feet of throw distance.
-  bubbas-02.jpg: Guitarist mid-lunge. I kept the blur; at that shutter speed it was the frame or nothing.
-  bubbas-03.jpg: Drummer under the bar's beer signs, shot from the only angle the room allowed.
-  bubbas-04.jpg: From behind the guitarist, looking out at a crowd standing close enough to touch the stage.
-  mix-01.jpg: The Mix, Seattle — the venue's own neon before the set. Establishing frames like this are worth more than they look.
-  mix-02.jpg: Deep red wash over the guitarist, with the vocalist half-lit behind him.
-  mix-03.jpg: Vocalist dropped low into the front of the stage, string lights strung above the room.
-  mix-04.jpg: Bassist under the same string lights, the only soft source in the building.
-  tonyvs-01.jpg: Tony V's, 2016 — a reunion date, and the first proper stage lighting I got to shoot them under.
-  tonyvs-02.jpg: Wide from the back of the room: lit backdrop, spot bars overhead, a silhouetted crowd.
-  tonyvs-03.jpg: Two of them working the front of the stage with the audience close in the foreground.
-  tonyvs-04.jpg: The last of the reunion frames, and the last work I did with the band.
-  vidshoot-01.jpg: Set dressing on the video shoot — a wall map strung with red thread, clippings and paper targets. Built by the production, not by me.
-  vidshoot-02.jpg: The kit alone in a bare concrete room, waiting for the performance block to be lit.
-  vidshoot-03.jpg: Crew framing a shot between two softboxes. Documenting a shoot means staying out of every one of those sightlines.
-  vidshoot-04.jpg: The scene as it was being captured — a masked figure over a body on a table.
-  vidshoot-05.jpg: Performance block, backlit through haze. The videographers' lighting; my frame.
   poster-hardrock.jpg: Hard Rock Cafe Seattle show poster. My layout and typography, my logotype and band photograph; the venue, support-act and ticketing marks were supplied. [tall]
   poster-tour-2013.jpg: Summer Inquisition Tour poster, 2013 — five dates set as a staggered calendar over a treated background, sponsor marks along the foot. [tall]
   poster-louie-gs.jpg: Louie G's Pizza, November 2013. Chiselled wordmark over a crowd frame, with the band's crest behind it and three support acts blocked across the bottom. [tall]
@@ -83,35 +66,27 @@ photos-flights:
   flights-02.png: A punter in body paint, entirely committed. Not every night calls for this.
   flights-03.png: Regular at the bar, playing to the camera the moment she saw it.
   flights-04.png: Guitarist mid-set in black and white, the venue's clutter falling away behind him.
-photos-firefighter:
-  firefighter-01.jpg: Firefighter benefit — vocalist arms out under red light in a temporary outdoor rig.
-  firefighter-02.jpg: Inside the room, the band set against walls covered in the venue's own memorabilia.
-  firefighter-03.jpg: Vocalist, arm up, isolated against black — the tightest frame of the night.
-  firefighter-04.jpg: Guitarist against red backlight, tattoos and instrument reading as one shape.
-photos-evergreen:
-  evergreen-01.jpg: Evergreen State Fair, Monroe — the courtyard stage in full daylight under an awning.
-  evergreen-02.jpg: Two players closer in, sun doing the work a lighting rig would normally do.
-  evergreen-03.jpg: Wide on the stage after dark, kit centred against a black backdrop.
-  evergreen-04.jpg: Vocalist with both arms up, drummer behind him — the frame the set was building toward.
 ---
 
 Arisen From Nothing were a rock band out of the Pacific Northwest. I
 worked with them from 2011 through 2016 under my own studio, Inkboard
 Design — shooting their live shows, running press and promo sessions,
-documenting a music video shoot, designing their logotype, their show
-posters and the sleeve for their EP, and mixing two tracks on that
-record.
+designing their logotype, their show posters and the sleeve for their
+EP, and mixing two tracks on that record.
 
 Most of it was unpaid. I took it on to build a body of music-industry
 work and to open doors with other bands, with the idea that it might
 lead to a larger record design project. That never materialised.
 
 The run was not evenly spread. The bulk of it lands between 2011 and
-2013 — a dense stretch of bar shows, festival dates, a summer tour, a
-video shoot and the release night — then the design work carries into
-2014 with the EP, and there is a single reunion date in March 2016. The
-training was in the density, not the duration: enough shows close
-together that I stopped thinking about the camera.
+2013 — a dense stretch of bar shows, festival dates, a summer tour and
+the release night — then the design work carries into 2014 with the EP,
+and there is a single reunion date in March 2016. The training was in
+the density, not the duration: enough shows close together that I
+stopped thinking about the camera.
+
+What follows is a selection, not the archive. Several nights I shot are
+not represented here yet.
 
 Two pieces of artwork recur in these photographs that I did not make.
 The band already had an engraved crest — Surrectum Ex Nihilum, In
@@ -122,9 +97,7 @@ layout is mine. Those two marks are theirs.
 
 ## Live Music Photography
 
-Hempfest, the Hard Rock Cafe, Studio 7, Flight's, a firefighter benefit,
-the Evergreen State Fair, Bubba's Roadhouse in Sultan, The Mix in
-Seattle, and Tony V's.
+Hempfest, the Hard Rock Cafe, Studio 7 and Flight's.
 
 Outdoor festival daylight at one end of the range, small rooms running
 whatever the house rig happened to be at the other. Access varied just
@@ -138,36 +111,6 @@ because you do not get to adjust it and you do not get a second take.
 
 [[grid:flights]]
 
-[[grid:firefighter]]
-
-[[grid:evergreen]]
-
-Three of those dates ran inside a fortnight in August 2013, on the tour
-whose poster I had designed a few weeks earlier — Bubba's Roadhouse in
-Sultan, The Mix in Seattle, then Hempfest and the Evergreen State Fair.
-Bubba's was the smallest room of the lot: a floor-level stage, wood
-panelling, beer neon, and no distance at all between lens and band.
-
-[[bubbas-01.jpg]]
-
-[[bubbas-02.jpg]]
-
-[[bubbas-03.jpg]]
-
-[[bubbas-04.jpg]]
-
-The Mix ran a deep red wash over everything, with a string of warm
-bulbs above the room as the only soft source in the building. It is a
-hard set of frames to grade and an easy one to shoot.
-
-[[mix-01.jpg]]
-
-[[mix-02.jpg]]
-
-[[mix-03.jpg]]
-
-[[mix-04.jpg]]
-
 There is also an outdoor set in the archive I can place in the same run
 but cannot pin to a venue with any confidence, so I am not going to
 guess at one. Full sun, no rig, nothing to work with but the time of
@@ -178,45 +121,6 @@ day.
 [[rockfest-poster-02.jpg]]
 
 [[rockfest-poster-04.jpg]]
-
-The band came back together for a date at Tony V's in March 2016, three
-years after the summer run. It was the only time I shot them under a
-proper stage rig — spot bars, a lit backdrop, and a room dark enough to
-let them work. It was also the last thing I did with them.
-
-[[tonyvs-01.jpg]]
-
-[[tonyvs-02.jpg]]
-
-[[tonyvs-03.jpg]]
-
-[[tonyvs-04.jpg]]
-
-## On Set
-
-In July 2013 the band shot a music video in a bare brick and concrete
-warehouse. I did not shoot the video. My job that day was to document
-it — the band, the crew, the set, the process. The finished cut is
-theirs and the videographers':
-
-[[youtube:https://youtu.be/X74IDkRJCLI|The finished music video. Directed and shot by the video production team; I was there as the stills photographer.]]
-
-Documenting a shoot is a different discipline to shooting a show. On
-stage you take the light you are given. On a set the light is being
-built in front of you, by people who need you out of every sightline
-while you do it. The useful frames are the ones nobody else is set up
-to get: the set dressing before it is lit, the kit alone in the room,
-the crew mid-decision.
-
-[[vidshoot-01.jpg]]
-
-[[vidshoot-02.jpg]]
-
-[[vidshoot-03.jpg]]
-
-[[vidshoot-04.jpg]]
-
-[[vidshoot-05.jpg]]
 
 ## CD Release Show
 
